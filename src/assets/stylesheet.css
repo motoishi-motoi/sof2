@@ -1,0 +1,1113 @@
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+body{
+  max-width: 100%;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #2b2b2b;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+div#root{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main-wrapper{
+  max-width: 100%;
+  margin:0 auto;
+  display: block;
+}
+
+.flags{
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+.share-box{
+  max-width: 1200px;
+  margin:0 auto;
+}
+.share-button{
+  position: relative;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 264px;
+  padding: 14px 12px 4px 12px;
+}
+.share-caption{
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  padding: 0 1em;
+  margin: 0;
+  background-color: white;
+  transform: translateY(-50%) translateX(5.3em);
+}
+
+.react-share__ShareButton{
+  margin: 0 8px;
+}
+
+/*.react-share__ShareButton svg circle{
+  fill: #505050;
+}*/
+
+/*
+Headerエリア
+*/
+
+header{
+  width: 100%;
+  height: 86px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 58px;
+}
+
+.header-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-inner h1{
+  margin:0;
+  padding:0;
+}
+
+header nav{
+  float: left;
+  line-height: 74px;
+  padding: 0 12px;
+}
+
+header nav a{
+  padding: 0 12px;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.logoHeader{
+  width: 120px;
+  height: 68px;
+  float: left;
+}
+
+/*
+国旗表示エリア
+*/
+
+.howto{
+  max-width: 500px;
+  margin: 42px auto;
+  background-color: #d4edda;
+  border-top: 12px solid #519657;
+  padding: 11px 22px;
+  border-radius: 4px;
+}
+.howto h3{
+  cursor: pointer;
+}
+.howto ol, .howto ul{
+  padding-left: 20px;
+}
+
+
+/*エリアとタグ囲んでるやつ*/
+.attributeBox{
+  margin-top: 34px;
+}
+
+/*エリアを囲んでるやつ*/
+.areaBox{
+  max-width: 100%;
+  margin-bottom: 2px;
+}
+
+/*エリア名*/
+.areaName{
+  display: inline-block;
+  background: #81c784;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  color:#fff;
+}
+
+/*エリアを囲んでるやつ*/
+.unitedBox{
+  max-width: 100%;
+  margin-bottom: 2px;
+}
+
+/*エリア名*/
+/*国連*/
+.kokuren{
+  display: inline-block;
+  background: #e57373;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  color:#fff;
+}
+
+/*国連じゃない*/
+.not-kokuren{
+  display: inline-block;
+  background: #64b5f6;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  color:#fff;
+}
+
+/*
+タグを囲んでるやつ
+.tagbox{
+  max-width: 100%
+}
+
+タグ名
+.tag{
+  display: inline-block;
+  background: #64b5f6;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 6px;
+  color:#fff;
+}
+*?
+
+/*国旗表示エリア全体を囲んでるやつ*/
+.flagArea{
+  padding: 24px;
+  border-radius: 4px;
+}
+
+/*国旗画像や国名タグをかこんでるやつ*/
+.flagBox{
+  width: 19%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 18px;
+  height: 250px;
+  vertical-align: middle;
+  margin: 20px 3%;
+  cursor: pointer;
+}
+
+/*画像を囲んでるやつ*/
+.flagImageBox{
+  width: 100px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 12px;
+  z-index: 1;
+}
+
+/*画像自体*/
+.countryFlag{
+  border: 1px solid #f0f0f0;
+  max-width: 100px;
+  max-height: 70px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+/*国名*/
+.countryName{
+  text-align: center;
+  color: #2b2b2b;
+}
+
+
+/*
+特定の国旗にだけ適用したいCSS
+*/
+
+.nepal{
+  border: 0;
+  left:21px;
+}
+
+.switzerland, .vatican{
+  left:15px;
+}
+
+.niger{
+  left:9px;
+}
+
+.belgium{
+  left:9.5px;
+}
+
+.monaco{
+  left:5px;
+}
+
+
+/*なぜか下記２つだけborderとの間に隙間ができるので、max-heightを100pxにしておく*/
+.norway, .denmark{
+  max-height: 100px;
+}
+
+
+/*
+検索用のチェックボックスのCSS
+*/
+
+
+/*検索用エリア全体を囲んでるやつ*/
+.searchBox{
+  border: 2px solid #b57a4e;
+  border-radius: 4px;
+  padding: 24px;
+  font-size: 0.94em;
+}
+
+h3.detail-search span, h4.search-mode span{
+  cursor: pointer;
+}
+h3.detail-search{
+  margin-top: 2em;
+}
+
+/* インデント的なやつ */
+.mBox{
+  margin-left: 0;
+}
+
+/*
+色の検索モードのやつ
+上のインデントと合わせて使って上書きしてるやつあり
+*/
+.searchMode{
+  margin: 12px 0;
+}
+
+/* 三角の位置調整 */
+.svg-inline--fa.fa-w-10{
+  margin-left: 6px;
+}
+
+/* 緑の説明書のところでは邪魔なので */
+.howto p .svg-inline--fa.fa-w-10{
+  margin: 0;
+}
+
+/*ラベル名とチェックボックスを囲んでるやつ*/
+.button{
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 8px;
+  padding: 3px 0 0 3px;
+}
+
+/*ラベル名に使ってるやつ*/
+.searchButton{
+  cursor: pointer;
+  margin: 4px 12px 4px 38px;
+  line-height: 32px;
+}
+
+/*チェックボックスのチェック入ってない時*/
+.checkbox0{
+  display:block;
+  position:absolute;
+  width:30px;
+  height:30px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+/*チェックボックスにチェックが入った時*/
+.checkbox1{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.checkbox1:after{
+  content: "";
+  display:block;
+  position:absolute;
+  top: 8px;
+  left: 8px;
+  width:14px;
+  height:14px;
+  background: #a5d6a7;
+  border-radius: 2px;
+}
+
+/*serachCheckBoxの略ね*/
+.scb{
+  margin-bottom: 12px;
+}
+.scb h3, .scb h4{
+  padding-left: 3px;
+}
+
+/*表示件数*/
+.result{
+  margin-top: 20px;
+}
+
+/*
+modalのcss
+*/
+
+/*modalの一番上*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: auto;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+/*modalの白いとこ、画像とかの表示部分*/
+/*【お得情報】position:absolute に right:0; left:0; を指定して、margin:auto にすると中央揃えできる。right,leftがないと出来ない*/
+.modal-inner{
+  position: absolute;
+  width: 60%;
+  max-width: 1000px;
+  margin: auto;
+  top: 10%;
+  right: 0;
+  left: 0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0 10px;
+  max-height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+  z-index: 7;
+}
+.modal-inner::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+
+/*2カラムにする用*/
+.modal-column{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding-bottom: 18px;
+}
+
+/*国旗表示エリア*/
+.modal-flag{
+  width: 50%;
+}
+
+/*国旗画像自体*/
+.modal-flag-image{
+  display: block;
+  max-width: 80%;
+  max-height: 300px;
+  margin: 0 6.5% 0 13.5%;
+  border: 1px solid #f0f0f0;
+}
+
+.nepalModal{
+  border: 0;
+}
+
+/*地図部*/
+.modal-map-image{
+  display: block;
+  max-width: 80%;
+  max-height: 300px;
+  margin: 0 13.5% 0 6.5%;
+}
+.modal-location{
+  width: 50%;
+}
+
+/*情報部*/
+.modal-info{
+  width: 100%;
+}
+.modal-intro{
+  margin: 0 8%;
+}
+
+/*国名*/
+.modal-name{
+  text-align: center;
+}
+.modal-name h2{
+  font-weight: normal;
+  margin-bottom: 0.2em;
+}
+.modal-name p{
+  margin-top: 0;
+}
+
+/*ボタン*/
+
+.modal-button{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.modal-button button{
+  cursor: pointer;
+  width: 50%;
+  margin: 32px 8%;
+  height: 48px;
+  padding: 0;
+  font-size: 0.84em;
+}
+
+.modal-button button a{
+  color: #2b2b2b;
+}
+
+.modal-button button:focus{
+  outline: none;
+}
+
+/*borderとbackgroundで色変えると情報量増えてダサい*/
+/*詳細と閉じるボタンのCSS*/
+.detail{
+  background: #a5d6a7;
+  color: #2b2b2b;
+  font-size: 16px;
+  line-height: 48px;
+  border: 0;
+}
+.detail a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.detail a:active{
+  color: inherit;
+}
+.detail a:visited{
+  color: inherit;
+}
+.svg-inline--fa.fa-w-16 {
+  line-height: 48px;
+  margin-left: 8px;
+  width: 0.9em;
+  color: #3b3b3b;
+}
+
+.close{
+  background: #e0e0e0;
+  color: #2b2b2b;
+  font-size: 16px;
+  line-height: 48px;
+  border: 0;
+}
+
+/*ネパール用*/
+
+.nepalBox .modal-flag-image{
+  margin: 0 auto;
+}
+
+
+/*
+Footer
+*/
+
+footer{
+  width: 100%;
+  border-top: 1px solid #ccc;
+  margin-top: 22px;
+}
+
+footer .footer-list{
+  float: left;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  margin-top: 22px;
+}
+
+.logoFooter{
+  width: 120px;
+  height: 68px;
+  float: left;
+  margin-left: 3%;
+  margin-top: 16px;
+}
+
+.footer-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 24px;
+
+}
+
+footer ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+footer ul li{
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+
+footer ul li a{
+  color: #777;
+  font-weight: bold;
+  font-size: 0.83em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer h4{
+  margin-top: 0;
+}
+
+/*旗個別のページ*/
+
+.flag-page{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*関連する旗*/
+
+.relation-flag{
+  display: inline-block;
+  height: 128px;
+  width: 25%;
+  border-bottom: 1px dotted #ccc;
+  margin: 12px 0;
+}
+/*画像を囲んでるやつ*/
+.relation-flag-box{
+  width: 86px;
+  height: 64px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 12px;
+  z-index: 1;
+}
+
+.relation-flag-img{
+  border: 1px solid #f0f0f0;
+  width: 86px;
+  max-height: 64px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.relation-flag h4{
+  text-align: center;
+  margin: 0;
+  color: #4b4b4b;
+  font-weight: normal;
+  font-size: 0.92em;
+}
+
+.nepalreFlag{
+  border: 0;
+}
+
+/*旗の個別ページ用*/
+
+/*2カラムにする用*/
+.flag-date-column{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding-bottom: 18px;
+}
+
+/*国旗表示エリア*/
+.flag-date-image{
+  width: 50%;
+}
+
+/*国旗画像自体*/
+.flag-date-image-svg{
+  display: block;
+  max-width: 80%;
+  max-height: 300px;
+  margin: 0 6.5% 0 13.5%;
+  border: 1px solid #f0f0f0;
+}
+
+.nepalDate{
+  border: 0;
+}
+
+/*地図部*/
+.flag-date-map-image{
+  display: block;
+  max-width: 80%;
+  max-height: 300px;
+  margin: 0 13.5% 0 6.5%;
+}
+.flag-date-location{
+  width: 50%;
+}
+
+/*情報部*/
+.flag-date-info{
+  width: 100%;
+}
+.flag-date-intro{
+  margin: 0 8%;
+}
+
+/*国名*/
+.flag-date-name{
+  text-align: center;
+}
+.flag-date-name h2{
+  font-weight: normal;
+  margin-bottom: 0.2em;
+}
+.flag-date-name p{
+  margin-top: 0;
+}
+
+/*ボタン*/
+
+.flag-date-button{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.flag-date-button button.detail{
+  cursor: pointer;
+  width: 50%;
+  margin: 32px 8%;
+  height: 48px;
+  padding: 0;
+  font-size: 0.84em;
+}
+
+.flag-date-button button a{
+  color: #2b2b2b;
+}
+
+.flag-date-button button:focus{
+  outline: none;
+}
+
+/*borderとbackgroundで色変えると情報量増えてダサい*/
+/*詳細と閉じるボタンのCSS*/
+.detail{
+  background: #a5d6a7;
+  color: #2b2b2b;
+  font-size: 16px;
+  line-height: 48px;
+  border: 0;
+}
+.detail a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.detail a:active{
+  color: inherit;
+}
+.detail a:visited{
+  color: inherit;
+}
+.svg-inline--fa.fa-w-16 {
+  line-height: 48px;
+  margin-left: 8px;
+  width: 0.9em;
+  color: #3b3b3b;
+}
+
+.close{
+  background: #e0e0e0;
+  color: #2b2b2b;
+  font-size: 16px;
+  line-height: 48px;
+  border: 0;
+}
+
+.close-link{
+  cursor: pointer;
+  width: 50%;
+  margin: 32px 8%;
+  height: 48px;
+  padding: 0;
+}
+
+.close-link button{
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 0.84em;
+}
+
+/*ネパール用*/
+
+.nepal-flag-date .flag-date-image{
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------*/
+/*ここからデバイス別のCSS*/
+
+
+@media screen and (max-width: 1024px){
+  .flagBox{
+    width: 27%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 18px;
+    height: 250px;
+    vertical-align: middle;
+    margin: 20px 3%;
+    cursor: pointer;
+  }
+
+    /*modal*/
+
+    .modal-inner{
+      top: 5%;
+      width: 70%;
+      max-height: 90vh;
+    }
+    .modal-column{
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      margin: 0;
+    }
+  
+    /*国旗表示エリア*/
+    .modal-flag{
+      width: 100%;
+      padding-bottom: 18px;
+    }
+
+    .modal-location{
+      width: 100%;
+    }
+    .modal-map-image{
+      display: block;
+      max-width: 80%;
+      max-height: 200px;
+      margin: 0 auto;
+    }
+  
+    /*国旗画像自体*/
+    .modal-flag-image{
+      display: block;
+      max-width: 80%;
+      max-height: 230px;
+      margin: 0 auto;
+    }
+
+    .modal-info{
+      width: 100%;
+    }
+    .modal-intro{
+      margin: 0 5%;
+    }
+  
+    .modal-button{
+      display: block;
+    }
+    .modal-button button{
+      display: block;
+      width: 90%;
+      margin: 24px auto;
+      padding: 0 6px;
+    }
+
+    .logoFooter{
+      margin-left: 3%;
+    }
+}
+@media screen and (max-width: 800px){
+  .flagBox{
+    width: 44%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 18px;
+    height: 250px;
+    vertical-align: middle;
+    margin: 20px 3%;
+    cursor: pointer;
+  }
+
+  /*modal*/
+
+  .modal-inner{
+    top: 5%;
+    width: 80%;
+    max-height: 80vh;
+  }
+  .modal-column{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0;
+  }
+
+  /*国旗表示エリア*/
+  .modal-flag{
+    width: 100%;
+    padding-bottom: 18px;
+  }
+
+  /*国旗画像自体*/
+  .modal-info{
+    width: 100%;
+  }
+
+  .modal-button{
+    display: block;
+  }
+  .modal-button button{
+    display: block;
+    width: 90%;
+    margin: 24px auto;
+    padding: 0 6px;
+  }
+
+  footer .footer-list, footer .logoFooter{
+    float: none;
+    margin-left: 3%;
+  }
+
+}
+@media screen and (max-width: 480px){
+
+  .flagArea{
+    padding: 24px 0;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .flagBox{
+    width: 48%;
+    max-width: 250px;
+    padding: 18px;
+    height: 160px;
+    cursor: pointer;
+  }
+
+  .flagBox:nth-child(odd){
+    margin:30px 2% 0 0;
+  }
+
+  .flagBox:nth-child(even){
+    margin:30px 0 0 2%;
+  }
+
+  .flagBox:nth-child(1), .flagBox:nth-child(2){
+    margin-top: 0;
+  }
+
+  .countryName{
+    font-size: 0.86em;
+  }
+
+  .attributeBox{
+    display: none;
+  }
+
+  /*
+  Headerエリア
+  */
+
+  header{
+    width: 100%;
+    height: 70px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 58px;
+  }
+
+  header nav{
+    float: left;
+    line-height: 54px;
+    padding: 0 12px;
+  }
+
+  header nav a{
+    padding: 0 12px;
+    color: #2b2b2b;
+    text-decoration: none;
+  }
+
+  .logoHeader{
+    width: 90px;
+    height: 50px;
+    float: left;
+  }
+
+  /*flagsエリア*/
+
+  .howto{
+    max-width: 90%;
+  }
+
+  .searchBox{
+    max-width: 90%;
+    margin:0 auto;
+  }
+
+  /*modal*/
+
+  .modal-inner{
+    top: 5%;
+    max-height: 80vh;
+  }
+  .modal-column{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0;
+  }
+
+  /*国旗表示エリア*/
+  .modal-flag{
+    width: 100%;
+    padding-bottom: 18px;
+  }
+
+  /*国旗画像自体*/
+  .modal-flag-image{
+    display: block;
+    max-width: 80%;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  .modal-info{
+    width: 100%;
+  }
+
+  .modal-button{
+    display: block;
+  }
+  .modal-button button{
+    display: block;
+    width: 90%;
+    margin: 24px auto;
+    padding: 0 6px;
+  }
+
+  .modal-button button.detail{
+    font-size:0.65em;
+  }
+
+  footer .footer-list, footer .logoFooter{
+    margin-left: 10%;
+  }
+
+}
+/*セントクリストファーネイビス用*/
+@media screen and (max-width: 360px){
+  .saintChristopherNevisBox .modal-button button.detail{
+    height: 48px;
+    line-height: 24px;
+  }
+
+  .saintChristopherNevisBox .countryName{
+    font-size: 0.8em;
+  }
+}
+
+/*
+アンティグア・バーブーダ
+ボスニア・ヘルツェゴビナ
+*/
+@media screen and (max-width: 310px){
+  .antiguaBarbudaBox .modal-button button.detail,
+  .bosniaHerzegovinaBox .modal-button button.detail{
+    height: 48px;
+    line-height: 24px;
+  }
+}
+
+/*
+サントメ・プリンシペ
+トリニダード・トバゴ
+
+  .saotomePrincipeBox .modal-button button.detail,
+  .trinidadTobagoBox .modal-button button.detail{
+    height: 48px;
+    line-height: 24px;
+  }
+
+  いらなくなった
+*/
+@media screen and (max-width: 320px){
+
+  header nav a{
+    font-size: 0.75em;
+  }
+}
