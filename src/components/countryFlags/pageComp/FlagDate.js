@@ -9,7 +9,6 @@ import { Helmet } from 'react-helmet';
 const FlagDate = (props) => {
 
 	const targetCountry = props.mainImage.find((v) => String(v.fullName) === props.name);
-	const ogp = 'sof.png'
 
 	return(
 		<div className = 'flag-date'>
@@ -21,11 +20,11 @@ const FlagDate = (props) => {
 					{property: 'twitter:description', content: targetCountry.fullName + '国旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。'},
 					{property: 'twitter:title', content: targetCountry.fullName + 'の国旗 | SOF'},
 					{property: 'twitter:url', content: 'https://laughing-volhard-e0a9d7.netlify.app/' + targetCountry.url},
-					{name: 'twitter:image', content: 'https://laughing-volhard-e0a9d7.netlify.app/' + ogp},
+					{name: 'twitter:image', content: 'https://laughing-volhard-e0a9d7.netlify.app/' + targetCountry.ogp},
 					{property: 'og:type', content: 'article'},
 					{property: 'og:title', content: targetCountry.fullName + 'の国旗 | SOF'},
 					{property: 'og:url', content: 'https://laughing-volhard-e0a9d7.netlify.app/' + targetCountry.url},
-					{property: 'og:image', content: 'https://laughing-volhard-e0a9d7.netlify.app/' + ogp},
+					{property: 'og:image', content: 'https://laughing-volhard-e0a9d7.netlify.app/' + targetCountry.ogp},
 					{property: 'og:description', content: targetCountry.fullName + '国旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。'},
 				]}
 			/>

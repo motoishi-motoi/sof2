@@ -642,217 +642,6 @@ import LebanonPage from './components/countryFlags/Lebanon';
 import RussiaPage from './components/countryFlags/Russia';
 
 
-// OGP用の国旗のPNG画像import
-import afghanistanOgppng from './assets/ogpFlagImages/afghanistan.png';
-import albaniaOgppng from './assets/ogpFlagImages/albania.png';
-import algeriaOgppng from './assets/ogpFlagImages/algeria.png';
-import andorraOgppng from './assets/ogpFlagImages/andorra.png';
-import angolaOgppng from './assets/ogpFlagImages/angola.png';
-import antiguaBarbudaOgppng from './assets/ogpFlagImages/antiguaBarbuda.png';
-import arabOgppng from './assets/ogpFlagImages/arab.png';
-import argentinaOgppng from './assets/ogpFlagImages/argentina.png';
-import armeniaOgppng from './assets/ogpFlagImages/armenia.png';
-import australiaOgppng from './assets/ogpFlagImages/australia.png';
-import austriaOgppng from './assets/ogpFlagImages/austria.png';
-import azerbaijanOgppng from './assets/ogpFlagImages/azerbaijan.png';
-import bahamasOgppng from './assets/ogpFlagImages/bahamas.png';
-import bahrainOgppng from './assets/ogpFlagImages/bahrain.png';
-import bangladeshOgppng from './assets/ogpFlagImages/bangladesh.png';
-import barbadosOgppng from './assets/ogpFlagImages/barbados.png';
-import belarusOgppng from './assets/ogpFlagImages/belarus.png';
-import belgiumOgppng from './assets/ogpFlagImages/belgium.png';
-import belizeOgppng from './assets/ogpFlagImages/belize.png';
-import beninOgppng from './assets/ogpFlagImages/benin.png';
-import bhutanOgppng from './assets/ogpFlagImages/bhutan.png';
-import boliviaOgppng from './assets/ogpFlagImages/bolivia.png';
-import bosniaHerzegovinaOgppng from './assets/ogpFlagImages/bosniaHerzegovina.png';
-import botswanaOgppng from './assets/ogpFlagImages/botswana.png';
-import brazilOgppng from './assets/ogpFlagImages/brazil.png';
-import bruneiOgppng from './assets/ogpFlagImages/brunei.png';
-import bulgariaOgppng from './assets/ogpFlagImages/bulgaria.png';
-import burkinaFasoOgppng from './assets/ogpFlagImages/burkinaFaso.png';
-import burundiOgppng from './assets/ogpFlagImages/burundi.png';
-import caboVerdeOgppng from './assets/ogpFlagImages/caboVerde.png';
-import cambodiaOgppng from './assets/ogpFlagImages/cambodia.png';
-import cameroonOgppng from './assets/ogpFlagImages/cameroon.png';
-import canadaOgppng from './assets/ogpFlagImages/canada.png';
-import centralAfricanOgppng from './assets/ogpFlagImages/centralAfrican.png';
-import chadOgppng from './assets/ogpFlagImages/chad.png';
-import chileOgppng from './assets/ogpFlagImages/chile.png';
-import chinaOgppng from './assets/ogpFlagImages/china.png';
-import colombiaOgppng from './assets/ogpFlagImages/colombia.png';
-import comorosOgppng from './assets/ogpFlagImages/comoros.png';
-import congoOgppng from './assets/ogpFlagImages/congo.png';
-import costaRicaOgppng from './assets/ogpFlagImages/costaRica.png';
-import cotodOgppng from './assets/ogpFlagImages/cotodIvoire.png';
-import croatiaOgppng from './assets/ogpFlagImages/croatia.png';
-import cubaOgppng from './assets/ogpFlagImages/cuba.png';
-import cyprusOgppng from './assets/ogpFlagImages/cyprus.png';
-import czechOgppng from './assets/ogpFlagImages/czech.png';
-import denmarkOgppng from './assets/ogpFlagImages/denmark.png';
-import djiboutiOgppng from './assets/ogpFlagImages/djibouti.png';
-import dominicaOgppng from './assets/ogpFlagImages/dominica.png';
-import dominicanRepublicOgppng from './assets/ogpFlagImages/dominicanRepublic.png';
-import eastTimorOgppng from './assets/ogpFlagImages/eastTimor.png';
-import ecuadorOgppng from './assets/ogpFlagImages/ecuador.png';
-import egyptOgppng from './assets/ogpFlagImages/egypt.png';
-import elSalvadorOgppng from './assets/ogpFlagImages/elSalvador.png';
-import equatorialGuineaOgppng from './assets/ogpFlagImages/equatorialGuinea.png';
-import eritreaOgppng from './assets/ogpFlagImages/eritrea.png';
-import estoniaOgppng from './assets/ogpFlagImages/estonia.png';
-import eswatiniOgppng from './assets/ogpFlagImages/eswatini.png';
-import ethiopiaOgppng from './assets/ogpFlagImages/ethiopia.png';
-import fijiOgppng from './assets/ogpFlagImages/fiji.png';
-import finlandOgppng from './assets/ogpFlagImages/finland.png';
-import franceOgppng from './assets/ogpFlagImages/france.png';
-import gabonOgppng from './assets/ogpFlagImages/gabon.png';
-import gambiaOgppng from './assets/ogpFlagImages/gambia.png';
-import georgiaOgppng from './assets/ogpFlagImages/georgia.png';
-import germanyOgppng from './assets/ogpFlagImages/germany.png';
-import ghanaOgppng from './assets/ogpFlagImages/ghana.png';
-import greeceOgppng from './assets/ogpFlagImages/greece.png';
-import grenadaOgppng from './assets/ogpFlagImages/grenada.png';
-import guatemalaOgppng from './assets/ogpFlagImages/guatemala.png';
-import guineaOgppng from './assets/ogpFlagImages/guinea.png';
-import guineaBissauOgppng from './assets/ogpFlagImages/guineaBissau.png';
-import guyanaOgppng from './assets/ogpFlagImages/guyana.png';
-import haitiOgppng from './assets/ogpFlagImages/haiti.png';
-import hondurasOgppng from './assets/ogpFlagImages/honduras.png';
-import hungaryOgppng from './assets/ogpFlagImages/hungary.png';
-import icelandOgppng from './assets/ogpFlagImages/iceland.png';
-import indiaOgppng from './assets/ogpFlagImages/india.png';
-import indonesiaOgppng from './assets/ogpFlagImages/indonesia.png';
-import iranOgppng from './assets/ogpFlagImages/iran.png';
-import iraqOgppng from './assets/ogpFlagImages/iraq.png';
-import irelandOgppng from './assets/ogpFlagImages/ireland.png';
-import israelOgppng from './assets/ogpFlagImages/israel.png';
-import italyOgppng from './assets/ogpFlagImages/italy.png';
-import jamaicaOgppng from './assets/ogpFlagImages/jamaica.png';
-import japanOgppng from './assets/ogpFlagImages/japan.png';
-import jordanOgppng from './assets/ogpFlagImages/jordan.png';
-import kazakhstanOgppng from './assets/ogpFlagImages/kazakhstan.png';
-import kenyaOgppng from './assets/ogpFlagImages/kenya.png';
-import kiribatiOgppng from './assets/ogpFlagImages/kiribati.png';
-import kuwaitOgppng from './assets/ogpFlagImages/kuwait.png';
-import kyrgyzstanOgppng from './assets/ogpFlagImages/kyrgyzstan.png';
-import laosOgppng from './assets/ogpFlagImages/laos.png';
-import latviaOgppng from './assets/ogpFlagImages/latvia.png';
-import lebanonOgppng from './assets/ogpFlagImages/lebanon.png';
-import lesothoOgppng from './assets/ogpFlagImages/lesotho.png';
-import liberiaOgppng from './assets/ogpFlagImages/liberia.png';
-import libyaOgppng from './assets/ogpFlagImages/libya.png';
-import liechtensteinOgppng from './assets/ogpFlagImages/liechtenstein.png';
-import lithuaniaOgppng from './assets/ogpFlagImages/lithuania.png';
-import luxembourgOgppng from './assets/ogpFlagImages/luxembourg.png';
-import madagascarOgppng from './assets/ogpFlagImages/madagascar.png';
-import malawiOgppng from './assets/ogpFlagImages/malawi.png';
-import malaysiaOgppng from './assets/ogpFlagImages/malaysia.png';
-import maldivesOgppng from './assets/ogpFlagImages/maldives.png';
-import maliOgppng from './assets/ogpFlagImages/mali.png';
-import maltaOgppng from './assets/ogpFlagImages/malta.png';
-import marshallIslandsOgppng from './assets/ogpFlagImages/marshallIslands.png';
-import mauritaniaOgppng from './assets/ogpFlagImages/mauritania.png';
-import mauritiusOgppng from './assets/ogpFlagImages/mauritius.png';
-import mexicoOgppng from './assets/ogpFlagImages/mexico.png';
-import micronesiaOgppng from './assets/ogpFlagImages/micronesia.png';
-import moldovaOgppng from './assets/ogpFlagImages/moldova.png';
-import monacoOgppng from './assets/ogpFlagImages/monaco.png';
-import mongoliaOgppng from './assets/ogpFlagImages/mongolia.png';
-import montenegroOgppng from './assets/ogpFlagImages/montenegro.png';
-import moroccoOgppng from './assets/ogpFlagImages/morocco.png';
-import mozambiqueOgppng from './assets/ogpFlagImages/mozambique.png';
-import myanmarOgppng from './assets/ogpFlagImages/myanmar.png';
-import namibiaOgppng from './assets/ogpFlagImages/namibia.png';
-import nauruOgppng from './assets/ogpFlagImages/nauru.png';
-import nepalOgppng from './assets/ogpFlagImages/nepal.png';
-import NetherlandsOgppng from './assets/ogpFlagImages/Netherlands.png';
-import newZealandOgppng from './assets/ogpFlagImages/newZealand.png';
-import nicaraguaOgppng from './assets/ogpFlagImages/nicaragua.png';
-import nigerOgppng from './assets/ogpFlagImages/niger.png';
-import nigeriaOgppng from './assets/ogpFlagImages/nigeria.png';
-import niueOgppng from './assets/ogpFlagImages/niue.png';
-import northKoreaOgppng from './assets/ogpFlagImages/northKorea.png';
-import northMacedoniaOgppng from './assets/ogpFlagImages/northMacedonia.png';
-import norwayOgppng from './assets/ogpFlagImages/norway.png';
-import omanOgppng from './assets/ogpFlagImages/oman.png';
-import pakistanOgppng from './assets/ogpFlagImages/pakistan.png';
-import palauOgppng from './assets/ogpFlagImages/palau.png';
-import panamaOgppng from './assets/ogpFlagImages/panama.png';
-import papuaNewGuineaOgppng from './assets/ogpFlagImages/papuaNewGuinea.png';
-import paraguayOgppng from './assets/ogpFlagImages/paraguay.png';
-import peruOgppng from './assets/ogpFlagImages/peru.png';
-import philippinesOgppng from './assets/ogpFlagImages/philippines.png';
-import polandOgppng from './assets/ogpFlagImages/poland.png';
-import portugalOgppng from './assets/ogpFlagImages/portugal.png';
-import qatarOgppng from './assets/ogpFlagImages/qatar.png';
-import republicCongoOgppng from './assets/ogpFlagImages/republicCongo.png';
-import romaniaOgppng from './assets/ogpFlagImages/romania.png';
-import russiaOgppng from './assets/ogpFlagImages/russia.png';
-import rwandaOgppng from './assets/ogpFlagImages/rwanda.png';
-import saintChristopherNevisOgppng from './assets/ogpFlagImages/saintChristopherNevis.png';
-import saintLuciaOgppng from './assets/ogpFlagImages/saintLucia.png';
-import saintVincentOgppng from './assets/ogpFlagImages/saintVincent.png';
-import samoaOgppng from './assets/ogpFlagImages/samoa.png';
-import sanMarinoOgppng from './assets/ogpFlagImages/sanMarino.png';
-import saotomePrincipeOgppng from './assets/ogpFlagImages/saotomePrincipe.png';
-import saudiArabiaOgppng from './assets/ogpFlagImages/saudiArabia.png';
-import senegalOgppng from './assets/ogpFlagImages/senegal.png';
-import serbiaOgppng from './assets/ogpFlagImages/serbia.png';
-import seychellesOgppng from './assets/ogpFlagImages/seychelles.png';
-import sierraLeoneOgppng from './assets/ogpFlagImages/sierraLeone.png';
-import singaporeOgppng from './assets/ogpFlagImages/singapore.png';
-import slovakiaOgppng from './assets/ogpFlagImages/slovakia.png';
-import sloveniaOgppng from './assets/ogpFlagImages/slovenia.png';
-import solomonIslandsOgppng from './assets/ogpFlagImages/solomonIslands.png';
-import somaliaOgppng from './assets/ogpFlagImages/somalia.png';
-import southAfricaOgppng from './assets/ogpFlagImages/southAfrica.png';
-import southKoreaOgppng from './assets/ogpFlagImages/southKorea.png';
-import southSudanOgppng from './assets/ogpFlagImages/southSudan.png';
-import spainOgppng from './assets/ogpFlagImages/spain.png';
-import sriLankaOgppng from './assets/ogpFlagImages/sriLanka.png';
-import sudanOgppng from './assets/ogpFlagImages/sudan.png';
-import surinameOgppng from './assets/ogpFlagImages/suriname.png';
-import swedenOgppng from './assets/ogpFlagImages/sweden.png';
-import switzerlandOgppng from './assets/ogpFlagImages/switzerland.png';
-import syriaOgppng from './assets/ogpFlagImages/syria.png';
-import tajikistanOgppng from './assets/ogpFlagImages/tajikistan.png';
-import tanzaniaOgppng from './assets/ogpFlagImages/tanzania.png';
-import thailandOgppng from './assets/ogpFlagImages/thailand.png';
-import togoOgppng from './assets/ogpFlagImages/togo.png';
-import tongaOgppng from './assets/ogpFlagImages/tonga.png';
-import trinidadTobagoOgppng from './assets/ogpFlagImages/trinidadTobago.png';
-import tunisiaOgppng from './assets/ogpFlagImages/tunisia.png';
-import turkeyOgppng from './assets/ogpFlagImages/turkey.png';
-import turkmenistanOgppng from './assets/ogpFlagImages/turkmenistan.png';
-import tuvaluOgppng from './assets/ogpFlagImages/tuvalu.png';
-import ugandaOgppng from './assets/ogpFlagImages/uganda.png';
-import ukraineOgppng from './assets/ogpFlagImages/ukraine.png';
-import unitedKingdomOgppng from './assets/ogpFlagImages/unitedKingdom.png';
-import unitedStatesOgppng from './assets/ogpFlagImages/unitedStates.png';
-import uruguayOgppng from './assets/ogpFlagImages/uruguay.png';
-import uzbekistanOgppng from './assets/ogpFlagImages/uzbekistan.png';
-import vanuatuOgppng from './assets/ogpFlagImages/vanuatu.png';
-import venezuelaOgppng from './assets/ogpFlagImages/venezuela.png';
-import vietnamOgppng from './assets/ogpFlagImages/vietnam.png';
-import yemenOgppng from './assets/ogpFlagImages/yemen.png';
-import zambiaOgppng from './assets/ogpFlagImages/zambia.png';
-import zimbabweOgppng from './assets/ogpFlagImages/zimbabwe.png';
-import abkhaziaOgppng from './assets/ogpFlagImages/abkhazia.png';
-import artsakhOgppng from './assets/ogpFlagImages/artsakh.png';
-import cookOgppng from './assets/ogpFlagImages/cook.png';
-import donetskOgppng from './assets/ogpFlagImages/donetsk.png';
-import kosovoOgppng from './assets/ogpFlagImages/kosovo.png';
-import northernCyprusOgppng from './assets/ogpFlagImages/northernCyprus.png';
-import palestineOgppng from './assets/ogpFlagImages/palestine.png';
-import sahrawiOgppng from './assets/ogpFlagImages/sahrawi.png';
-import somalilandOgppng from './assets/ogpFlagImages/somaliland.png';
-import sssetiaOgppng from './assets/ogpFlagImages/sssetia.png';
-import taiwanOgppng from './assets/ogpFlagImages/taiwan.png';
-import transnistriaOgppng from './assets/ogpFlagImages/transnistria.png';
-import vaticanOgppng from './assets/ogpFlagImages/vatican.png';
-import luhanskOgppng from './assets/ogpFlagImages/luhansk.png';
-
-
 const App = () => {
 
   //色タグ
@@ -911,7 +700,7 @@ desc: [
           image: iceland,
           location: icelandMap,
           link: 'https://flaghistory.jp/iceland/',
-          ogp: icelandOgppng,
+          ogp: 'ogpFlagImages/iceland.png',
           desc: [
             '縦横比率は【18:25】',
             '青色は古くからアイスランドで親しまれてきた国民的な色。赤は国内に多く存在する火山、白は氷河と雪原を表します。旗竿側に交点が少し寄っている十字はスカンジナビア十字と呼ばれるものです。',
@@ -934,7 +723,7 @@ desc: [
           image: ireland,
           location: irelandMap,
           link: 'https://flaghistory.jp/ireland/',
-          ogp: irelandOgppng,
+          ogp: 'ogpFlagImages/ireland.png',
           desc: [
             '縦横比率は【1:2】',
             '緑色はケルトの伝統とカトリック、オレンジ色はウィリアム3世の支持者とプロテスタント、白色はその両者の平和を表します。',
@@ -957,7 +746,7 @@ desc: [
           image: azerbaijan,
           location: azerbaijanMap,
           link: 'https://flaghistory.jp/azerbaijan/',
-          ogp: azerbaijanOgppng,
+          ogp: 'ogpFlagImages/azerbaijan.png',
           desc: [
             '縦横比率は【1:2】',
             '青色はトルコ系民族、赤色は近代化への決意、緑はイスラム、八角星は8つのトルコ系民族を表します。また三日月と星の組み合わせはイスラム教の象徴です。',
@@ -980,7 +769,7 @@ desc: [
           image: afghanistan,
           location: afghanistanMap,
           link: 'https://flaghistory.jp/afghanistan/',
-          ogp: afghanistanOgppng,
+          ogp: 'ogpFlagImages/afghanistan.png',
           desc: [
             '縦横比率は【2:3】',
             '黒は外国に支配されていた暗い過去、赤はイギリスからの独立を目指した戦いで流された血、緑は達成した独立と平和・イスラムを表します。中央に描かれているのはモスク（イスラム教の礼拝堂）やシャハーダ（信仰告白）が描かれた国章です。',
@@ -1003,7 +792,7 @@ desc: [
           image: abkhazia,
           location: abkhaziaMap,
           link: 'https://flaghistory.jp/abkhazia/',
-          ogp: abkhaziaOgppng,
+          ogp: 'ogpFlagImages/abkhazia.png',
           desc: [
             '縦横比率は【1:2】',
             'カントン（左上）に描かれている手はアブハジアの集団を、7つの星はアブハジアの7つの地域を、緑と白の7つの縞はキリスト教とイスラム教の共生を表しています。また7という数字は神聖さの象徴です。',
@@ -1026,7 +815,7 @@ desc: [
           image: unitedStates,
           location: unitedStatesMap,
           link: 'https://flaghistory.jp/america/',
-          ogp: unitedStatesOgppng,
+          ogp: 'ogpFlagImages/unitedStates.png',
           desc: [
             '縦横比率は【10:19】',
             '青は正義と忍耐、赤は勇気と耐久力、白は純粋さと純血を表します。50個の星はアメリカを構成する50の州を、13の赤白の縞は独立宣言した独立当初の13州を示したものです。',
@@ -1049,7 +838,7 @@ desc: [
           image: arab,
           location: arabMap,
           link: 'https://flaghistory.jp/arab/',
-          ogp: arabOgppng,
+          ogp: 'ogpFlagImages/arab.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は犠牲者の血、緑は肥沃な黒土、白は平和と純粋さ、黒は国に近代化をもたらす石油を表します。これら4色の組み合わせは汎アラブ色と呼ばれるものです。',
@@ -1072,7 +861,7 @@ desc: [
           image: algeria,
           location: algeriaMap,
           link: 'https://flaghistory.jp/algeria/',
-          ogp: algeriaOgppng,
+          ogp: 'ogpFlagImages/algeria.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は自然の美しさ、白は平和、赤はアルジェリア独立戦争の際に流された血を表します。また、星と三日月の組み合わせはイスラム教の象徴です。',
@@ -1095,7 +884,7 @@ desc: [
           image: argentina,
           location: argentinaMap,
           link: 'https://flaghistory.jp/argentine/',
-          ogp: argentinaOgppng,
+          ogp: 'ogpFlagImages/argentina.png',
           desc: [
             '縦横比率は【9:14】',
             '青は青空、白はラプラタ川を表しています。中央に描かれているのは5月の太陽と呼ばれるものです。',
@@ -1118,7 +907,7 @@ desc: [
           image: artsakh,
           location: artsakhMap,
           link: 'https://flaghistory.jp/artsakh/',
-          ogp: artsakhOgppng,
+          ogp: 'ogpFlagImages/artsakh.png',
           desc: [
             '縦横比率は【1:2】',
             '白線はアルメニアの伝統と地域の人口を表し、アルツァフがアルメニアから切り離された地域であることを示します。また白線の模様はアルメニアの絨毯に使われるデザインとも類似しています。',
@@ -1141,7 +930,7 @@ desc: [
           image: albania,
           location: albaniaMap,
           link: 'https://flaghistory.jp/albania/',
-          ogp: albaniaOgppng,
+          ogp: 'ogpFlagImages/albania.png',
           desc: [
             '縦横比率は【5:7】（法律では1:1.4と表記）',
             '中央に描かれた双頭の鷲は『この国が東洋と西洋の間にあり文化の中心であること』を表しています。なお鷲はアルバニアで古くから評価されている生き物で、その影響もありこの国は『Land of the Eagles』（鷲の土地）とも呼ばれているとか。',
@@ -1164,7 +953,7 @@ desc: [
           image: armenia,
           location: armeniaMap,
           link: 'https://flaghistory.jp/armenia/',
-          ogp: armeniaOgppng,
+          ogp: 'ogpFlagImages/armenia.png',
           desc: [
             '縦横比率は【1:2】',
             '赤はアルメニアの高地と独立・自由・キリスト教を守る戦い、青は平和を求める国民の意志、オレンジは勤勉で創造的な国民を表します。',
@@ -1187,7 +976,7 @@ desc: [
           image: angola,
           location: angolaMap,
           link: 'https://flaghistory.jp/angola/',
-          ogp: angolaOgppng,
+          ogp: 'ogpFlagImages/angola.png',
           desc: [
             '縦横比率は【2:3】',
             '国際連帯と進歩を表す黄色い五角星。農民、農業、闘争武器を表すナタ。労働者、工業を表す歯車が描かれています。また赤は独立闘争中に流されたアンゴラ人の血、黒はアフリカ大陸、黄色は豊かな資源を表します。',
@@ -1210,7 +999,7 @@ desc: [
           image: antiguaBarbuda,
           location: antiguaBarbudaMap,
           link: 'https://flaghistory.jp/antigua/',
-          ogp: antiguaBarbudaOgppng,
+          ogp: 'ogpFlagImages/antiguaBarbuda.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は国民の活力、黒は国民と祖先のアフリカ人、青は希望とカリブ海、白は砂浜を表します。黄色で描かれているのは太陽で、意味は新時代の夜明けです。',
@@ -1233,7 +1022,7 @@ desc: [
           image: andorra,
           location: andorraMap,
           link: 'https://flaghistory.jp/andorra/',
-          ogp: andorraOgppng,
+          ogp: 'ogpFlagImages/andorra.png',
           desc: [
             '縦横比率は【7:10】',
             'フランス・スペインの影響下にある国。その影響で青色フランス国旗から、黄色はスペイン国旗から、赤色はフランス・スペインに共通する色として国旗に採用されています。中心に描かれているのはアンドラの国章です。',
@@ -1256,7 +1045,7 @@ desc: [
           image: yemen,
           location: yemenMap,
           link: 'https://flaghistory.jp/yemen/',
-          ogp: yemenOgppng,
+          ogp: 'ogpFlagImages/yemen.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は自由と統一のために流された血、白は輝ける未来、黒は植民地時代を表します。',
@@ -1279,7 +1068,7 @@ desc: [
           image: unitedKingdom,
           location: unitedKingdomMap,
           link: 'https://flaghistory.jp/england/',
-          ogp: unitedKingdomOgppng,
+          ogp: 'ogpFlagImages/unitedKingdom.png',
           desc: [
             '縦横比率は【1:2】',
             '構成地域であるイングランドの聖ジョージ旗、スコットランドの聖アンドリュース旗、アイルランドの聖パトリック旗を組み合わせた旗。通称『ユニオン・ジャック』、『ユニオン・フラッグ』。',
@@ -1302,7 +1091,7 @@ desc: [
           image: israel,
           location: israelMap,
           link: 'https://flaghistory.jp/israel/',
-          ogp: israelOgppng,
+          ogp: 'ogpFlagImages/israel.png',
           desc: [
             '縦横比率は【8:11】',
             '青はパレスチナの空、白はシオニストの清い心、中央の青い六芒星は『ダビデの盾』と呼ばれるユダヤ教徒のシンボルです。また青と白はユダヤ教の祈祷用肩掛けの色から採られています。',
@@ -1325,7 +1114,7 @@ desc: [
           image: italy,
           location: italyMap,
           link: 'https://flaghistory.jp/italy/',
-          ogp: italyOgppng,
+          ogp: 'ogpFlagImages/italy.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は美しい国土、白は雪、赤は熱血を表しています。',
@@ -1348,7 +1137,7 @@ desc: [
           image: iraq,
           location: iraqMap,
           link: 'https://flaghistory.jp/iraq/',
-          ogp: iraqOgppng,
+          ogp: 'ogpFlagImages/iraq.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は闘争で流した血、白は明るい未来、黒は過去の抑圧、緑はイスラムを表します。また中央に描かれているのは「アッラーフ・アクバル（神は偉大なり）」という言葉です。',
@@ -1371,7 +1160,7 @@ desc: [
           image: iran,
           location: iranMap,
           link: 'https://flaghistory.jp/iran/',
-          ogp: iranOgppng,
+          ogp: 'ogpFlagImages/iran.png',
           desc: [
             '縦横比率は【4:7】',
             '緑はイスラム、白は平和、赤は勇気を表しており、白の境界線に描かれている模様は「神は偉大なり」を意味するアラビア語です。上下11回ずつ、計22回書かれています。これは11と22という数で、イラン暦1357年11月22日にイラン・イスラム革命が帝政を打倒したことを表すためです。',
@@ -1394,7 +1183,7 @@ desc: [
           image: india,
           location: indiaMap,
           link: 'https://flaghistory.jp/india/',
-          ogp: indiaOgppng,
+          ogp: 'ogpFlagImages/india.png',
           desc: [
             '縦横比率は【2:3】',
             'サフラン色は勇気と犠牲、白は平和と真理、緑は忠誠と礼節、青は空と海を表します。',
@@ -1417,7 +1206,7 @@ desc: [
           image: indonesia,
           location: indonesiaMap,
           link: 'https://flaghistory.jp/indonesia/',
-          ogp: indonesiaOgppng,
+          ogp: 'ogpFlagImages/indonesia.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は勇気、白は純血を表します。',
@@ -1440,7 +1229,7 @@ desc: [
           image: uganda,
           location: ugandaMap,
           link: 'https://flaghistory.jp/uganda/',
-          ogp: ugandaOgppng,
+          ogp: 'ogpFlagImages/uganda.png',
           desc: [
             '縦横比率は【2:3】',
             '黒はアフリカ人、黄色は太陽、赤は他のアフリカ諸国との兄弟愛を表します。中央に描かれているのは国鳥に指定されているカンムリヅル。',
@@ -1463,7 +1252,7 @@ desc: [
           image: ukraine,
           location: ukraineMap,
           link: 'https://flaghistory.jp/ukraine/',
-          ogp: ukraineOgppng,
+          ogp: 'ogpFlagImages/ukraine.png',
           desc: [
             '縦横比率は【2:3】',
             '青は空、黄色は小麦を表します。（ウクライナはヨーロッパの穀倉地帯と言われるほど、耕作地に恵まれた国）',
@@ -1486,7 +1275,7 @@ desc: [
           image: uzbekistan,
           location: uzbekistanMap,
           link: 'https://flaghistory.jp/uzbekistan/',
-          ogp: uzbekistanOgppng,
+          ogp: 'ogpFlagImages/uzbekistan.png',
           desc: [
             '縦横比率は【1:2】',
             '青は水と空、白は平和、緑は新しい生活と自然。赤は民衆の生命力を表します。三日月はイスラムと独立の象徴で、12個の星は1年を構成する12ヶ月や12星座、もしくは国内12の地区を示します。',
@@ -1509,7 +1298,7 @@ desc: [
           image: uruguay,
           location: uruguayMap,
           link: 'https://flaghistory.jp/uruguay/',
-          ogp: uruguayOgppng,
+          ogp: 'ogpFlagImages/uruguay.png',
           desc: [
             '縦横比率は【2:3】',
             '青白9つの縞は独立宣言当時の9州を表します。',
@@ -1532,7 +1321,7 @@ desc: [
           image: ecuador,
           location: ecuadorMap,
           link: 'https://flaghistory.jp/ecuador/',
-          ogp: ecuadorOgppng,
+          ogp: 'ogpFlagImages/ecuador.png',
           desc: [
             '縦横比率は【2:3】',
             '黄色は国土の豊かさ、青は海と空、赤は独立戦争で流した犠牲者の地を表します。',
@@ -1555,7 +1344,7 @@ desc: [
           image: egypt,
           location: egyptMap,
           link: 'https://flaghistory.jp/egypt/',
-          ogp: egyptOgppng,
+          ogp: 'ogpFlagImages/egypt.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は1952年革命以前の王政時代、白は1952年の無血革命の到来、黒はイギリス植民地時代と王政時代の抑圧を表します。中央に描かれているのは金色のサラディンの鷲。',
@@ -1578,7 +1367,7 @@ desc: [
           image: estonia,
           location: estoniaMap,
           link: 'https://flaghistory.jp/estonia/',
-          ogp: estoniaOgppng,
+          ogp: 'ogpFlagImages/estonia.png',
           desc: [
             '縦横比率は【7:11】（セブンイレブン！）',
             '青は空、黒は国土、白は自由への願望を表します。',
@@ -1601,7 +1390,7 @@ desc: [
           image: eswatini,
           location: eswatiniMap,
           link: 'https://flaghistory.jp/eswatini/',
-          ogp: eswatiniOgppng,
+          ogp: 'ogpFlagImages/eswatini.png',
           desc: [
             '縦横比率は【2:3】',
             '青平和と安定、黄色は国の天然資源、赤は過去の戦いで流した血を表します。また中央に描かれた盾と武器は国の防衛を示しています。',
@@ -1624,7 +1413,7 @@ desc: [
           image: ethiopia,
           location: ethiopiaMap,
           link: 'https://flaghistory.jp/ethiopia/',
-          ogp: ethiopiaOgppng,
+          ogp: 'ogpFlagImages/ethiopia.png',
           desc: [
             '縦横比率は【1:2】',
             '緑は労働・肥沃さ・発展、黄色は希望・正義・平等、赤は自由と平等を求めた犠牲を表します。また中央に描かれているのは国章で、青は平和、星は国民の団結、光線は輝ける繁栄を表します。また光線が等間隔に並んでいるのは民族と宗教上の平等を示すためです。',
@@ -1647,7 +1436,7 @@ desc: [
           image: eritrea,
           location: eritreaMap,
           link: 'https://flaghistory.jp/eritrea/',
-          ogp: eritreaOgppng,
+          ogp: 'ogpFlagImages/eritrea.png',
           desc: [
             '縦横比率は【1:2】',
             '緑は肥沃な国土と農業、青は紅海、黄色は鉱物資源と豊かさ、赤は独立闘争で流された血を表します。また左部に描かれた黄色いオリーブのリースは独立闘争の勝利と明るい未来への希望を表します。',
@@ -1670,7 +1459,7 @@ desc: [
           image: elSalvador,
           location: elSalvadorMap,
           link: 'https://flaghistory.jp/elsalvador/',
-          ogp: elSalvadorOgppng,
+          ogp: 'ogpFlagImages/elSalvador.png',
           desc: [
             '縦横比率は【189:335】',
             '青はカリブ海と太平洋、白は二つの海に囲まれた国土と平和を表します。中央に描かれているのはエルサルバドルの国章。',
@@ -1693,7 +1482,7 @@ desc: [
           image: transnistria,
           location: transnistriaMap,
           link: 'https://flaghistory.jp/transnistria/',
-          ogp: transnistriaOgppng,
+          ogp: 'ogpFlagImages/transnistria.png',
           desc: [
             '縦横比率は【1：2】',
             '鎌は農民、槌はプロレタリアート（資本主義社会における、賃金労働者階級全体のこと）の象徴、農業労働者と工業労働者の団結を表しています。',
@@ -1716,7 +1505,7 @@ desc: [
           image: australia,
           location: australiaMap,
           link: 'https://flaghistory.jp/australia/',
-          ogp: australiaOgppng,
+          ogp: 'ogpFlagImages/australia.png',
           desc: [
             '縦横比率は【1:2】',
             '右側に描かれているのは国土が南半球にあることを示す南十字星、左側にはイギリス国旗とその下に連邦星と呼ばれる、オーストラリアを構成した6箇所の植民地とパプア地域、そして将来加わるであろう地域を示す七角星が描かれています。',
@@ -1739,7 +1528,7 @@ desc: [
           image: austria,
           location: austriaMap,
           link: 'https://flaghistory.jp/austria/',
-          ogp: austriaOgppng,
+          ogp: 'ogpFlagImages/austria.png',
           desc: [
             '縦横比率は【2:3】',
             '赤白赤の3色は、第三回十字軍にて敵の返り血に染まったレオポルト5世がベルト部分だけ白く残ったという故事から来たとされています。',
@@ -1762,7 +1551,7 @@ desc: [
           image: oman,
           location: omanMap,
           link: 'https://flaghistory.jp/oman/',
-          ogp: omanOgppng,
+          ogp: 'ogpFlagImages/oman.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は外部からの侵略者との戦い、白は繁栄と平和、緑は肥沃な国土を表します。左上（カントン部分）に描かれているのはカンジャルと呼ばれる短剣と太刀を組み合わせたもので、スルタンの権威を示しています。',
@@ -1785,7 +1574,7 @@ desc: [
           image: Netherlands,
           location: NetherlandsMap,
           link: 'https://flaghistory.jp/netherlands/',
-          ogp: NetherlandsOgppng,
+          ogp: 'ogpFlagImages/Netherlands.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は国民が持つ勇気、白は信仰心、青は忠誠心を表しています。',
@@ -1808,7 +1597,7 @@ desc: [
           image: guyana,
           location: guyanaMap,
           link: 'https://flaghistory.jp/guyana/',
-          ogp: guyanaOgppng,
+          ogp: 'ogpFlagImages/guyana.png',
           desc: [
             '縦横比率は【3:5】',
             '緑は農業と森林資源、白は川と水資源、黄色は鉱物資源、黒は国民の忍耐力、赤は国家建設への熱意を表します。',
@@ -1831,7 +1620,7 @@ desc: [
           image: kazakhstan,
           location: kazakhstanMap,
           link: 'https://flaghistory.jp/kazakhstan/',
-          ogp: kazakhstanOgppng,
+          ogp: 'ogpFlagImages/kazakhstan.png',
           desc: [
             '縦横比率は【1:2】',
             '青色は空と自由を、黄色い太陽は気高い理想を、翼を広げて飛ぶ鷲はカザフスタン人の誇りを表しています。旗竿側（左側）に描かれている文様は民族の伝統的なイスラム教独特の幾何学文様（アラベスク模様）です。',
@@ -1854,7 +1643,7 @@ desc: [
           image: qatar,
           location: qatarMap,
           link: 'https://flaghistory.jp/qatar/',
-          ogp: qatarOgppng,
+          ogp: 'ogpFlagImages/qatar.png',
           desc: [
             '縦横比率は【11:28】',
             '白は平和、海老茶色は過去の戦いで流した血を表します。また境界線のジグザグは9個あり、これによって1916年にイギリスと保護条約を締結した時点で、カタールが9番目の海岸首長国であったことを表しています。',
@@ -1877,7 +1666,7 @@ desc: [
           image: ghana,
           location: ghanaMap,
           link: 'https://flaghistory.jp/ghana/',
-          ogp: ghanaOgppng,
+          ogp: 'ogpFlagImages/ghana.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は独立闘争で流れた血、黄色は鉱物資源、緑は豊かな森林を表しています。中央の黒い星はアフリカの自由を示します。',
@@ -1900,7 +1689,7 @@ desc: [
           image: caboVerde,
           location: caboVerdeMap,
           link: 'https://flaghistory.jp/caboverde/',
-          ogp: caboVerdeOgppng,
+          ogp: 'ogpFlagImages/caboVerde.png',
           desc: [
             '縦横比率は【10:17】',
             '青は海と空、白は平和、赤は国民の努力、10個の黄色い星は国を構成する島々、輪を描くように配置することで国の統一を示します。また横縞は国家建設への道筋を表します。',
@@ -1923,7 +1712,7 @@ desc: [
           image: gabon,
           location: gabonMap,
           link: 'https://flaghistory.jp/gabonese/',
-          ogp: gabonOgppng,
+          ogp: 'ogpFlagImages/gabon.png',
           desc: [
             '縦横比率は【3:4】',
             '緑は森林、黄色は赤道と太陽、青は大西洋を表します。',
@@ -1946,7 +1735,7 @@ desc: [
           image: canada,
           location: canadaMap,
           link: 'https://flaghistory.jp/canada/',
-          ogp: canadaOgppng,
+          ogp: 'ogpFlagImages/canada.png',
           desc: [
             '縦横比率は【1:2】',
             '左の赤は太平洋、右の赤は大西洋、中央の白は雪と個の国の位置を示します。中央に描かれているのはサトウカエデで、建国以来の国のシンボルです。',
@@ -1969,7 +1758,7 @@ desc: [
           image: cameroon,
           location: cameroonMap,
           link: 'https://flaghistory.jp/cameroon/',
-          ogp: cameroonOgppng,
+          ogp: 'ogpFlagImages/cameroon.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は南部の森林地帯、赤は南北の団結、黄色は北部のサバンナ地帯を表します。',
@@ -1992,7 +1781,7 @@ desc: [
           image: southKorea,
           location: southKoreaMap,
           link: 'https://flaghistory.jp/korea/',
-          ogp: southKoreaOgppng,
+          ogp: 'ogpFlagImages/southKorea.png',
           desc: [
             '縦横比率は【2:3】',
             '中央の赤青の太極は陰陽・善悪と言った万物が相反するものからなるという中国古来の思想に由来するものです。四隅の卦と呼ばれるものは四季や方角、天地火水など。白地で国土や平和、太極で国民、4つの卦で政府を表してもいます。',
@@ -2015,7 +1804,7 @@ desc: [
           image: gambia,
           location: gambiaMap,
           link: 'https://flaghistory.jp/gambia/',
-          ogp: gambiaOgppng,
+          ogp: 'ogpFlagImages/gambia.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は太陽とサバンナ、青はガンビア川、緑は森林、白は平和と純粋さを表します。',
@@ -2038,7 +1827,7 @@ desc: [
           image: cambodia,
           location: cambodiaMap,
           link: 'https://flaghistory.jp/cambodia/',
-          ogp: cambodiaOgppng,
+          ogp: 'ogpFlagImages/cambodia.png',
           desc: [
             '縦横比率は【2:3】',
             '青は王室、赤は国家、白は仏教を表します。中央に描かれているのはアンコールワットで、カンボジアの象徴的存在です。',
@@ -2061,7 +1850,7 @@ desc: [
           image: northernCyprus,
           location: northernCyprusMap,
           link: 'https://flaghistory.jp/northerncyprus/',
-          ogp: northernCyprusOgppng,
+          ogp: 'ogpFlagImages/northernCyprus.png',
           desc: [
             '縦横比率は【2:3】',
             'トルコ国旗の赤と白を反転させ、さらに上下に白い水平の線を加えたデザインをしています。',
@@ -2084,7 +1873,7 @@ desc: [
           image: northKorea,
           location: northKoreaMap,
           link: 'https://flaghistory.jp/northkorea/',
-          ogp: northKoreaOgppng,
+          ogp: 'ogpFlagImages/northKorea.png',
           desc: [
             '縦横比率は【1:2】',
             '青は自主と平和、白は輝ける歴史的文化を持つ朝鮮民族、赤は革命で流された血を意味します。また星は社会主義社会の建設と明るい未来を示しています。',
@@ -2107,7 +1896,7 @@ desc: [
           image: northMacedonia,
           location: northMacedoniaMap,
           link: 'https://flaghistory.jp/macedonia/',
-          ogp: northMacedoniaOgppng,
+          ogp: 'ogpFlagImages/northMacedonia.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は自由と進歩を求める戦い、黄色で描かれた太陽は背名と喜びを表します。',
@@ -2130,7 +1919,7 @@ desc: [
           image: guinea,
           location: guineaMap,
           link: 'https://flaghistory.jp/guinea/',
-          ogp: guineaOgppng,
+          ogp: 'ogpFlagImages/guinea.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は反植民地闘争で流した血、黄色は太陽と鉱物資源、緑は農業と繁栄を表します。',
@@ -2153,7 +1942,7 @@ desc: [
           image: guineaBissau,
           location: guineaBissauMap,
           link: 'https://flaghistory.jp/guineabissau/',
-          ogp: guineaBissauOgppng,
+          ogp: 'ogpFlagImages/guineaBissau.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は独立闘争で流した血、黄色は太陽と鉱物資源、緑は農作物、黒い星はアフリカの自由と尊厳を表します。',
@@ -2176,7 +1965,7 @@ desc: [
           image: cyprus,
           location: cyprusMap,
           link: 'https://flaghistory.jp/cyprus/',
-          ogp: cyprusOgppng,
+          ogp: 'ogpFlagImages/cyprus.png',
           desc: [
             '縦横比率は【2:3】',
             'オリーブの枝は平和、金色は銅の産地であるキプロスの富を表します。また金で描かれているのはキプロスの地形です。',
@@ -2199,7 +1988,7 @@ desc: [
           image: cuba,
           location: cubaMap,
           link: 'https://flaghistory.jp/cuba/',
-          ogp: cubaOgppng,
+          ogp: 'ogpFlagImages/cuba.png',
           desc: [
             '縦横比率は【1:2】',
             '青い3縞は独立戦争時の東部・中央部・西部キューバの3地方、白い2本の縞は純粋な愛国心、赤い三角形は独立の自由を勝ち取ったときに流された血、白い星は独立を表しています。',
@@ -2222,7 +2011,7 @@ desc: [
           image: greece,
           location: greeceMap,
           link: 'https://flaghistory.jp/greece/',
-          ogp: greeceOgppng,
+          ogp: 'ogpFlagImages/greece.png',
           desc: [
             '縦横比率は【2:3】',
             '青は海と空、白は自由と独立を求めて戦う国民の純粋さを意味しています。またカントン部分の白十字は東方教会的キリスト教信仰を示します。',
@@ -2245,7 +2034,7 @@ desc: [
           image: kiribati,
           location: kiribatiMap,
           link: 'https://flaghistory.jp/kiribati/',
-          ogp: kiribatiOgppng,
+          ogp: 'ogpFlagImages/kiribati.png',
           desc: [
             '縦横比率は【1:2】',
             '青は太平洋、その上を飛ぶのはグンカンドリで自由と力を表します。',
@@ -2268,7 +2057,7 @@ desc: [
           image: kyrgyzstan,
           location: kyrgyzstanMap,
           link: 'https://flaghistory.jp/kyrgyz/',
-          ogp: kyrgyzstanOgppng,
+          ogp: 'ogpFlagImages/kyrgyzstan.png',
           desc: [
             '縦横比率は【3:5】',
             '中央に黄色い太陽と、キルギス人が使うユルトという移動式テントを真上から見た形を描いた赤い国旗。赤は勇敢さと勇気、黄色は平和と豊かさを表します。',
@@ -2291,7 +2080,7 @@ desc: [
           image: guatemala,
           location: guatemalaMap,
           link: 'https://flaghistory.jp/guatemala/',
-          ogp: guatemalaOgppng,
+          ogp: 'ogpFlagImages/guatemala.png',
           desc: [
             '縦横比率は【5:8】',
             '青は太平洋とカリブ海、白は平和と純粋さを表します。中央に描かれているのは国章です。',
@@ -2314,7 +2103,7 @@ desc: [
           image: kuwait,
           location: kuwaitMap,
           link: 'https://flaghistory.jp/kuwait/',
-          ogp: kuwaitOgppng,
+          ogp: 'ogpFlagImages/kuwait.png',
           desc: [
             '縦横比率は【1:2】',
             '黒は洗浄、緑はアラブの土地、白は戦士の純粋さ、赤は敵の血を表します。',
@@ -2337,7 +2126,7 @@ desc: [
           image: cook,
           location: cookMap,
           link: 'https://flaghistory.jp/cook/',
-          ogp: cookOgppng,
+          ogp: 'ogpFlagImages/cook.png',
           desc: [
             '縦横比率は【1:2】',
             '15個の星はクック諸島を構成する島々、青は太平洋と島民の穏やかな気質を表します。またカントンのイギリス国旗は、イギリスとの歴史的繋がりを示しています。',
@@ -2360,7 +2149,7 @@ desc: [
           image: grenada,
           location: grenadaMap,
           link: 'https://flaghistory.jp/grenada/',
-          ogp: grenadaOgppng,
+          ogp: 'ogpFlagImages/grenada.png',
           desc: [
             '縦横比率は【3:5】',
             '赤は勇気と活力、黄色は知恵と国民の友情、緑は植物と農業、ホイスト（左部）に描かれているのはナツメグで国の特産物です。また7つの星は中央の大きなものが首都セントジョージズを他6つの星は6地区を表します。',
@@ -2383,7 +2172,7 @@ desc: [
           image: croatia,
           location: croatiaMap,
           link: 'https://flaghistory.jp/croatia/',
-          ogp: croatiaOgppng,
+          ogp: 'ogpFlagImages/croatia.png',
           desc: [
             '縦横比率は【1:2】',
             'クロアチア王国の赤白、スロベニア王国の青白、そして部分的にダルマチア王国の青と黄色を組み合わせた国旗です。',
@@ -2406,7 +2195,7 @@ desc: [
           image: kenya,
           location: kenyaMap,
           link: 'https://flaghistory.jp/kenya/',
-          ogp: kenyaOgppng,
+          ogp: 'ogpFlagImages/kenya.png',
           desc: [
             '縦横比率は【2:3】',
             '黒は国民、赤は独立闘争で流した血、緑は自然の豊かさ、白は平和と統一を表します。槍と盾は自由防衛を表す、マサイ族の伝統的な交差した槍と盾です。',
@@ -2429,7 +2218,7 @@ desc: [
           image: cotod,
           location: cotodMap,
           link: 'https://flaghistory.jp/cote_d/',
-          ogp: cotodOgppng,
+          ogp: 'ogpFlagImages/cotodIvoire.png',
           desc: [
             '縦横比率は【2:3】',
             'オレンジは国土と北部にある肥沃なサバンナ、白は平和、緑は希望と南部の森林を表しています。',
@@ -2452,7 +2241,7 @@ desc: [
           image: costaRica,
           location: costaRicaMap,
           link: 'https://flaghistory.jp/costarica/',
-          ogp: costaRicaOgppng,
+          ogp: 'ogpFlagImages/costaRica.png',
           desc: [
             '縦横比率は【3:5】',
             '青は空と理想、白は平和と知恵、赤は犠牲者の血と国民の温かさを表します。',
@@ -2475,7 +2264,7 @@ desc: [
           image: kosovo,
           location: kosovoMap,
           link: 'https://flaghistory.jp/kosovo/',
-          ogp: kosovoOgppng,
+          ogp: 'ogpFlagImages/kosovo.png',
           desc: [
             '縦横比率は【2:3】',
             '青は欧州連合と同じ色で欧州との協調を、白は平和、黄色は湯田中国土を表しています。',
@@ -2498,7 +2287,7 @@ desc: [
           image: comoros,
           location: comorosMap,
           link: 'https://flaghistory.jp/comoros/',
-          ogp: comorosOgppng,
+          ogp: 'ogpFlagImages/comoros.png',
           desc: [
             '縦横比率は【3:5】',
             '緑と三日月はイスラム教を示し、4つの星と黄白赤青の4色はコモロを構成する4島を表しています。',
@@ -2521,7 +2310,7 @@ desc: [
           image: colombia,
           location: colombiaMap,
           link: 'https://flaghistory.jp/colombia/',
-          ogp: colombiaOgppng,
+          ogp: 'ogpFlagImages/colombia.png',
           desc: [
             '縦横比率は【2:3】',
             '黄色は金、青は太平洋とカリブ海、赤は独立戦争で流した血を表します',
@@ -2544,7 +2333,7 @@ desc: [
           image: congo,
           location: congoMap,
           link: 'https://flaghistory.jp/congo/',
-          ogp: congoOgppng,
+          ogp: 'ogpFlagImages/congo.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は農業と森林、黄色は友情と国民の誇り、赤は独立闘争で流した血を表します。',
@@ -2567,7 +2356,7 @@ desc: [
           image: republicCongo,
           location: republicCongoMap,
           link: 'https://flaghistory.jp/congo_d/',
-          ogp: republicCongoOgppng,
+          ogp: 'ogpFlagImages/republicCongo.png',
           desc: [
             '縦横比率は【3:4】',
             '青は平和、赤は国のために流した犠牲の血、黄色は国の富、星は光り輝く国の未来を表しています。',
@@ -2590,7 +2379,7 @@ desc: [
           image: saudiArabia,
           location: saudiArabiaMap,
           link: 'https://flaghistory.jp/saudiarabia/',
-          ogp: saudiArabiaOgppng,
+          ogp: 'ogpFlagImages/saudiArabia.png',
           desc: [
             '縦横比率は【2:3】',
             '中央には「アッラーの他に神はなく、ムハンマドはアッラーの使徒なり」という信仰告白（シャハーダ）が書かれており、その下の件はイスラムの力と聖地メッカの守護を表します。緑はムハンマドの娘ファティマに由来する色、もしくはムハンマドのターバンの色であり、イスラムを象徴する色です。',
@@ -2613,7 +2402,7 @@ desc: [
           image: sahrawi,
           location: sahrawiMap,
           link: 'https://flaghistory.jp/sahrawi/',
-          ogp: sahrawiOgppng,
+          ogp: 'ogpFlagImages/sahrawi.png',
           desc: [
             '縦横比率は【1:2】',
             '旗に用いられている赤緑白黒は汎アラブ色で、三日月と星の組み合わせはイスラム教を表しています。黒は死を、緑は生命を、白は平和を表すと言われています。',
@@ -2636,7 +2425,7 @@ desc: [
           image: samoa,
           location: samoaMap,
           link: 'https://flaghistory.jp/samoa/',
-          ogp: samoaOgppng,
+          ogp: 'ogpFlagImages/samoa.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は勇気とサモアの伝統色、白は純粋さ、青は自由を表します。',
@@ -2659,7 +2448,7 @@ desc: [
           image: saotomePrincipe,
           location: saotomePrincipeMap,
           link: 'https://flaghistory.jp/saotome/',
-          ogp: saotomePrincipeOgppng,
+          ogp: 'ogpFlagImages/saotomePrincipe.png',
           desc: [
             '縦横比率は【1:2】',
             '緑は農業、黄色は太陽と主要産物のカカオ、赤は独立闘争で流された血、黒い２つの星はサントメ島とプリンシペ島を表します。',
@@ -2682,7 +2471,7 @@ desc: [
           image: zambia,
           location: zambiaMap,
           link: 'https://flaghistory.jp/zambia/',
-          ogp: zambiaOgppng,
+          ogp: 'ogpFlagImages/zambia.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は農業と森林資源、赤は独立闘争で流した血、黒は国民、オレンジは銅を表します。右上に描かれているのはサンショクウミワシで、自由と困難に打ち勝つ力を示しています。',
@@ -2705,7 +2494,7 @@ desc: [
           image: sanMarino,
           location: sanMarinoMap,
           link: 'https://flaghistory.jp/sanmarino/',
-          ogp: sanMarinoOgppng,
+          ogp: 'ogpFlagImages/sanMarino.png',
           desc: [
             '縦横比率は【3:4】',
             '白はティタノ山にかかる雲、青は空を表します。中央に描かれているのは国章です。',
@@ -2728,7 +2517,7 @@ desc: [
           image: sierraLeone,
           location: sierraLeoneMap,
           link: 'https://flaghistory.jp/sierraleone/',
-          ogp: sierraLeoneOgppng,
+          ogp: 'ogpFlagImages/sierraLeone.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は農業と山々、白は正義と団結、青は良港フリータウンを表します。',
@@ -2751,7 +2540,7 @@ desc: [
           image: djibouti,
           location: djiboutiMap,
           link: 'https://flaghistory.jp/djibouti/',
-          ogp: djiboutiOgppng,
+          ogp: 'ogpFlagImages/djibouti.png',
           desc: [
             '縦横比率は【2:3】',
             '青はイッサ人、緑はアファール人、白は平和、赤は独立闘争、星は統合を表します。',
@@ -2774,7 +2563,7 @@ desc: [
           image: jamaica,
           location: jamaicaMap,
           link: 'https://flaghistory.jp/jamaica/',
-          ogp: jamaicaOgppng,
+          ogp: 'ogpFlagImages/jamaica.png',
           desc: [
             '縦横比率は【1:2】',
             '黄色は太陽と天然資源、緑は農業と将来の希望、黒は国民が克服すべき困難を表します。',
@@ -2797,7 +2586,7 @@ desc: [
           image: georgia,
           location: georgiaMap,
           link: 'https://flaghistory.jp/georgia/',
-          ogp: georgiaOgppng,
+          ogp: 'ogpFlagImages/georgia.png',
           desc: [
             '縦横比率は【2:3】',
             '国旗に描かれているのはエルサレム十字と呼ばれるもので、これは十字軍に由来するシンボルです。',
@@ -2820,7 +2609,7 @@ desc: [
           image: syria,
           location: syriaMap,
           link: 'https://flaghistory.jp/syria/',
-          ogp: syriaOgppng,
+          ogp: 'ogpFlagImages/syria.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は自由への戦い、白は平和、黒は暗い植民地時代を表します。2個の緑の星は美しいアラブの大地と統一を意味します。',
@@ -2843,7 +2632,7 @@ desc: [
           image: singapore,
           location: singaporeMap,
           link: 'https://flaghistory.jp/singapore/',
-          ogp: singaporeOgppng,
+          ogp: 'ogpFlagImages/singapore.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は全人類の平等と融和、白は美徳と純潔、5つの星は民主主義・平和・平等・進歩・正義、三日月はイスラム教の象徴であり5つの星が示す5募りそうと新興国家の発展を支える決意を表しています。',
@@ -2866,7 +2655,7 @@ desc: [
           image: zimbabwe,
           location: zimbabweMap,
           link: 'https://flaghistory.jp/zimbabwe/',
-          ogp: zimbabweOgppng,
+          ogp: 'ogpFlagImages/zimbabwe.png',
           desc: [
             '縦横比率は【1:2】',
             '緑は農業、黄色は好物資源、赤は武力闘争で流れた血、黒は黒人、白は平和、星は希望、鳥はジンバブエのシンボルで過去の栄光を表します。',
@@ -2889,7 +2678,7 @@ desc: [
           image: switzerland,
           location: switzerlandMap,
           link: 'https://flaghistory.jp/switzerland/',
-          ogp: switzerlandOgppng,
+          ogp: 'ogpFlagImages/switzerland.png',
           desc: [
             '縦横比率は【1:1】',
             '白はキリスト教精神を、赤は主権を表します。',
@@ -2912,7 +2701,7 @@ desc: [
           image: sweden,
           location: swedenMap,
           link: 'https://flaghistory.jp/sweden/',
-          ogp: swedenOgppng,
+          ogp: 'ogpFlagImages/sweden.png',
           desc: [
             '縦横比率は【5:8】',
             '青は澄み切った空、黄色は国教のキリスト教徒と同時に自由と独立を表します。',
@@ -2935,7 +2724,7 @@ desc: [
           image: sudan,
           location: sudanMap,
           link: 'https://flaghistory.jp/sudan/',
-          ogp: sudanOgppng,
+          ogp: 'ogpFlagImages/sudan.png',
           desc: [
             '縦横比率は【1:2】',
             '緑は繁栄と農業、赤は闘争と犠牲者、白は平和や光・愛、黒はスーダンを表します。',
@@ -2958,7 +2747,7 @@ desc: [
           image: spain,
           location: spainMap,
           link: 'https://flaghistory.jp/spain/',
-          ogp: spainOgppng,
+          ogp: 'ogpFlagImages/spain.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は祖先の勇気、黄色は新大陸で発見した富を表します。',
@@ -2981,7 +2770,7 @@ desc: [
           image: suriname,
           location: surinameMap,
           link: 'https://flaghistory.jp/suriname/',
-          ogp: surinameOgppng,
+          ogp: 'ogpFlagImages/suriname.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は肥沃さと希望、白は正義と自由、赤は進歩、黄色は犠牲、星は国の統一と輝ける未来を表します。',
@@ -3004,7 +2793,7 @@ desc: [
           image: sriLanka,
           location: sriLankaMap,
           link: 'https://flaghistory.jp/srilanka/',
-          ogp: sriLankaOgppng,
+          ogp: 'ogpFlagImages/sriLanka.png',
           desc: [
             '縦横比率は【1:2】',
             '緑はイスラム教徒を、オレンジはヒンドゥー教徒タミル人を、4枚の菩薩樹の葉は仏教を、黄色は仏教による国家と国民の加護を表します。',
@@ -3027,7 +2816,7 @@ desc: [
           image: slovakia,
           location: slovakiaMap,
           link: 'https://flaghistory.jp/slovakia/',
-          ogp: slovakiaOgppng,
+          ogp: 'ogpFlagImages/slovakia.png',
           desc: [
             '縦横比率は【2:3】',
             '青白赤はチェコスロバキア時代より使われている色です。左部に描かれているのは国章でダブルクロスと呼ばれる、正教会のシンボルと、その下には実在する3つの山を表すものが描かれています。',
@@ -3050,7 +2839,7 @@ desc: [
           image: slovenia,
           location: sloveniaMap,
           link: 'https://flaghistory.jp/slovenia/',
-          ogp: sloveniaOgppng,
+          ogp: 'ogpFlagImages/slovenia.png',
           desc: [
             '縦横比率は【1:2】',
             '青白赤の3色はユーゴスラビア王国時代から続く色合い。カントン（左上）に描かれているのは国章です。',
@@ -3073,7 +2862,7 @@ desc: [
           image: seychelles,
           location: seychellesMap,
           link: 'https://flaghistory.jp/seychelles/',
-          ogp: seychellesOgppng,
+          ogp: 'ogpFlagImages/seychelles.png',
           desc: [
             '縦横比率は【1:2】',
             '青は空と海、黄色は光と生命を与える太陽、赤は国民と統一を目指しともに働く決意、白は社会正義と調和、緑は国土と自然環境を表します。',
@@ -3096,7 +2885,7 @@ desc: [
           image: equatorialGuinea,
           location: equatorialGuineaMap,
           link: 'https://flaghistory.jp/eq-guinea/',
-          ogp: equatorialGuineaOgppng,
+          ogp: 'ogpFlagImages/equatorialGuinea.png',
           desc: [
             '縦横比率は【2:3】',
             '青は大陸部と島々を結ぶ海、緑は農業と天然資源・ジャングル、白は平和、赤は独立戦争を表します。中央に描かれているのは国章です。',
@@ -3119,7 +2908,7 @@ desc: [
           image: senegal,
           location: senegalMap,
           link: 'https://flaghistory.jp/senegal/',
-          ogp: senegalOgppng,
+          ogp: 'ogpFlagImages/senegal.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は発展への希望、黄色は国の富、赤は独立闘争で流した血、緑の星は希望と統一を表します。',
@@ -3142,7 +2931,7 @@ desc: [
           image: serbia,
           location: serbiaMap,
           link: 'https://flaghistory.jp/serbia/',
-          ogp: serbiaOgppng,
+          ogp: 'ogpFlagImages/serbia.png',
           desc: [
             '縦横比率は【2:3】',
             '赤青白の3色は、オスマン帝国よりセルビア王国として独立を果たしたときから使っている色です。',
@@ -3165,7 +2954,7 @@ desc: [
           image: saintChristopherNevis,
           location: saintChristopherNevisMap,
           link: 'https://flaghistory.jp/nevis/',
-          ogp: saintChristopherNevisOgppng,
+          ogp: 'ogpFlagImages/saintChristopherNevis.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は肥沃な国土、黄色は太陽、黒はアフリカからの伝統、赤は独立闘争で流された血、２つの星は希望と自由、また国を構成する2つの島を表します。',
@@ -3188,7 +2977,7 @@ desc: [
           image: saintVincent,
           location: saintVincentMap,
           link: 'https://flaghistory.jp/saintvincent/',
-          ogp: saintVincentOgppng,
+          ogp: 'ogpFlagImages/saintVincent.png',
           desc: [
             '縦横比率は【2:3】',
             '青は空と海、黄色は陽光と国民の明るい気質・輝く砂浜、緑は豊かな植物と農業・国民の活気を表します。',
@@ -3211,7 +3000,7 @@ desc: [
           image: saintLucia,
           location: saintLuciaMap,
           link: 'https://flaghistory.jp/saintlucia/',
-          ogp: saintLuciaOgppng,
+          ogp: 'ogpFlagImages/saintLucia.png',
           desc: [
             '縦横比率は【1:2】',
             '青は忠誠と空・カリブ海・大西洋、黄色は陽光と繁栄、黒と白は黒人と白人の文化的影響と調和を表します。また2つの三角形は2つのピトン火山で、国民の希望と大志を示します。',
@@ -3234,7 +3023,7 @@ desc: [
           image: somalia,
           location: somaliaMap,
           link: 'https://flaghistory.jp/somalia/',
-          ogp: somaliaOgppng,
+          ogp: 'ogpFlagImages/somalia.png',
           desc: [
             '縦横比率は【2:3】',
             '青と白は国連の旗に因んだ色で、平和を表します。五角の星はソマリ人が住む5つの地域を示しています。',
@@ -3257,7 +3046,7 @@ desc: [
           image: somaliland,
           location: somalilandMap,
           link: 'https://flaghistory.jp/somaliland/',
-          ogp: somalilandOgppng,
+          ogp: 'ogpFlagImages/somaliland.png',
           desc: [
             '縦横比率は【1:2】',
             '緑は繁栄、白は平和、赤は英雄の血、黒は大ソマリア主義の夢の終焉、五角星はソマリランドの5つの地域、上部に描かれている文字はシャハーダでイスラム教を表します。',
@@ -3280,7 +3069,7 @@ desc: [
           image: solomonIslands,
           location: solomonIslandsMap,
           link: 'https://flaghistory.jp/solomon/',
-          ogp: solomonIslandsOgppng,
+          ogp: 'ogpFlagImages/solomonIslands.png',
           desc: [
             '縦横比率は【1:2】',
             '青は空と海、緑は肥沃な大地、黄色は太陽と砂浜、5つの星は独立当時の5地区を表します。',
@@ -3303,7 +3092,7 @@ desc: [
           image: thailand,
           location: thailandMap,
           link: 'https://flaghistory.jp/thailand/',
-          ogp: thailandOgppng,
+          ogp: 'ogpFlagImages/thailand.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は国民の血、白は信仰に守られた国民の純粋さ、青はタイ王室を表します。',
@@ -3326,7 +3115,7 @@ desc: [
           image: taiwan,
           location: taiwanMap,
           link: 'https://flaghistory.jp/taiwan/',
-          ogp: taiwanOgppng,
+          ogp: 'ogpFlagImages/taiwan.png',
           desc: [
             '縦横比率は【2:3】',
             '青は民権主義と自由、白は民主主義と平等、赤は民族主義と革命に身を捧げた人の血を表します。また太陽が放つ12本の光は十二支を表し、絶え間ない進歩を意味しています。',
@@ -3349,7 +3138,7 @@ desc: [
           image: tajikistan,
           location: tajikistanMap,
           link: 'https://flaghistory.jp/tajikistan/',
-          ogp: tajikistanOgppng,
+          ogp: 'ogpFlagImages/tajikistan.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は国家主権、白は主要産業である綿花、緑はその他農作物を表します。また7つの星は天国にあると伝えられる7つの果樹園、冠は国民を表しています。',
@@ -3372,7 +3161,7 @@ desc: [
           image: tanzania,
           location: tanzaniaMap,
           link: 'https://flaghistory.jp/tanzania/',
-          ogp: tanzaniaOgppng,
+          ogp: 'ogpFlagImages/tanzania.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は国土、黄色は鉱物資源、黒は国民、青は海を表します。',
@@ -3395,7 +3184,7 @@ desc: [
           image: czech,
           location: czechMap,
           link: 'https://flaghistory.jp/czech/',
-          ogp: czechOgppng,
+          ogp: 'ogpFlagImages/czech.png',
           desc: [
             '縦横比率は【2:3】',
             'ボヘミア紋章由来の白赤の二色と、スロバキアとモラヴィアを表す青い三角形を描いている国旗です。',
@@ -3418,7 +3207,7 @@ desc: [
           image: chad,
           location: chadMap,
           link: 'https://flaghistory.jp/chad/',
-          ogp: chadOgppng,
+          ogp: 'ogpFlagImages/chad.png',
           desc: [
             '縦横比率は【2:3】',
             '青は空・希望・水、黄色は太陽と砂漠、赤は進歩と統一・犠牲者を表します。',
@@ -3441,7 +3230,7 @@ desc: [
           image: centralAfrican,
           location: centralAfricanMap,
           link: 'https://flaghistory.jp/car/',
-          ogp: centralAfricanOgppng,
+          ogp: 'ogpFlagImages/centralAfrican.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は独立闘争で流した血、青は空と自由、白は平和と尊厳、緑は希望と新年、黄色は忍耐、星は未来への願望を表します。',
@@ -3464,7 +3253,7 @@ desc: [
           image: china,
           location: chinaMap,
           link: 'https://flaghistory.jp/china/',
-          ogp: chinaOgppng,
+          ogp: 'ogpFlagImages/china.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は共産主義の象徴であり、漢民族の伝統色、黄色は光明を表します。カントン（左上）に描かれている大きな星は中国共産党の指導力、小さな4個の星は中国人民の団結を示しています。',
@@ -3487,7 +3276,7 @@ desc: [
           image: tunisia,
           location: tunisiaMap,
           link: 'https://flaghistory.jp/tunisia/',
-          ogp: tunisiaOgppng,
+          ogp: 'ogpFlagImages/tunisia.png',
           desc: [
             '縦横比率は【2:3】',
             '白は平和、赤は犠牲者の血を表します。また白い円は太陽、三日月はカルタゴを建設したフェニキアの女神タニスのシンボル、幸福を表しています。',
@@ -3510,7 +3299,7 @@ desc: [
           image: chile,
           location: chileMap,
           link: 'https://flaghistory.jp/chile/',
-          ogp: chileOgppng,
+          ogp: 'ogpFlagImages/chile.png',
           desc: [
             '縦横比率は【2:3】',
             '青は空と太平洋、白はアンデス山脈の雪、赤は独立のために流された血、星は進歩と名誉を表します。',
@@ -3533,7 +3322,7 @@ desc: [
           image: tuvalu,
           location: tuvaluMap,
           link: 'https://flaghistory.jp/tuvalu/',
-          ogp: tuvaluOgppng,
+          ogp: 'ogpFlagImages/tuvalu.png',
           desc: [
             '縦横比率は【1:2】',
             '9個の星は無人島を含めたこの国の島の数を表しています。またカントン（左上）に描かれているのはイギリスの国旗です。イギリスとの歴史的関係性を示します。',
@@ -3556,7 +3345,7 @@ desc: [
           image: denmark,
           location: denmarkMap,
           link: 'https://flaghistory.jp/denmark/',
-          ogp: denmarkOgppng,
+          ogp: 'ogpFlagImages/denmark.png',
           desc: [
             '縦横比率は【28:37】',
             '赤は神聖ローマ帝国群旗の色で、白い十字はキリスト教を表します。別名『ダンネブロ』',
@@ -3579,7 +3368,7 @@ desc: [
           image: germany,
           location: germanyMap,
           link: 'https://flaghistory.jp/germany/',
-          ogp: germanyOgppng,
+          ogp: 'ogpFlagImages/germany.png',
           desc: [
             '縦横比率は【3:5】',
             '黒は勤勉と力、赤は熱血、黄色（金色）は名誉を表しています。',
@@ -3602,7 +3391,7 @@ desc: [
           image: togo,
           location: togoMap,
           link: 'https://flaghistory.jp/togo/',
-          ogp: togoOgppng,
+          ogp: 'ogpFlagImages/togo.png',
           desc: [
             '縦横比率は【1:1.618】（または【3:5】）',
             '緑は希望や農業・森林、黄色は国民の団結と鉱物資源、赤は独立のために流した血、白は平和と尊厳・知恵、星は自由と生命を表します。また5つの縞は海岸、プラトー、カラ、サバンナ、中部の国を構成する5地区を示します。',
@@ -3625,7 +3414,7 @@ desc: [
           image: donetsk,
           location: donetskMap,
           link: 'https://flaghistory.jp/donetsk/',
-          ogp: donetskOgppng,
+          ogp: 'ogpFlagImages/donetsk.png',
           desc: [
             '縦横比率は【2:3】',
             '黒は黒海や石炭産業、青は水、赤は自由を表します。',
@@ -3648,7 +3437,7 @@ desc: [
           image: dominicanRepublic,
           location: dominicanRepublicMap,
           link: 'https://flaghistory.jp/dominican/',
-          ogp: dominicanRepublicOgppng,
+          ogp: 'ogpFlagImages/dominicanRepublic.png',
           desc: [
             '縦横比率は【2:3】',
             '青は自由、赤は愛国者の血、白は平和と尊厳を表します。中央には国章が描かれています。',
@@ -3671,7 +3460,7 @@ desc: [
           image: dominica,
           location: dominicaMap,
           link: 'https://flaghistory.jp/dominica/',
-          ogp: dominicaOgppng,
+          ogp: 'ogpFlagImages/dominica.png',
           desc: [
             '縦横比率は【1:2】',
             '緑は豊かな森林、赤は社会主義、黄色は陽光、白は国民の純粋さ、黒は豊かな土壌とアフリカからの伝統を表します。10個の星は国を構成する10地区、3本の縞はキリスト教の三位一体を示します。',
@@ -3694,7 +3483,7 @@ desc: [
           image: trinidadTobago,
           location: trinidadTobagoMap,
           link: 'https://flaghistory.jp/trinidad/',
-          ogp: trinidadTobagoOgppng,
+          ogp: 'ogpFlagImages/trinidadTobago.png',
           desc: [
             '縦横比率は【3:5】',
             '赤は国民の寛容さと太陽のエネルギー、白は海と平等、黒は国民の統一への努力と天然資源を表します。',
@@ -3717,7 +3506,7 @@ desc: [
           image: turkmenistan,
           location: turkmenistanMap,
           link: 'https://flaghistory.jp/turkmenistan/',
-          ogp: turkmenistanOgppng,
+          ogp: 'ogpFlagImages/turkmenistan.png',
           desc: [
             '縦横比率は【2:3】',
             '緑はイスラムの色、三日月は明るい未来、5つの星は5州、ホイスト（左部）に描かれているのは主要5部族のグルという伝統的な絨毯模様です。',
@@ -3740,7 +3529,7 @@ desc: [
           image: turkey,
           location: turkeyMap,
           link: 'https://flaghistory.jp/turkey/',
-          ogp: turkeyOgppng,
+          ogp: 'ogpFlagImages/turkey.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は勇気を表し、三日月と星はイスラムのシンボルであり、月の女神ディアナの三日月と聖母マリアの明けの明星を示したものでもあります。',
@@ -3763,7 +3552,7 @@ desc: [
           image: tonga,
           location: tongaMap,
           link: 'https://flaghistory.jp/tonga/',
-          ogp: tongaOgppng,
+          ogp: 'ogpFlagImages/tonga.png',
           desc: [
             '縦横比率は【1:2】',
             '赤はキリストの血、白は純潔、十字はキリスト教を表します。',
@@ -3786,7 +3575,7 @@ desc: [
           image: nigeria,
           location: nigeriaMap,
           link: 'https://flaghistory.jp/nigeria/',
-          ogp: nigeriaOgppng,
+          ogp: 'ogpFlagImages/nigeria.png',
           desc: [
             '縦横比率は【1:2】',
             '緑は農業と森林、白は平和と統一を表します。',
@@ -3809,7 +3598,7 @@ desc: [
           image: nauru,
           location: nauruMap,
           link: 'https://flaghistory.jp/nauru/',
-          ogp: nauruOgppng,
+          ogp: 'ogpFlagImages/nauru.png',
           desc: [
             '縦横比率は【1:2】',
             '黄色い横線は赤道を、白い星は赤道より42km南に位置するナウル自体を表しています。また12角星で12部族を示します。',
@@ -3832,7 +3621,7 @@ desc: [
           image: namibia,
           location: namibiaMap,
           link: 'https://flaghistory.jp/namibia/',
-          ogp: namibiaOgppng,
+          ogp: 'ogpFlagImages/namibia.png',
           desc: [
             '縦横比率は【2:3】',
             '青は大西洋と重要な水、白は平和と統一、赤は国民と平等な社会を建設する決意、緑は農業と天然資源、黄色い太陽は生命と活力を表します。',
@@ -3855,7 +3644,7 @@ desc: [
           image: niue,
           location: niueMap,
           link: 'https://flaghistory.jp/niue/',
-          ogp: niueOgppng,
+          ogp: 'ogpFlagImages/niue.png',
           desc: [
             '縦横比率は【1:2】',
             '黄色はニウエを照らす明るい太陽と、ニウエ国民がニュージーランドとその国民に抱く暖かい気持ちを表します',
@@ -3878,7 +3667,7 @@ desc: [
           image: nicaragua,
           location: nicaraguaMap,
           link: 'https://flaghistory.jp/nicaragua/',
-          ogp: nicaraguaOgppng,
+          ogp: 'ogpFlagImages/nicaragua.png',
           desc: [
             '縦横比率は【3:5】',
             '青はカリブ海と太平洋、白は二つの海に挟まれた国土を表します。また中央に描かれているのはニカラグアの国章です。',
@@ -3901,7 +3690,7 @@ desc: [
           image: niger,
           location: nigerMap,
           link: 'https://flaghistory.jp/niger/',
-          ogp: nigerOgppng,
+          ogp: 'ogpFlagImages/niger.png',
           desc: [
             '縦横比率は【6:7】',
             'オレンジは北部のサハラ砂漠、白は希望と純粋さ、緑はニジェール川に接する南西部の草地、中央のオレンジの円は太陽を表しています。',
@@ -3924,7 +3713,7 @@ desc: [
           image: japan,
           location: japanMap,
           link: 'https://flaghistory.jp/japan/',
-          ogp: japanOgppng,
+          ogp: 'ogpFlagImages/japan.png',
           desc: [
             '縦横比率は【2:3】',
             '赤丸は太陽、白は純粋さや正直さ、赤は情熱や忠誠心を表しています。',
@@ -3947,7 +3736,7 @@ desc: [
           image: newZealand,
           location: newZealandMap,
           link: 'https://flaghistory.jp/newzealand/',
-          ogp: newZealandOgppng,
+          ogp: 'ogpFlagImages/newZealand.png',
           desc: [
             '縦横比率は【1:2】',
             '4つの赤い星は南十字星、カントン（左上）のイギリス国旗はイギリス支配下にあった頃からの関係性を示します。',
@@ -3970,7 +3759,7 @@ desc: [
           image: nepal,
           location: nepalMap,
           link: 'https://flaghistory.jp/nepal/',
-          ogp: nepalOgppng,
+          ogp: 'ogpFlagImages/nepal.png',
           desc: [
             '縦横比率は【11:9】',
             '青は平和と調和、赤は勇気、2つの三角形はヒマラヤ山脈、太陽と月は国家の長期間にわたる繁栄を表します。',
@@ -3993,7 +3782,7 @@ desc: [
           image: norway,
           location: norwayMap,
           link: 'https://flaghistory.jp/norway/',
-          ogp: norwayOgppng,
+          ogp: 'ogpFlagImages/norway.png',
           desc: [
             '縦横比率は【8:11】',
             '赤は国民の情熱、青は海と国土、白は雪を表します。',
@@ -4016,7 +3805,7 @@ desc: [
           image: bahrain,
           location: bahrainMap,
           link: 'https://flaghistory.jp/bahrain/',
-          ogp: bahrainOgppng,
+          ogp: 'ogpFlagImages/bahrain.png',
           desc: [
             '縦横比率は【3:5】',
             '白は純粋さと気品、赤は自由、5つのジグザグはイスラムの5行に基づいたものです。',
@@ -4039,7 +3828,7 @@ desc: [
           image: haiti,
           location: haitiMap,
           link: 'https://flaghistory.jp/haiti/',
-          ogp: haitiOgppng,
+          ogp: 'ogpFlagImages/haiti.png',
           desc: [
             '縦横比率は【3:5】',
             '青は黒人、赤は白人と黒人の混血のムラートを表します。中央に描かれているのは国章です。',
@@ -4062,7 +3851,7 @@ desc: [
           image: pakistan,
           location: pakistanMap,
           link: 'https://flaghistory.jp/pakistan/',
-          ogp: pakistanOgppng,
+          ogp: 'ogpFlagImages/pakistan.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は国の繁栄、白は平和、三日月は進歩、星は光明と知識を表します。',
@@ -4085,7 +3874,7 @@ desc: [
           image: vatican,
           location: vaticanMap,
           link: 'https://flaghistory.jp/vatican/',
-          ogp: vaticanOgppng,
+          ogp: 'ogpFlagImages/vatican.png',
           desc: [
             '縦横比率は【1:1】',
             '右側に描かれている金銀の鍵はペテロの鍵と呼ばれるもので、イエスが弟子ペテロに言った言葉「あなたに天の国の鍵を授ける」に由来するものです。聖俗両面の支配権を象徴しており、その上の3段の法王冠は立法・司法・行政の三権力を表しています。',
@@ -4108,7 +3897,7 @@ desc: [
           image: panama,
           location: panamaMap,
           link: 'https://flaghistory.jp/panama/',
-          ogp: panamaOgppng,
+          ogp: 'ogpFlagImages/panama.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は自由党、青は保守党、白は両党の協力と平和、青い星は国民の誠実さと純粋さ、赤い星は法律と権威を表します。',
@@ -4131,7 +3920,7 @@ desc: [
           image: vanuatu,
           location: vanuatuMap,
           link: 'https://flaghistory.jp/vanuatu/',
-          ogp: vanuatuOgppng,
+          ogp: 'ogpFlagImages/vanuatu.png',
           desc: [
             '縦横比率は【3:5】',
             '黒は国民のメラネシア人、黄色は太陽とキリスト教、赤は豚と人間の血、緑は国土の豊かさを表します。',
@@ -4154,7 +3943,7 @@ desc: [
           image: bahamas,
           location: bahamasMap,
           link: 'https://flaghistory.jp/bahamas/',
-          ogp: bahamasOgppng,
+          ogp: 'ogpFlagImages/bahamas.png',
           desc: [
             '縦横比率は【1:2】',
             '黒は国民の活力と団結、青はカリブ海、黄色は2つの海に囲まれたバハマの美しい砂浜を表します。',
@@ -4177,7 +3966,7 @@ desc: [
           image: papuaNewGuinea,
           location: papuaNewGuineaMap,
           link: 'https://flaghistory.jp/papua/',
-          ogp: papuaNewGuineaOgppng,
+          ogp: 'ogpFlagImages/papuaNewGuinea.png',
           desc: [
             '縦横比率は【3:4】',
             '黄色い鳥はゴクラクチョウで自由や統合、飛躍を表し、南十字星は南半球に位置することとオーストラリアとの関係を示します。',
@@ -4200,7 +3989,7 @@ desc: [
           image: palau,
           location: palauMap,
           link: 'https://flaghistory.jp/palau/',
-          ogp: palauOgppng,
+          ogp: 'ogpFlagImages/palau.png',
           desc: [
             '縦横比率は【5:8】',
             '黄色い満月は主権と統一、青は太平洋と独立を表しています。',
@@ -4223,7 +4012,7 @@ desc: [
           image: paraguay,
           location: paraguayMap,
           link: 'https://flaghistory.jp/paraguay/',
-          ogp: paraguayOgppng,
+          ogp: 'ogpFlagImages/paraguay.png',
           desc: [
             '縦横比率は【3:5】',
             '赤は祖国愛、白は団結と平和、青は自由と寛大さを表します。',
@@ -4246,7 +4035,7 @@ desc: [
           image: barbados,
           location: barbadosMap,
           link: 'https://flaghistory.jp/barbados/',
-          ogp: barbadosOgppng,
+          ogp: 'ogpFlagImages/barbados.png',
           desc: [
             '縦横比率は【2:3】',
             '青は空と海、黄色は砂浜、中央の鉾は民主主義の三原理を表します。',
@@ -4269,7 +4058,7 @@ desc: [
           image: palestine,
           location: palestineMap,
           link: 'https://flaghistory.jp/palestine/',
-          ogp: palestineOgppng,
+          ogp: 'ogpFlagImages/palestine.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は勇気、黒は暗い過去、白は純潔、緑はイスラム教を表しています。',
@@ -4292,7 +4081,7 @@ desc: [
           image: hungary,
           location: hungaryMap,
           link: 'https://flaghistory.jp/hungary/',
-          ogp: hungaryOgppng,
+          ogp: 'ogpFlagImages/hungary.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は強さ、白は忠誠心、緑は希望を表します。',
@@ -4315,7 +4104,7 @@ desc: [
           image: bangladesh,
           location: bangladeshMap,
           link: 'https://flaghistory.jp/bangladesh/',
-          ogp: bangladeshOgppng,
+          ogp: 'ogpFlagImages/bangladesh.png',
           desc: [
             '縦横比率は【3:5】',
             '緑は国の若さと活力、赤い円はパキスタン支配時代に終止符を打つこと、また独立日の夜明けに昇った太陽を表します。',
@@ -4338,7 +4127,7 @@ desc: [
           image: eastTimor,
           location: eastTimorMap,
           link: 'https://flaghistory.jp/timor/',
-          ogp: eastTimorOgppng,
+          ogp: 'ogpFlagImages/eastTimor.png',
           desc: [
             '縦横比率は【1:2】',
             '黒い三角形は克服すべき困難、黄色は植民地時代の痕跡、赤は独立戦争、星は平和を表します。',
@@ -4361,7 +4150,7 @@ desc: [
           image: fiji,
           location: fijiMap,
           link: 'https://flaghistory.jp/fiji/',
-          ogp: fijiOgppng,
+          ogp: 'ogpFlagImages/fiji.png',
           desc: [
             '縦横比率は【1:2】',
             'フライ（右側）に国章を配置し、イギリスとの関係性を示すイギリス国旗をカントン（左上）に描いた国旗です。',
@@ -4384,7 +4173,7 @@ desc: [
           image: philippines,
           location: philippinesMap,
           link: 'https://flaghistory.jp/philippines/',
-          ogp: philippinesOgppng,
+          ogp: 'ogpFlagImages/philippines.png',
           desc: [
             '縦横比率は【1:2】',
             '青は平和と正義、赤は勇気、白は平等、白い三角形は自由の象徴です。太陽から出る8つの光は1898年にスペインに反乱を起こした8州、3つの黄色い星は主要3島を表します。',
@@ -4407,7 +4196,7 @@ desc: [
           image: finland,
           location: finlandMap,
           link: 'https://flaghistory.jp/finland/',
-          ogp: finlandOgppng,
+          ogp: 'ogpFlagImages/finland.png',
           desc: [
             '縦横比率は【11:18】',
             '白は雪、青は湖を表します。',
@@ -4430,7 +4219,7 @@ desc: [
           image: bhutan,
           location: bhutanMap,
           link: 'https://flaghistory.jp/bhutan/',
-          ogp: bhutanOgppng,
+          ogp: 'ogpFlagImages/bhutan.png',
           desc: [
             '縦横比率は【2:3】',
             '黄色は国王の指導力、オレンジは仏教、白は純粋さと忠誠心を表します。',
@@ -4453,7 +4242,7 @@ desc: [
           image: brazil,
           location: brazilMap,
           link: 'https://flaghistory.jp/brazil/',
-          ogp: brazilOgppng,
+          ogp: 'ogpFlagImages/brazil.png',
           desc: [
             '縦横比率は【7:10】',
             '緑は森林、黄色は鉱物資源、青い天球にはブラジルの州と連邦直轄地を示す27個の星が描かれています。',
@@ -4476,7 +4265,7 @@ desc: [
           image: france,
           location: franceMap,
           link: 'https://flaghistory.jp/france/',
-          ogp: franceOgppng,
+          ogp: 'ogpFlagImages/france.png',
           desc: [
             '縦横比率は【2:3】',
             '白はブルボン王家の色、青と赤はパリ市の色。また青は自由、白は平等、赤は博愛を表すというのが通説です。',
@@ -4499,7 +4288,7 @@ desc: [
           image: bulgaria,
           location: bulgariaMap,
           link: 'https://flaghistory.jp/bulgaria/',
-          ogp: bulgariaOgppng,
+          ogp: 'ogpFlagImages/bulgaria.png',
           desc: [
             '縦横比率は【3:5】',
             '白は平等と自由、緑は農業と森林、赤は軍隊の勇気と闘争を表します。',
@@ -4522,7 +4311,7 @@ desc: [
           image: burkinaFaso,
           location: burkinaFasoMap,
           link: 'https://flaghistory.jp/burkinafaso/',
-          ogp: burkinaFasoOgppng,
+          ogp: 'ogpFlagImages/burkinaFaso.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は革命、緑は農業と豊かな天然資源、黄色は国の富、星は革命を導く光を表します。',
@@ -4545,7 +4334,7 @@ desc: [
           image: brunei,
           location: bruneiMap,
           link: 'https://flaghistory.jp/brunei/',
-          ogp: bruneiOgppng,
+          ogp: 'ogpFlagImages/brunei.png',
           desc: [
             '縦横比率は【1:2】',
             '黄色は国王、白は総理大臣、黒はその他の大臣を表します。また中央に描かれているのは国章です。',
@@ -4568,7 +4357,7 @@ desc: [
           image: burundi,
           location: burundiMap,
           link: 'https://flaghistory.jp/burundi/',
-          ogp: burundiOgppng,
+          ogp: 'ogpFlagImages/burundi.png',
           desc: [
             '縦横比率は【3:5】',
             '赤は独立闘争、緑は希望、白は平和を表します。',
@@ -4591,7 +4380,7 @@ desc: [
           image: vietnam,
           location: vietnamMap,
           link: 'https://flaghistory.jp/vietnam/',
-          ogp: vietnamOgppng,
+          ogp: 'ogpFlagImages/vietnam.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は独立闘争で流れた血、黄色は革命を表します。',
@@ -4614,7 +4403,7 @@ desc: [
           image: benin,
           location: beninMap,
           link: 'https://flaghistory.jp/benin/',
-          ogp: beninOgppng,
+          ogp: 'ogpFlagImages/benin.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は希望と再生、黄色は国の富、赤は祖先の勇気を表します。',
@@ -4637,7 +4426,7 @@ desc: [
           image: venezuela,
           location: venezuelaMap,
           link: 'https://flaghistory.jp/venezuela/',
-          ogp: venezuelaOgppng,
+          ogp: 'ogpFlagImages/venezuela.png',
           desc: [
             '縦横比率は【2:3】',
             '黄色は国の豊かさ、青は勇気とベネズエラとスペインを隔てる海、赤は独立戦争で流された血を表します。',
@@ -4660,7 +4449,7 @@ desc: [
           image: belarus,
           location: belarusMap,
           link: 'https://flaghistory.jp/belarus/',
-          ogp: belarusOgppng,
+          ogp: 'ogpFlagImages/belarus.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は過去の戦い、緑は希望と森林を表します。',
@@ -4683,7 +4472,7 @@ desc: [
           image: belize,
           location: belizeMap,
           link: 'https://flaghistory.jp/belize/',
-          ogp: belizeOgppng,
+          ogp: 'ogpFlagImages/belize.png',
           desc: [
             '縦横比率は【2:3】',
             '青は人民連合党、赤は民主連合党の党旗の色から取られています。また青は隣国との友好、赤は独立を守る決意を意味しています。',
@@ -4706,7 +4495,7 @@ desc: [
           image: peru,
           location: peruMap,
           link: 'https://flaghistory.jp/peru/',
-          ogp: peruOgppng,
+          ogp: 'ogpFlagImages/peru.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は勇気と愛国心、白は平和を表します。中央に描かれているのは国章です。',
@@ -4729,7 +4518,7 @@ desc: [
           image: belgium,
           location: belgiumMap,
           link: 'https://flaghistory.jp/belgium/',
-          ogp: belgiumOgppng,
+          ogp: 'ogpFlagImages/belgium.png',
           desc: [
             '縦横比率は【13:15】',
             '黒は力、黄色は充実、赤は勝利を表します。',
@@ -4752,7 +4541,7 @@ desc: [
           image: poland,
           location: polandMap,
           link: 'https://flaghistory.jp/poland/',
-          ogp: polandOgppng,
+          ogp: 'ogpFlagImages/poland.png',
           desc: [
             '縦横比率は【5:8】',
             '白は喜び、赤は独立のために流された血を表します。',
@@ -4775,7 +4564,7 @@ desc: [
           image: bosniaHerzegovina,
           location: bosniaHerzegovinaMap,
           link: 'https://flaghistory.jp/bosnia/',
-          ogp: bosniaHerzegovinaOgppng,
+          ogp: 'ogpFlagImages/bosniaHerzegovina.png',
           desc: [
             '縦横比率は【1:2】',
             '三角形は国土と3民族の融和・共存を意味し、黄色は希望を表しています。',
@@ -4798,7 +4587,7 @@ desc: [
           image: botswana,
           location: botswanaMap,
           link: 'https://flaghistory.jp/botswana/',
-          ogp: botswanaOgppng,
+          ogp: 'ogpFlagImages/botswana.png',
           desc: [
             '縦横比率は【2:3】',
             '青は水と雨、黒と白は人種の融合を表します。',
@@ -4821,7 +4610,7 @@ desc: [
           image: bolivia,
           location: boliviaMap,
           link: 'https://flaghistory.jp/bolivia/',
-          ogp: boliviaOgppng,
+          ogp: 'ogpFlagImages/bolivia.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は勇気と独立闘争で流れた血、黄色は国の資源、緑は肥沃な国土を表します。中央に描かれているのは国章です。',
@@ -4844,7 +4633,7 @@ desc: [
           image: portugal,
           location: portugalMap,
           link: 'https://flaghistory.jp/portugal/',
-          ogp: portugalOgppng,
+          ogp: 'ogpFlagImages/portugal.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は未来への希望、赤は大海原に乗り出した勇気あるポルトガル英雄の血を表します。赤と緑の境界線に描かれているのはポルトガルの国章です。',
@@ -4867,7 +4656,7 @@ desc: [
           image: honduras,
           location: hondurasMap,
           link: 'https://flaghistory.jp/honduras/',
-          ogp: hondurasOgppng,
+          ogp: 'ogpFlagImages/honduras.png',
           desc: [
             '縦横比率は【1:2】',
             '青はカリブ海と太平洋、白は平和と繁栄、中央5つの星はアメリカ連邦構成5カ国を表しています。',
@@ -4890,7 +4679,7 @@ desc: [
           image: marshallIslands,
           location: marshallIslandsMap,
           link: 'https://flaghistory.jp/marshall/',
-          ogp: marshallIslandsOgppng,
+          ogp: 'ogpFlagImages/marshallIslands.png',
           desc: [
             '縦横比率は【10:19】',
             '青は太平洋、白は平和、オレンジ色は勇気を表しています。これら星や2本の帯にも細かく意味が込められています。',
@@ -4913,7 +4702,7 @@ desc: [
           image: madagascar,
           location: madagascarMap,
           link: 'https://flaghistory.jp/madagascar/',
-          ogp: madagascarOgppng,
+          ogp: 'ogpFlagImages/madagascar.png',
           desc: [
             '縦横比率は【2:3】',
             '白は純粋さ、赤は主権、緑は希望を表します。',
@@ -4936,7 +4725,7 @@ desc: [
           image: malawi,
           location: malawiMap,
           link: 'https://flaghistory.jp/malawi/',
-          ogp: malawiOgppng,
+          ogp: 'ogpFlagImages/malawi.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は独立のために流された血、黒はアフリカ人、緑は国土の風景を意味しています。また上部にはアフリカの自由と希望の夜明けを意味する、赤い太陽が描かれています。',
@@ -4959,7 +4748,7 @@ desc: [
           image: mali,
           location: maliMap,
           link: 'https://flaghistory.jp/mali/',
-          ogp: maliOgppng,
+          ogp: 'ogpFlagImages/mali.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は肥沃な土地、黄色は鉱物資源、赤は独立戦争で流された血。',
@@ -4982,7 +4771,7 @@ desc: [
           image: malta,
           location: maltaMap,
           link: 'https://flaghistory.jp/malta/',
-          ogp: maltaOgppng,
+          ogp:'ogpFlagImages/malta.png',
           desc: [
             '縦横比率は【2:3】',
             '白は信仰心、赤は国民の純粋さを表します。',
@@ -5005,7 +4794,7 @@ desc: [
           image: malaysia,
           location: malaysiaMap,
           link: 'https://flaghistory.jp/malaysia/',
-          ogp: malaysiaOgppng,
+          ogp: 'ogpFlagImages/malaysia.png',
           desc: [
             '縦横比率は【1:2】',
             '黄色はスルタン（イスラム教国の君主）、赤白青の3色はイギリスを表します。また星と縞は14と関係があり、これはマレーシアを構成する14州を示しています。',
@@ -5028,7 +4817,7 @@ desc: [
           image: micronesia,
           location: micronesiaMap,
           link: 'https://flaghistory.jp/micronesia/',
-          ogp: micronesiaOgppng,
+          ogp: 'ogpFlagImages/micronesia.png',
           desc: [
             '縦横比率は【10:19】',
             '青は太平洋と自由、白は平和を表します。また4つの星は連邦を構成する4州と、4つの星を結ぶことで十字替えが変えることから、これによって南十字星とキリスト教を表しています。',
@@ -5051,7 +4840,7 @@ desc: [
           image: southAfrica,
           location: southAfricaMap,
           link: 'https://flaghistory.jp/south-africa/',
-          ogp: southAfricaOgppng,
+          ogp: 'ogpFlagImages/southAfrica.png',
           desc: [
             '縦横比率は【2;3】',
             '色自体の意味はありませんが、Y字のレイアウトには多様なアフリカ社会の統一と過去及び現在の勢力を結集させることで国家を前進させることという意味があります。',
@@ -5074,7 +4863,7 @@ desc: [
           image: sssetia,
           location: sssetiaMap,
           link: 'https://flaghistory.jp/sssetia/',
-          ogp: sssetiaOgppng,
+          ogp: 'ogpFlagImages/sssetia.png',
           desc: [
             '縦横比率【1:2】',
             '白は知恵と知的生活・道徳と清潔さを、赤は軍人の勇気を、黄色は人々の幸せと富・繁栄を表しています。',
@@ -5097,7 +4886,7 @@ desc: [
           image: southSudan,
           location: southSudanMap,
           link: 'https://flaghistory.jp/south-sudan/',
-          ogp: southSudanOgppng,
+          ogp: 'ogpFlagImages/southSudan.png',
           desc: [
             '縦横比率は【1:2】',
             '黒は国民、赤は自由のために流された血、白は独立闘争で勝ち取った自由、緑は国土、青はナイル川、黄色は国家と国民を導く星を表します。',
@@ -5120,7 +4909,7 @@ desc: [
           image: myanmar,
           location: myanmarMap,
           link: 'https://flaghistory.jp/myanmar/',
-          ogp: myanmarOgppng,
+          ogp: 'ogpFlagImages/myanmar.png',
           desc: [
             '縦横比率は【2:3】',
             '黄色は団結、緑は平和お茶すら傘、赤は勇気と決意、白い星は永続する連邦を表します。',
@@ -5143,7 +4932,7 @@ desc: [
           image: mexico,
           location: mexicoMap,
           link: 'https://flaghistory.jp/mexico/',
-          ogp: mexicoOgppng,
+          ogp: 'ogpFlagImages/mexico.png',
           desc: [
             '縦横比率は【4:7】',
             '緑は国民の希望、白は統一と純粋さ、赤は愛国者の血を表します。中央に描かれているのは国章です。',
@@ -5166,7 +4955,7 @@ desc: [
           image: mauritius,
           location: mauritiusMap,
           link: 'https://flaghistory.jp/mauritius/',
-          ogp: mauritiusOgppng,
+          ogp: 'ogpFlagImages/mauritius.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は独立闘争、青はインド洋、黄色は独立による新しい光、緑は農業を表します。',
@@ -5189,7 +4978,7 @@ desc: [
           image: mauritania,
           location: mauritaniaMap,
           link: 'https://flaghistory.jp/mauritania/',
-          ogp: mauritaniaOgppng,
+          ogp: 'ogpFlagImages/mauritania.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は独立闘争で流した血、緑は明るい未来への希望、黄色はサハラ砂漠を表します。また三日月と星はイスラムのシンボルです。',
@@ -5212,7 +5001,7 @@ desc: [
           image: mozambique,
           location: mozambiqueMap,
           link: 'https://flaghistory.jp/mozambique/',
-          ogp: mozambiqueOgppng,
+          ogp: 'ogpFlagImages/mozambique.png',
           desc: [
             '縦横比率は【2:3】',
             '緑は肥沃な国土、白は平和、黒はアフリカ大陸、黄色は鉱物資源、赤は独立闘争、ライフル銃は防御や警戒、書籍は教育の重要性、クワは農業、星はマルクス主義と社会主義インターナショナルを表しています。',
@@ -5235,7 +5024,7 @@ desc: [
           image: monaco,
           location: monacoMap,
           link: 'https://flaghistory.jp/monaco/',
-          ogp: monacoOgppng,
+          ogp: 'ogpFlagImages/monaco.png',
           desc: [
             '縦横比率は【4:5】',
             '赤と白の二色はグリマルディ家（アラゴン王国からモナコを購入した家）の紋章から来ています。',
@@ -5258,7 +5047,7 @@ desc: [
           image: maldives,
           location: maldivesMap,
           link: 'https://flaghistory.jp/maldives/',
-          ogp: maldivesOgppng,
+          ogp: 'ogpFlagImages/maldives.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は自由のために流された血、緑は平和と繁栄、白い三日月はイスラムを表しています。',
@@ -5281,7 +5070,7 @@ desc: [
           image: moldova,
           location: moldovaMap,
           link: 'https://flaghistory.jp/moldova/',
-          ogp: moldovaOgppng,
+          ogp: 'ogpFlagImages/moldova.png',
           desc: [
             '縦横比率は【1:2】',
             '青は過去と民主主義、黄色は現在と伝統、赤は未来と平等を表します。中央に描かれているのは国章です。',
@@ -5304,7 +5093,7 @@ desc: [
           image: morocco,
           location: moroccoMap,
           link: 'https://flaghistory.jp/morocco/',
-          ogp: moroccoOgppng,
+          ogp: 'ogpFlagImages/morocco.png',
           desc: [
             '縦横比率は【2:3】',
             '緑はイスラム教を象徴する色で、赤色は忍耐や夕刊という意味が込められています。中央に描かれているのはスレイマン（ソロモン）の印章です。',
@@ -5327,7 +5116,7 @@ desc: [
           image: mongolia,
           location: mongoliaMap,
           link: 'https://flaghistory.jp/mongolia/',
-          ogp: mongoliaOgppng,
+          ogp: 'ogpFlagImages/mongolia.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は進歩と繁栄、黄色は永遠の友情、青はモンゴルの伝統色で国民を表します。',
@@ -5350,7 +5139,7 @@ desc: [
           image: montenegro,
           location: montenegroMap,
           link: 'https://flaghistory.jp/montenegro/',
-          ogp: montenegroOgppng,
+          ogp: 'ogpFlagImages/montenegro.png',
           desc: [
             '縦横比率は【1:2】',
             '19世紀にオスマン帝国との戦いで用いられた赤い旗が基となっている国旗で、それに金色の縁取りがなされています。',
@@ -5373,7 +5162,7 @@ desc: [
           image: jordan,
           location: jordanMap,
           link: 'https://flaghistory.jp/jordan/',
-          ogp: jordanOgppng,
+          ogp: 'ogpFlagImages/jordan.png',
           desc: [
             '縦横比率は【1:2】',
             '赤はハシェミット朝、黒はアッバース朝、白はウマイヤ朝、緑はファーティマ朝を表します。また7角星はコーラン第一章の1節から7節を意味しています。',
@@ -5396,7 +5185,7 @@ desc: [
           image: laos,
           location: laosMap,
           link: 'https://flaghistory.jp/laos/',
-          ogp: laosOgppng,
+          ogp: 'ogpFlagImages/laos.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は自由と独立を求めて戦った国民の血、青は国の繁栄とメコン川、白い円はメコン川の上に出る満月を表します。',
@@ -5419,7 +5208,7 @@ desc: [
           image: latvia,
           location: latviaMap,
           link: 'https://flaghistory.jp/latvia/',
-          ogp: latviaOgppng,
+          ogp: 'ogpFlagImages/latvia.png',
           desc: [
             '縦横比率は【1:2】',
             '暗い赤色は国を守る国民の血、白は誠実さとバルト海を表しています。',
@@ -5442,7 +5231,7 @@ desc: [
           image: lithuania,
           location: lithuaniaMap,
           link: 'https://flaghistory.jp/lithuania/',
-          ogp: lithuaniaOgppng,
+          ogp: 'ogpFlagImages/lithuania.png',
           desc: [
             '縦横比率は【3:5】',
             '黄色は太陽と繁栄、緑は希望と森林、赤は勇気と愛国心を表します。',
@@ -5465,7 +5254,7 @@ desc: [
           image: libya,
           location: libyaMap,
           link: 'https://flaghistory.jp/libya/',
-          ogp: libyaOgppng,
+          ogp: 'ogpFlagImages/libya.png',
           desc: [
             '縦横比率は【1:2】',
             '赤は自由のために流された血、黒はイタリア植民地だった頃の暗黒時代、緑は富と農業と将来の繁栄を表しています。また三日月と星はイスラム教のシンボルです。',
@@ -5488,7 +5277,7 @@ desc: [
           image: liechtenstein,
           location: liechtensteinMap,
           link: 'https://flaghistory.jp/liechtenstein/',
-          ogp: liechtensteinOgppng,
+          ogp: 'ogpFlagImages/liechtenstein.png',
           desc: [
             '縦横比率は【3:5】',
             '青は空、赤は家庭の暖炉、黄色い冠は公国と国民との一体感を表しています。',
@@ -5511,7 +5300,7 @@ desc: [
           image: liberia,
           location: liberiaMap,
           link: 'https://flaghistory.jp/liberia/',
-          ogp: liberiaOgppng,
+          ogp: 'ogpFlagImages/liberia.png',
           desc: [
             '縦横比率は【10:19】',
             '青はアフリカ大陸、赤は勇気、白は純粋さ、星は独立を表しています。',
@@ -5534,7 +5323,7 @@ desc: [
           image: romania,
           location: romaniaMap,
           link: 'https://flaghistory.jp/romania/',
-          ogp: romaniaOgppng,
+          ogp: 'ogpFlagImages/romania.png',
           desc: [
             '縦横比率は【2:3】',
             '青は澄んだ空、黄色は鉱物資源、赤は国民の勇気を表しています。',
@@ -5557,7 +5346,7 @@ desc: [
           image: luhansk,
           location: luhanskMap,
           link: 'https://flaghistory.jp/luhansk/',
-          ogp: luhanskOgppng,
+          ogp: 'ogpFlagImages/luhansk.png',
           desc: [
             '縦横比率は【2:3】',
             '国旗としては珍しい、水色と青色が隣接している国旗。',
@@ -5580,7 +5369,7 @@ desc: [
           image: luxembourg,
           location: luxembourgMap,
           link: 'https://flaghistory.jp/luxembourg/',
-          ogp: luxembourgOgppng,
+          ogp: 'ogpFlagImages/luxembourg.png',
           desc: [
             '縦横比率は【3:5】',
             '赤白水色は、赤いライオンの描かれた紋章に由来しています。',
@@ -5603,7 +5392,7 @@ desc: [
           image: rwanda,
           location: rwandaMap,
           link: 'https://flaghistory.jp/rwanda/',
-          ogp: rwandaOgppng,
+          ogp: 'ogpFlagImages/rwanda.png',
           desc: [
             '縦横比率は【2:3】',
             '青は幸福と平和、黄色は労働による経済成長、緑は繁栄への希望、太陽は統一を表しています。',
@@ -5626,7 +5415,7 @@ desc: [
           image: lesotho,
           location: lesothoMap,
           link: 'https://flaghistory.jp/lesotho/',
-          ogp: lesothoOgppng,
+          ogp: 'ogpFlagImages/lesotho.png',
           desc: [
             '縦横比率は【2:3】',
             '青は雨、白は平和、緑は繁栄、黒はアフリカ大陸を表しています。中央に描かれているのはバソト帽です。',
@@ -5649,7 +5438,7 @@ desc: [
           image: lebanon,
           location: lebanonMap,
           link: 'https://flaghistory.jp/lebanon/',
-          ogp: lebanonOgppng,
+          ogp: 'ogpFlagImages/lebanon.png',
           desc: [
             '縦横比率は【2:3】',
             '赤は犠牲心と勇気・独立のために流された血、白は平和と純粋さ、中央に描かれているのはレバノン杉で富と力を表しています。',
@@ -5672,7 +5461,7 @@ desc: [
           image: russia,
           location: russiaMap,
           link: 'https://flaghistory.jp/russia/',
-          ogp: russiaOgppng,
+          ogp: 'ogpFlagImages/russia.png',
           desc: [
             '縦横比率は【2:3】',
             '白は高潔と素直さ、青は名誉と純粋さ、赤は勇気と寛大さを表しています。',
