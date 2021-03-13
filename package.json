@@ -1,4 +1,5 @@
 {
+  "build": "react-scripts build && cp _redirects build/",
   "name": "search-of-flags",
   "version": "0.1.0",
   "private": true,
