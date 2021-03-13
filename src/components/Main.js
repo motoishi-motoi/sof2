@@ -25,50 +25,53 @@ const Main = (props) =>{
     'ら', 'り', 'る', 'れ', 'ろ','-------',
     'わ', 'を', 'ん'];
   
+
+  // ※sessionStorageがStringのみ対応しているので、'ON','OFF'で検索機能を実装するように変更 2021/03/14
+
   // 色に関するカウント
   //  const[unspeColor, setUnspeColor] = useState(true);
-  const[redcount, setRedcount] = useState(0);
-  const[whitecount, setWhitecount] = useState(0);
-  const[greencount, setGreencount] = useState(0);
-  const[yellowcount, setYellowcount] = useState(0);
-  const[bluecount, setBluecount] = useState(0);
-  const[blackcount, setBlackcount] = useState(0);
-  const[purplecount, setPurplecount] = useState(0);
-  const[goldcount, setGoldcount] = useState(0);
-  const[orangecount, setOrangecount] = useState(0);
+  const[redcount, setRedcount] = useState('OFF');
+  const[whitecount, setWhitecount] = useState('OFF');
+  const[greencount, setGreencount] = useState('OFF');
+  const[yellowcount, setYellowcount] = useState('OFF');
+  const[bluecount, setBluecount] = useState('OFF');
+  const[blackcount, setBlackcount] = useState('OFF');
+  const[purplecount, setPurplecount] = useState('OFF');
+  const[goldcount, setGoldcount] = useState('OFF');
+  const[orangecount, setOrangecount] = useState('OFF');
 
   // 色の部分・完全・除外スイッチ
-  const[partialColor, setPartialColor] = useState(true);
-  const[perfectColor, setPerfectColor] = useState(false);
-  const[exclusionColor, setExclusionColor] = useState(false);
+  const[partialColor, setPartialColor] = useState('ON');
+  const[perfectColor, setPerfectColor] = useState('OFF');
+  const[exclusionColor, setExclusionColor] = useState('OFF');
 
   // 色のフルカラー・メインカラースイッチ
-  const[mColorSwitch, setMColorSwitch] = useState(true);
-  const[fColorSwitch, setFColorSwitch] = useState(false);
+  const[mColorSwitch, setMColorSwitch] = useState('ON');
+  const[fColorSwitch, setFColorSwitch] = useState('OFF');
 
 
   // 模様に関するカウント
 //  const[unspePattern, setUnspePattern] = useState(true);
-  const[suncount, setSuncount] = useState(0);
-  const[mooncount, setMooncount] = useState(0);
-  const[starcount, setStarcount] = useState(0);
-  const[crosscount, setCrosscount] = useState(0);
-  const[creaturecount, setCreaturecount] = useState(0);
-  const[plantcount, setPlantcount] = useState(0);
+  const[suncount, setSuncount] = useState('OFF');
+  const[mooncount, setMooncount] = useState('OFF');
+  const[starcount, setStarcount] = useState('OFF');
+  const[crosscount, setCrosscount] = useState('OFF');
+  const[creaturecount, setCreaturecount] = useState('OFF');
+  const[plantcount, setPlantcount] = useState('OFF');
 
   // エリアに関するカウント
-  const[unspeArea, setUnspeArea] = useState(true);
-  const[asiacount, setAsiacount] = useState(0);
-  const[eucount, setEucount] = useState(0);
-  const[africacount, setAfricacount] = useState(0);
-  const[ncAmericacount, setNcAmericacount] = useState(0);
-  const[sAmericacount, setSAmericacount] = useState(0);
-  const[oceaniacount, setOceaniacount] = useState(0);
+  const[unspeArea, setUnspeArea] = useState('ON');
+  const[asiacount, setAsiacount] = useState('OFF');
+  const[eucount, setEucount] = useState('OFF');
+  const[africacount, setAfricacount] = useState('OFF');
+  const[ncAmericacount, setNcAmericacount] = useState('OFF');
+  const[sAmericacount, setSAmericacount] = useState('OFF');
+  const[oceaniacount, setOceaniacount] = useState('OFF');
 
  // その他に関するカウント
-  const[unspeKokuren, setUnspeKokuren] = useState(false);
-  const[kokurencount, setKokurencount] = useState(1);
-  const[notKokurencount, setNotKokurencount] = useState(false);
+  const[unspeKokuren, setUnspeKokuren] = useState('OFF');
+  const[kokurencount, setKokurencount] = useState('ON');
+  const[notKokurencount, setNotKokurencount] = useState('OFF');
 
   // useState()を使う場合は、必ずconst[x1, x2]のようにやらないといけないらしい。
   // １つ目が初期値になって、２つ目が例えば"setCount(count + 1)"みたいに
@@ -77,6 +80,153 @@ const Main = (props) =>{
 
   const [filterQuery, setFilterQuery] = useState({});
   const [filterHiragana, setFilterHiragana] = useState('');
+
+  // 詳細検索のstate定義
+  const[isDetailOpen, setIsDetailOpen] = useState(String('OFF')); 
+  const[firIsDetailOpen, setFirIsDetailOpen] = useState(String('OFF'));
+
+  // 色検索モード切替のstate定義
+  const [issmOpen, setIssmOpen] = useState(String('OFF'));
+  const [fIssmOpen, setfIssmOpen] = useState(String('OFF'));
+
+
+  //sessionStorageに値があったら取得する
+  // 最初の一度だけ処理する。
+  const [onlyone, setOnlyone] = useState(true);
+  if(onlyone){
+
+    //値がnullじゃないときに取得する
+    //色のスイッチの値取得
+    if(sessionStorage.redcount){
+      setRedcount(sessionStorage.getItem('redcount'));
+    }
+    if(sessionStorage.whitecount){
+      setWhitecount(sessionStorage.getItem('whitecount'));
+    }
+    if(sessionStorage.greencount){
+      setGreencount(sessionStorage.getItem('greencount'));
+    }
+    if(sessionStorage.yellowcount){
+      setYellowcount(sessionStorage.getItem('yellowcount'));
+    }
+    if(sessionStorage.bluecount){
+      setBluecount(sessionStorage.getItem('bluecount'));
+    }
+    if(sessionStorage.Blackcount){
+      setBlackcount(sessionStorage.getItem('Blackcount'));
+    }
+    if(sessionStorage.purplecount){
+      setPurplecount(sessionStorage.getItem('purplecount'));
+    }
+    if(sessionStorage.goldcount){
+      setGoldcount(sessionStorage.getItem('goldcount'));
+    }
+    if(sessionStorage.orangecount){
+      setOrangecount(sessionStorage.getItem('orangecount'));
+    }
+
+
+    //色の部分・完全・除外スイッチの取得
+    if(sessionStorage.partialColor){
+      setPartialColor(sessionStorage.getItem('partialColor'));
+    }
+    if(sessionStorage.perfectColor){
+      setPerfectColor(sessionStorage.getItem('perfectColor'));
+    }
+    if(sessionStorage.exclusionColor){
+      setExclusionColor(sessionStorage.getItem('exclusionColor'));
+    }
+
+
+    //色のフルカラー・メインカラースイッチ
+    if(sessionStorage.mColorSwitch){
+      setMColorSwitch(sessionStorage.getItem('mColorSwitch'));
+    }
+    if(sessionStorage.fColorSwitch){
+      setFColorSwitch(sessionStorage.getItem('fColorSwitch'));
+    }
+
+
+    //模様に関するスイッチの取得
+    if(sessionStorage.suncount){
+      setSuncount(sessionStorage.getItem('suncount'));
+    }
+    if(sessionStorage.mooncount){
+      setMooncount(sessionStorage.getItem('mooncount'));
+    }
+    if(sessionStorage.starcount){
+      setStarcount(sessionStorage.getItem('starcount'));
+    }
+    if(sessionStorage.crosscount){
+      setCrosscount(sessionStorage.getItem('crosscount'));
+    }
+    if(sessionStorage.creaturecount){
+      setCreaturecount(sessionStorage.getItem('creaturecount'));
+    }
+    if(sessionStorage.plantcount){
+      setPlantcount(sessionStorage.getItem('plantcount'));
+    }
+
+
+    //エリアに関するカウントの値を取得
+    if(sessionStorage.unspeArea){
+      setUnspeArea(sessionStorage.getItem('unspeArea'));
+    }
+    if(sessionStorage.asiacount){
+      setAsiacount(sessionStorage.getItem('asiacount'));
+    }
+    if(sessionStorage.eucount){
+      setEucount(sessionStorage.getItem('eucount'));
+    }
+    if(sessionStorage.africacount){
+      setAfricacount(sessionStorage.getItem('africacount'));
+    }
+    if(sessionStorage.ncAmericacount){
+      setNcAmericacount(sessionStorage.getItem('ncAmericacount'));
+    }
+    if(sessionStorage.sAmericacount){
+      setSAmericacount(sessionStorage.getItem('sAmericacount'));
+    }
+    if(sessionStorage.oceaniacount){
+      setOceaniacount(sessionStorage.getItem('oceaniacount'));
+    }
+
+
+    //その他に関するカウントの値を取得
+    if(sessionStorage.unspeKokuren){
+      setUnspeKokuren(sessionStorage.getItem('unspeKokuren'));
+    }
+    if(sessionStorage.kokurencount){
+      setKokurencount(sessionStorage.getItem('kokurencount'));
+    }
+    if(sessionStorage.notKokurencount){
+      setNotKokurencount(sessionStorage.getItem('notKokurencount'));
+    }
+
+    //詳細検索の切替の値を取得
+    if(sessionStorage.isDetailOpen){
+      setIsDetailOpen(sessionStorage.getItem('isDetailOpen'));
+    }
+    if(sessionStorage.firIsDetailOpen){
+      setFirIsDetailOpen(sessionStorage.getItem('isDetailOpen'));
+    }
+
+    //色検索モードの切替の値を取得
+    if(sessionStorage.issmOpen){
+      setIssmOpen(sessionStorage.getItem('issmOpen'));
+    }
+    if(sessionStorage.fIssmOpen){
+      setfIssmOpen(sessionStorage.getItem('issmOpen'));
+    }
+
+    //一文字目検索の値を取得
+    if(sessionStorage.hiragana){
+      setFilterHiragana(sessionStorage.getItem('hiragana'));
+    }
+
+    // 一度だけなので次の処理までfalseにする。
+    setOnlyone(false);
+  }
 
   // 絞り込み機能
   const filteredImage = useMemo(() => {
@@ -88,218 +238,218 @@ const Main = (props) =>{
     tmpImages = tmpImages.filter(row =>{
 
       // フルカラーでの検索
-      if(fColorSwitch){
+      if(fColorSwitch === String('ON')){
         // 部分一致
-        if(partialColor){
-          if(String(row.fullColor).indexOf('赤色') === -1 && redcount === 1){
+        if(partialColor === String('ON')){
+          if(String(row.fullColor).indexOf('赤色') === -1 && redcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('緑色') === -1 && greencount === 1){
+          }else if(String(row.fullColor).indexOf('緑色') === -1 && greencount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('青色') === -1 && bluecount === 1){
+          }else if(String(row.fullColor).indexOf('青色') === -1 && bluecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('黄色') === -1 && yellowcount === 1){
+          }else if(String(row.fullColor).indexOf('黄色') === -1 && yellowcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('白色') === -1 && whitecount === 1){
+          }else if(String(row.fullColor).indexOf('白色') === -1 && whitecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('黒色') === -1 && blackcount === 1){
+          }else if(String(row.fullColor).indexOf('黒色') === -1 && blackcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('橙色') === -1 && orangecount === 1){
+          }else if(String(row.fullColor).indexOf('橙色') === -1 && orangecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('金色') === -1 && goldcount === 1){
+          }else if(String(row.fullColor).indexOf('金色') === -1 && goldcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('紫色') === -1 && purplecount === 1){
+          }else if(String(row.fullColor).indexOf('紫色') === -1 && purplecount === String('ON')){
             return false;
           }
         }
         
         // 色の完全一致検索
-        else if(perfectColor){
-          if(String(row.fullColor).indexOf('赤色') === -1 && redcount === 1){
+        else if(perfectColor === String('ON')){
+          if(String(row.fullColor).indexOf('赤色') === -1 && redcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('赤色') >= 0 && redcount === 0){
+          }else if(String(row.fullColor).indexOf('赤色') >= 0 && redcount === String('OFF')){
             return false;
-          }else if(String(row.fullColor).indexOf('緑色') === -1 && greencount === 1){
+          }else if(String(row.fullColor).indexOf('緑色') === -1 && greencount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('緑色') >= 0 && greencount === 0){
+          }else if(String(row.fullColor).indexOf('緑色') >= 0 && greencount === String('OFF')){
             return false;
-          }else if(String(row.fullColor).indexOf('青色') === -1 && bluecount === 1){
+          }else if(String(row.fullColor).indexOf('青色') === -1 && bluecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('青色') >= 0 && bluecount === 0){
+          }else if(String(row.fullColor).indexOf('青色') >= 0 && bluecount === String('OFF')){
             return false;
-          }else if(String(row.fullColor).indexOf('黄色') === -1 && yellowcount === 1){
+          }else if(String(row.fullColor).indexOf('黄色') === -1 && yellowcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('黄色') >= 0 && yellowcount === 0){
+          }else if(String(row.fullColor).indexOf('黄色') >= 0 && yellowcount === String('OFF')){
             return false;
-          }else if(String(row.fullColor).indexOf('白色') === -1 && whitecount === 1){
+          }else if(String(row.fullColor).indexOf('白色') === -1 && whitecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('白色') >= 0 && whitecount === 0){
+          }else if(String(row.fullColor).indexOf('白色') >= 0 && whitecount === String('OFF')){
             return false;
-          }else if(String(row.fullColor).indexOf('黒色') === -1 && blackcount === 1){
+          }else if(String(row.fullColor).indexOf('黒色') === -1 && blackcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('黒色') >= 0 && blackcount === 0){
+          }else if(String(row.fullColor).indexOf('黒色') >= 0 && blackcount === String('OFF')){
             return false;
-          }else if(String(row.fullColor).indexOf('橙色') === -1 && orangecount === 1){
+          }else if(String(row.fullColor).indexOf('橙色') === -1 && orangecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('橙色') >= 0 && orangecount === 0){
+          }else if(String(row.fullColor).indexOf('橙色') >= 0 && orangecount === String('OFF')){
             return false;
-          }else if(String(row.fullColor).indexOf('金色') === -1 && goldcount === 1){
+          }else if(String(row.fullColor).indexOf('金色') === -1 && goldcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('金色') >= 0 && goldcount === 0){
+          }else if(String(row.fullColor).indexOf('金色') >= 0 && goldcount === String('OFF')){
             return false;
-          }else if(String(row.fullColor).indexOf('紫色') === -1 && purplecount === 1){
+          }else if(String(row.fullColor).indexOf('紫色') === -1 && purplecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('紫色') >= 0 && purplecount === 0){
+          }else if(String(row.fullColor).indexOf('紫色') >= 0 && purplecount === String('OFF')){
             return false;
           }
         }
 
         // 色の除外検索
-        else if(exclusionColor){
-          if(String(row.fullColor).indexOf('赤色') >= 0 && redcount === 1){
+        else if(exclusionColor === String('ON')){
+          if(String(row.fullColor).indexOf('赤色') >= 0 && redcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('緑色') >= 0 && greencount === 1){
+          }else if(String(row.fullColor).indexOf('緑色') >= 0 && greencount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('青色') >= 0 && bluecount === 1){
+          }else if(String(row.fullColor).indexOf('青色') >= 0 && bluecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('黄色') >= 0 && yellowcount === 1){
+          }else if(String(row.fullColor).indexOf('黄色') >= 0 && yellowcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('白色') >= 0 && whitecount === 1){
+          }else if(String(row.fullColor).indexOf('白色') >= 0 && whitecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('黒色') >= 0 && blackcount === 1){
+          }else if(String(row.fullColor).indexOf('黒色') >= 0 && blackcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('橙色') >= 0 && orangecount === 1){
+          }else if(String(row.fullColor).indexOf('橙色') >= 0 && orangecount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('金色') >= 0 && goldcount === 1){
+          }else if(String(row.fullColor).indexOf('金色') >= 0 && goldcount === String('ON')){
             return false;
-          }else if(String(row.fullColor).indexOf('紫色') >= 0 && purplecount === 1){
+          }else if(String(row.fullColor).indexOf('紫色') >= 0 && purplecount === String('ON')){
             return false;
           }
         }
       }
 
       // メインカラーでの検索
-      if(mColorSwitch){
+      if(mColorSwitch === String('ON')){
         // 部分一致
-        if(partialColor){
-          if(String(row.mainColor).indexOf('赤色') === -1 && redcount === 1){
+        if(partialColor === String('ON')){
+          if(String(row.mainColor).indexOf('赤色') === -1 && redcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('緑色') === -1 && greencount === 1){
+          }else if(String(row.mainColor).indexOf('緑色') === -1 && greencount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('青色') === -1 && bluecount === 1){
+          }else if(String(row.mainColor).indexOf('青色') === -1 && bluecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('黄色') === -1 && yellowcount === 1){
+          }else if(String(row.mainColor).indexOf('黄色') === -1 && yellowcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('白色') === -1 && whitecount === 1){
+          }else if(String(row.mainColor).indexOf('白色') === -1 && whitecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('黒色') === -1 && blackcount === 1){
+          }else if(String(row.mainColor).indexOf('黒色') === -1 && blackcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('橙色') === -1 && orangecount === 1){
+          }else if(String(row.mainColor).indexOf('橙色') === -1 && orangecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('金色') === -1 && goldcount === 1){
+          }else if(String(row.mainColor).indexOf('金色') === -1 && goldcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('紫色') === -1 && purplecount === 1){
+          }else if(String(row.mainColor).indexOf('紫色') === -1 && purplecount === String('ON')){
             return false;
           }
         }
         
         // 色の完全一致検索
-        else if(perfectColor){
-          if(String(row.mainColor).indexOf('赤色') === -1 && redcount === 1){
+        else if(perfectColor === String('ON')){
+          if(String(row.mainColor).indexOf('赤色') === -1 && redcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('赤色') >= 0 && redcount === 0){
+          }else if(String(row.mainColor).indexOf('赤色') >= 0 && redcount === String('OFF')){
             return false;
-          }else if(String(row.mainColor).indexOf('緑色') === -1 && greencount === 1){
+          }else if(String(row.mainColor).indexOf('緑色') === -1 && greencount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('緑色') >= 0 && greencount === 0){
+          }else if(String(row.mainColor).indexOf('緑色') >= 0 && greencount === String('OFF')){
             return false;
-          }else if(String(row.mainColor).indexOf('青色') === -1 && bluecount === 1){
+          }else if(String(row.mainColor).indexOf('青色') === -1 && bluecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('青色') >= 0 && bluecount === 0){
+          }else if(String(row.mainColor).indexOf('青色') >= 0 && bluecount === String('OFF')){
             return false;
-          }else if(String(row.mainColor).indexOf('黄色') === -1 && yellowcount === 1){
+          }else if(String(row.mainColor).indexOf('黄色') === -1 && yellowcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('黄色') >= 0 && yellowcount === 0){
+          }else if(String(row.mainColor).indexOf('黄色') >= 0 && yellowcount === String('OFF')){
             return false;
-          }else if(String(row.mainColor).indexOf('白色') === -1 && whitecount === 1){
+          }else if(String(row.mainColor).indexOf('白色') === -1 && whitecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('白色') >= 0 && whitecount === 0){
+          }else if(String(row.mainColor).indexOf('白色') >= 0 && whitecount === String('OFF')){
             return false;
-          }else if(String(row.mainColor).indexOf('黒色') === -1 && blackcount === 1){
+          }else if(String(row.mainColor).indexOf('黒色') === -1 && blackcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('黒色') >= 0 && blackcount === 0){
+          }else if(String(row.mainColor).indexOf('黒色') >= 0 && blackcount === String('OFF')){
             return false;
-          }else if(String(row.mainColor).indexOf('橙色') === -1 && orangecount === 1){
+          }else if(String(row.mainColor).indexOf('橙色') === -1 && orangecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('橙色') >= 0 && orangecount === 0){
+          }else if(String(row.mainColor).indexOf('橙色') >= 0 && orangecount === String('OFF')){
             return false;
-          }else if(String(row.mainColor).indexOf('金色') === -1 && goldcount === 1){
+          }else if(String(row.mainColor).indexOf('金色') === -1 && goldcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('金色') >= 0 && goldcount === 0){
+          }else if(String(row.mainColor).indexOf('金色') >= 0 && goldcount === String('OFF')){
             return false;
-          }else if(String(row.mainColor).indexOf('紫色') === -1 && purplecount === 1){
+          }else if(String(row.mainColor).indexOf('紫色') === -1 && purplecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('紫色') >= 0 && purplecount === 0){
+          }else if(String(row.mainColor).indexOf('紫色') >= 0 && purplecount === String('OFF')){
             return false;
           }
         }
 
         // 色の除外検索
-        else if(exclusionColor){
-          if(String(row.mainColor).indexOf('赤色') >= 0 && redcount === 1){
+        else if(exclusionColor === String('ON')){
+          if(String(row.mainColor).indexOf('赤色') >= 0 && redcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('緑色') >= 0 && greencount === 1){
+          }else if(String(row.mainColor).indexOf('緑色') >= 0 && greencount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('青色') >= 0 && bluecount === 1){
+          }else if(String(row.mainColor).indexOf('青色') >= 0 && bluecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('黄色') >= 0 && yellowcount === 1){
+          }else if(String(row.mainColor).indexOf('黄色') >= 0 && yellowcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('白色') >= 0 && whitecount === 1){
+          }else if(String(row.mainColor).indexOf('白色') >= 0 && whitecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('黒色') >= 0 && blackcount === 1){
+          }else if(String(row.mainColor).indexOf('黒色') >= 0 && blackcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('橙色') >= 0 && orangecount === 1){
+          }else if(String(row.mainColor).indexOf('橙色') >= 0 && orangecount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('金色') >= 0 && goldcount === 1){
+          }else if(String(row.mainColor).indexOf('金色') >= 0 && goldcount === String('ON')){
             return false;
-          }else if(String(row.mainColor).indexOf('紫色') >= 0 && purplecount === 1){
+          }else if(String(row.mainColor).indexOf('紫色') >= 0 && purplecount === String('ON')){
             return false;
           }
         }
       }
 
-      if(String(row.tag).indexOf('太陽') === -1 && suncount === 1){
+      if(String(row.tag).indexOf('太陽') === -1 && suncount === String('ON')){
         return false;
-      }else if(String(row.tag).indexOf('月') === -1 && mooncount === 1){
+      }else if(String(row.tag).indexOf('月') === -1 && mooncount === String('ON')){
         return false;
-      }else if(String(row.tag).indexOf('星') === -1 && starcount === 1){
+      }else if(String(row.tag).indexOf('星') === -1 && starcount === String('ON')){
         return false;
-      }else if(String(row.tag).indexOf('十字') === -1 && crosscount === 1){
+      }else if(String(row.tag).indexOf('十字') === -1 && crosscount === String('ON')){
         return false;
-      }else if(String(row.tag).indexOf('生物') === -1 && creaturecount === 1){
+      }else if(String(row.tag).indexOf('生物') === -1 && creaturecount === String('ON')){
         return false;
-      }else if(String(row.tag).indexOf('植物') === -1 && plantcount === 1){
+      }else if(String(row.tag).indexOf('植物') === -1 && plantcount === String('ON')){
         return false;
       }
       
-      if(!unspeArea){
-        if(String(row.area).indexOf('アジア') === -1 && asiacount === 1){
+      if(unspeArea === String('OFF')){
+        if(String(row.area).indexOf('アジア') === -1 && asiacount === String('ON')){
           return false;
-        }else if(String(row.area).indexOf('ヨーロッパ') === -1 && eucount === 1){
+        }else if(String(row.area).indexOf('ヨーロッパ') === -1 && eucount === String('ON')){
           return false;
-        }else if(String(row.area).indexOf('アフリカ') === -1 && africacount === 1){
+        }else if(String(row.area).indexOf('アフリカ') === -1 && africacount === String('ON')){
           return false;
-        }else if(String(row.area).indexOf('北中央アメリカ') === -1 && ncAmericacount === 1){
+        }else if(String(row.area).indexOf('北中央アメリカ') === -1 && ncAmericacount === String('ON')){
           return false;
-        }else if(String(row.area).indexOf('南アメリカ') === -1 && sAmericacount === 1){
+        }else if(String(row.area).indexOf('南アメリカ') === -1 && sAmericacount === String('ON')){
           return false;
-        }else if(String(row.area).indexOf('オセアニア') === -1 && oceaniacount === 1){
+        }else if(String(row.area).indexOf('オセアニア') === -1 && oceaniacount === String('ON')){
           return false;
         }
       }
 
-        if(String(row.kokuren).indexOf('国連加盟国') === -1 && kokurencount === 1){
+        if(String(row.kokuren).indexOf('国連加盟国') === -1 && kokurencount === String('ON')){
           return false;
-        }else if(String(row.kokuren).indexOf('国連非加盟国') === -1 && notKokurencount){
+        }else if(String(row.kokuren).indexOf('国連非加盟国') === -1 && notKokurencount === String('ON')){
           return false;
         }
 
@@ -349,287 +499,353 @@ const Main = (props) =>{
   const firLetterFilter = e => {
     if(e.target.value !== '-------'){
       setFilterHiragana(e.target.value);
+      sessionStorage.setItem('hiragana', e.target.value);
     }else {
       setFilterHiragana('');
+      sessionStorage.setItem('hiragana', '');
     }
   }
 
   // --------------------------------- 
   // 色の検索モードスイッチ
   const handleMColorSwitch = e => {
-    if(!mColorSwitch){
-      setMColorSwitch(true);
-      setFColorSwitch(false);
+    if(mColorSwitch === String('OFF')){
+      setMColorSwitch(String('ON'));
+      sessionStorage.setItem('mColorSwitch', String('ON'));
+      setFColorSwitch(String('OFF'));
+      sessionStorage.setItem('fColorSwitch', String('OFF'));
     }
   };
 
   const handleFColorSwitch = e => {
-    if(!fColorSwitch){
-      setMColorSwitch(false);
-      setFColorSwitch(true);
+    if(fColorSwitch === String('OFF')){
+      setMColorSwitch(String('OFF'));
+      sessionStorage.setItem('mColorSwitch', String('OFF'));
+      setFColorSwitch(String('ON'));
+      sessionStorage.setItem('fColorSwitch', String('ON'));
     }
   };
 
+  const colorSearchModeReset = () => {
+    setPartialColor(String('OFF'));
+    sessionStorage.setItem('partialColor', String('OFF'));
+    setPerfectColor(String('OFF'));
+    sessionStorage.setItem('perfectColor', String('OFF'));
+    setExclusionColor(String('OFF'));
+    sessionStorage.setItem('exclusionColor', String('OFF'));
+  }
+
   // 部分一致検索が押された
   const handleColorPartial = e => {
-    if(!partialColor){
-      setPartialColor(true);
-      setPerfectColor(false);
-      setExclusionColor(false);
+    if(partialColor === String('OFF')){
+      colorSearchModeReset();
+      setPartialColor(String('ON'));
+      sessionStorage.setItem('partialColor', String('ON'));
     }
   };
 
   // 完全一致検索が押された
   const handleColorPerfect = e => {
-    if(!perfectColor){
-      setPartialColor(false);
-      setPerfectColor(true);
-      setExclusionColor(false);
+    if(perfectColor === String('OFF')){
+      colorSearchModeReset();
+      setPerfectColor(String('ON'));
+      sessionStorage.setItem('perfectColor', String('ON'));
     }
   };
 
   // 除外検索が押された
   const handleColorExclusion = e => {
-    if(!exclusionColor){
-      setPartialColor(false);
-      setPerfectColor(false);
-      setExclusionColor(true);
+    if(exclusionColor === String('OFF')){
+      colorSearchModeReset();
+      setExclusionColor(String('ON'));
+      sessionStorage.setItem('exclusionColor', String('ON'));
     }
   };
 
   // 色のカウントを引いたり足したりする
   const handleFilterRed = e => {
-    if(redcount === 0){
-      setRedcount(redcount + 1);
+    if(redcount === String('OFF')){
+      setRedcount(String('ON'));
+      sessionStorage.setItem('redcount', 'ON');
     }else{
-      setRedcount(redcount - 1);
+      setRedcount(String('OFF'));
+      sessionStorage.setItem('redcount', 'OFF');
     }
   };
 
   const handleFilterWhite = e => {
-    if(whitecount === 0){
-      setWhitecount(whitecount + 1);
+    if(whitecount === String('OFF')){
+      setWhitecount(String('ON'));
+      sessionStorage.setItem('whitecount', 'ON');
     }else{
-      setWhitecount(whitecount - 1);
+      setWhitecount(String('OFF'));
+      sessionStorage.setItem('whitecount', 'OFF');
     }
   };
 
   const handleFilterBlue = e => {
-    if(bluecount === 0){
-      setBluecount(bluecount + 1);
+    if(bluecount === String('OFF')){
+      setBluecount(String('ON'));
+      sessionStorage.setItem('bluecount', 'ON');
     }else{
-      setBluecount(bluecount - 1);
+      setBluecount(String('OFF'));
+      sessionStorage.setItem('bluecount', 'OFF');
     }
   };
 
   const handleFilterGreen = e => {
-    if(greencount === 0){
-      setGreencount(greencount + 1);
+    if(greencount === String('OFF')){
+      setGreencount(String('ON'));
+      sessionStorage.setItem('greencount', 'ON');
     }else{
-      setGreencount(greencount - 1);
+      setGreencount(String('OFF'));
+      sessionStorage.setItem('greencount', 'OFF');
     }
   };
   
   const handleFilterYellow = e => {
-    if(yellowcount === 0){
-      setYellowcount(yellowcount + 1);
+    if(yellowcount === String('OFF')){
+      setYellowcount(String('ON'));
+      sessionStorage.setItem('yellowcount', 'ON');
     }else{
-      setYellowcount(yellowcount - 1);
+      setYellowcount(String('OFF'));
+      sessionStorage.setItem('yellowcount', 'OFF');
     }
   };
 
   const handleFilterBlack = e => {
-    if(blackcount === 0){
-      setBlackcount(blackcount + 1);
+    if(blackcount === String('OFF')){
+      setBlackcount(String('ON'));
+      sessionStorage.setItem('blackcount', 'ON');
     }else{
-      setBlackcount(blackcount - 1);
+      setBlackcount(String('OFF'));
+      sessionStorage.setItem('blackcount', 'OFF');
     }
   };
 
   const handleFilterGold = e => {
-    if(goldcount === 0){
-      setGoldcount(goldcount + 1);
+    if(goldcount === String('OFF')){
+      setGoldcount(String('ON'));
+      sessionStorage.setItem('goldcount', 'ON');
     }else{
-      setGoldcount(goldcount - 1);
+      setGoldcount(String('OFF'));
+      sessionStorage.setItem('goldcount', 'OFF');
     }
   };
 
   const handleFilterPurple = e => {
-    if(purplecount === 0){
-      setPurplecount(purplecount + 1);
+    if(purplecount === String('OFF')){
+      setPurplecount(String('ON'));
+      sessionStorage.setItem('purplecount', 'ON');
     }else{
-      setPurplecount(purplecount - 1);
+      setPurplecount(String('OFF'));
+      sessionStorage.setItem('purplecount', 'OFF');
     }
   };
 
   const handleFilterOrange = e => {
-    if(orangecount === 0){
-      setOrangecount(orangecount + 1);
+    if(orangecount === String('OFF')){
+      setOrangecount(String('ON'));
+      sessionStorage.setItem('orangecount', 'ON');
     }else{
-      setOrangecount(orangecount - 1);
+      setOrangecount(String('OFF'));
+      sessionStorage.setItem('orangecount', 'OFF');
     }
   };
 
   // エリアのカウントを足したり引いたりする
 
   const areaReset = () => {
-    setAsiacount(asiacount - asiacount);
-    setEucount(eucount - eucount);
-    setAfricacount(africacount - africacount);
-    setNcAmericacount(ncAmericacount - ncAmericacount);
-    setSAmericacount(sAmericacount - sAmericacount);
-    setOceaniacount(oceaniacount - oceaniacount);
-    setUnspeArea(Number(unspeArea) - Number(unspeArea));
+    setAsiacount(String('OFF'));
+    setEucount(String('OFF'));
+    setAfricacount(String('OFF'));
+    setNcAmericacount(String('OFF'));
+    setSAmericacount(String('OFF'));
+    setOceaniacount(String('OFF'));
+    setUnspeArea(String('OFF'));
+    sessionStorage.setItem('asiacount', 'OFF');
+    sessionStorage.setItem('eucount', 'OFF');
+    sessionStorage.setItem('africacount', 'OFF');
+    sessionStorage.setItem('ncAmericacount', 'OFF');
+    sessionStorage.setItem('sAmericacount', 'OFF');
+    sessionStorage.setItem('oceaniacount', 'OFF');
+    sessionStorage.setItem('unspeArea', 'OFF');
   };
 
   const handleUnspeArea = e => {
-    if(!unspeArea){
+    if(unspeArea === String('OFF')){
       areaReset();
-      setUnspeArea(true);
+      setUnspeArea(String('ON'));
+      sessionStorage.setItem('unspeArea', 'ON');
     }
   };
 
   const handleFilterAsia = e => {
-    if(asiacount === 0){
+    if(asiacount === String('OFF')){
       areaReset();
-      setAsiacount(asiacount + 1);
+      setAsiacount(String('ON'));
+      sessionStorage.setItem('asiacount', 'ON');
     }
   };
 
   const handleFilterEu = e => {
-    if(eucount === 0){
+    if(eucount === String('OFF')){
       areaReset();
-      setEucount(eucount + 1);
+      setEucount(String('ON'));
+      sessionStorage.setItem('eucount', 'ON');
     }
   };
 
   const handleFilterAfrica = e => {
-    if(africacount === 0){
+    if(africacount === String('OFF')){
       areaReset();
-      setAfricacount(africacount + 1);
+      setAfricacount(String('ON'));
+      sessionStorage.setItem('africacount', 'ON');
     }
   };
 
   const handleFilterNcAmerica = e => {
-    if(ncAmericacount === 0){
+    if(ncAmericacount === String('OFF')){
       areaReset();
-      setNcAmericacount(ncAmericacount + 1);
+      setNcAmericacount(String('ON'));
+      sessionStorage.setItem('ncAmericacount', 'ON');
     }
   };
 
   const handleFilterSAmerica = e => {
-    if(sAmericacount === 0){
+    if(sAmericacount === String('OFF')){
       areaReset();
-      setSAmericacount(sAmericacount + 1);
+      setSAmericacount(String('ON'));
+      sessionStorage.setItem('sAmericacount', 'ON');
     }
   };
 
   const handleFilterOceania = e => {
-    if(oceaniacount === 0){
+    if(oceaniacount === String('OFF')){
       areaReset();
-      setOceaniacount(oceaniacount + 1);
+      setOceaniacount(String('ON'));
+      sessionStorage.setItem('oceaniacount', 'ON');
     }
   };
 
   // 模様のカウントを足したり引いたりする
 
   const handleFilterSun = e => {
-    if(suncount === 0){
-      setSuncount(suncount + 1);
+    if(suncount === String('OFF')){
+      setSuncount(String('ON'));
+      sessionStorage.setItem('suncount', 'ON');
     }else{
-      setSuncount(suncount - 1);
+      setSuncount(String('OFF'));
+      sessionStorage.setItem('suncount', 'OFF');
     }
   };
 
   const handleFilterMoon = e => {
-    if(mooncount === 0){
-      setMooncount(mooncount + 1);
+    if(mooncount === String('OFF')){
+      setMooncount(String('ON'));
+      sessionStorage.setItem('mooncount', 'ON');
     }else{
-      setMooncount(mooncount - 1);
+      setMooncount(String('OFF'));
+      sessionStorage.setItem('mooncount', 'OFF');
     }
   };
 
   const handleFilterStar = e => {
-    if(starcount === 0){
-      setStarcount(starcount + 1);
+    if(starcount === String('OFF')){
+      setStarcount(String('ON'));
+      sessionStorage.setItem('starcount', 'ON');
     }else{
-      setStarcount(starcount - 1);
+      setStarcount(String('OFF'));
+      sessionStorage.setItem('starcount', 'OFF');
     }
   };
 
   const handleFilterCross = e => {
-    if(crosscount === 0){
-      setCrosscount(crosscount + 1);
+    if(crosscount === String('OFF')){
+      setCrosscount(String('ON'));
+      sessionStorage.setItem('crosscount', 'ON');
     }else{
-      setCrosscount(crosscount - 1);
+      setCrosscount(String('OFF'));
+      sessionStorage.setItem('crosscount', 'OFF');
     }
   };
 
   const handleFilterCreature = e => {
-    if(creaturecount === 0){
-      setCreaturecount(creaturecount + 1);
+    if(creaturecount === String('OFF')){
+      setCreaturecount(String('ON'));
+      sessionStorage.setItem('creaturecount', 'ON');
     }else{
-      setCreaturecount(creaturecount - 1);
+      setCreaturecount(String('OFF'));
+      sessionStorage.setItem('creaturecount', 'OFF');
     }
   };
 
   const handleFilterPlant = e => {
-    if(plantcount === 0){
-      setPlantcount(plantcount + 1);
+    if(plantcount === String('OFF')){
+      setPlantcount(String('ON'));
+      sessionStorage.setItem('plantcount', 'ON');
     }else{
-      setPlantcount(plantcount - 1);
+      setPlantcount(String('OFF'));
+      sessionStorage.setItem('plantcount', 'OFF');
     }
   };
 
   // 国連に関するカウント
 
   const kokurenReset = () => {
-    setUnspeKokuren(Number(unspeKokuren) - Number(unspeKokuren));
-    setKokurencount(Number(kokurencount) - Number(kokurencount));
-    setNotKokurencount(Number(notKokurencount) - Number(notKokurencount));
+    setUnspeKokuren(String('OFF'));
+    setKokurencount(String('OFF'));
+    setNotKokurencount(String('OFF'));
+    sessionStorage.setItem('unspeKokuren', 'OFF');
+    sessionStorage.setItem('kokurencount', 'OFF');
+    sessionStorage.setItem('notKokurencount', 'OFF');
   };
 
   const handleFilterKokuren = e => {
-    if(kokurencount === 0){
+    if(kokurencount === String('OFF')){
       kokurenReset();
-      setKokurencount(kokurencount + 1);
+      setKokurencount(String('ON'));
+      sessionStorage.setItem('Kokurencount', 'ON');
     }else{
       kokurenReset();
-      setUnspeKokuren(true);
+      setUnspeKokuren(String('ON'));
+      sessionStorage.setItem('unspeKokuren', 'ON');
     }
   };
 
   const handleFilterUnspeKokuren = e => {
-    if(!unspeKokuren){
+    if(unspeKokuren === String('OFF')){
       kokurenReset();
-      setUnspeKokuren(true);
-    }else{
-      kokurenReset();
-      setUnspeKokuren(true);
+      setUnspeKokuren(String('ON'));
+      sessionStorage.setItem('unspeKokuren', 'ON');
     }
   };
 
   const handleFilterNotKokuren = e => {
-    if(!notKokurencount){
+    if(notKokurencount === String('OFF')){
       kokurenReset();
-      setNotKokurencount(true);
+      setNotKokurencount(String('ON'));
+      sessionStorage.setItem('notKokurencount', 'ON');
     }else{
       kokurenReset();
-      setUnspeKokuren(true);
+      setUnspeKokuren(String('ON'));
+      sessionStorage.setItem('unspeKokuren', 'ON');
     }
   };
 
   // 詳細検索の表示切り替え
-  const[isDetailOpen, setIsDetailOpen] = useState(false); 
-  const[firIsDetailOpen, setFirIsDetailOpen] = useState(false);
+
   const handleDetailSearchMode = e =>{
-    if(!isDetailOpen){
-      setIsDetailOpen(true);
+    if(isDetailOpen === String('OFF')){
+      setIsDetailOpen(String('ON'));
+      sessionStorage.setItem('isDetailOpen', String('ON'));
     }else{
-      setIsDetailOpen(false);
+      setIsDetailOpen(String('OFF'));
+      sessionStorage.setItem('isDetailOpen', String('OFF'));
     }
-    if(!firIsDetailOpen){
-      setFirIsDetailOpen(true);
+    if(firIsDetailOpen === String('OFF')){
+      setFirIsDetailOpen(String('ON'));
+      sessionStorage.setItem('firIsDetailOpen', String('ON'));
     }
   };
 
@@ -648,16 +864,18 @@ const Main = (props) =>{
   };
 
   // 色検索モードの切替
-  const [issmOpen, setIssmOpen] = useState(false);
-  const [fIssmOpen, setfIssmOpen] = useState(false);
+
   const smOpen = e => {
-    if(!issmOpen){
-      setIssmOpen(true);
+    if(issmOpen === String('OFF')){
+      setIssmOpen(String('ON'));
+      sessionStorage.setItem('issmOpen', String('ON'));
     }else{
-      setIssmOpen(false);
+      setIssmOpen(String('OFF'));
+      sessionStorage.setItem('issmOpen', String('OFF'));
     }
-    if(!fIssmOpen){
-      setfIssmOpen(true);
+    if(fIssmOpen === String('OFF')){
+      setfIssmOpen(String('ON'));
+      sessionStorage.setItem('fIssmOpen', String('ON'));
     }
   };
 
@@ -758,7 +976,7 @@ const Main = (props) =>{
               <h3>エリア</h3>
               <div className ="mBox">
               <div className = 'button' onClick={() => {handleUnspeArea()}}>
-                  <span className = {'checkbox' + Number(unspeArea)}></span>
+                  <span className = {'checkbox' + unspeArea}></span>
                   <span className ='searchButton'>指定なし</span>
                 </div>
                 <div className = 'button' onClick={() => {handleFilterAsia()}}>
@@ -893,7 +1111,7 @@ const Main = (props) =>{
              <h3>エリア</h3>
              <div className ="mBox">
              <div className = 'button' onClick={() => {handleUnspeArea()}}>
-                 <span className = {'checkbox' + Number(unspeArea)}></span>
+                 <span className = {'checkbox' + unspeArea}></span>
                  <span className ='searchButton'>指定なし</span>
                </div>
                <div className = 'button' onClick={() => {handleFilterAsia()}}>
@@ -1006,25 +1224,25 @@ const Main = (props) =>{
             <div className ="mBox searchMode" style = {{'maxHeight':`${interpolatingStyle.y}px`, overflow:'hidden', position:'relative',}}>
             <div className = "mode">
               <div className = 'button' onClick={() => {handleColorPartial()}}>
-                <span className = {'checkbox' + Number(partialColor)}></span>
+                <span className = {'checkbox' + partialColor}></span>
                 <span className ='searchButton'>部分一致</span>
               </div>
               <div className = 'button' onClick={() => {handleColorPerfect()}}>
-                <span className = {'checkbox' + Number(perfectColor)}></span>
+                <span className = {'checkbox' + perfectColor}></span>
                 <span className ='searchButton'>完全一致</span>
               </div>
               <div className = 'button' onClick={() => {handleColorExclusion()}}>
-                <span className = {'checkbox' + Number(exclusionColor)}></span>
+                <span className = {'checkbox' + exclusionColor}></span>
                 <span className ='searchButton'>除外</span>
               </div>
             </div>
             <div className = "mode">
               <div className = 'button' onClick={() => {handleMColorSwitch()}}>
-                <span className = {'checkbox' + Number(mColorSwitch)}></span>
+                <span className = {'checkbox' + mColorSwitch}></span>
                 <span className ='searchButton'>メインカラー</span>
               </div>
               <div className = 'button' onClick={() => {handleFColorSwitch()}}>
-                <span className = {'checkbox' + Number(fColorSwitch)}></span>
+                <span className = {'checkbox' + fColorSwitch}></span>
                 <span className ='searchButton'>フルカラー</span>
               </div>
             </div>
@@ -1041,25 +1259,25 @@ const Main = (props) =>{
             <div className ="mBox searchMode" style = {{'maxHeight':`${interpolatingStyle.y}px`, overflow:'hidden', position:'relative',}}>
             <div className = "mode">
               <div className = 'button' onClick={() => {handleColorPartial()}}>
-                <span className = {'checkbox' + Number(partialColor)}></span>
+                <span className = {'checkbox' + partialColor}></span>
                 <span className ='searchButton'>部分一致</span>
               </div>
               <div className = 'button' onClick={() => {handleColorPerfect()}}>
-                <span className = {'checkbox' + Number(perfectColor)}></span>
+                <span className = {'checkbox' + perfectColor}></span>
                 <span className ='searchButton'>完全一致</span>
               </div>
               <div className = 'button' onClick={() => {handleColorExclusion()}}>
-                <span className = {'checkbox' + Number(exclusionColor)}></span>
+                <span className = {'checkbox' + exclusionColor}></span>
                 <span className ='searchButton'>除外</span>
               </div>
             </div>
             <div className = "mode">
               <div className = 'button' onClick={() => {handleMColorSwitch()}}>
-                <span className = {'checkbox' + Number(mColorSwitch)}></span>
+                <span className = {'checkbox' + mColorSwitch}></span>
                 <span className ='searchButton'>メインカラー</span>
               </div>
               <div className = 'button' onClick={() => {handleFColorSwitch()}}>
-                <span className = {'checkbox' + Number(fColorSwitch)}></span>
+                <span className = {'checkbox' + fColorSwitch}></span>
                 <span className ='searchButton'>フルカラー</span>
               </div>
             </div>
@@ -1096,11 +1314,11 @@ const Main = (props) =>{
           <h4 className = "search-mode">
             <span onClick={() => {smOpen()}}>
             検索モード切替
-            {issmOpen ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />}
+            {issmOpen === String('ON') ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />}
             </span>
           </h4>
-          {fIssmOpen ? 
-          issmOpen ? smhtmlOpen() : smhtmlClose()
+          {fIssmOpen === String('ON')  ? 
+          issmOpen === String('ON') ? smhtmlOpen() : smhtmlClose()
           : Firstsmhtml()}
           <div className ="mBox">
             <div className = 'button' onClick={() => {handleFilterRed()}}>
@@ -1145,7 +1363,7 @@ const Main = (props) =>{
           <h3>国連加盟</h3>
           <div className ="mBox">
             <div className = 'button' onClick={() => {handleFilterUnspeKokuren()}}>
-              <span className = {'checkbox' + Number(unspeKokuren)}></span>
+              <span className = {'checkbox' + unspeKokuren}></span>
               <span className ='searchButton'>指定なし</span>
             </div>
             <div className = 'button' onClick={() => {handleFilterKokuren()}}>
@@ -1153,7 +1371,7 @@ const Main = (props) =>{
               <span className ='searchButton'>国連加盟国</span>
             </div>
             <div className = 'button' onClick={() => {handleFilterNotKokuren()}}>
-              <span className = {'checkbox' + Number(notKokurencount)}></span>
+              <span className = {'checkbox' + notKokurencount}></span>
               <span className ='searchButton'>国連非加盟国</span>
             </div>
           </div>
@@ -1170,11 +1388,11 @@ const Main = (props) =>{
         <h3 className = "detail-search">
           <span onClick={() => {handleDetailSearchMode()}}>
           詳細検索表示
-          {isDetailOpen ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />}
+          {isDetailOpen === String('ON') ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />}
           </span>
         </h3>
-        {firIsDetailOpen ? 
-        isDetailOpen ? SearchDetailSearchOpen() : SearchDetailSearchClose()
+        {firIsDetailOpen === String('ON') ? 
+        isDetailOpen === String('ON') ? SearchDetailSearchOpen() : SearchDetailSearchClose()
         : FirstDetailSearch()}
         <div className='result'>
           <span>{'表示件数：' + filteredImage.length + ' / ' + props.mainImage.length}</span>

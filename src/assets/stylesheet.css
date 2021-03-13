@@ -363,6 +363,41 @@ h3.detail-search{
   border-radius: 2px;
 }
 
+/*チェックボックスのチェック入ってない時*/
+.checkboxOFF{
+  display:block;
+  position:absolute;
+  width:30px;
+  height:30px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+/*チェックボックスにチェックが入った時*/
+.checkboxON{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.checkboxON:after{
+  content: "";
+  display:block;
+  position:absolute;
+  top: 8px;
+  left: 8px;
+  width:14px;
+  height:14px;
+  background: #a5d6a7;
+  border-radius: 2px;
+}
+
 /*serachCheckBoxの略ね*/
 .scb{
   margin-bottom: 12px;
@@ -968,15 +1003,15 @@ footer h4{
     cursor: pointer;
   }
 
-  .flagBox:nth-child(odd){
+  a:nth-child(odd) .flagBox{
     margin:30px 2% 0 0;
   }
 
-  .flagBox:nth-child(even){
+  a:nth-child(even) .flagBox{
     margin:30px 0 0 2%;
   }
 
-  .flagBox:nth-child(1), .flagBox:nth-child(2){
+  a:nth-child(1) .flagBox, a:nth-child(2) .flagBox{
     margin-top: 0;
   }
 

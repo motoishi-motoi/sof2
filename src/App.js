@@ -1413,7 +1413,7 @@ desc: [
         },
         {
           mainColor: [blue, white],
-          fullColor: [red, green, blue, white, gold],
+          fullColor: [red, green, blue, white, gold, purple],
           tag: [plant],
           area: worldArea.ncAmerica,
           kokuren: '国連加盟国',
@@ -2250,7 +2250,7 @@ desc: [
         {
           mainColor: [red, green, yellow],
           fullColor: [red, green, yellow],
-          tag: [star],
+          tag: [],
           area: worldArea.africa,
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
@@ -2272,7 +2272,7 @@ desc: [
         {
           mainColor: [red, blue, yellow],
           fullColor: [red, blue, yellow],
-          tag: [],
+          tag: [star],
           area: worldArea.africa,
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
