@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom'
 import Share from '../../Share';
+import { Helmet } from 'react-helmet';
 
 const FlagDate = (props) => {
 
@@ -11,6 +12,22 @@ const FlagDate = (props) => {
 	
 	return(
 		<div className = 'flag-date'>
+			<Helmet 
+				title={targetCountry.fullName + 'の国旗 | SOF'}
+				link={[{ rel: "canonical", href: 'https://laughing-volhard-e0a9d7.netlify.app/' + targetCountry.url}]}
+				meta={[
+					{ name: 'description', content: targetCountry.fullName + '国旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。' },
+					{property: 'twitter:description', content: targetCountry.fullName + '国旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。'},
+					{property: 'twitter:title', content: targetCountry.fullName + 'の国旗 | SOF'},
+					{property: 'twitter:url', content: 'https://laughing-volhard-e0a9d7.netlify.app/' + targetCountry.url},
+					{name: 'twitter:image', content: targetCountry.ogp},
+					{property: 'og:type', content: 'article'},
+					{property: 'og:title', content: targetCountry.fullName + 'の国旗 | SOF'},
+					{property: 'og:url', content: 'https://laughing-volhard-e0a9d7.netlify.app/' + targetCountry.url},
+					{property: 'og:image', content: targetCountry.ogp},
+					{property: 'og:description', content: targetCountry.fullName + '国旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。'},
+				]}
+			/>
 			<div className = {targetCountry.id + "-flag-date flag-date-name"}>
 				<h2>{targetCountry.fullName}</h2>
 				<p>{targetCountry.officialName}</p>
