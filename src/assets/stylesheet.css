@@ -602,8 +602,11 @@ footer h4{
 /*旗個別のページ*/
 
 .flag-page{
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 48px;
 }
 
 /*関連する旗*/
@@ -639,6 +642,9 @@ footer h4{
   color: #4b4b4b;
   font-weight: normal;
   font-size: 0.92em;
+}
+.relation h3{
+  color: #2b2b2b;
 }
 
 .nepalreFlag{
@@ -788,6 +794,10 @@ footer h4{
 
 .nepal-flag-date .flag-date-image{
   margin: 0 auto;
+}
+
+.flag-date{
+  margin-bottom: 32px;
 }
 
 

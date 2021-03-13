@@ -3,6 +3,7 @@ import Relation from './Relation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom'
+import Share from '../../Share';
 
 const FlagDate = (props) => {
 
@@ -26,6 +27,10 @@ const FlagDate = (props) => {
 			</div>
 			<div className = 'flag-date-info'>
 				<div className = 'flag-date-intro'>
+					<div className = 'areaBox'>
+						<span className='areaName'>{targetCountry.area}</span>
+						<span style={{'marginLeft': '12px'}} className={targetCountry.groupingCSS}>{targetCountry.kokuren}</span>                                        
+					</div>
 					<p className='flag-date-desc'>{targetCountry.desc[0]}</p>
 					<p className='flag-date-desc'>{targetCountry.desc[1]}</p>
 					<p className='flag-date-desc'>{targetCountry.desc[2]}</p>
@@ -34,6 +39,9 @@ const FlagDate = (props) => {
 			<div className = 'flag-date-button'>
 				<button className = 'detail'><a href = {targetCountry.link} target = '_blank' rel = 'noreferrer noopener'>{targetCountry.name + '国旗の詳細'}<FontAwesomeIcon icon={faExternalLinkAlt} /></a></button>
 				<Link to = '/' className = 'close-link'><button className = 'close'>ホームに戻る</button></Link>
+			</div>
+			<div style={{marginTop:'14px' , marginBottom:'42px'}}>
+				<Share url = {'https://sof.flaghistory.jp/' + targetCountry.url} title = {targetCountry.fullName + 'の国旗 | SOF'} />
 			</div>
 			<Relation mainImage = {props.mainImage} name = {props.name}/>
 		</div>

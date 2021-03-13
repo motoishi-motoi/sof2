@@ -6,6 +6,7 @@ import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import {Motion, spring } from 'react-motion';
 import Share from './Share';
 import { Link } from 'react-router-dom'
+import ScrollTop from './ScrollToTopOnMount';
 
 const Main = (props) =>{
 
@@ -1078,6 +1079,7 @@ const Main = (props) =>{
   //検索する機構と、国旗を表示する部分。
   return (
     <div className ='flags'>
+      <ScrollTop />
       <div className = 'howto'>
         <h3 onClick = {() => {howtoOpen()}}>
           SOFの使い方
@@ -1182,8 +1184,8 @@ const Main = (props) =>{
         {
           filteredImage.map((flagImage) => {
             return(
-              <Link to = {'/' + flagImage.url}>
-                <Flags key = {flagImage.id} mainFlagImage = {flagImage}/>
+              <Link key = {flagImage.id} to = {'/' + flagImage.url}>
+                <Flags mainFlagImage = {flagImage}/>
               </Link>
             );
           })

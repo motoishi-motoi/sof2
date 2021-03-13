@@ -433,6 +433,215 @@ import luhanskMap from './assets/mapImages/luhanskMap.svg';
 
 //個別ページのimport
 import IcelandPage from './components/countryFlags/Iceland';
+import IrelandPage from './components/countryFlags/Ireland';
+import AzerbaijanPage from './components/countryFlags/Azerbaijan';
+import AfghanistanPage from './components/countryFlags/Afghanistan';
+import AbkhaziaPage from './components/countryFlags/Abkhazia';
+import AmericaPage from './components/countryFlags/America';
+import ArabPage from './components/countryFlags/Arab';
+import AlgeriaPage from './components/countryFlags/Algeria';
+import ArgentinePage from './components/countryFlags/Argentine';
+import ArtsakhPage from './components/countryFlags/Artsakh';
+import AlbaniaPage from './components/countryFlags/Albania';
+import ArmeniaPage from './components/countryFlags/Armenia';
+import AngolaPage from './components/countryFlags/Angola';
+import AntiguaPage from './components/countryFlags/Antigua';
+import AndorraPage from './components/countryFlags/Andorra';
+import YemenPage from './components/countryFlags/Yemen';
+import UnitedKingdomPage from './components/countryFlags/UnitedKingdom';
+import IsraelPage from './components/countryFlags/Israel';
+import ItalyPage from './components/countryFlags/Italy';
+import IraqPage from './components/countryFlags/Iraq';
+import IranPage from './components/countryFlags/Iran';
+import IndiaPage from './components/countryFlags/India';
+import IndonesiaPage from './components/countryFlags/Indonesia';
+import UgandaPage from './components/countryFlags/Uganda';
+import UkrainePage from './components/countryFlags/Ukraine';
+import UzbekistanPage from './components/countryFlags/Uzbekistan';
+import UruguayPage from './components/countryFlags/Uruguay';
+import EcuadorPage from './components/countryFlags/Ecuador';
+import EgyptPage from './components/countryFlags/Egypt';
+import EstoniaPage from './components/countryFlags/Estonia';
+import EswatiniPage from './components/countryFlags/Eswatini';
+import EthiopiaPage from './components/countryFlags/Ethiopia';
+import EritreaPage from './components/countryFlags/Eritrea';
+import ElsalvadorPage from './components/countryFlags/Elsalvador';
+import TransnistriaPage from './components/countryFlags/Transnistria';
+import AustraliaPage from './components/countryFlags/Australia';
+import AustriaPage from './components/countryFlags/Austria';
+import OmanPage from './components/countryFlags/Oman';
+import NetherlandsPage from './components/countryFlags/Netherlands';
+import GuyanaPage from './components/countryFlags/Guyana';
+import KazakhstanPage from './components/countryFlags/Kazakhstan';
+import QatarPage from './components/countryFlags/Qatar';
+import GhanaPage from './components/countryFlags/Ghana';
+import CaboverdePage from './components/countryFlags/Caboverde';
+import GabonPage from './components/countryFlags/Gabon';
+import CanadaPage from './components/countryFlags/Canada';
+import CameroonPage from './components/countryFlags/Cameroon';
+import KoreaPage from './components/countryFlags/Korea';
+import GambiaPage from './components/countryFlags/Gambia';
+import CambodiaPage from './components/countryFlags/Cambodia';
+import NorthernCyprusPage from './components/countryFlags/NorthernCyprus';
+import NorthKoreaPage from './components/countryFlags/NorthKorea';
+import NorthMacedoniaPage from './components/countryFlags/NorthMacedonia';
+import GuineaPage from './components/countryFlags/Guinea';
+import GuineaBissauPage from './components/countryFlags/GuineaBissau';
+import CyprusPage from './components/countryFlags/Cyprus';
+import CubaPage from './components/countryFlags/Cuba';
+import GreecePage from './components/countryFlags/Greece';
+import KiribatiPage from './components/countryFlags/Kiribati';
+import KyrgyzPage from './components/countryFlags/Kyrgyz';
+import GuatemalaPage from './components/countryFlags/Guatemala';
+import KuwaitPage from './components/countryFlags/Kuwait';
+import CookPage from './components/countryFlags/Cook';
+import GrenadaPage from './components/countryFlags/Grenada';
+import CroatiaPage from './components/countryFlags/Croatia';
+import KenyaPage from './components/countryFlags/Kenya';
+import CotedPage from './components/countryFlags/Coted';
+import CostaricaPage from './components/countryFlags/Costarica';
+import KosovoPage from './components/countryFlags/Kosovo';
+import ComorosPage from './components/countryFlags/Comoros';
+import ColombiaPage from './components/countryFlags/Colombia';
+import CongoPage from './components/countryFlags/Congo';
+import RepublicCongoPage from './components/countryFlags/RepublicCongo';
+import SaudiarabiaPage from './components/countryFlags/Saudiarabia';
+import SahrawiPage from './components/countryFlags/Sahrawi';
+import SamoaPage from './components/countryFlags/Samoa';
+import SaotomePage from './components/countryFlags/Saotome';
+import ZambiaPage from './components/countryFlags/Zambia';
+import SanmarinoPage from './components/countryFlags/Sanmarino';
+import SierraleonePage from './components/countryFlags/Sierraleone';
+import DjiboutiPage from './components/countryFlags/Djibouti';
+import JamaicaPage from './components/countryFlags/Jamaica';
+import GeorgiaPage from './components/countryFlags/Georgia';
+import SyriaPage from './components/countryFlags/Syria';
+import SingaporePage from './components/countryFlags/Singapore';
+import ZimbabwePage from './components/countryFlags/Zimbabwe';
+import SwissPage from './components/countryFlags/Swiss';
+import SwedenPage from './components/countryFlags/Sweden';
+import SudanPage from './components/countryFlags/Sudan';
+import SpainPage from './components/countryFlags/Spain';
+import SurinamePage from './components/countryFlags/Suriname';
+import SrilankaPage from './components/countryFlags/Srilanka';
+import SlovakiaPage from './components/countryFlags/Slovakia';
+import SloveniaPage from './components/countryFlags/Slovenia';
+import SeychellesPage from './components/countryFlags/Seychelles';
+import EqGuineaPage from './components/countryFlags/EqGuinea';
+import SenegalPage from './components/countryFlags/Senegal';
+import SerbiaPage from './components/countryFlags/Serbia';
+import NevisPage from './components/countryFlags/Nevis';
+import VincentPage from './components/countryFlags/Vincent';
+import SaintluciaPage from './components/countryFlags/Saintlucia';
+import SomaliaPage from './components/countryFlags/Somalia';
+import SomalilandPage from './components/countryFlags/Somaliland';
+import SolomonPage from './components/countryFlags/Solomon';
+import ThailandPage from './components/countryFlags/Thailand';
+import TaiwanPage from './components/countryFlags/Taiwan';
+import TajikistanPage from './components/countryFlags/Tajikistan';
+import TanzaniaPage from './components/countryFlags/Tanzania';
+import CzechPage from './components/countryFlags/Czech';
+import ChadPage from './components/countryFlags/Chad';
+import CentralAfricanPage from './components/countryFlags/CentralAfrican';
+import ChinaPage from './components/countryFlags/China';
+import TunisiaPage from './components/countryFlags/Tunisia';
+import ChilePage from './components/countryFlags/Chile';
+import TuvaluPage from './components/countryFlags/Tuvalu';
+import DenmarkPage from './components/countryFlags/Denmark';
+import GermanyPage from './components/countryFlags/Germany';
+import TogoPage from './components/countryFlags/Togo';
+import DonetskPage from './components/countryFlags/Donetsk';
+import DominicanPage from './components/countryFlags/Dominican';
+import DominicaPage from './components/countryFlags/Dominica';
+import TrinidadPage from './components/countryFlags/Trinidad';
+import TurkmenistanPage from './components/countryFlags/Turkmenistan';
+import TurkeyPage from './components/countryFlags/Turkey';
+import TongaPage from './components/countryFlags/Tonga';
+import NigeriaPage from './components/countryFlags/Nigeria';
+import NauruPage from './components/countryFlags/Nauru';
+import NamibiaPage from './components/countryFlags/Namibia';
+import NiuePage from './components/countryFlags/Niue';
+import NicaraguaPage from './components/countryFlags/Nicaragua';
+import NigerPage from './components/countryFlags/Niger';
+import JapanPage from './components/countryFlags/Japan';
+import NewzealandPage from './components/countryFlags/Newzealand';
+import NepalPage from './components/countryFlags/Nepal';
+import NorwayPage from './components/countryFlags/Norway';
+import BahrainPage from './components/countryFlags/Bahrain';
+import HaitiPage from './components/countryFlags/Haiti';
+import PakistanPage from './components/countryFlags/Pakistan';
+import VaticanPage from './components/countryFlags/Vatican';
+import PanamaPage from './components/countryFlags/Panama';
+import VanuatuPage from './components/countryFlags/Vanuatu';
+import BahamasPage from './components/countryFlags/Bahamas';
+import PapuaPage from './components/countryFlags/Papua';
+import PalauPage from './components/countryFlags/Palau';
+import ParaguayPage from './components/countryFlags/Paraguay';
+import BarbadosPage from './components/countryFlags/Barbados';
+import PalestinePage from './components/countryFlags/Palestine';
+import HungaryPage from './components/countryFlags/Hungary';
+import BangladeshPage from './components/countryFlags/Bangladesh';
+import TimorPage from './components/countryFlags/Timor';
+import FijiPage from './components/countryFlags/Fiji';
+import PhilippinesPage from './components/countryFlags/Philippines';
+import FinlandPage from './components/countryFlags/Finland';
+import BhutanPage from './components/countryFlags/Bhutan';
+import BrazilPage from './components/countryFlags/Brazil';
+import FrancePage from './components/countryFlags/France';
+import BulgariaPage from './components/countryFlags/Bulgaria';
+import BurkinafasoPage from './components/countryFlags/Burkinafaso';
+import BruneiPage from './components/countryFlags/Brunei';
+import BurundiPage from './components/countryFlags/Burundi';
+import VietnamPage from './components/countryFlags/Vietnam';
+import BeninPage from './components/countryFlags/Benin';
+import VenezuelaPage from './components/countryFlags/Venezuela';
+import BelarusPage from './components/countryFlags/Belarus';
+import BelizePage from './components/countryFlags/Belize';
+import PeruPage from './components/countryFlags/Peru';
+import BelgiumPage from './components/countryFlags/Belgium';
+import PolandPage from './components/countryFlags/Poland';
+import BosniaPage from './components/countryFlags/Bosnia';
+import BotswanaPage from './components/countryFlags/Botswana';
+import BoliviaPage from './components/countryFlags/Bolivia';
+import PortugalPage from './components/countryFlags/Portugal';
+import HondurasPage from './components/countryFlags/Honduras';
+import MarshallPage from './components/countryFlags/Marshall';
+import MadagascarPage from './components/countryFlags/Madagascar';
+import MalawiPage from './components/countryFlags/Malawi';
+import MaliPage from './components/countryFlags/Mali';
+import MaltaPage from './components/countryFlags/Malta';
+import MalaysiaPage from './components/countryFlags/Malaysia';
+import MicronesiaPage from './components/countryFlags/Micronesia';
+import SouthAfricaPage from './components/countryFlags/SouthAfrica';
+import SouthOssetiaPage from './components/countryFlags/SouthOssetia';
+import SouthSudanPage from './components/countryFlags/SouthSudan';
+import MyanmarPage from './components/countryFlags/Myanmar';
+import MexicoPage from './components/countryFlags/Mexico';
+import MauritiusPage from './components/countryFlags/Mauritius';
+import MauritaniaPage from './components/countryFlags/Mauritania';
+import MozambiquePage from './components/countryFlags/Mozambique';
+import MonacoPage from './components/countryFlags/Monaco';
+import MaldivesPage from './components/countryFlags/Maldives';
+import MoldovaPage from './components/countryFlags/Moldova';
+import MoroccoPage from './components/countryFlags/Morocco';
+import MongoliaPage from './components/countryFlags/Mongolia';
+import MontenegroPage from './components/countryFlags/Montenegro';
+import JordanPage from './components/countryFlags/Jordan';
+import LaosPage from './components/countryFlags/Laos';
+import LatviaPage from './components/countryFlags/Latvia';
+import LithuaniaPage from './components/countryFlags/Lithuania';
+import LibyaPage from './components/countryFlags/Libya';
+import LiechtensteinPage from './components/countryFlags/Liechtenstein';
+import LiberiaPage from './components/countryFlags/Liberia';
+import RomaniaPage from './components/countryFlags/Romania';
+import LuhanskPage from './components/countryFlags/Luhansk';
+import LuxembourgPage from './components/countryFlags/Luxembourg';
+import RwandaPage from './components/countryFlags/Rwanda';
+import LesothoPage from './components/countryFlags/Lesotho';
+import LebanonPage from './components/countryFlags/Lebanon';
+import RussiaPage from './components/countryFlags/Russia';
+
+
 
 const App = () => {
 
@@ -836,7 +1045,7 @@ desc: [
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'unitedKingdom',
-          url: 'united-kigdom',
+          url: 'united-kingdom',
           name: 'イギリス',
           fullName: 'グレートブリテン及び北アイルランド連合王国',
           firstLetter: 'い',
@@ -1782,7 +1991,7 @@ desc: [
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'kyrgyzstan',
-          url: 'kyrgyzstan',
+          url: 'kyrgyz',
           name: 'キルギス',
           fullName: 'キルギス共和国',
           firstLetter: 'き',
@@ -2376,7 +2585,7 @@ desc: [
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'switzerland',
-          url: 'switzerland',
+          url: 'swiss',
           name: 'スイス',
           fullName: 'スイス連邦',
           firstLetter: 'す',
@@ -3405,7 +3614,7 @@ desc: [
         {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
-          tag: [sun, star],
+          tag: [sun, moon],
           area: worldArea.asia,
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
@@ -3938,7 +4147,7 @@ desc: [
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'brukinaFaso',
-          url: 'brukinafaso',
+          url: 'burkinafaso',
           name: 'ブルキナファソ',
           fullName: 'ブルキナファソ',
           firstLetter: 'ふ',
@@ -5063,7 +5272,214 @@ desc: [
       <Router>
         <Switch>
           <Route exact path='/' render={ () => <Main mainImage = {intialState.imageList}/>} />
-          <Route path={'/' + intialState.imageList[0].url} render={ () => <IcelandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/iceland' render={ () => <IcelandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/ireland' render={ () => <IrelandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/azerbaijan' render={ () => <AzerbaijanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan' render={ () => <AfghanistanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/abkhazia' render={ () => <AbkhaziaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/america' render={ () => <AmericaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/arab' render={ () => <ArabPage mainImage = {intialState.imageList}/>} />
+          <Route path='/algeria' render={ () => <AlgeriaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/argentine' render={ () => <ArgentinePage mainImage = {intialState.imageList}/>} />
+          <Route path='/artsakh' render={ () => <ArtsakhPage mainImage = {intialState.imageList}/>} />
+          <Route path='/albania' render={ () => <AlbaniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/armenia' render={ () => <ArmeniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/angola' render={ () => <AngolaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/antigua' render={ () => <AntiguaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/andorra' render={ () => <AndorraPage mainImage = {intialState.imageList}/>} />
+          <Route path='/yemen' render={ () => <YemenPage mainImage = {intialState.imageList}/>} />
+          <Route path='/united-kingdom' render={ () => <UnitedKingdomPage mainImage = {intialState.imageList}/>} />
+          <Route path='/israel' render={ () => <IsraelPage mainImage = {intialState.imageList}/>} />
+          <Route path='/italy' render={ () => <ItalyPage mainImage = {intialState.imageList}/>} />
+          <Route path='/iraq' render={ () => <IraqPage mainImage = {intialState.imageList}/>} />
+          <Route path='/iran' render={ () => <IranPage mainImage = {intialState.imageList}/>} />
+          <Route path='/india' render={ () => <IndiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/indonesia' render={ () => <IndonesiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/uganda' render={ () => <UgandaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/ukraine' render={ () => <UkrainePage mainImage = {intialState.imageList}/>} />
+          <Route path='/uzbekistan' render={ () => <UzbekistanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/uruguay' render={ () => <UruguayPage mainImage = {intialState.imageList}/>} />
+          <Route path='/ecuador' render={ () => <EcuadorPage mainImage = {intialState.imageList}/>} />
+          <Route path='/egypt' render={ () => <EgyptPage mainImage = {intialState.imageList}/>} />
+          <Route path='/estonia' render={ () => <EstoniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/eswatini' render={ () => <EswatiniPage mainImage = {intialState.imageList}/>} />
+          <Route path='/ethiopia' render={ () => <EthiopiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/eritrea' render={ () => <EritreaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/elsalvador' render={ () => <ElsalvadorPage mainImage = {intialState.imageList}/>} />
+          <Route path='/transnistria' render={ () => <TransnistriaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/australia' render={ () => <AustraliaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/austria' render={ () => <AustriaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/oman' render={ () => <OmanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/netherlands' render={ () => <NetherlandsPage mainImage = {intialState.imageList}/>} />
+          <Route path='/guyana' render={ () => <GuyanaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/kazakhstan' render={ () => <KazakhstanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/qatar' render={ () => <QatarPage mainImage = {intialState.imageList}/>} />
+          <Route path='/ghana' render={ () => <GhanaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/caboverde' render={ () => <CaboverdePage mainImage = {intialState.imageList}/>} />
+          <Route path='/gabon' render={ () => <GabonPage mainImage = {intialState.imageList}/>} />
+          <Route path='/canada' render={ () => <CanadaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/cameroon' render={ () => <CameroonPage mainImage = {intialState.imageList}/>} />
+          <Route path='/korea' render={ () => <KoreaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/gambia' render={ () => <GambiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/cambodia' render={ () => <CambodiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/northern-cyprus' render={ () => <NorthernCyprusPage mainImage = {intialState.imageList}/>} />
+          <Route path='/north-korea' render={ () => <NorthKoreaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/north-macedonia' render={ () => <NorthMacedoniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/guinea' render={ () => <GuineaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/guinea-bissau' render={ () => <GuineaBissauPage mainImage = {intialState.imageList}/>} />
+          <Route path='/cyprus' render={ () => <CyprusPage mainImage = {intialState.imageList}/>} />
+          <Route path='/cuba' render={ () => <CubaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/greece' render={ () => <GreecePage mainImage = {intialState.imageList}/>} />
+          <Route path='/kiribati' render={ () => <KiribatiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/kyrgyz' render={ () => <KyrgyzPage mainImage = {intialState.imageList}/>} />
+          <Route path='/guatemala' render={ () => <GuatemalaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/kuwait' render={ () => <KuwaitPage mainImage = {intialState.imageList}/>} />
+          <Route path='/cook' render={ () => <CookPage mainImage = {intialState.imageList}/>} />
+          <Route path='/grenada' render={ () => <GrenadaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/croatia' render={ () => <CroatiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/kenya' render={ () => <KenyaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/coted' render={ () => <CotedPage mainImage = {intialState.imageList}/>} />
+          <Route path='/costarica' render={ () => <CostaricaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/kosovo' render={ () => <KosovoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/comoros' render={ () => <ComorosPage mainImage = {intialState.imageList}/>} />
+          <Route path='/colombia' render={ () => <ColombiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/congo' render={ () => <CongoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/republic-congo' render={ () => <RepublicCongoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/saudiarabia' render={ () => <SaudiarabiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/sahrawi' render={ () => <SahrawiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/samoa' render={ () => <SamoaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/saotome' render={ () => <SaotomePage mainImage = {intialState.imageList}/>} />
+          <Route path='/zambia' render={ () => <ZambiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/sanmarino' render={ () => <SanmarinoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/sierraleone' render={ () => <SierraleonePage mainImage = {intialState.imageList}/>} />
+          <Route path='/djibouti' render={ () => <DjiboutiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/jamaica' render={ () => <JamaicaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/georgia' render={ () => <GeorgiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/syria' render={ () => <SyriaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/singapore' render={ () => <SingaporePage mainImage = {intialState.imageList}/>} />
+          <Route path='/zimbabwe' render={ () => <ZimbabwePage mainImage = {intialState.imageList}/>} />
+          <Route path='/swiss' render={ () => <SwissPage mainImage = {intialState.imageList}/>} />
+          <Route path='/sweden' render={ () => <SwedenPage mainImage = {intialState.imageList}/>} />
+          <Route path='/sudan' render={ () => <SudanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/spain' render={ () => <SpainPage mainImage = {intialState.imageList}/>} />
+          <Route path='/suriname' render={ () => <SurinamePage mainImage = {intialState.imageList}/>} />
+          <Route path='/srilanka' render={ () => <SrilankaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/slovakia' render={ () => <SlovakiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/slovenia' render={ () => <SloveniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/seychelles' render={ () => <SeychellesPage mainImage = {intialState.imageList}/>} />
+          <Route path='/eq-guinea' render={ () => <EqGuineaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/senegal' render={ () => <SenegalPage mainImage = {intialState.imageList}/>} />
+          <Route path='/serbia' render={ () => <SerbiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/nevis' render={ () => <NevisPage mainImage = {intialState.imageList}/>} />
+          <Route path='/vincent' render={ () => <VincentPage mainImage = {intialState.imageList}/>} />
+          <Route path='/saintlucia' render={ () => <SaintluciaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/somalia' render={ () => <SomaliaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/somaliland' render={ () => <SomalilandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/solomon' render={ () => <SolomonPage mainImage = {intialState.imageList}/>} />
+          <Route path='/thailand' render={ () => <ThailandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/taiwan' render={ () => <TaiwanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/tajikistan' render={ () => <TajikistanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/tanzania' render={ () => <TanzaniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/czech' render={ () => <CzechPage mainImage = {intialState.imageList}/>} />
+          <Route path='/chad' render={ () => <ChadPage mainImage = {intialState.imageList}/>} />
+          <Route path='/central-african' render={ () => <CentralAfricanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/china' render={ () => <ChinaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/tunisia' render={ () => <TunisiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/chile' render={ () => <ChilePage mainImage = {intialState.imageList}/>} />
+          <Route path='/tuvalu' render={ () => <TuvaluPage mainImage = {intialState.imageList}/>} />
+          <Route path='/denmark' render={ () => <DenmarkPage mainImage = {intialState.imageList}/>} />
+          <Route path='/germany' render={ () => <GermanyPage mainImage = {intialState.imageList}/>} />
+          <Route path='/togo' render={ () => <TogoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/donetsk' render={ () => <DonetskPage mainImage = {intialState.imageList}/>} />
+          <Route path='/dominican' render={ () => <DominicanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/dominica' render={ () => <DominicaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/trinidad' render={ () => <TrinidadPage mainImage = {intialState.imageList}/>} />
+          <Route path='/turkmenistan' render={ () => <TurkmenistanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/turkey' render={ () => <TurkeyPage mainImage = {intialState.imageList}/>} />
+          <Route path='/tonga' render={ () => <TongaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/nigeria' render={ () => <NigeriaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/nauru' render={ () => <NauruPage mainImage = {intialState.imageList}/>} />
+          <Route path='/namibia' render={ () => <NamibiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/niue' render={ () => <NiuePage mainImage = {intialState.imageList}/>} />
+          <Route path='/nicaragua' render={ () => <NicaraguaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/niger' render={ () => <NigerPage mainImage = {intialState.imageList}/>} />
+          <Route path='/japan' render={ () => <JapanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/newzealand' render={ () => <NewzealandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/nepal' render={ () => <NepalPage mainImage = {intialState.imageList}/>} />
+          <Route path='/norway' render={ () => <NorwayPage mainImage = {intialState.imageList}/>} />
+          <Route path='/bahrain' render={ () => <BahrainPage mainImage = {intialState.imageList}/>} />
+          <Route path='/haiti' render={ () => <HaitiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/pakistan' render={ () => <PakistanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/vatican' render={ () => <VaticanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/panama' render={ () => <PanamaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/vanuatu' render={ () => <VanuatuPage mainImage = {intialState.imageList}/>} />
+          <Route path='/bahamas' render={ () => <BahamasPage mainImage = {intialState.imageList}/>} />
+          <Route path='/papua' render={ () => <PapuaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/palau' render={ () => <PalauPage mainImage = {intialState.imageList}/>} />
+          <Route path='/paraguay' render={ () => <ParaguayPage mainImage = {intialState.imageList}/>} />
+          <Route path='/barbados' render={ () => <BarbadosPage mainImage = {intialState.imageList}/>} />
+          <Route path='/palestine' render={ () => <PalestinePage mainImage = {intialState.imageList}/>} />
+          <Route path='/hungary' render={ () => <HungaryPage mainImage = {intialState.imageList}/>} />
+          <Route path='/bangladesh' render={ () => <BangladeshPage mainImage = {intialState.imageList}/>} />
+          <Route path='/timor' render={ () => <TimorPage mainImage = {intialState.imageList}/>} />
+          <Route path='/fiji' render={ () => <FijiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/philippines' render={ () => <PhilippinesPage mainImage = {intialState.imageList}/>} />
+          <Route path='/finland' render={ () => <FinlandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/bhutan' render={ () => <BhutanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/brazil' render={ () => <BrazilPage mainImage = {intialState.imageList}/>} />
+          <Route path='/france' render={ () => <FrancePage mainImage = {intialState.imageList}/>} />
+          <Route path='/bulgaria' render={ () => <BulgariaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/burkinafaso' render={ () => <BurkinafasoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/brunei' render={ () => <BruneiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/burundi' render={ () => <BurundiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/vietnam' render={ () => <VietnamPage mainImage = {intialState.imageList}/>} />
+          <Route path='/benin' render={ () => <BeninPage mainImage = {intialState.imageList}/>} />
+          <Route path='/venezuela' render={ () => <VenezuelaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/belarus' render={ () => <BelarusPage mainImage = {intialState.imageList}/>} />
+          <Route path='/belize' render={ () => <BelizePage mainImage = {intialState.imageList}/>} />
+          <Route path='/peru' render={ () => <PeruPage mainImage = {intialState.imageList}/>} />
+          <Route path='/belgium' render={ () => <BelgiumPage mainImage = {intialState.imageList}/>} />
+          <Route path='/poland' render={ () => <PolandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/bosnia' render={ () => <BosniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/botswana' render={ () => <BotswanaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/bolivia' render={ () => <BoliviaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/portugal' render={ () => <PortugalPage mainImage = {intialState.imageList}/>} />
+          <Route path='/honduras' render={ () => <HondurasPage mainImage = {intialState.imageList}/>} />
+          <Route path='/marshall' render={ () => <MarshallPage mainImage = {intialState.imageList}/>} />
+          <Route path='/madagascar' render={ () => <MadagascarPage mainImage = {intialState.imageList}/>} />
+          <Route path='/malawi' render={ () => <MalawiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/mali' render={ () => <MaliPage mainImage = {intialState.imageList}/>} />
+          <Route path='/malta' render={ () => <MaltaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/malaysia' render={ () => <MalaysiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/micronesia' render={ () => <MicronesiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/south-africa' render={ () => <SouthAfricaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/south-ossetia' render={ () => <SouthOssetiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/south-sudan' render={ () => <SouthSudanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/myanmar' render={ () => <MyanmarPage mainImage = {intialState.imageList}/>} />
+          <Route path='/mexico' render={ () => <MexicoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/mauritius' render={ () => <MauritiusPage mainImage = {intialState.imageList}/>} />
+          <Route path='/mauritania' render={ () => <MauritaniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/mozambique' render={ () => <MozambiquePage mainImage = {intialState.imageList}/>} />
+          <Route path='/monaco' render={ () => <MonacoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/maldives' render={ () => <MaldivesPage mainImage = {intialState.imageList}/>} />
+          <Route path='/moldova' render={ () => <MoldovaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/morocco' render={ () => <MoroccoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/mongolia' render={ () => <MongoliaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/montenegro' render={ () => <MontenegroPage mainImage = {intialState.imageList}/>} />
+          <Route path='/jordan' render={ () => <JordanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/laos' render={ () => <LaosPage mainImage = {intialState.imageList}/>} />
+          <Route path='/latvia' render={ () => <LatviaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/lithuania' render={ () => <LithuaniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/libya' render={ () => <LibyaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/liechtenstein' render={ () => <LiechtensteinPage mainImage = {intialState.imageList}/>} />
+          <Route path='/liberia' render={ () => <LiberiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/romania' render={ () => <RomaniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/luhansk' render={ () => <LuhanskPage mainImage = {intialState.imageList}/>} />
+          <Route path='/luxembourg' render={ () => <LuxembourgPage mainImage = {intialState.imageList}/>} />
+          <Route path='/rwanda' render={ () => <RwandaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/lesotho' render={ () => <LesothoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/lebanon' render={ () => <LebanonPage mainImage = {intialState.imageList}/>} />
+          <Route path='/russia' render={ () => <RussiaPage mainImage = {intialState.imageList}/>} />
         </Switch>
       </Router>
 

@@ -25,6 +25,8 @@ const Relation = (props) => {
     const creature = String(targetCountry.tag).indexOf('生物');
     const plant = String(targetCountry.tag).indexOf('植物');
 
+
+
     const filteredImage = useMemo(() => {
         let tmpImages = images;
 
@@ -140,11 +142,11 @@ const Relation = (props) => {
 
     return (
         <div className='relation'>
-            <h2>{targetCountry.name + '国旗'}と同じ色を使っている旗一覧</h2>
-            {
+            <h3>{targetCountry.name + '国旗'}と同じ色だけを使っている旗一覧</h3>
+            {filteredImage.length !== 0 ?
             filteredImage.map((flagImage) => {
                 return(
-                    <Link to = {'/' + flagImage.url}>
+                    <Link to = {'/' + flagImage.url} key = {flagImage.id}>
                         <div className = 'relation-flag' key={flagImage.url}>
                             <div className = 'relation-flag-box'>
                                 <img className = {flagImage.id + 'reFlag relation-flag-img'} src={flagImage.image} alt = {flagImage.fullName + 'の国旗'} />
@@ -154,12 +156,12 @@ const Relation = (props) => {
                     </Link>
                     );
                 })
-            }   
-            <h2>{targetCountry.name + '国旗'}と同じ模様がある旗一覧</h2>
-            {
-            filteredImage2.map((flagImage) => {
-                return(
-                    <Link to = {'/' + flagImage.url}>
+            :<p>Not Found</p>}   
+            <h3>{targetCountry.name + '国旗'}と同じ模様が全てある旗一覧</h3>
+            {filteredImage2.length !== 0 && targetCountry.tag.length !== 0 ?
+                filteredImage2.map((flagImage) => {
+                  return(
+                    <Link to = {'/' + flagImage.url} key = {flagImage.id}>
                         <div className = 'relation-flag' key={flagImage.url}>
                             <div className = 'relation-flag-box'>
                                 <img className = {flagImage.id + 'reFlag relation-flag-img'} src={flagImage.image} alt = {flagImage.fullName + 'の国旗'} />
@@ -167,9 +169,9 @@ const Relation = (props) => {
                             <h4>{flagImage.name}</h4>
                         </div>
                     </Link>
-                    );
+                  );
                 })
-            }   
+            :<p>Not Found</p>}
         </div>
     );
   }

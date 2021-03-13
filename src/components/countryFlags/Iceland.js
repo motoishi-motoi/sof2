@@ -5,11 +5,13 @@ import ScrollTop from '../ScrollToTopOnMount';
 
 const Iceland = (props) => {
 
+	const targetCountry = props.mainImage.find((v) => String(v.fullName) === 'アイスランド共和国');
+
     return (
       <div className='flag-page'>
 				<ScrollTop />
-				<FlagDate mainImage = {props.mainImage} name = 'アイスランド共和国' />
-				<Share url='https://sof.flaghistory.jp/iceland' title = 'アイスランド共和国の国旗 | SOF' />
+				<FlagDate mainImage = {props.mainImage} name = {targetCountry.fullName} />
+				<Share url = {'https://sof.flaghistory.jp/' + targetCountry.url} title = {targetCountry.fullName + 'の国旗 | SOF'} />
       </div>
     );
   }
