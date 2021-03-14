@@ -8,6 +8,7 @@ import Share from './Share';
 import { Link } from 'react-router-dom'
 import ScrollTop from './ScrollToTopOnMount';
 import Page from './Page';
+import Helmet from 'react-helmet';
 
 const Main = (props) =>{
 
@@ -1301,6 +1302,22 @@ const Main = (props) =>{
     <div className ='flags'>
       <Page />
       <ScrollTop />
+      <Helmet 
+				title={'Search of Flags | 絞り込み検索可能な『旗・国旗一覧』'}
+				link={[{ rel: "canonical", href: 'https://sof.flaghistory.jp/'}]}
+				meta={[
+					{ name: 'description', content: 'SOF(Search of Flags)は、世界の旗・国旗一覧をサクサク絞り込み検索できるウェブサイト。' },
+					{property: 'twitter:description', content: 'SOF(Search of Flags)は、世界の旗・国旗一覧をサクサク絞り込み検索できるウェブサイト。'},
+					{property: 'twitter:title', content: 'Search of Flags | 絞り込み検索可能な『旗・国旗一覧』'},
+					{property: 'twitter:url', content: 'https://sof.flaghistory.jp/'},
+					{name: 'twitter:image', content: 'https://sof.flaghistory.jp/sof.png'},
+					{property: 'og:type', content: 'article'},
+					{property: 'og:title', content: 'Search of Flags | 絞り込み検索可能な『旗・国旗一覧』'},
+					{property: 'og:url', content: 'https://sof.flaghistory.jp/'},
+					{property: 'og:image', content: 'https://sof.flaghistory.jp/sof.png'},
+					{property: 'og:description', content: 'SOF(Search of Flags)は、世界の旗・国旗一覧をサクサク絞り込み検索できるウェブサイト。'},
+				]}
+			/>
       <div className = 'howto'>
         <h3 onClick = {() => {howtoOpen()}}>
           SOFの使い方
