@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import React from 'react';
 import Main from './components/Main';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -5471,24 +5471,12 @@ desc: [
     ],
   }
 
-
-  // gtag処理
-  const router = useRef(null);
-
-  useEffect(() => {
-    router.current.history.listen((location) => {
-      window.gtag('config', 'UA-157580228-1', {
-        'page_path': location.pathname
-      });
-    });
-  });
-
   return (
     <div className = 'main-wrapper'>
       <Header />
       
       
-      <Router ref={router}>
+      <Router>
         <Switch>
           <Route exact path='/' render={ () => <Main mainImage = {intialState.imageList}/>} />
           <Route path='/iceland' render={ () => <IcelandPage mainImage = {intialState.imageList}/>} />

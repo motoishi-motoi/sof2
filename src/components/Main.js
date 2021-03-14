@@ -7,6 +7,7 @@ import {Motion, spring } from 'react-motion';
 import Share from './Share';
 import { Link } from 'react-router-dom'
 import ScrollTop from './ScrollToTopOnMount';
+import Page from './Page';
 
 const Main = (props) =>{
 
@@ -1294,9 +1295,11 @@ const Main = (props) =>{
     );
   };
 
+
   //検索する機構と、国旗を表示する部分。
   return (
     <div className ='flags'>
+      <Page />
       <ScrollTop />
       <div className = 'howto'>
         <h3 onClick = {() => {howtoOpen()}}>

@@ -5,6 +5,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom'
 import Share from '../../Share';
 import { Helmet } from 'react-helmet';
+import Page from '../../Page';
 
 const FlagDate = (props) => {
 
@@ -12,6 +13,7 @@ const FlagDate = (props) => {
 
 	return(
 		<div className = 'flag-date'>
+			<Page />
 			<Helmet 
 				title={targetCountry.fullName + 'の国旗 | SOF'}
 				link={[{ rel: "canonical", href: 'https://laughing-volhard-e0a9d7.netlify.app/' + targetCountry.url}]}
