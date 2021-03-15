@@ -147,12 +147,12 @@ const Relation = (props) => {
             filteredImage.map((flagImage) => {
                 return(
                     <Link to = {'/' + flagImage.url} key = {flagImage.id}>
-                        <div className = 'relation-flag' key={flagImage.url}>
+                        <section className = 'relation-flag' key={flagImage.url}>
                             <div className = 'relation-flag-box'>
                                 <img className = {flagImage.id + 'reFlag relation-flag-img'} src={flagImage.image} alt = {flagImage.fullName + 'の国旗'} />
                             </div>
                             <h4>{flagImage.name}</h4>
-                        </div>
+                        </section>
                     </Link>
                     );
                 })
@@ -162,12 +162,12 @@ const Relation = (props) => {
                 filteredImage2.map((flagImage) => {
                   return(
                     <Link to = {'/' + flagImage.url} key = {flagImage.id}>
-                        <div className = 'relation-flag' key={flagImage.url}>
+                        <section className = 'relation-flag' key={flagImage.url}>
                             <div className = 'relation-flag-box'>
                                 <img className = {flagImage.id + 'reFlag relation-flag-img'} src={flagImage.image} alt = {flagImage.fullName + 'の国旗'} />
                             </div>
                             <h4>{flagImage.name}</h4>
-                        </div>
+                        </section>
                     </Link>
                   );
                 })

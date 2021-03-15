@@ -6,7 +6,7 @@ const Flags = (props) =>{
 
 	return(
 
-		<div className = {props.mainFlagImage.id + 'Box flagBox'} >
+		<section className = {props.mainFlagImage.id + 'Box flagBox'} >
 			<div className ='flagImageBox'>
 				<img className = {props.mainFlagImage.id + ' countryFlag'} src ={props.mainFlagImage.image} alt = {props.mainFlagImage.name + 'の国旗'} />
 			</div>
@@ -19,7 +19,7 @@ const Flags = (props) =>{
 					<span className={props.mainFlagImage.groupingCSS}>{props.mainFlagImage.kokuren}</span>                    
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 
 }

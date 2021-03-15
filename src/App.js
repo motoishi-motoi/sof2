@@ -5473,10 +5473,11 @@ desc: [
 
   return (
     <div className = 'main-wrapper'>
-      <Header />
+
       
       
       <Router>
+        <Header />
         <Switch>
           <Route exact path='/' render={ () => <Main mainImage = {intialState.imageList}/>} />
           <Route path='/iceland' render={ () => <IcelandPage mainImage = {intialState.imageList}/>} />

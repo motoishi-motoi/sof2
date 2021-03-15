@@ -38,7 +38,7 @@ div#root{
   border-radius: 4px;
   margin: 0 auto;
   width: 264px;
-  padding: 14px 12px 4px 12px;
+  padding: 14px 12px 6px 12px;
 }
 .share-caption{
   font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
@@ -623,9 +623,9 @@ footer ul li{
 }
 
 footer ul li a{
-  color: #777;
+  color: #6b6b6b;
   font-weight: bold;
-  font-size: 0.83em;
+  font-size: 0.90em;
   cursor: pointer;
   text-decoration: none;
 }
@@ -639,12 +639,19 @@ footer h4{
 .flag-page{
   max-width: 900px;
   margin: 0 auto;
-  border: 1px solid #ccc;
-  border-radius: 12px;
   padding: 48px;
 }
 
 /*関連する旗*/
+
+
+
+.relation h3 {
+  color: #4b4b4b;
+  border-bottom: 1px solid #4b4b4b;
+  padding-bottom: 8px;
+  padding-left: 12px;
+}
 
 .relation-flag{
   display: inline-block;
@@ -678,10 +685,6 @@ footer h4{
   font-weight: normal;
   font-size: 0.92em;
 }
-.relation h3{
-  color: #2b2b2b;
-}
-
 .nepalreFlag{
   border: 0;
 }
@@ -690,11 +693,12 @@ footer h4{
 
 /*2カラムにする用*/
 .flag-date-column{
+  width: 84%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 18px;
 }
 
@@ -706,9 +710,9 @@ footer h4{
 /*国旗画像自体*/
 .flag-date-image-svg{
   display: block;
-  max-width: 80%;
+  max-width: 100%;
   max-height: 300px;
-  margin: 0 6.5% 0 13.5%;
+  margin: 0;
   border: 1px solid #f0f0f0;
 }
 
@@ -719,9 +723,9 @@ footer h4{
 /*地図部*/
 .flag-date-map-image{
   display: block;
-  max-width: 80%;
+  max-width: 100%;
   max-height: 300px;
-  margin: 0 13.5% 0 6.5%;
+  margin: 0;
 }
 .flag-date-location{
   width: 50%;
@@ -738,6 +742,11 @@ footer h4{
 /*国名*/
 .flag-date-name{
   text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 26px;
+  margin: 0 8% 26px 8%;
+  padding: 0 14px;
 }
 .flag-date-name h2{
   font-weight: normal;
@@ -745,6 +754,7 @@ footer h4{
 }
 .flag-date-name p{
   margin-top: 0;
+  font-size: 0.9em;
 }
 
 /*ボタン*/
@@ -933,6 +943,31 @@ footer h4{
     }
 }
 @media screen and (max-width: 800px){
+
+
+  .relation-flag{
+    width: 33.333333%;
+    height: 128px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+
+  .flag-date-button{
+    display: block;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .flag-date-button button.detail{
+    display: block;
+    width: 84%;
+  }
+
+  .close-link{
+    display:block;
+    width: 84%;
+  }
+
   .flagBox{
     width: 44%;
     display: inline-block;
@@ -988,6 +1023,41 @@ footer h4{
 
 }
 @media screen and (max-width: 480px){
+
+  .flag-page{
+    padding: 8px;
+  }
+
+  .flag-date-column{
+    display:block;
+  }
+
+  .flag-date-image{
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .flag-date-image-svg{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .flag-date-location{
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .flag-date-map-image{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .relation-flag{
+    width: 50%;
+    height: 128px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
 
   .flagArea{
     padding: 24px 0;
