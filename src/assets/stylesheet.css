@@ -710,6 +710,12 @@ footer h4{
   left:5px;
 }
 
+
+/*なぜか下記２つだけborderとの間に隙間ができるので、max-heightを100pxにしておく*/
+.norwayreFlag, .denmarkreFlag, .icelandreFlag{
+  max-height: 100px;
+}
+
 /*旗の個別ページ用*/
 
 /*2カラムにする用*/
