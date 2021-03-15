@@ -662,8 +662,8 @@ footer h4{
 }
 /*画像を囲んでるやつ*/
 .relation-flag-box{
-  width: 86px;
-  height: 64px;
+  width: 90px;
+  height: 63px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 12px;
@@ -672,8 +672,8 @@ footer h4{
 
 .relation-flag-img{
   border: 1px solid #f0f0f0;
-  width: 86px;
-  max-height: 64px;
+  max-width: 90px;
+  max-height: 63px;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -687,6 +687,27 @@ footer h4{
 }
 .nepalreFlag{
   border: 0;
+}
+
+.nepalreFlag{
+  border: 0;
+  left:21px;
+}
+
+.switzerlandreFlag, .vaticanreFlag{
+  left:15px;
+}
+
+.nigerreFlag{
+  left:9px;
+}
+
+.belgiumreFlag{
+  left:9.5px;
+}
+
+.monacoreFlag{
+  left:5px;
 }
 
 /*旗の個別ページ用*/
