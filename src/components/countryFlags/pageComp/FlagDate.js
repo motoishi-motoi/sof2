@@ -67,7 +67,7 @@ const FlagDate = (props) => {
 				<Share url = {'https://sof.flaghistory.jp/' + targetCountry.url} title = {targetCountry.fullName + 'の国旗 | SOF'} />
 			</div>
 			<Relation mainImage = {props.mainImage} name = {props.name}/>
-			<Link to = '/'><p>○ホームに戻る</p></Link>
+			<p>⇒ <Link to = '/'>ホームに戻る</Link></p>
 		</article>
 	);
 
