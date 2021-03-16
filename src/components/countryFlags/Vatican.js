@@ -5,7 +5,7 @@ import ScrollTop from '../ScrollToTopOnMount';
 
 const Vatican = (props) => {
 
-	const targetCountry = props.mainImage.find((v) => String(v.fullName) === 'アイスランド共和国');
+	const targetCountry = props.mainImage.find((v) => String(v.fullName) === 'バチカン市国');
 
     return (
       <div className='flag-page'>
