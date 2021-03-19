@@ -74,6 +74,7 @@ const Main = (props) =>{
   const[unspeKokuren, setUnspeKokuren] = useState('OFF');
   const[kokurencount, setKokurencount] = useState('ON');
   const[notKokurencount, setNotKokurencount] = useState('OFF');
+  const[othercount, setOthercount] = useState('OFF');
 
   // useState()を使う場合は、必ずconst[x1, x2]のようにやらないといけないらしい。
   // １つ目が初期値になって、２つ目が例えば"setCount(count + 1)"みたいに
@@ -203,6 +204,9 @@ const Main = (props) =>{
     }
     if(sessionStorage.notKokurencount){
       setNotKokurencount(sessionStorage.getItem('notKokurencount'));
+    }
+    if(sessionStorage.othercount){
+      setOthercount(sessionStorage.getItem('othercount'));
     }
 
     //詳細検索の切替の値を取得
@@ -449,11 +453,13 @@ const Main = (props) =>{
         }
       }
 
-        if(String(row.kokuren).indexOf('国連加盟国') === -1 && kokurencount === String('ON')){
-          return false;
-        }else if(String(row.kokuren).indexOf('国連非加盟国') === -1 && notKokurencount === String('ON')){
-          return false;
-        }
+      if(String(row.kokuren).indexOf('国連加盟国') === -1 && kokurencount === String('ON')){
+        return false;
+      }else if(String(row.kokuren).indexOf('国連非加盟国') === -1 && notKokurencount === String('ON')){
+        return false;
+      }else if(String(row.kokuren).indexOf('海外領土・自治領') === -1 && othercount === String('ON')){
+        return false;
+      }
 
       // ひらがな検索
       if (hiraganaTitle && String(row.firstLetter).indexOf(hiraganaTitle) === -1) {
@@ -485,7 +491,7 @@ const Main = (props) =>{
     //.mapはこういう書き方した関数を呼び出してもいけるみたい。
     //useMemoはなんか高速化するらしい。
 
-  }, [filterHiragana, unspeArea, filterQuery.title, notKokurencount, plantcount, exclusionColor, fColorSwitch, mColorSwitch, partialColor, perfectColor, africacount, asiacount, blackcount, bluecount, creaturecount, crosscount, eucount, goldcount, greencount, kokurencount, mooncount, ncAmericacount, oceaniacount, orangecount, purplecount, redcount, sAmericacount, starcount, suncount, whitecount, yellowcount, images]);
+  }, [othercount, filterHiragana, unspeArea, filterQuery.title, notKokurencount, plantcount, exclusionColor, fColorSwitch, mColorSwitch, partialColor, perfectColor, africacount, asiacount, blackcount, bluecount, creaturecount, crosscount, eucount, goldcount, greencount, kokurencount, mooncount, ncAmericacount, oceaniacount, orangecount, purplecount, redcount, sAmericacount, starcount, suncount, whitecount, yellowcount, images]);
 
 
   //onClickで呼び出す関数たち。
@@ -798,9 +804,11 @@ const Main = (props) =>{
     setUnspeKokuren(String('OFF'));
     setKokurencount(String('OFF'));
     setNotKokurencount(String('OFF'));
+    setOthercount(String('OFF'));
     sessionStorage.setItem('unspeKokuren', 'OFF');
     sessionStorage.setItem('kokurencount', 'OFF');
     sessionStorage.setItem('notKokurencount', 'OFF');
+    sessionStorage.setItem('othercount', 'OFF');
   };
 
   const handleFilterKokuren = e => {
@@ -828,6 +836,18 @@ const Main = (props) =>{
       kokurenReset();
       setNotKokurencount(String('ON'));
       sessionStorage.setItem('notKokurencount', 'ON');
+    }else{
+      kokurenReset();
+      setUnspeKokuren(String('ON'));
+      sessionStorage.setItem('unspeKokuren', 'ON');
+    }
+  };
+
+  const handleFilterOther = e => {
+    if(othercount === String('OFF')){
+      kokurenReset();
+      setOthercount(String('ON'));
+      sessionStorage.setItem('othercount', 'ON');
     }else{
       kokurenReset();
       setUnspeKokuren(String('ON'));
@@ -1393,6 +1413,10 @@ const Main = (props) =>{
             <div className = 'button' onClick={() => {handleFilterNotKokuren()}}>
               <span className = {'checkbox' + notKokurencount}></span>
               <span className ='searchButton'>国連非加盟国</span>
+            </div>
+            <div className = 'button' onClick={() => {handleFilterOther()}}>
+              <span className = {'checkbox' + othercount}></span>
+              <span className ='searchButton'>海外領土・自治領</span>
             </div>
           </div>
         </div>

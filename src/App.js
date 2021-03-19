@@ -215,6 +215,10 @@ import taiwan from './assets/flagImages/taiwan.svg';
 import transnistria from './assets/flagImages/transnistria.svg';
 import vatican from './assets/flagImages/vatican.svg';
 import luhansk from './assets/flagImages/luhansk.svg';
+// 03/19追加分
+import antarctica from './assets/flagImages/antarctica.svg';
+import greenland from './assets/flagImages/greenland.svg';
+import mann from './assets/flagImages/mann.svg';
 
 
 // マップ画像のimport
@@ -427,7 +431,10 @@ import taiwanMap from './assets/mapImages/taiwanMap.svg';
 import transnistriaMap from './assets/mapImages/transnistriaMap.svg';
 import vaticanMap from './assets/mapImages/vaticanMap.svg';
 import luhanskMap from './assets/mapImages/luhanskMap.svg';
-
+// 03/19追加分
+import antarcticaMap from './assets/mapImages/antarcticaMap.svg';
+import greenlandMap from './assets/mapImages/greenlandMap.svg';
+import mannMap from './assets/mapImages/mannMap.svg';
 
 
 
@@ -640,7 +647,10 @@ import RwandaPage from './components/countryFlags/Rwanda';
 import LesothoPage from './components/countryFlags/Lesotho';
 import LebanonPage from './components/countryFlags/Lebanon';
 import RussiaPage from './components/countryFlags/Russia';
-
+// 03/19追加分
+import AntarcticaPage from './components/countryFlags/Antarctica';
+import GreenlandPage from './components/countryFlags/Greenland';
+import MannPage from './components/countryFlags/Mann';
 
 const App = () => {
 
@@ -662,6 +672,9 @@ const App = () => {
   const cross = '十字';
   const creature　= '生物';
   const plant = '植物';
+
+  //特殊タグ
+  const scCross = 'スカンジナビア十字';
 
   //エリアカテゴリ
   const worldArea = {
@@ -687,7 +700,7 @@ desc: [
         {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
-          tag: [cross],
+          tag: [cross, scCross],
           area: worldArea.eu,
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
@@ -2134,6 +2147,29 @@ desc: [
           ],
         },
         {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [sun],
+          area: worldArea.ncAmerica,
+          kokuren: '海外領土・自治領',
+          groupingCSS: 'other',
+          id: 'greenland',
+          url: 'greenland',
+          name: 'グリーンランド',
+          fullName: 'グリーンランド',
+          firstLetter: 'く',
+          officialName: 'Greenland',
+          image: greenland,
+          location: greenlandMap,
+          link: 'https://flaghistory.jp/greenland/',
+          ogp: 'ogpFlagImages/greenland.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '大きな白の部分は氷帽（陸地を覆う5万km2未満の氷河の塊のこと）、大きな赤の部分は海洋、円の白い部分は氷山と流氷、円の赤い部分はフィヨルド（氷河による浸食作用で形成された海岸にできる複雑な地形のこと）を表しています。',
+            '上記の意味は旗のデザイナーであるトゥエ・クリスチャンセンによって示されたものですが、他の解釈として円は昇る太陽と沈む太陽を表したものという見方も存在します。',
+          ],
+        },
+        {
           mainColor: [red, green, yellow],
           fullColor: [red, green, yellow],
           tag: [star, plant],
@@ -2688,7 +2724,7 @@ desc: [
         {
           mainColor: [blue, yellow],
           fullColor: [blue, yellow],
-          tag: [cross],
+          tag: [cross, scCross],
           area: worldArea.eu,
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
@@ -3332,7 +3368,7 @@ desc: [
         {
           mainColor: [red, white],
           fullColor: [red, white],
-          tag: [cross],
+          tag: [cross, scCross],
           area: worldArea.eu,
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
@@ -3629,6 +3665,29 @@ desc: [
           ],
         },
         {
+          mainColor: [blue, white],
+          fullColor: [blue, white],
+          tag: [],
+          area: '---',
+          kokuren: '海外領土・自治領',
+          groupingCSS: 'other',
+          id: 'antarctica',
+          url: 'antarctica',
+          name: '南極',
+          fullName: '南極',
+          firstLetter: 'な',
+          officialName: 'Antarctica',
+          image: antarctica,
+          location: antarcticaMap,
+          link: 'https://flaghistory.jp/antarctic/',
+          ogp: 'ogpFlagImages/antarctica.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '青い背景に、南極大陸の真っ白な地図を描いた国旗です。これにより中立性を象徴していますが、なぜかといえば国際連合の旗が同じ用に青い背景に白色を組み合わせたもののためです。',
+            'なお南極には公式に認定された旗は存在しておらず、ここで紹介しているのは旗章学者のグラハム・バートラムが提案した旗です。',
+          ],
+        },
+        {
           mainColor: [red, blue, yellow, white],
           fullColor: [red, blue, yellow, white],
           tag: [star, cross],
@@ -3769,7 +3828,7 @@ desc: [
         {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
-          tag: [cross],
+          tag: [cross, scCross],
           area: worldArea.eu,
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
@@ -4183,7 +4242,7 @@ desc: [
         {
           mainColor: [blue, white],
           fullColor: [blue, white],
-          tag: [cross],
+          tag: [cross, scCross],
           area: worldArea.eu,
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
@@ -4799,6 +4858,29 @@ desc: [
             '縦横比率は【1:2】',
             '黄色はスルタン（イスラム教国の君主）、赤白青の3色はイギリスを表します。また星と縞は14と関係があり、これはマレーシアを構成する14州を示しています。',
             'なお当時14州の中にはシンガポールが含まれていましたが、独立に伴い13州と首都クアラルンプールを表すと変更されました。',
+          ],
+        },
+        {
+          mainColor: [red, yellow, white],
+          fullColor: [red, yellow, white, black],
+          tag: [star],
+          area: worldArea.eu,
+          kokuren: '海外領土・自治領',
+          groupingCSS: 'other',
+          id: 'mann',
+          url: 'mann',
+          name: 'マン島',
+          fullName: 'マン島',
+          firstLetter: 'ま',
+          officialName: 'Isle of Mann',
+          image: mann,
+          location: mannMap,
+          link: 'https://flaghistory.jp/man/',
+          ogp: 'ogpFlagImages/mann.png',
+          desc: [
+            '縦横比率は【1:2】',
+            '中央に三脚巴紋、もしくはトリスケリオンと呼ばれる紋章があしらわれています。このマン島の旗はマグヌス3世（1252 - 1265）の紋章に基づくと言われています。',
+            'またシチリア島にも似たデザインの紋章が描かれており、トリナクリアと呼ばれるそれとの関連性があるのではと考えられています。（トリナクリア（三角という意味）はイタリア南部に位置するシチリア島が三角形であることを示している）',
           ],
         },
         {
@@ -5688,6 +5770,9 @@ desc: [
           <Route path='/lesotho' render={ () => <LesothoPage mainImage = {intialState.imageList}/>} />
           <Route path='/lebanon' render={ () => <LebanonPage mainImage = {intialState.imageList}/>} />
           <Route path='/russia' render={ () => <RussiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/antarctica' render={ () => <AntarcticaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/greenland' render={ () => <GreenlandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/Mann' render={ () => <MannPage mainImage = {intialState.imageList}/>} />
         </Switch>
       </Router>
 
