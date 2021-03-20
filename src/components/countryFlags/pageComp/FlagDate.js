@@ -54,9 +54,11 @@ const FlagDate = (props) => {
 						<span className='areaName'>{targetCountry.area}</span>
 						<span style={{'marginLeft': '12px'}} className={targetCountry.groupingCSS}>{targetCountry.kokuren}</span>                                        
 					</div>
-					<p className='flag-date-desc'>{targetCountry.desc[0]}</p>
-					<p className='flag-date-desc'>{targetCountry.desc[1]}</p>
-					<p className='flag-date-desc'>{targetCountry.desc[2]}</p>
+					{targetCountry.desc.map((desc) => {
+						return (
+							<p className='flag-date-desc' key = 'desc'>{desc}</p>
+						);
+					})}
 				</div>
 			</div>
 			<div className = 'flag-date-button'>

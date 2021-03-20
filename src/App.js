@@ -219,7 +219,10 @@ import luhansk from './assets/flagImages/luhansk.svg';
 import antarctica from './assets/flagImages/antarctica.svg';
 import greenland from './assets/flagImages/greenland.svg';
 import mann from './assets/flagImages/mann.svg';
-
+// 03/20追加分
+import wales from './assets/flagImages/wales.svg';
+import scotland from './assets/flagImages/scotland.svg';
+import england from './assets/flagImages/england.svg';
 
 // マップ画像のimport
 import afghanistanMap from './assets/mapImages/afghanistanMap.svg';
@@ -435,6 +438,10 @@ import luhanskMap from './assets/mapImages/luhanskMap.svg';
 import antarcticaMap from './assets/mapImages/antarcticaMap.svg';
 import greenlandMap from './assets/mapImages/greenlandMap.svg';
 import mannMap from './assets/mapImages/mannMap.svg';
+// 03/20追加分
+import walesMap from './assets/mapImages/walesMap.svg';
+import scotlandMap from './assets/mapImages/scotlandMap.svg';
+import englandMap from './assets/mapImages/englandMap.svg';
 
 
 
@@ -651,6 +658,10 @@ import RussiaPage from './components/countryFlags/Russia';
 import AntarcticaPage from './components/countryFlags/Antarctica';
 import GreenlandPage from './components/countryFlags/Greenland';
 import MannPage from './components/countryFlags/Mann';
+// 03/20追加分
+import WalesPage from './components/countryFlags/Wales';
+import ScotlandPage from './components/countryFlags/Scotland';
+import EnglandPage from './components/countryFlags/England';
 
 const App = () => {
 
@@ -1181,6 +1192,29 @@ desc: [
           ],
         },
         {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [cross],
+          area: worldArea.eu,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'england',
+          url: 'england',
+          name: 'イングランド',
+          fullName: 'イングランド',
+          firstLetter: 'い',
+          officialName: 'England',
+          image: england,
+          location: englandMap,
+          link: 'https://flaghistory.jp/england-flag/',
+          ogp: 'ogpFlagImages/england.png',
+          desc: [
+            '縦横比率は【3:5】',
+            'イギリスを構成する4つの地域の一つである、イングランドで使われている域旗です。イギリスの前身であるイングランド王国で国旗として使われていたものと同一のデザインで、聖ゲオルギオス十字と呼ばれます。',
+            '聖ゲオルギオスとはキリスト教の聖人の一人で、ドラゴン退治の伝説で有名な人物です。なお聖ゲオルギオス十字はセント・ジョージズ・クロスとも呼ばれます。またカトリックと由来のあるシンボルです。',
+          ],
+        },
+        {
           mainColor: [green, blue, yellow, white],
           fullColor: [green, blue, yellow, white],
           tag: [],
@@ -1224,6 +1258,29 @@ desc: [
             '縦横比率は【2:3】',
             '赤は勇気、白は純血を表します。',
             'ヨーロッパに位置するモナコの国旗と縦横比率以外同じデザインで、それもありモナコより制定年が新しいことからデザイン変更を求められたことがありますが、過去より赤と白を伝統的色として使っていることを根拠に拒否した、という出来事がありました。',
+          ],
+        },
+        {
+          mainColor: [red, green, white],
+          fullColor: [red, green, white, black],
+          tag: [creature],
+          area: worldArea.eu,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'wales',
+          url: 'wales',
+          name: 'ウェールズ',
+          fullName: 'ウェールズ',
+          firstLetter: 'う',
+          officialName: 'Wales',
+          image: wales,
+          location: walesMap,
+          link: 'https://flaghistory.jp/wales/',
+          ogp: 'ogpFlagImages/wales.png',
+          desc: [
+            '縦横比率は【3:5】',
+            'ウェールズはイギリスを構成する4つの地域の一つです。イギリス国旗はほか3地域を象徴するシンボルがデザインに含まれているのですが、ウェールズのみ入っていません。悲しいですね。',
+            'ウェールズの旗に描かれている赤いドラゴンはア・ズライグ・ゴッホと呼びます。背景に使われている白と緑はウェールズを発祥とするテューダー家で使われた薔薇の紋章から来ていると考えられています。',
           ],
         },
         {
@@ -2765,6 +2822,29 @@ desc: [
             '縦横比率は【1:2】',
             '緑は繁栄と農業、赤は闘争と犠牲者、白は平和や光・愛、黒はスーダンを表します。',
             'なおスーダンとはアラビア語で『黒い』を意味しています。',
+          ],
+        },
+        {
+          mainColor: [blue, white],
+          fullColor: [blue, white],
+          tag: [cross],
+          area: worldArea.eu,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'scotland',
+          url: 'scotland',
+          name: 'スコットランド',
+          fullName: 'スコットランド',
+          firstLetter: 'す',
+          officialName: 'Scotland',
+          image: scotland,
+          location: scotlandMap,
+          link: 'https://flaghistory.jp/scotland/',
+          ogp: 'ogpFlagImages/scotland.png',
+          desc: [
+            '縦横比率は【2:3】',
+            'イギリスを構成する4つの地域の一つである、スコットランドで使われている域旗です。イギリスの前身であるイングランド王国と1603年に同君連合を結び、現在イギリスの構成地域の一つとなりました。',
+            'スコットランドで使われている域旗はかつて独立国家であった頃に国旗として使っていたもので、セント・アンドリュー・クロスとも呼ばれます。セント・アンドリューは聖アンデレとも呼び、その人はスコットランドの守護聖人です。守護聖人とはキリスト教における信仰の一つで、ゆかりのある聖人が国や職業などを守ってくれているという思想です。',
           ],
         },
         {
@@ -5773,6 +5853,9 @@ desc: [
           <Route path='/antarctica' render={ () => <AntarcticaPage mainImage = {intialState.imageList}/>} />
           <Route path='/greenland' render={ () => <GreenlandPage mainImage = {intialState.imageList}/>} />
           <Route path='/Mann' render={ () => <MannPage mainImage = {intialState.imageList}/>} />
+          <Route path='/wales' render={ () => <WalesPage mainImage = {intialState.imageList}/>} />
+          <Route path='/england' render={ () => <EnglandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/scotland' render={ () => <ScotlandPage mainImage = {intialState.imageList}/>} />
         </Switch>
       </Router>
 

@@ -75,6 +75,7 @@ const Main = (props) =>{
   const[kokurencount, setKokurencount] = useState('ON');
   const[notKokurencount, setNotKokurencount] = useState('OFF');
   const[othercount, setOthercount] = useState('OFF');
+  const[localcount, setLocalcount] = useState('OFF');
 
   // useState()を使う場合は、必ずconst[x1, x2]のようにやらないといけないらしい。
   // １つ目が初期値になって、２つ目が例えば"setCount(count + 1)"みたいに
@@ -207,6 +208,9 @@ const Main = (props) =>{
     }
     if(sessionStorage.othercount){
       setOthercount(sessionStorage.getItem('othercount'));
+    }
+    if(sessionStorage.localcount){
+      setLocalcount(sessionStorage.getItem('localcount'));
     }
 
     //詳細検索の切替の値を取得
@@ -459,6 +463,8 @@ const Main = (props) =>{
         return false;
       }else if(String(row.kokuren).indexOf('海外領土・自治領') === -1 && othercount === String('ON')){
         return false;
+      }else if(String(row.kokuren).indexOf('地方旗') === -1 && localcount === String('ON')){
+        return false;
       }
 
       // ひらがな検索
@@ -491,7 +497,7 @@ const Main = (props) =>{
     //.mapはこういう書き方した関数を呼び出してもいけるみたい。
     //useMemoはなんか高速化するらしい。
 
-  }, [othercount, filterHiragana, unspeArea, filterQuery.title, notKokurencount, plantcount, exclusionColor, fColorSwitch, mColorSwitch, partialColor, perfectColor, africacount, asiacount, blackcount, bluecount, creaturecount, crosscount, eucount, goldcount, greencount, kokurencount, mooncount, ncAmericacount, oceaniacount, orangecount, purplecount, redcount, sAmericacount, starcount, suncount, whitecount, yellowcount, images]);
+  }, [localcount, othercount, filterHiragana, unspeArea, filterQuery.title, notKokurencount, plantcount, exclusionColor, fColorSwitch, mColorSwitch, partialColor, perfectColor, africacount, asiacount, blackcount, bluecount, creaturecount, crosscount, eucount, goldcount, greencount, kokurencount, mooncount, ncAmericacount, oceaniacount, orangecount, purplecount, redcount, sAmericacount, starcount, suncount, whitecount, yellowcount, images]);
 
 
   //onClickで呼び出す関数たち。
@@ -805,10 +811,12 @@ const Main = (props) =>{
     setKokurencount(String('OFF'));
     setNotKokurencount(String('OFF'));
     setOthercount(String('OFF'));
+    setLocalcount(String('OFF'));
     sessionStorage.setItem('unspeKokuren', 'OFF');
     sessionStorage.setItem('kokurencount', 'OFF');
     sessionStorage.setItem('notKokurencount', 'OFF');
     sessionStorage.setItem('othercount', 'OFF');
+    sessionStorage.setItem('localcount', 'OFF');
   };
 
   const handleFilterKokuren = e => {
@@ -848,6 +856,18 @@ const Main = (props) =>{
       kokurenReset();
       setOthercount(String('ON'));
       sessionStorage.setItem('othercount', 'ON');
+    }else{
+      kokurenReset();
+      setUnspeKokuren(String('ON'));
+      sessionStorage.setItem('unspeKokuren', 'ON');
+    }
+  };
+
+  const handleFilterLocal = e => {
+    if(localcount === String('OFF')){
+      kokurenReset();
+      setLocalcount(String('ON'));
+      sessionStorage.setItem('localcount', 'ON');
     }else{
       kokurenReset();
       setUnspeKokuren(String('ON'));
@@ -1417,6 +1437,10 @@ const Main = (props) =>{
             <div className = 'button' onClick={() => {handleFilterOther()}}>
               <span className = {'checkbox' + othercount}></span>
               <span className ='searchButton'>海外領土・自治領</span>
+            </div>
+            <div className = 'button' onClick={() => {handleFilterLocal()}}>
+              <span className = {'checkbox' + localcount}></span>
+              <span className ='searchButton'>地方旗</span>
             </div>
           </div>
         </div>

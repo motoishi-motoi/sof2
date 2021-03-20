@@ -185,6 +185,17 @@ header nav a{
   color:#fff;
 }
 
+/*地方旗*/
+.local{
+  display: inline-block;
+  background: #4464f3;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  color:#fff;
+}
+
 /*
 タグを囲んでるやつ
 .tagbox{
