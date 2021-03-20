@@ -1515,7 +1515,7 @@ desc: [
         },
         {
           mainColor: [blue, white],
-          fullColor: [red, green, blue, white, gold, purple],
+          fullColor: [red, green, blue, white, gold],
           tag: [plant],
           area: worldArea.ncAmerica,
           kokuren: '国連加盟国',
