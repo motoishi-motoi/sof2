@@ -3,6 +3,14 @@
   box-sizing: border-box; 
 }
 
+a{
+  color: #1967d2;
+}
+
+a:hover {
+  color: #e53900;
+}
+
 body{
   max-width: 100%;
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
