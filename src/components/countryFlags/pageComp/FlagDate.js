@@ -56,11 +56,27 @@ const FlagDate = (props) => {
 					</div>
 					{targetCountry.desc.map((desc) => {
 						return (
-							<p className='flag-date-desc' key = 'desc'>{desc}</p>
+							<p className='flag-date-desc' key = {desc}>{desc}</p>
 						);
 					})}
 				</div>
 			</div>
+			{targetCountry.topics.length !== 0 &&
+				<div className ="topics-box">
+					<div className = "topics-button">
+						<p className = "topics-caption">Topics</p>
+							<ul>
+								{targetCountry.topicsUrl.map((url, i) => {
+									return (
+										<li key = {url}>
+											<Link to = {'/' + url}>{targetCountry.topics[i]}</Link>
+										</li>
+									);
+								})}
+							</ul>
+					</div>
+				</div>
+			}
 			<div className = 'flag-date-button'>
 				<button className = 'detail'><a href = {targetCountry.link} target = '_blank' rel = 'noreferrer noopener'>{targetCountry.name + '国旗の詳細'}<FontAwesomeIcon icon={faExternalLinkAlt} /></a></button>
 				<span className='close-link' onClick={() => {browserBack()}}><button className = 'close'>前のページに戻る</button></span>

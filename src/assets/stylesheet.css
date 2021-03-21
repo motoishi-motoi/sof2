@@ -61,6 +61,42 @@ div#root{
   fill: #505050;
 }*/
 
+/*topics*/
+.topics-box{
+  width: 84%;
+  margin:0 auto;
+}
+.topics-button{
+  position: relative;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 14px 12px 6px 12px;
+}
+.topics-caption{
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  padding: 0 1em;
+  margin: 0;
+  background-color: white;
+  transform: translateY(-50%) translateX(1.0em);
+}
+.topic-flag-image{
+  width: 50%;
+  margin: 0 auto;
+}
+.topic-flag-image img{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;;
+}
+
+
 /*
 Headerエリア
 */
@@ -786,6 +822,11 @@ footer h4{
 }
 .flag-date-intro{
   margin: 0 8%;
+  margin-bottom: 4.0em;
+}
+.flag-date-desc{
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
 }
 
 /*国名*/
