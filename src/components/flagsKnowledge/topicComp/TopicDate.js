@@ -33,9 +33,11 @@ const TopicDate = (props) => {
 				<h2>{targetKnowledge.name}</h2>
 				<p>{targetKnowledge.englishName}</p>
 			</div>
+			{targetKnowledge.image !== '' &&
             <div className = 'topic-flag-image'>
                 <img src = {targetKnowledge.image} alt = {targetKnowledge.name} />
             </div>
+			}
 			<div className = 'flag-date-info'>
 				<div className = 'flag-date-intro'>
 					{targetKnowledge.desc.map((desc) => {

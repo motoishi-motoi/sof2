@@ -104,6 +104,13 @@ div#root{
   border: 2px solid #ccc;;
 }
 
+/*tipsエリア*/
+.tips-list{
+  width: 84%;
+  margin:0 auto;
+}
+
+
 
 /*
 Headerエリア

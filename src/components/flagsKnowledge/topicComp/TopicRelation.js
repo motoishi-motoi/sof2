@@ -15,10 +15,10 @@ const TopicRelation = (props) => {
         tmpImages = tmpImages.filter(row =>{
     
     
-            // 色の完全一致検索
+            // 検索部分
 
 
-          	  if(String(row.topics).indexOf('スカンジナビア十字') === -1){
+          	  if(String(row.topics).indexOf(targetKnowledge.name) === -1){
                 return false;
               }
             return row;
@@ -37,7 +37,7 @@ const TopicRelation = (props) => {
         //.mapはこういう書き方した関数を呼び出してもいけるみたい。
         //useMemoはなんか高速化するらしい。
     
-      }, [images]);
+      }, [targetKnowledge, images]);
 
  
     return (

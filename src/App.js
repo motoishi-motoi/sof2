@@ -670,7 +670,10 @@ import EnglandPage from './components/countryFlags/England';
 // カテゴリ・タグページ
 import ScandinavianCrossPage　from './components/flagsKnowledge/ScandinavianCross';
 import ScandinavianCross from './assets/flagImages/scCross.svg';
+import SquarePage　from './components/flagsKnowledge/Square';
 
+// tipsページ
+import Tips　from './components/Tips';
 
 const App = () => {
 
@@ -713,10 +716,12 @@ const App = () => {
   //topics
   const topics = {
     scCross: 'スカンジナビア十字',
+    square: '正方形',
   };
 
   const topicsUrl = {
-    scCross: 'scandinavian-cross'
+    scCross: 'scandinavian-cross',
+    square: 'square',
   }
 
 
@@ -2961,8 +2966,8 @@ desc: [
           fullColor: [red, white],
           tag: [cross],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.square],
+          topicsUrl: [topicsUrl.square],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'switzerland',
@@ -4311,8 +4316,8 @@ desc: [
           fullColor: [red, yellow, white],
           tag: [],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.square],
+          topicsUrl: [topicsUrl.square],
           kokuren: '国連非加盟国',
           groupingCSS: 'not-kokuren',
           id: 'vatican',
@@ -6099,6 +6104,19 @@ desc: [
         'このデザインの始まりは国旗の古さから考えるとデンマーク、もしくはスウェーデンが始まりになっていると捉えるのが自然です。',
         'なお、現在地方で使われている旗を含めると数多くの類似デザインが存在していますが、その全てがスカンジナビアで使われているわけではないため、誤解を避けるためにスカンジナビア十字と呼ばず中心を外れた十字架と単に呼ぶ場合もあります',
       ],
+    },
+    {
+      name: '正方形',
+      englishName: 'Square',
+      ogp: 'ogpFlagImages/switzerland.png',
+      image: '',
+      url: 'square',
+      desc: [
+        '国旗には縦横比率が存在しています',
+        'オリンピックや国連で使用される国旗は2:3の比率に統一されますし、それに伴ってか2:3の国旗が最も多くはありますが、アメリカ国旗の10:19のように異なった比率のものも多いです。',
+        'その中でも1:1（正方形）の国旗は少なく、国連加盟国ではスイス。日本は承認していますが、国連には非加盟となっているバチカン市国の２つしかありません。',
+        'なお正方形の旗は軍隊の旗として使われるケースが多かったと言われます。',
+      ],
     }
   ]
 
@@ -6329,6 +6347,9 @@ desc: [
 
 
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
+          <Route path='/square' render={ () => <SquarePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
+
+          <Route path='/tips' render={ () => <Tips knowledge = {knowledge} />}/>
         </Switch>
       </Router>
 

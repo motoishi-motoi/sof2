@@ -14,6 +14,7 @@ const Header = () => {
                 </Link>
                 <nav>
                     <a href = 'https://flaghistory.jp/term/' target='_blank' rel='noopener noreferrer'>旗の用語</a>
+                    <Link to = '/tips'>TIPS</Link>
                 </nav>
             </div>
         </header>

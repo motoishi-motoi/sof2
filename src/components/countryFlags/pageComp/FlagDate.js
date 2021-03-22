@@ -64,7 +64,7 @@ const FlagDate = (props) => {
 			{targetCountry.topics.length !== 0 &&
 				<div className ="topics-box">
 					<div className = "topics-button">
-						<p className = "topics-caption">Topics</p>
+						<p className = "topics-caption">Tips</p>
 							<ul>
 								{targetCountry.topicsUrl.map((url, i) => {
 									return (
