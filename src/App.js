@@ -671,6 +671,7 @@ import EnglandPage from './components/countryFlags/England';
 import ScandinavianCrossPage　from './components/flagsKnowledge/ScandinavianCross';
 import ScandinavianCross from './assets/flagImages/scCross.svg';
 import SquarePage　from './components/flagsKnowledge/Square';
+import UnionjackPage　from './components/flagsKnowledge/Unionjack';
 
 // tipsページ
 import Tips　from './components/Tips';
@@ -717,11 +718,13 @@ const App = () => {
   const topics = {
     scCross: 'スカンジナビア十字',
     square: '正方形',
+    uj: 'ユニオン・ジャック',
   };
 
   const topicsUrl = {
     scCross: 'scandinavian-cross',
     square: 'square',
+    uj: 'unionjack',
   }
 
 
@@ -1141,8 +1144,8 @@ desc: [
           fullColor: [red, blue, white],
           tag: [cross],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.uj],
+          topicsUrl: [topicsUrl.uj],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'unitedKingdom',
@@ -1666,8 +1669,8 @@ desc: [
           fullColor: [red, blue, white],
           tag: [cross],
           area: worldArea.oceania,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.uj],
+          topicsUrl: [topicsUrl.uj],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'austrarlia',
@@ -2341,8 +2344,8 @@ desc: [
           fullColor: [red, blue, white],
           tag: [star],
           area: worldArea.oceania,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.uj],
+          topicsUrl: [topicsUrl.uj],
           kokuren: '国連非加盟国',
           groupingCSS: 'not-kokuren',
           id: 'cook',
@@ -3691,8 +3694,8 @@ desc: [
           fullColor: [red, blue, yellow, white],
           tag: [star, cross],
           area: worldArea.oceania,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.uj],
+          topicsUrl: [topicsUrl.uj],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'tuvalu',
@@ -4066,8 +4069,8 @@ desc: [
           fullColor: [red, blue, yellow, white],
           tag: [star, cross],
           area: worldArea.oceania,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.uj],
+          topicsUrl: [topicsUrl.uj],
           kokuren: '国連非加盟国',
           groupingCSS: 'not-kokuren',
           id: 'niue',
@@ -4166,8 +4169,8 @@ desc: [
           fullColor: [red, blue, white],
           tag: [star, cross],
           area: worldArea.oceania,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.uj],
+          topicsUrl: [topicsUrl.uj],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'newZealand',
@@ -4616,8 +4619,8 @@ desc: [
           fullColor: [red, green, blue, yellow, white, black],
           tag: [cross, creature, plant],
           area: worldArea.oceania,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.uj],
+          topicsUrl: [topicsUrl.uj],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'fiji',
@@ -6117,7 +6120,23 @@ desc: [
         'その中でも1:1（正方形）の国旗は少なく、国連加盟国ではスイス。日本は承認していますが、国連には非加盟となっているバチカン市国の２つしかありません。',
         'なお正方形の旗は軍隊の旗として使われるケースが多かったと言われます。',
       ],
-    }
+    },
+    {
+      name: 'ユニオン・ジャック',
+      englishName: 'Union Jack',
+      ogp: 'ogpFlagImages/unitedKingdom.png',
+      image: unitedKingdom,
+      url: 'unionjack',
+      desc: [
+        'ユニオン・ジャックはイギリス国旗の別名です。ユニオンフラッグとも呼びます。',
+        'ユニオン・ジャックは直訳すると連合船首旗となるため、艦隊で使われるものを限定的に指すという考えがありましたが、',
+        '1908年に英国議会にてユニオンジャック、ユニオンフラッグどちらもイギリス国旗を指すとして定義されました。',
+        'そのためユニオンジャックはイギリス国旗を指すと考えて問題ありません。',
+        'なおユニオンジャックがカントン（左上、旗竿側上部）に描かれているものは、過去イギリス植民地であった影響から来ています。',
+        'そのため国旗にイギリス国旗が含まれているものは、歴史的にイギリスと関係のある場所と考えて良いです。',
+        'ちなみにカントンにイギリス国旗を描くもののうち、青ベースのものをブルーエンサイン。赤ベースのものをレッドエンサインと呼んだりします。',
+      ],
+    },
   ]
 
   return (
@@ -6348,6 +6367,7 @@ desc: [
 
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/square' render={ () => <SquarePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
+          <Route path='/unionjack' render={ () => <UnionjackPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
 
           <Route path='/tips' render={ () => <Tips knowledge = {knowledge} />}/>
         </Switch>
