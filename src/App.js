@@ -6356,7 +6356,7 @@ desc: [
 
 
       <Footer />
-      <PreLoad preloadImage = {intialState.imageList}/>
+      <PreLoad preloadImage = {intialState.imageList} preloadKnowledge = {knowledge}/>
     </div>
   );
 }
