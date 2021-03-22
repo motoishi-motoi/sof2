@@ -55,6 +55,7 @@ const Tips = (props) => {
                 <div style={{marginTop:'42px' , marginBottom:'12px'}}>
                     <Share url = {'https://sof.flaghistory.jp/tips'} title = {'国旗のTIPS | SOF'} />
                 </div>
+                <p style={{margin:'0 auto' , width:'84%'}}>⇒ <Link to = '/'>ホームに戻る</Link></p>
             </div>
         </article>
     );
