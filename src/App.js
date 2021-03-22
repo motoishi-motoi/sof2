@@ -5195,7 +5195,7 @@ desc: [
         {
           mainColor: [blue, white, orange],
           fullColor: [blue, white, orange],
-          tag: [star],
+          tag: [star, cross],
           area: worldArea.oceania,
           topics: [],
           topicsUrl: [],
