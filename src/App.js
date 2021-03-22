@@ -672,6 +672,7 @@ import ScandinavianCrossPage　from './components/flagsKnowledge/ScandinavianCro
 import ScandinavianCross from './assets/flagImages/scCross.svg';
 import SquarePage　from './components/flagsKnowledge/Square';
 import UnionjackPage　from './components/flagsKnowledge/Unionjack';
+import DoubleEaglePage　from './components/flagsKnowledge/DoubleEagle';
 
 // tipsページ
 import Tips　from './components/Tips';
@@ -719,12 +720,14 @@ const App = () => {
     scCross: 'スカンジナビア十字',
     square: '正方形',
     uj: 'ユニオン・ジャック',
+    doubleEagle: '双頭の鷲',
   };
 
   const topicsUrl = {
     scCross: 'scandinavian-cross',
     square: 'square',
     uj: 'unionjack',
+    doubleEagle: 'double-headed-eagle',
   }
 
 
@@ -994,8 +997,8 @@ desc: [
           fullColor: [red, black],
           tag: [creature],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.doubleEagle],
+          topicsUrl: [topicsUrl.doubleEagle],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'albania',
@@ -3269,8 +3272,8 @@ desc: [
           fullColor: [red, blue, yellow, white, black],
           tag: [cross, creature],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.doubleEagle],
+          topicsUrl: [topicsUrl.doubleEagle],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'serbia',
@@ -5719,8 +5722,8 @@ desc: [
           fullColor: [red, green, blue, gold],
           tag: [cross, creature],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.doubleEagle],
+          topicsUrl: [topicsUrl.doubleEagle],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'montenegro',
@@ -6122,6 +6125,21 @@ desc: [
       ],
     },
     {
+      name: '双頭の鷲',
+      englishName: 'Double-headed eagle',
+      ogp: 'ogpFlagImages/albania.png',
+      image: albania,
+      url: 'double-headed-eagle',
+      desc: [
+        '双頭の鷲はヨーロッパ圏の国旗で主に使われているシンボルです。',
+        '双頭の鷲の起源としては、1410年に神聖ローマ帝国が黄色地に双頭の黒い鷲を描いたところからと言われますが、',
+        '最も早い時期まで遡ると紀元前3800年代のの古代シュメール王国ですでに使用された記録が残ってはいます。',
+        'また11世紀から12世紀にかけて存在したトルコ系セルジューク朝でも双頭の白鷲が用いられていました。',
+        'しかし双頭の鷲が有名になり、ヨーロッパの各地へと拡大したきっかけとなったのは神聖ローマ帝国のシンボルとなった辺りからです。',
+        '※厳密に言えば、ギリシア正教とビザンツ帝国のシンボルとなり → 東西ローマ帝国の権威の象徴となり → ドイツに渡って神聖ローマ帝国のシンボルとなり → ヨーロッパ各地へと広がりを見せたという感じ。',
+      ],
+    },
+    {
       name: 'ユニオン・ジャック',
       englishName: 'Union Jack',
       ogp: 'ogpFlagImages/unitedKingdom.png',
@@ -6368,6 +6386,7 @@ desc: [
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/square' render={ () => <SquarePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/unionjack' render={ () => <UnionjackPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
+          <Route path='/double-headed-eagle' render={ () => <DoubleEaglePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
 
           <Route path='/tips' render={ () => <Tips knowledge = {knowledge} />}/>
         </Switch>
