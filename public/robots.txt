@@ -1,0 +1,3 @@
+User-Agent:*
+
+Sitemap:http://sof.flaghistory.jp/sitemap.xml

@@ -42,7 +42,7 @@ const TopicRelation = (props) => {
  
     return (
         <div className='relation'>
-            <h3>{targetKnowledge.name}の国旗・旗一覧</h3>
+            <h3>{targetKnowledge.name}に関連する国旗・旗一覧</h3>
             {
             filteredImage.map((flagImage) => {
                 return(
