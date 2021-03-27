@@ -51,7 +51,7 @@ const TopicDate = (props) => {
 				<Share url = {'https://sof.flaghistory.jp/' + targetKnowledge.url} title = {targetKnowledge.name + 'の国旗一覧と解説 | SOF'} />
 			</div>
 			<TopicRelation mainImage = {props.mainImage} name = {props.name} knowledge = {props.knowledge}/>
-			<p>⇒ <Link to = '/'>ホームに戻る</Link></p>
+			<p>⇒ <Link to = '/'>旗・国旗一覧に戻る</Link></p>
 		</article>
 	);
 

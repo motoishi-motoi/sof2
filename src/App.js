@@ -6139,6 +6139,19 @@ desc: [
         '※厳密に言えば、ギリシア正教とビザンツ帝国のシンボルとなり → 東西ローマ帝国の権威の象徴となり → ドイツに渡って神聖ローマ帝国のシンボルとなり → ヨーロッパ各地へと広がりを見せたという感じ。',
       ],
     },
+    /*
+    {
+      name: '三日月と星',
+      englishName: 'Crescent moon and stars',
+      ogp: 'ogpFlagImages/turkey.png',
+      image: turkey,
+      url: 'crescent-moon-and-stars',
+      desc: [
+        '国旗において三日月と星が合わせて使われている場合、それはイスラム教を表すシンボルとして用いられています。',
+        '',
+      ],
+    },
+    */
     {
       name: 'ユニオン・ジャック',
       englishName: 'Union Jack',
