@@ -545,7 +545,6 @@ form svg.fa-search{
 
 .formInput{
   width: 100%;
-  background: #fff;
   border: 1px solid #c8e6c9;
   padding: 0 1em;
   line-height: 48px;
@@ -555,6 +554,7 @@ form svg.fa-search{
 
 .formInput::placeholder{
   color:#ccc;
+  background: #fff;
   font-weight: normal;
 }
 
