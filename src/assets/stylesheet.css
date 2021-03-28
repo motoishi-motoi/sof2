@@ -60,7 +60,7 @@ div#root{
   padding: 0 1em;
   margin: 0;
   background-color: white;
-  transform: translateY(-50%) translateX(5.3em);
+  transform: translateY(-50%) translateX(5.8em);
 }
 
 .react-share__ShareButton{
