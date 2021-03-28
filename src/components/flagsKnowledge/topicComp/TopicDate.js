@@ -14,19 +14,19 @@ const TopicDate = (props) => {
 		<article className = 'flag-date'>
 			<Page />
 			<Helmet 
-				title={targetKnowledge.name + 'の国旗一覧と解説 | SOF'}
+				title={targetKnowledge.title}
 				link={[{ rel: "canonical", href: 'https://sof.flaghistory.jp/' + targetKnowledge.url}]}
 				meta={[
-					{ name: 'description', content: targetKnowledge.name + 'の解説と国旗の一覧' },
-					{property: 'twitter:description', content: targetKnowledge.name + 'の解説と国旗の一覧'},
-					{property: 'twitter:title', content: targetKnowledge.name + 'の国旗一覧と解説 | SOF'},
+					{ name: 'description', content: targetKnowledge.metaDesc },
+					{property: 'twitter:description', content: targetKnowledge.metaDesc},
+					{property: 'twitter:title', content: targetKnowledge.title},
 					{property: 'twitter:url', content: 'https://sof.flaghistory.jp/' + targetKnowledge.url},
 					{name: 'twitter:image', content: 'https://sof.flaghistory.jp/' + targetKnowledge.ogp},
 					{property: 'og:type', content: 'article'},
-					{property: 'og:title', content: targetKnowledge.name + 'の国旗一覧と解説 | SOF'},
+					{property: 'og:title', content: targetKnowledge.title},
 					{property: 'og:url', content: 'https://sof.flaghistory.jp/' + targetKnowledge.url},
 					{property: 'og:image', content: 'https://sof.flaghistory.jp/' + targetKnowledge.ogp},
-					{property: 'og:description', content: targetKnowledge.name + 'の解説と国旗の一覧'},
+					{property: 'og:description', content: targetKnowledge.metaDesc},
 				]}
 			/>
 			<div className = 'flag-date-name'>

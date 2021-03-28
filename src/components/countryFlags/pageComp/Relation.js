@@ -26,7 +26,6 @@ const Relation = (props) => {
     const plant = String(targetCountry.tag).indexOf('植物');
 
 
-
     const filteredImage = useMemo(() => {
         let tmpImages = images;
 
@@ -95,6 +94,43 @@ const Relation = (props) => {
     
       }, [targetCountry.fullName, blackSwitch, blueSwitch, goldSwitch, greenSwitch, orangeSwitch, purpleSwitch, redSwitch, whiteSwitch, yellowSwitch, images]);
 
+      const filteredImageKanren = useMemo(() => {
+        let tmpImages = images;
+
+
+        tmpImages = tmpImages.filter(row =>{
+    
+            // 模様の検索
+
+            if(String(row.fullName) === targetCountry.fullName){
+                return false;
+            }
+            if(targetCountry.kanrenTag === undefined){
+              return false;
+            }
+            if(String(row.kanrenTag).indexOf(targetCountry.kanrenTag[0]) !== -1 && targetCountry.kanrenTag[0] !== undefined){
+              return row;
+            }else if(String(row.kanrenTag).indexOf(targetCountry.kanrenTag[1]) !== -1 && targetCountry.kanrenTag[1] !== undefined){
+              return row;
+            }
+            return false;
+
+
+        
+        
+        });
+    
+        //indexOf()は引数と該当するものが配列内にあった場合、配列の位置に応じて数字を返す
+        //当てはまらなかった場合-1を返す。
+        //String型を対象としたものにしか出来ないので、String()を使うのが得策
+    
+        return tmpImages;
+    
+        //.mapはこういう書き方した関数を呼び出してもいけるみたい。
+        //useMemoはなんか高速化するらしい。
+    
+      }, [targetCountry.kanrenTag, targetCountry.fullName, images]);
+
       const filteredImage2 = useMemo(() => {
         let tmpImages = images;
 
@@ -142,6 +178,25 @@ const Relation = (props) => {
 
     return (
         <div className='relation'>
+            {filteredImageKanren.length !== 0 &&
+            <div>
+              <h3>{targetCountry.name + '国旗'}と関連する旗一覧</h3>
+              <div className = 'grid-relation'>
+
+                  {filteredImageKanren.map((flagImage) => {
+                    return(
+                      <Link to = {'/' + flagImage.url} key = {flagImage.id}>
+                          <section className = 'relation-flag' key={flagImage.url}>
+                              <div className = 'relation-flag-box'>
+                                  <img className = {flagImage.id + 'reFlag relation-flag-img'} src={flagImage.image} alt = {flagImage.fullName + 'の国旗'} />
+                              </div>
+                              <h4>{flagImage.name}</h4>
+                          </section>
+                      </Link>
+                    );
+                  })}
+              </div>
+            </div>}
             <h3>{targetCountry.name + '国旗'}と同じ色だけを使っている旗一覧</h3>
             <div className = 'grid-relation'>
             {filteredImage.length !== 0 ?

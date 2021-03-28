@@ -730,15 +730,14 @@ const App = () => {
     doubleEagle: 'double-headed-eagle',
   }
 
+  //-----------------------------------------------------------
+  //関連変数
 
-/*
-.descの処理
-desc: [
-  'ここには国旗の縦横比率を記述する',
-  'ここには国旗の意味を記述する',
-  'ここには国旗のトリビアを記述する',
-]
-*/
+  const kanren = {
+    UK : 'イギリスの過去国旗',
+    UKLocal : 'イギリスの地方旗',
+  };
+
 
   const intialState ={
     imageList : [
@@ -1146,6 +1145,7 @@ desc: [
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [cross],
+          kanrenTag: [kanren.UK, kanren.UKLocal],
           area: worldArea.eu,
           topics: [topics.uj],
           topicsUrl: [topicsUrl.uj],
@@ -1271,6 +1271,7 @@ desc: [
           mainColor: [red, white],
           fullColor: [red, white],
           tag: [cross],
+          kanrenTag: [kanren.UKLocal],
           area: worldArea.eu,
           topics: [],
           topicsUrl: [],
@@ -1346,6 +1347,7 @@ desc: [
           mainColor: [red, green, white],
           fullColor: [red, green, white, black],
           tag: [creature],
+          kanrenTag: [kanren.UKLocal],
           area: worldArea.eu,
           topics: [],
           topicsUrl: [],
@@ -3046,6 +3048,7 @@ desc: [
           mainColor: [blue, white],
           fullColor: [blue, white],
           tag: [cross],
+          kanrenTag: [kanren.UKLocal],
           area: worldArea.eu,
           topics: [],
           topicsUrl: [],
@@ -6099,6 +6102,8 @@ desc: [
   const knowledge = [
     {
       name: 'スカンジナビア十字',
+      title: 'スカンジナビア十字の国旗一覧と解説 ｜ SOF',
+      metaDesc: 'スカンジナビア十字がどこで使われているのかや、デザインの意図を解説しました。また国旗画像を一覧でまとめています。',
       englishName: 'Scandinavian Cross',
       ogp: 'ogpFlagImages/scCross.png',
       image: ScandinavianCross,
@@ -6113,6 +6118,8 @@ desc: [
     },
     {
       name: '正方形',
+      title: '正方形の国旗一覧と解説 ｜ SOF',
+      metaDesc: '世界でも珍しい縦横比率が1:1で出来ている正方形の国旗について解説し、またどこで使われているのか画像つきで紹介しています',
       englishName: 'Square',
       ogp: 'ogpFlagImages/switzerland.png',
       image: '',
@@ -6126,6 +6133,8 @@ desc: [
     },
     {
       name: '双頭の鷲',
+      title: '双頭の鷲の国旗一覧と解説 ｜ SOF',
+      metaDesc: '神聖ローマ帝国の国旗が起源と言われている、双頭の鷲がどこから来たのか解説しています。また双頭の鷲があしらわれている国旗を一覧でまとめました',
       englishName: 'Double-headed eagle',
       ogp: 'ogpFlagImages/albania.png',
       image: albania,
@@ -6154,6 +6163,8 @@ desc: [
     */
     {
       name: 'ユニオン・ジャック',
+      title: 'ユニオンジャックに関係する国旗一覧と解説 ｜ SOF',
+      metaDesc: 'イギリス国旗の別名であるユニオンジャックについてどのような成り立ちをしているのかや、知ってる人の少ない雑学を解説しました。また関連国旗を一覧で掲載しています。',
       englishName: 'Union Jack',
       ogp: 'ogpFlagImages/unitedKingdom.png',
       image: unitedKingdom,

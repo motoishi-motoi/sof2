@@ -1023,7 +1023,7 @@ const Main = (props) =>{
             <div className = "areaBox scb">
               <div className ="mBox">
                 <div className = {'button button' + unspeArea} onClick={() => {handleUnspeArea()}}>
-                  <span className ='searchButton'>指定なし</span>
+                  <span className ='searchButton'>全地域</span>
                 </div>
                 <div className = {'button button' + asiacount} onClick={() => {handleFilterAsia()}}>
                   <span className ='searchButton'>アジア</span>

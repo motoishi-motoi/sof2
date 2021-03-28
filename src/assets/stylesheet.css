@@ -874,6 +874,7 @@ footer h4{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 1.4rem;
+  margin-bottom: 3em;
 }
 .grid-relation a{
   text-decoration: none;
