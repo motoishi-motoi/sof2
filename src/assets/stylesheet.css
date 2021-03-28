@@ -554,7 +554,6 @@ form svg.fa-search{
 
 .formInput::placeholder{
   color:#ccc;
-  background: #fff;
   font-weight: normal;
 }
 
@@ -568,6 +567,7 @@ form svg.fa-search{
 }
 .select-hiragana select{
   color: #4b4b4b;
+  background: #fff;
   cursor: pointer;
   padding: 12px 8px;
   border: 1px solid #c8e6c9;
