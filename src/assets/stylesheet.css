@@ -184,6 +184,7 @@ header nav a{
 .areaBox{
   max-width: 100%;
   margin-bottom: 2px;
+  line-height: 20px;
 }
 
 /*エリア名*/
@@ -201,6 +202,7 @@ header nav a{
 .unitedBox{
   max-width: 100%;
   margin-bottom: 2px;
+  line-height: 20px;
 }
 
 /*エリア名*/
