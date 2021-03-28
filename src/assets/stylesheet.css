@@ -267,6 +267,11 @@ header nav a{
 /*国旗表示エリア全体を囲んでるやつ*/
 .flag-bg{
   background: #f1f8e9;
+  padding-bottom: 68px;
+  padding-top: 68px;
+}
+.flags .flag-bg{
+  background: #f1f8e9;
   padding-bottom: 26px;
   padding-top: 26px;
 }
