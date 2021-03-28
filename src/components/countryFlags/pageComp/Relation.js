@@ -143,6 +143,7 @@ const Relation = (props) => {
     return (
         <div className='relation'>
             <h3>{targetCountry.name + '国旗'}と同じ色だけを使っている旗一覧</h3>
+            <div className = 'grid-relation'>
             {filteredImage.length !== 0 ?
             filteredImage.map((flagImage) => {
                 return(
@@ -157,7 +158,9 @@ const Relation = (props) => {
                     );
                 })
             :<p>Not Found</p>}   
+            </div>
             <h3>{targetCountry.name + '国旗'}と同じ模様が全てある旗一覧</h3>
+            <div className = 'grid-relation'>
             {filteredImage2.length !== 0 && targetCountry.tag.length !== 0 ?
                 filteredImage2.map((flagImage) => {
                   return(
@@ -172,6 +175,7 @@ const Relation = (props) => {
                   );
                 })
             :<p>Not Found</p>}
+            </div>
         </div>
     );
   }
