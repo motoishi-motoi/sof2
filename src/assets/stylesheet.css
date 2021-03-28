@@ -32,7 +32,7 @@ div#root{
 }
 
 .flags{
-  max-width: 1200px;
+  max-width: 100%;
   margin:0 auto;
 }
 
@@ -120,8 +120,6 @@ header{
   width: 100%;
   height: 86px;
   padding: 8px 12px;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 58px;
 }
 
 .header-inner{
@@ -159,6 +157,7 @@ header nav a{
 */
 
 .howto{
+  display: none;
   max-width: 500px;
   margin: 42px auto;
   background-color: #d4edda;
@@ -266,22 +265,45 @@ header nav a{
 *?
 
 /*国旗表示エリア全体を囲んでるやつ*/
+.flag-bg{
+  background: #f1f8e9;
+  padding-bottom: 26px;
+  padding-top: 26px;
+}
+.flags .share-caption{
+  display: none;
+}
+.flags .share-button{
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 0 6px #ccc;
+}
+
 .flagArea{
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 24px;
-  border-radius: 4px;
 }
 
 /*国旗画像や国名タグをかこんでるやつ*/
 .flagBox{
   width: 19%;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  /*border: 1px solid #ccc;
+  border-radius: 4px;*/
   padding: 18px;
   height: 250px;
   vertical-align: middle;
   margin: 20px 3%;
   cursor: pointer;
+  box-shadow: 0 0 7px #ccc;
+  background: #fff;
+}
+.flagBox:hover{
+  box-shadow: 0 0 6px #9b9b9b;
+  transition-duration: 0.3s;
+  transform: translateY(-2px);
 }
 
 /*画像を囲んでるやつ*/
@@ -307,7 +329,7 @@ header nav a{
 /*国名*/
 .countryName{
   text-align: center;
-  color: #2b2b2b;
+  color: #4b4b4b;
 }
 
 
@@ -350,10 +372,14 @@ header nav a{
 
 /*検索用エリア全体を囲んでるやつ*/
 .searchBox{
-  border: 2px solid #b57a4e;
-  border-radius: 4px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*border: 2px solid #b57a4e;
+  border-radius: 4px;*/
   padding: 24px;
   font-size: 0.94em;
+  margin-top: 36px;
+  margin-bottom: 12px;
 }
 
 h3.detail-search span, h4.search-mode span{
@@ -366,14 +392,6 @@ h3.detail-search{
 /* インデント的なやつ */
 .mBox{
   margin-left: 0;
-}
-
-/*
-色の検索モードのやつ
-上のインデントと合わせて使って上書きしてるやつあり
-*/
-.searchMode{
-  margin: 12px 0;
 }
 
 /* 三角の位置調整 */
@@ -390,16 +408,18 @@ h3.detail-search{
 .button{
   display: inline-block;
   cursor: pointer;
-  margin-bottom: 8px;
-  padding: 3px 0 0 3px;
+  margin: 10px 8px 0 0;
+  padding: 6px 10px;
+  color: #4b4b4b;
 }
 
-/*ラベル名に使ってるやつ*/
+/*ラベル名に使ってるやつ
 .searchButton{
   cursor: pointer;
   margin: 4px 12px 4px 38px;
   line-height: 32px;
 }
+*/
 
 /*チェックボックスのチェック入ってない時*/
 .checkbox0{
@@ -439,6 +459,7 @@ h3.detail-search{
 /*チェックボックスのチェック入ってない時*/
 .checkboxOFF{
   display:block;
+  display:none;
   position:absolute;
   width:30px;
   height:30px;
@@ -451,6 +472,7 @@ h3.detail-search{
 .checkboxON{
   content: "";
   display: block;
+  display:none;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -462,6 +484,7 @@ h3.detail-search{
 .checkboxON:after{
   content: "";
   display:block;
+  display:none;
   position:absolute;
   top: 8px;
   left: 8px;
@@ -471,17 +494,91 @@ h3.detail-search{
   border-radius: 2px;
 }
 
+.search-bg{
+  background: #fff;
+}
+
 /*serachCheckBoxの略ね*/
 .scb{
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
-.scb h3, .scb h4{
-  padding-left: 3px;
+
+.scb .buttonOFF{
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+  box-shadow: 0 0 6px #fbfffc;
+}
+
+.scb .buttonOFF:hover{
+  transition-duration: 0.2s;
+  box-shadow: 0 0 6px #c8e6c9;
+}
+
+.scb .buttonON{
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+  box-shadow: 0;
+  background: #c8e6c9;
+  transition-duration: 0.2s;
+}
+
+.inputgroup{
+  margin-bottom: 36px;
+}
+
+.keywordSearch{
+  position: relative;
+}
+
+form svg.fa-search{
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 23px;
+  color: #ccc;
+}
+
+.formInput{
+  width: 100%;
+  border: 1px solid #c8e6c9;
+  padding: 0 1em;
+  line-height: 48px;
+  font-size: 18px;
+  border-radius: 2.5em;
+}
+
+.formInput::placeholder{
+  color:#ccc;
+  font-weight: normal;
+}
+
+.formInput:focus{
+  outline: 0;
+  border-color: #a5d6a7;
+}
+
+.select-hiragana{
+  display: inline-block;
+}
+.select-hiragana select{
+  color: #4b4b4b;
+  cursor: pointer;
+  padding: 12px 8px;
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+}
+.select-hiragana select:focus{
+  outline: 0;
+  border-color: #a5d6a7;
+}
+.select-hiragana select option{
+  color: #4b4b4b;
 }
 
 /*表示件数*/
 .result{
-  margin-top: 20px;
+  margin-top: 36px;
+  color: #4b4b4b;
 }
 
 /*
@@ -631,7 +728,7 @@ modalのcss
 .detail a:visited{
   color: inherit;
 }
-.svg-inline--fa.fa-w-16 {
+.fa-external-link-alt {
   line-height: 48px;
   margin-left: 8px;
   width: 0.9em;
@@ -659,8 +756,6 @@ Footer
 
 footer{
   width: 100%;
-  border-top: 1px solid #ccc;
-  margin-top: 22px;
 }
 
 footer .footer-list{
@@ -713,6 +808,8 @@ footer h4{
   max-width: 900px;
   margin: 0 auto;
   padding: 48px;
+  background: #fff;
+  border-radius: 4px;
 }
 
 /*関連する旗*/
@@ -847,10 +944,7 @@ footer h4{
 /*国名*/
 .flag-date-name{
   text-align: center;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 26px;
-  margin: 0 8% 26px 8%;
+  margin: 0 8% 42px 8%;
   padding: 0 14px;
 }
 .flag-date-name h2{
@@ -909,7 +1003,7 @@ footer h4{
 .detail a:visited{
   color: inherit;
 }
-.svg-inline--fa.fa-w-16 {
+.fa-external-link-alt {
   line-height: 48px;
   margin-left: 8px;
   width: 0.9em;
@@ -978,8 +1072,6 @@ footer h4{
   .flagBox{
     width: 27%;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     padding: 18px;
     height: 250px;
     vertical-align: middle;
@@ -1049,6 +1141,9 @@ footer h4{
 }
 @media screen and (max-width: 800px){
 
+  .flag-page{
+    border-radius: 0;
+  }
 
   .relation-flag{
     width: 33.333333%;
@@ -1076,8 +1171,6 @@ footer h4{
   .flagBox{
     width: 44%;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     padding: 18px;
     height: 250px;
     vertical-align: middle;
@@ -1130,7 +1223,7 @@ footer h4{
 @media screen and (max-width: 480px){
 
   .flag-page{
-    padding: 8px;
+    padding: 48px 8px;
   }
 
   .flag-date-column{
@@ -1206,8 +1299,6 @@ footer h4{
     width: 100%;
     height: 70px;
     padding: 8px 12px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 58px;
   }
 
   header nav{
@@ -1235,8 +1326,10 @@ footer h4{
   }
 
   .searchBox{
-    max-width: 90%;
+    max-width: 100%;
     margin:0 auto;
+    margin-top: 36px;
+    margin-bottom: 12px;
   }
 
   /*modal*/

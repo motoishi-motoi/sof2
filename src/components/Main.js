@@ -1,9 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import Flags from './Flags.js';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
-import {Motion, spring } from 'react-motion';
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Share from './Share';
 import { Link } from 'react-router-dom'
 import ScrollTop from './ScrollToTopOnMount';
@@ -84,15 +82,6 @@ const Main = (props) =>{
 
   const [filterQuery, setFilterQuery] = useState({});
   const [filterHiragana, setFilterHiragana] = useState('');
-
-  // 詳細検索のstate定義
-  const[isDetailOpen, setIsDetailOpen] = useState(String('OFF')); 
-  const[firIsDetailOpen, setFirIsDetailOpen] = useState(String('OFF'));
-
-  // 色検索モード切替のstate定義
-  const [issmOpen, setIssmOpen] = useState(String('OFF'));
-  const [fIssmOpen, setfIssmOpen] = useState(String('OFF'));
-
 
   //sessionStorageに値があったら取得する
   // 最初の一度だけ処理する。
@@ -211,22 +200,6 @@ const Main = (props) =>{
     }
     if(sessionStorage.localcount){
       setLocalcount(sessionStorage.getItem('localcount'));
-    }
-
-    //詳細検索の切替の値を取得
-    if(sessionStorage.isDetailOpen){
-      setIsDetailOpen(sessionStorage.getItem('isDetailOpen'));
-    }
-    if(sessionStorage.firIsDetailOpen){
-      setFirIsDetailOpen(sessionStorage.getItem('isDetailOpen'));
-    }
-
-    //色検索モードの切替の値を取得
-    if(sessionStorage.issmOpen){
-      setIssmOpen(sessionStorage.getItem('issmOpen'));
-    }
-    if(sessionStorage.fIssmOpen){
-      setfIssmOpen(sessionStorage.getItem('issmOpen'));
     }
 
     //一文字目検索の値を取得
@@ -875,467 +848,6 @@ const Main = (props) =>{
     }
   };
 
-  // 詳細検索の表示切り替え
-
-  const handleDetailSearchMode = e =>{
-    if(isDetailOpen === String('OFF')){
-      setIsDetailOpen(String('ON'));
-      sessionStorage.setItem('isDetailOpen', String('ON'));
-    }else{
-      setIsDetailOpen(String('OFF'));
-      sessionStorage.setItem('isDetailOpen', String('OFF'));
-    }
-    if(firIsDetailOpen === String('OFF')){
-      setFirIsDetailOpen(String('ON'));
-      sessionStorage.setItem('firIsDetailOpen', String('ON'));
-    }
-  };
-
-  // howtoの開く閉じる
-  const [isHowToOpen, setIsHowToOpen] = useState(false);
-  const [fIsHowToOpen, setfIsHowToOpen] = useState(false);
-  const howtoOpen = e => {
-    if(!isHowToOpen){
-      setIsHowToOpen(true);
-    }else{
-      setIsHowToOpen(false);
-    }
-    if(!fIsHowToOpen){
-      setfIsHowToOpen(true);
-    }
-  };
-
-  // 色検索モードの切替
-
-  const smOpen = e => {
-    if(issmOpen === String('OFF')){
-      setIssmOpen(String('ON'));
-      sessionStorage.setItem('issmOpen', String('ON'));
-    }else{
-      setIssmOpen(String('OFF'));
-      sessionStorage.setItem('issmOpen', String('OFF'));
-    }
-    if(fIssmOpen === String('OFF')){
-      setfIssmOpen(String('ON'));
-      sessionStorage.setItem('fIssmOpen', String('ON'));
-    }
-  };
-
-
-  // 使い方説明3つ
-  const SofDescOpen = () => {
-    return(
-      <Motion defaultStyle={{y:0}} style={{y:spring(700,{ stiffness: 50 })}}>
-        {interpolatingStyle => 
-          <div className="sof-desc" style = {{'maxHeight':`${interpolatingStyle.y}px`, overflow:'hidden',}}>
-            <ol>
-              <li>チェックボックスにチェックを入れます</li>
-              <li>候補が絞り込まれます</li>
-              <li>国旗をタップorクリックすると詳細が見れます</li>
-            </ol>
-            <h4>検索モードについて</h4>
-            <ul>
-              <li>部分一致：その色が含まれる旗を抽出します</li>
-              <li>完全一致：その色を持つ旗だけを抽出します</li>
-              <li>除外：その色を持たない旗だけを抽出します</li>
-              <li>メインカラー：旗に一定以上含まれる色だけを対象にします</li>
-              <li>フルカラー：旗に含まれる全ての色を対象にします</li>
-            </ul>
-          </div>
-        }
-      </Motion>
-    );
-  };
-
-  const SofDescClose = () => {
-    return(
-      <Motion defaultStyle={{y:700}} style={{y:spring(0,{ stiffness: 170 })}}>
-        {interpolatingStyle => 
-          <div className="sof-desc" style = {{'maxHeight':`${interpolatingStyle.y}px`, overflow:'hidden',}}>
-            <ol>
-              <li>チェックボックスにチェックを入れます</li>
-              <li>候補が絞り込まれます</li>
-              <li>国旗をタップorクリックすると詳細が見れます</li>
-            </ol>
-            <h4>検索モードについて</h4>
-            <ul>
-              <li>部分一致：その色が含まれる旗を抽出します</li>
-              <li>完全一致：その色を持つ旗だけを抽出します</li>
-              <li>除外：その色を持たない旗だけを抽出します</li>
-              <li>メインカラー：旗に一定以上含まれる色だけを対象にします</li>
-              <li>フルカラー：旗に含まれる全ての色を対象にします</li>
-            </ul>
-          </div>
-        }
-      </Motion>
-    );
-  };
-
-  const FirstSofDesc = () => {
-    return(
-          <div className="sof-desc" style = {{'maxHeight':'0px', overflow:'hidden',}}>
-          </div>
-    );
-  };
-
-
-  // 詳細検索3つ
-  const SearchDetailSearchOpen = () => {
-    return(
-      <Motion defaultStyle={{y:0}} style={{y:spring(720,{ stiffness: 60 })}}>
-        {interpolatingStyle => 
-          <div className="detail-scb" style = {{'maxHeight':`${interpolatingStyle.y}px`, overflow:'hidden', position:'relative',}}>
-            <div className="designBox scb">
-              <h3>模様</h3>
-              <div className ="mBox">
-                <div className = 'button' onClick={() => {handleFilterSun()}}>
-                  <span className = {'checkbox' + suncount}></span>
-                  <span className ='searchButton'>太陽</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterMoon()}}>
-                  <span className = {'checkbox' + mooncount}></span>
-                  <span className ='searchButton'>月</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterStar()}}>
-                  <span className = {'checkbox' + starcount}></span>
-                  <span className ='searchButton'>星</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterCross()}}>
-                  <span className = {'checkbox' + crosscount}></span>
-                  <span className ='searchButton'>十字</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterCreature()}}>
-                  <span className = {'checkbox' + creaturecount}></span>
-                  <span className ='searchButton'>動物</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterPlant()}}>
-                  <span className = {'checkbox' + plantcount}></span>
-                  <span className ='searchButton'>植物</span>
-                </div>
-              </div>
-              </div>
-              <div className = "areaBox scb">
-              <h3>エリア</h3>
-              <div className ="mBox">
-              <div className = 'button' onClick={() => {handleUnspeArea()}}>
-                  <span className = {'checkbox' + unspeArea}></span>
-                  <span className ='searchButton'>指定なし</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterAsia()}}>
-                  <span className = {'checkbox' + asiacount}></span>
-                  <span className ='searchButton'>アジア</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterEu()}}>
-                  <span className = {'checkbox' + eucount}></span>
-                  <span className ='searchButton'>ヨーロッパ</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterAfrica()}}>
-                  <span className = {'checkbox' + africacount}></span>
-                  <span className ='searchButton'>アフリカ</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterNcAmerica()}}>
-                  <span className = {'checkbox' + ncAmericacount}></span>
-                  <span className ='searchButton'>北中央アメリカ</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterSAmerica()}}>
-                  <span className = {'checkbox' + sAmericacount}></span>
-                  <span className ='searchButton'>南アメリカ</span>
-                </div>
-                <div className = 'button' onClick={() => {handleFilterOceania()}}>
-                  <span className = {'checkbox' + oceaniacount}></span>
-                  <span className ='searchButton'>オセアニア</span>
-                </div>
-              </div>
-              </div>
-              <div className = "firstletterBox scb">
-              <h3>一文字目検索</h3>
-              <div className="select-hiragana">
-                <select value={filterHiragana} onChange={firLetterFilter}>
-                  <option value=''>指定なし</option>
-                  <option value={hiragana[0]}>{hiragana[0]}</option>
-                  <option value={hiragana[1]}>{hiragana[1]}</option>
-                  <option value={hiragana[2]}>{hiragana[2]}</option>
-                  <option value={hiragana[3]}>{hiragana[3]}</option>
-                  <option value={hiragana[4]}>{hiragana[4]}</option>
-                  <option value={hiragana[5]}>{hiragana[5]}</option>
-                  <option value={hiragana[6]}>{hiragana[6]}</option>
-                  <option value={hiragana[7]}>{hiragana[7]}</option>
-                  <option value={hiragana[8]}>{hiragana[8]}</option>
-                  <option value={hiragana[9]}>{hiragana[9]}</option>
-                  <option value={hiragana[10]}>{hiragana[10]}</option>
-                  <option value={hiragana[11]}>{hiragana[11]}</option>
-                  <option value={hiragana[12]}>{hiragana[12]}</option>
-                  <option value={hiragana[13]}>{hiragana[13]}</option>
-                  <option value={hiragana[14]}>{hiragana[14]}</option>
-                  <option value={hiragana[15]}>{hiragana[15]}</option>
-                  <option value={hiragana[16]}>{hiragana[16]}</option>
-                  <option value={hiragana[17]}>{hiragana[17]}</option>
-                  <option value={hiragana[18]}>{hiragana[18]}</option>
-                  <option value={hiragana[19]}>{hiragana[19]}</option>
-                  <option value={hiragana[20]}>{hiragana[20]}</option>
-                  <option value={hiragana[21]}>{hiragana[21]}</option>
-                  <option value={hiragana[22]}>{hiragana[22]}</option>
-                  <option value={hiragana[23]}>{hiragana[23]}</option>
-                  <option value={hiragana[24]}>{hiragana[24]}</option>
-                  <option value={hiragana[25]}>{hiragana[25]}</option>
-                  <option value={hiragana[26]}>{hiragana[26]}</option>
-                  <option value={hiragana[27]}>{hiragana[27]}</option>
-                  <option value={hiragana[28]}>{hiragana[28]}</option>
-                  <option value={hiragana[29]}>{hiragana[29]}</option>
-                  <option value={hiragana[30]}>{hiragana[30]}</option>
-                  <option value={hiragana[31]}>{hiragana[31]}</option>
-                  <option value={hiragana[32]}>{hiragana[32]}</option>
-                  <option value={hiragana[33]}>{hiragana[33]}</option>
-                  <option value={hiragana[34]}>{hiragana[34]}</option>
-                  <option value={hiragana[35]}>{hiragana[35]}</option>
-                  <option value={hiragana[36]}>{hiragana[36]}</option>
-                  <option value={hiragana[37]}>{hiragana[37]}</option>
-                  <option value={hiragana[38]}>{hiragana[38]}</option>
-                  <option value={hiragana[39]}>{hiragana[39]}</option>
-                  <option value={hiragana[40]}>{hiragana[40]}</option>
-                  <option value={hiragana[41]}>{hiragana[41]}</option>
-                  <option value={hiragana[42]}>{hiragana[42]}</option>
-                  <option value={hiragana[43]}>{hiragana[43]}</option>
-                  <option value={hiragana[44]}>{hiragana[44]}</option>
-                  <option value={hiragana[45]}>{hiragana[45]}</option>
-                  <option value={hiragana[46]}>{hiragana[46]}</option>
-                  <option value={hiragana[47]}>{hiragana[47]}</option>
-                  <option value={hiragana[48]}>{hiragana[48]}</option>
-                  <option value={hiragana[49]}>{hiragana[49]}</option>
-                  <option value={hiragana[50]}>{hiragana[50]}</option>
-                  <option value={hiragana[51]}>{hiragana[51]}</option>
-                  <option value={hiragana[52]}>{hiragana[52]}</option>
-                  <option value={hiragana[53]}>{hiragana[53]}</option>
-                  <option value={hiragana[54]}>{hiragana[54]}</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        }
-      </Motion>
-    );
-  }
-  const SearchDetailSearchClose = () => {
-    return(
-      <Motion defaultStyle={{y:650}} style={{y:spring(0,{ stiffness: 170 })}}>
-        {interpolatingStyle => 
-         <div className="detail-scb" style = {{'maxHeight':`${interpolatingStyle.y}px`, overflow:'hidden', position:'relative',}}>
-           <div className="designBox scb">
-             <h3>模様</h3>
-             <div className ="mBox">
-               <div className = 'button' onClick={() => {handleFilterSun()}}>
-                 <span className = {'checkbox' + suncount}></span>
-                 <span className ='searchButton'>太陽</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterMoon()}}>
-                 <span className = {'checkbox' + mooncount}></span>
-                 <span className ='searchButton'>月</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterStar()}}>
-                 <span className = {'checkbox' + starcount}></span>
-                 <span className ='searchButton'>星</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterCross()}}>
-                 <span className = {'checkbox' + crosscount}></span>
-                 <span className ='searchButton'>十字</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterCreature()}}>
-                 <span className = {'checkbox' + creaturecount}></span>
-                 <span className ='searchButton'>動物</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterPlant()}}>
-                 <span className = {'checkbox' + plantcount}></span>
-                 <span className ='searchButton'>植物</span>
-               </div>
-             </div>
-             </div>
-             <div className = "areaBox scb">
-             <h3>エリア</h3>
-             <div className ="mBox">
-             <div className = 'button' onClick={() => {handleUnspeArea()}}>
-                 <span className = {'checkbox' + unspeArea}></span>
-                 <span className ='searchButton'>指定なし</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterAsia()}}>
-                 <span className = {'checkbox' + asiacount}></span>
-                 <span className ='searchButton'>アジア</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterEu()}}>
-                 <span className = {'checkbox' + eucount}></span>
-                 <span className ='searchButton'>ヨーロッパ</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterAfrica()}}>
-                 <span className = {'checkbox' + africacount}></span>
-                 <span className ='searchButton'>アフリカ</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterNcAmerica()}}>
-                 <span className = {'checkbox' + ncAmericacount}></span>
-                 <span className ='searchButton'>北中央アメリカ</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterSAmerica()}}>
-                 <span className = {'checkbox' + sAmericacount}></span>
-                 <span className ='searchButton'>南アメリカ</span>
-               </div>
-               <div className = 'button' onClick={() => {handleFilterOceania()}}>
-                 <span className = {'checkbox' + oceaniacount}></span>
-                 <span className ='searchButton'>オセアニア</span>
-               </div>
-            </div>
-            </div>
-              <div className = "firstletterBox scb">
-              <h3>一文字目検索</h3>
-              <div className="select-hiragana">
-                <select value={filterHiragana} onChange={firLetterFilter}>
-                  <option value=''>指定なし</option>
-                  <option value={hiragana[0]}>{hiragana[0]}</option>
-                  <option value={hiragana[1]}>{hiragana[1]}</option>
-                  <option value={hiragana[2]}>{hiragana[2]}</option>
-                  <option value={hiragana[3]}>{hiragana[3]}</option>
-                  <option value={hiragana[4]}>{hiragana[4]}</option>
-                  <option value={hiragana[5]}>{hiragana[5]}</option>
-                  <option value={hiragana[6]}>{hiragana[6]}</option>
-                  <option value={hiragana[7]}>{hiragana[7]}</option>
-                  <option value={hiragana[8]}>{hiragana[8]}</option>
-                  <option value={hiragana[9]}>{hiragana[9]}</option>
-                  <option value={hiragana[10]}>{hiragana[10]}</option>
-                  <option value={hiragana[11]}>{hiragana[11]}</option>
-                  <option value={hiragana[12]}>{hiragana[12]}</option>
-                  <option value={hiragana[13]}>{hiragana[13]}</option>
-                  <option value={hiragana[14]}>{hiragana[14]}</option>
-                  <option value={hiragana[15]}>{hiragana[15]}</option>
-                  <option value={hiragana[16]}>{hiragana[16]}</option>
-                  <option value={hiragana[17]}>{hiragana[17]}</option>
-                  <option value={hiragana[18]}>{hiragana[18]}</option>
-                  <option value={hiragana[19]}>{hiragana[19]}</option>
-                  <option value={hiragana[20]}>{hiragana[20]}</option>
-                  <option value={hiragana[21]}>{hiragana[21]}</option>
-                  <option value={hiragana[22]}>{hiragana[22]}</option>
-                  <option value={hiragana[23]}>{hiragana[23]}</option>
-                  <option value={hiragana[24]}>{hiragana[24]}</option>
-                  <option value={hiragana[25]}>{hiragana[25]}</option>
-                  <option value={hiragana[26]}>{hiragana[26]}</option>
-                  <option value={hiragana[27]}>{hiragana[27]}</option>
-                  <option value={hiragana[28]}>{hiragana[28]}</option>
-                  <option value={hiragana[29]}>{hiragana[29]}</option>
-                  <option value={hiragana[30]}>{hiragana[30]}</option>
-                  <option value={hiragana[31]}>{hiragana[31]}</option>
-                  <option value={hiragana[32]}>{hiragana[32]}</option>
-                  <option value={hiragana[33]}>{hiragana[33]}</option>
-                  <option value={hiragana[34]}>{hiragana[34]}</option>
-                  <option value={hiragana[35]}>{hiragana[35]}</option>
-                  <option value={hiragana[36]}>{hiragana[36]}</option>
-                  <option value={hiragana[37]}>{hiragana[37]}</option>
-                  <option value={hiragana[38]}>{hiragana[38]}</option>
-                  <option value={hiragana[39]}>{hiragana[39]}</option>
-                  <option value={hiragana[40]}>{hiragana[40]}</option>
-                  <option value={hiragana[41]}>{hiragana[41]}</option>
-                  <option value={hiragana[42]}>{hiragana[42]}</option>
-                  <option value={hiragana[43]}>{hiragana[43]}</option>
-                  <option value={hiragana[44]}>{hiragana[44]}</option>
-                  <option value={hiragana[45]}>{hiragana[45]}</option>
-                  <option value={hiragana[46]}>{hiragana[46]}</option>
-                  <option value={hiragana[47]}>{hiragana[47]}</option>
-                  <option value={hiragana[48]}>{hiragana[48]}</option>
-                  <option value={hiragana[49]}>{hiragana[49]}</option>
-                  <option value={hiragana[50]}>{hiragana[50]}</option>
-                  <option value={hiragana[51]}>{hiragana[51]}</option>
-                  <option value={hiragana[52]}>{hiragana[52]}</option>
-                  <option value={hiragana[53]}>{hiragana[53]}</option>
-                  <option value={hiragana[54]}>{hiragana[54]}</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        }
-      </Motion>
-    );
-  };
-
-  const FirstDetailSearch = () => {
-    return(
-      <div className ="detail-scb" style = {{'maxHeight':'0px', overflow:'hidden', position:'relative',}}>
-      </div>
-    );
-  };
-
-  // 検索モード切替3つ
-  const smhtmlOpen = () => {
-    return(
-      <Motion defaultStyle={{y:0}} style={{y:spring(370,{ stiffness: 60 })}}>
-        {interpolatingStyle => 
-            <div className ="mBox searchMode" style = {{'maxHeight':`${interpolatingStyle.y}px`, overflow:'hidden', position:'relative',}}>
-            <div className = "mode">
-              <div className = 'button' onClick={() => {handleColorPartial()}}>
-                <span className = {'checkbox' + partialColor}></span>
-                <span className ='searchButton'>部分一致</span>
-              </div>
-              <div className = 'button' onClick={() => {handleColorPerfect()}}>
-                <span className = {'checkbox' + perfectColor}></span>
-                <span className ='searchButton'>完全一致</span>
-              </div>
-              <div className = 'button' onClick={() => {handleColorExclusion()}}>
-                <span className = {'checkbox' + exclusionColor}></span>
-                <span className ='searchButton'>除外</span>
-              </div>
-            </div>
-            <div className = "mode">
-              <div className = 'button' onClick={() => {handleMColorSwitch()}}>
-                <span className = {'checkbox' + mColorSwitch}></span>
-                <span className ='searchButton'>メインカラー</span>
-              </div>
-              <div className = 'button' onClick={() => {handleFColorSwitch()}}>
-                <span className = {'checkbox' + fColorSwitch}></span>
-                <span className ='searchButton'>フルカラー</span>
-              </div>
-            </div>
-          </div>
-        }
-      </Motion>
-    );
-  };
-
-  const smhtmlClose = () => {
-    return(
-      <Motion defaultStyle={{y:230}} style={{y:spring(0,{ stiffness: 170 })}}>
-        {interpolatingStyle => 
-            <div className ="mBox searchMode" style = {{'maxHeight':`${interpolatingStyle.y}px`, overflow:'hidden', position:'relative',}}>
-            <div className = "mode">
-              <div className = 'button' onClick={() => {handleColorPartial()}}>
-                <span className = {'checkbox' + partialColor}></span>
-                <span className ='searchButton'>部分一致</span>
-              </div>
-              <div className = 'button' onClick={() => {handleColorPerfect()}}>
-                <span className = {'checkbox' + perfectColor}></span>
-                <span className ='searchButton'>完全一致</span>
-              </div>
-              <div className = 'button' onClick={() => {handleColorExclusion()}}>
-                <span className = {'checkbox' + exclusionColor}></span>
-                <span className ='searchButton'>除外</span>
-              </div>
-            </div>
-            <div className = "mode">
-              <div className = 'button' onClick={() => {handleMColorSwitch()}}>
-                <span className = {'checkbox' + mColorSwitch}></span>
-                <span className ='searchButton'>メインカラー</span>
-              </div>
-              <div className = 'button' onClick={() => {handleFColorSwitch()}}>
-                <span className = {'checkbox' + fColorSwitch}></span>
-                <span className ='searchButton'>フルカラー</span>
-              </div>
-            </div>
-          </div>
-        }
-      </Motion>
-    );
-  };
-
-  const Firstsmhtml = () => {
-    return(
-      <div className ="mBox searchMode" style = {{'maxHeight':'0px', overflow:'hidden', position:'relative',}}>
-      </div>
-    );
-  };
-
 
   //検索する機構と、国旗を表示する部分。
   return (
@@ -1358,126 +870,219 @@ const Main = (props) =>{
 					{property: 'og:description', content: 'SOF(Search of Flags)は、世界の旗・国旗一覧をサクサク絞り込み検索できるウェブサイト。'},
 				]}
 			/>
-      <div className = 'howto'>
-        <h3 onClick = {() => {howtoOpen()}}>
-          SOFの使い方
-          {isHowToOpen ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />}
-        </h3>
-        {fIsHowToOpen ?
-        isHowToOpen ? SofDescOpen() : SofDescClose()
-        : FirstSofDesc()}
-        <p>※”<FontAwesomeIcon icon={faCaretDown} />”をタップorクリックで開きます</p>
-      </div>
+      <div className = 'search-bg'>
       <div className ='searchBox'>
+        <div className = "keywordBox scb">
+          <div className="inputgroup">
+            <form className = 'keywordSearch'>
+              <input type="text" name="title" className="formInput" placeholder="国名を入力…" autoComplete="off"
+                value={filterQuery.title || ''}
+                onChange={handleFilter}
+              />
+              <FontAwesomeIcon icon={faSearch} />
+            </form>
+          </div>
+        </div>
+        <div className = "firstletterBox scb">
+          <div className="select-hiragana">
+            <select value={filterHiragana} onChange={firLetterFilter}>
+              <option value=''>一文字目検索</option>
+              <option value={hiragana[0]}>{hiragana[0]}</option>
+              <option value={hiragana[1]}>{hiragana[1]}</option>
+              <option value={hiragana[2]}>{hiragana[2]}</option>
+              <option value={hiragana[3]}>{hiragana[3]}</option>
+              <option value={hiragana[4]}>{hiragana[4]}</option>
+              <option value={hiragana[5]}>{hiragana[5]}</option>
+              <option value={hiragana[6]}>{hiragana[6]}</option>
+              <option value={hiragana[7]}>{hiragana[7]}</option>
+              <option value={hiragana[8]}>{hiragana[8]}</option>
+              <option value={hiragana[9]}>{hiragana[9]}</option>
+              <option value={hiragana[10]}>{hiragana[10]}</option>
+              <option value={hiragana[11]}>{hiragana[11]}</option>
+              <option value={hiragana[12]}>{hiragana[12]}</option>
+              <option value={hiragana[13]}>{hiragana[13]}</option>
+              <option value={hiragana[14]}>{hiragana[14]}</option>
+              <option value={hiragana[15]}>{hiragana[15]}</option>
+              <option value={hiragana[16]}>{hiragana[16]}</option>
+              <option value={hiragana[17]}>{hiragana[17]}</option>
+              <option value={hiragana[18]}>{hiragana[18]}</option>
+              <option value={hiragana[19]}>{hiragana[19]}</option>
+              <option value={hiragana[20]}>{hiragana[20]}</option>
+              <option value={hiragana[21]}>{hiragana[21]}</option>
+              <option value={hiragana[22]}>{hiragana[22]}</option>
+              <option value={hiragana[23]}>{hiragana[23]}</option>
+              <option value={hiragana[24]}>{hiragana[24]}</option>
+              <option value={hiragana[25]}>{hiragana[25]}</option>
+              <option value={hiragana[26]}>{hiragana[26]}</option>
+              <option value={hiragana[27]}>{hiragana[27]}</option>
+              <option value={hiragana[28]}>{hiragana[28]}</option>
+              <option value={hiragana[29]}>{hiragana[29]}</option>
+              <option value={hiragana[30]}>{hiragana[30]}</option>
+              <option value={hiragana[31]}>{hiragana[31]}</option>
+              <option value={hiragana[32]}>{hiragana[32]}</option>
+              <option value={hiragana[33]}>{hiragana[33]}</option>
+              <option value={hiragana[34]}>{hiragana[34]}</option>
+              <option value={hiragana[35]}>{hiragana[35]}</option>
+              <option value={hiragana[36]}>{hiragana[36]}</option>
+              <option value={hiragana[37]}>{hiragana[37]}</option>
+              <option value={hiragana[38]}>{hiragana[38]}</option>
+              <option value={hiragana[39]}>{hiragana[39]}</option>
+              <option value={hiragana[40]}>{hiragana[40]}</option>
+              <option value={hiragana[41]}>{hiragana[41]}</option>
+              <option value={hiragana[42]}>{hiragana[42]}</option>
+              <option value={hiragana[43]}>{hiragana[43]}</option>
+              <option value={hiragana[44]}>{hiragana[44]}</option>
+              <option value={hiragana[45]}>{hiragana[45]}</option>
+              <option value={hiragana[46]}>{hiragana[46]}</option>
+              <option value={hiragana[47]}>{hiragana[47]}</option>
+              <option value={hiragana[48]}>{hiragana[48]}</option>
+              <option value={hiragana[49]}>{hiragana[49]}</option>
+              <option value={hiragana[50]}>{hiragana[50]}</option>
+              <option value={hiragana[51]}>{hiragana[51]}</option>
+              <option value={hiragana[52]}>{hiragana[52]}</option>
+              <option value={hiragana[53]}>{hiragana[53]}</option>
+              <option value={hiragana[54]}>{hiragana[54]}</option>
+            </select>
+          </div>
+        </div>
         <div className = "colorBox scb">
-          <h3>色</h3>
-          <h4 className = "search-mode">
-            <span onClick={() => {smOpen()}}>
-            検索モード切替
-            {issmOpen === String('ON') ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />}
-            </span>
-          </h4>
-          {fIssmOpen === String('ON')  ? 
-          issmOpen === String('ON') ? smhtmlOpen() : smhtmlClose()
-          : Firstsmhtml()}
+          <div className ="mBox searchMode" >
+            <div className = "mode">
+              <div className = {'button button' + partialColor} onClick={() => {handleColorPartial()}}>
+                <span className ='searchButton'>部分一致</span>
+              </div>
+              <div className = {'button button' + perfectColor} onClick={() => {handleColorPerfect()}}>
+                <span className ='searchButton'>完全一致</span>
+              </div>
+              <div className = {'button button' + exclusionColor} onClick={() => {handleColorExclusion()}}>
+                <span className ='searchButton'>除外</span>
+              </div>
+            </div>
+            <div className = "mode">
+              <div className = {'button button' + mColorSwitch} onClick={() => {handleMColorSwitch()}}>
+                <span className ='searchButton'>メインカラー</span>
+              </div>
+              <div className = {'button button' + fColorSwitch} onClick={() => {handleFColorSwitch()}}>
+                <span className ='searchButton'>フルカラー</span>
+              </div>
+            </div>
+          </div>
           <div className ="mBox">
-            <div className = 'button' onClick={() => {handleFilterRed()}}>
-              <span className = {'checkbox' + redcount}></span>
+            <div className = {'button button' + redcount} onClick={() => {handleFilterRed()}}>
               <span className ='searchButton'>赤色</span>
             </div>
-            <div className = 'button' onClick={() => {handleFilterBlue()}}>
-              <span className = {'checkbox' + bluecount}></span>
+            <div className = {'button button' + bluecount} onClick={() => {handleFilterBlue()}}>
               <span className ='searchButton'>青色</span>
             </div>
-            <div className = 'button' onClick={() => {handleFilterGreen()}}>
-              <span className = {'checkbox' + greencount}></span>
+            <div className = {'button button' + greencount} onClick={() => {handleFilterGreen()}}>
               <span className ='searchButton'>緑色</span>
             </div>
-            <div className = 'button' onClick={() => {handleFilterYellow()}}>
-              <span className = {'checkbox' + yellowcount}></span>
+            <div className = {'button button' + yellowcount} onClick={() => {handleFilterYellow()}}>
               <span className ='searchButton'>黄色</span>
             </div>
-            <div className = 'button' onClick={() => {handleFilterWhite()}}>
+            <div className = {'button button' + whitecount} onClick={() => {handleFilterWhite()}}>
               <span className = {'checkbox' + whitecount}></span>
               <span className ='searchButton'>白色</span>
             </div>
-            <div className = 'button' onClick={() => {handleFilterBlack()}}>
-              <span className = {'checkbox' + blackcount}></span>
+            <div className = {'button button' + blackcount} onClick={() => {handleFilterBlack()}}>
               <span className ='searchButton'>黒色</span>
             </div>
-            <div className = 'button' onClick={() => {handleFilterGold()}}>
-              <span className = {'checkbox' + goldcount}></span>
+            <div className = {'button button' + goldcount} onClick={() => {handleFilterGold()}}>
               <span className ='searchButton'>金色</span>
             </div>
-            <div className = 'button' onClick={() => {handleFilterPurple()}}>
-              <span className = {'checkbox' + purplecount}></span>
+            <div className = {'button button' + purplecount} onClick={() => {handleFilterPurple()}}>
               <span className ='searchButton'>紫色</span>
             </div>
-            <div className = 'button' onClick={() => {handleFilterOrange()}}>
-              <span className = {'checkbox' + orangecount}></span>
+            <div className = {'button button' + orangecount} onClick={() => {handleFilterOrange()}}>
               <span className ='searchButton'>橙色</span>
             </div>
           </div>
         </div>
-        <div className = "sonotaBox scb">
-          <h3>国連加盟</h3>
-          <div className ="mBox">
-            <div className = 'button' onClick={() => {handleFilterUnspeKokuren()}}>
-              <span className = {'checkbox' + unspeKokuren}></span>
-              <span className ='searchButton'>指定なし</span>
+            <div className="designBox scb">
+              <div className ="mBox">
+                <div className = {'button button' + suncount} onClick={() => {handleFilterSun()}}>
+                  <span className ='searchButton'>太陽</span>
+                </div>
+                <div className = {'button button' + mooncount} onClick={() => {handleFilterMoon()}}>
+                  <span className ='searchButton'>月</span>
+                </div>
+                <div className = {'button button' + starcount} onClick={() => {handleFilterStar()}}>
+                  <span className ='searchButton'>星</span>
+                </div>
+                <div className = {'button button' + crosscount} onClick={() => {handleFilterCross()}}>
+                  <span className ='searchButton'>十字</span>
+                </div>
+                <div className = {'button button' + creaturecount} onClick={() => {handleFilterCreature()}}>
+                  <span className ='searchButton'>動物</span>
+                </div>
+                <div className = {'button button' + plantcount} onClick={() => {handleFilterPlant()}}>
+                  <span className ='searchButton'>植物</span>
+                </div>
+              </div>
             </div>
-            <div className = 'button' onClick={() => {handleFilterKokuren()}}>
-              <span className = {'checkbox' + kokurencount}></span>
-              <span className ='searchButton'>国連加盟国</span>
+            <div className = "areaBox scb">
+              <div className ="mBox">
+                <div className = {'button button' + unspeArea} onClick={() => {handleUnspeArea()}}>
+                  <span className ='searchButton'>指定なし</span>
+                </div>
+                <div className = {'button button' + asiacount} onClick={() => {handleFilterAsia()}}>
+                  <span className ='searchButton'>アジア</span>
+                </div>
+                <div className = {'button button' + eucount} onClick={() => {handleFilterEu()}}>
+                  <span className ='searchButton'>ヨーロッパ</span>
+                </div>
+                <div className = {'button button' + africacount} onClick={() => {handleFilterAfrica()}}>
+                  <span className ='searchButton'>アフリカ</span>
+                </div>
+                <div className = {'button button' + ncAmericacount} onClick={() => {handleFilterNcAmerica()}}>
+                  <span className ='searchButton'>北中央アメリカ</span>
+                </div>
+                <div className = {'button button' + sAmericacount} onClick={() => {handleFilterSAmerica()}}>
+                  <span className ='searchButton'>南アメリカ</span>
+                </div>
+                <div className = {'button button' + oceaniacount} onClick={() => {handleFilterOceania()}}>
+                  <span className ='searchButton'>オセアニア</span>
+                </div>
+              </div>
             </div>
-            <div className = 'button' onClick={() => {handleFilterNotKokuren()}}>
-              <span className = {'checkbox' + notKokurencount}></span>
-              <span className ='searchButton'>国連非加盟国</span>
-            </div>
-            <div className = 'button' onClick={() => {handleFilterOther()}}>
-              <span className = {'checkbox' + othercount}></span>
-              <span className ='searchButton'>海外領土・自治領</span>
-            </div>
-            <div className = 'button' onClick={() => {handleFilterLocal()}}>
-              <span className = {'checkbox' + localcount}></span>
-              <span className ='searchButton'>地方旗</span>
-            </div>
+            <div className = "sonotaBox scb">
+              <div className ="mBox">
+                <div className = {'button button' + unspeKokuren} onClick={() => {handleFilterUnspeKokuren()}}>
+                  <span className ='searchButton'>全ての旗</span>
+                </div>
+                <div className = {'button button' + kokurencount} onClick={() => {handleFilterKokuren()}}>
+                  <span className ='searchButton'>国連加盟国</span>
+                </div>
+                <div className = {'button button' + notKokurencount} onClick={() => {handleFilterNotKokuren()}}>
+                  <span className ='searchButton'>国連非加盟国</span>
+                </div>
+                <div className = {'button button' + othercount} onClick={() => {handleFilterOther()}}>
+                  <span className ='searchButton'>海外領土・自治領</span>
+                </div>
+                <div className = {'button button' + localcount} onClick={() => {handleFilterLocal()}}>
+                  <span className ='searchButton'>地方旗</span>
+                </div>
+              </div>
+            </div>            
+          <div className='result'>
+            <span>{'表示件数：' + filteredImage.length + ' / ' + props.mainImage.length}</span>
           </div>
         </div>
-        <div className = "keywordBox scb">
-          <h3>キーワード検索</h3>
-          <div className="inputgroup">
-            <input type="text" name="title" className="formInput" placeholder="国名" autoComplete="off"
-              value={filterQuery.title || ''}
-              onChange={handleFilter}
-            />
+        </div>
+        <div className = 'flag-bg'>
+          <div className = 'flagArea'>
+            {
+              filteredImage.map((flagImage) => {
+                return(
+                  <Link key = {flagImage.id} to = {'/' + flagImage.url}>
+                    <Flags mainFlagImage = {flagImage}/>
+                  </Link>
+                );
+              })
+            }
           </div>
-        </div>
-        <h3 className = "detail-search">
-          <span onClick={() => {handleDetailSearchMode()}}>
-          詳細検索表示
-          {isDetailOpen === String('ON') ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />}
-          </span>
-        </h3>
-        {firIsDetailOpen === String('ON') ? 
-        isDetailOpen === String('ON') ? SearchDetailSearchOpen() : SearchDetailSearchClose()
-        : FirstDetailSearch()}
-        <div className='result'>
-          <span>{'表示件数：' + filteredImage.length + ' / ' + props.mainImage.length}</span>
-        </div>
+        <Share url='https://sof.flagshitory.jp/' title='Search of Flags | 絞り込み検索可能な『旗・国旗一覧』' />
       </div>
-      <div className = 'flagArea'>
-        {
-          filteredImage.map((flagImage) => {
-            return(
-              <Link key = {flagImage.id} to = {'/' + flagImage.url}>
-                <Flags mainFlagImage = {flagImage}/>
-              </Link>
-            );
-          })
-        }
-      </div>
-      <Share url='https://sof.flagshitory.jp/' title='Search of Flags | 絞り込み検索可能な『旗・国旗一覧』' />
     </div>
   );
 }

@@ -3069,7 +3069,7 @@ desc: [
         },
         {
           mainColor: [red, yellow],
-          fullColor: [red, yellow],
+          fullColor: [red, blue, yellow],
           tag: [creature],
           area: worldArea.eu,
           topics: [],
@@ -6174,11 +6174,13 @@ desc: [
     <div className = 'main-wrapper'>
 
       
-      
+
       <Router>
         <Header />
+
         <Switch>
           <Route exact path='/' render={ () => <Main mainImage = {intialState.imageList}/>} />
+          <div className = 'flag-bg'>
           <Route path='/iceland' render={ () => <IcelandPage mainImage = {intialState.imageList}/>} />
           <Route path='/ireland' render={ () => <IrelandPage mainImage = {intialState.imageList}/>} />
           <Route path='/azerbaijan' render={ () => <AzerbaijanPage mainImage = {intialState.imageList}/>} />
@@ -6402,7 +6404,9 @@ desc: [
           <Route path='/double-headed-eagle' render={ () => <DoubleEaglePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
 
           <Route path='/tips' render={ () => <Tips knowledge = {knowledge} />}/>
+          </div>
         </Switch>
+
       </Router>
 
 
