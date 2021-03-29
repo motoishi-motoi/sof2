@@ -673,6 +673,7 @@ import ScandinavianCross from './assets/flagImages/scCross.svg';
 import SquarePage　from './components/flagsKnowledge/Square';
 import UnionjackPage　from './components/flagsKnowledge/Unionjack';
 import DoubleEaglePage　from './components/flagsKnowledge/DoubleEagle';
+import StarMoonPage from './components/flagsKnowledge/StarMoon';
 
 // tipsページ
 import Tips　from './components/Tips';
@@ -721,6 +722,7 @@ const App = () => {
     square: '正方形',
     uj: 'ユニオン・ジャック',
     doubleEagle: '双頭の鷲',
+    starMoon: '三日月と星',
   };
 
   const topicsUrl = {
@@ -728,6 +730,7 @@ const App = () => {
     square: 'square',
     uj: 'unionjack',
     doubleEagle: 'double-headed-eagle',
+    starMoon: 'crescent-moon-and-stars'
   }
 
   //-----------------------------------------------------------
@@ -737,7 +740,6 @@ const App = () => {
     UK : 'イギリスの過去国旗',
     UKLocal : 'イギリスの地方旗',
   };
-
 
   const intialState ={
     imageList : [
@@ -796,8 +798,8 @@ const App = () => {
           fullColor: [red, green, blue, white],
           tag: [moon, star],
           area: worldArea.asia,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'azerbaijan',
@@ -921,8 +923,8 @@ const App = () => {
           fullColor: [red, green, white],
           tag: [moon, star],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'algeria',
@@ -1424,8 +1426,8 @@ const App = () => {
           fullColor: [red, green, blue, white],
           tag: [moon, star],
           area: worldArea.asia,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'uzbekistan',
@@ -2049,8 +2051,8 @@ const App = () => {
           fullColor: [red, white],
           tag: [star, moon],
           area: worldArea.asia,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連非加盟国',
           groupingCSS: 'not-kokuren',
           id: 'northernCyprus',
@@ -2549,8 +2551,8 @@ const App = () => {
           fullColor: [red, green, blue, yellow, white],
           tag: [moon, star],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'comoros',
@@ -2674,8 +2676,8 @@ const App = () => {
           fullColor: [red, green, white, black],
           tag: [star, moon],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連非加盟国',
           groupingCSS: 'not-kokuren',
           id: 'sahrawi',
@@ -2924,8 +2926,8 @@ const App = () => {
           fullColor: [red, white],
           tag: [moon, star],
           area: worldArea.asia,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'singapore',
@@ -3650,8 +3652,8 @@ const App = () => {
           fullColor: [red, white],
           tag: [sun, moon, star],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'tunisia',
@@ -3900,8 +3902,8 @@ const App = () => {
           fullColor: [red, green, yellow, white, black],
           tag: [moon, star],
           area: worldArea.asia,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'turkmenistan',
@@ -3925,8 +3927,8 @@ const App = () => {
           fullColor: [red, white],
           tag: [moon, star],
           area: worldArea.asia,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'turkey',
@@ -4300,8 +4302,8 @@ const App = () => {
           fullColor: [green, white],
           tag: [moon, star],
           area: worldArea.asia,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'pakistan',
@@ -5325,8 +5327,8 @@ const App = () => {
           fullColor: [red, blue, yellow, white],
           tag: [moon, star],
           area: worldArea.asia,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'malaysia',
@@ -5550,8 +5552,8 @@ const App = () => {
           fullColor: [red, green, yellow],
           tag: [moon, star],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'mauritania',
@@ -5850,8 +5852,8 @@ const App = () => {
           fullColor: [red, green, white, black],
           tag: [moon, star],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'libya',
@@ -6148,19 +6150,26 @@ const App = () => {
         '※厳密に言えば、ギリシア正教とビザンツ帝国のシンボルとなり → 東西ローマ帝国の権威の象徴となり → ドイツに渡って神聖ローマ帝国のシンボルとなり → ヨーロッパ各地へと広がりを見せたという感じ。',
       ],
     },
-    /*
     {
       name: '三日月と星',
+      title: '三日月と星の描かれた国旗一覧と意味の解説 ｜ SOF',
+      metaDesc: 'アジア圏を中心として国旗によく使われている三日月と星は何を意味しているのか、どうしてそのような意味を持つようになったかの成り立ちを解説しています。また三日月と星を使っている国旗をまとめています。',
       englishName: 'Crescent moon and stars',
       ogp: 'ogpFlagImages/turkey.png',
       image: turkey,
       url: 'crescent-moon-and-stars',
       desc: [
         '国旗において三日月と星が合わせて使われている場合、それはイスラム教を表すシンボルとして用いられています。',
-        '',
+        '現在のトルコである、オスマン帝国が1793年に国旗として三日月と星の組み合わせを採用したこと始まりです。',
+        'なぜ三日月と星がイスラム教を示すようになったのかは諸説あります。',
+        '例えば、ムハンマドが洞窟で瞑想にふけっていると、天使ジブリール（ガブリエル）に神のメッセージを伝えられました',
+        'この夜のことをイスラムでは『定命の夜』と呼び、三日月と星はこの記念すべき夜を示したもの、といった説があります。',
+        '個人的な意見で言えば上記説がイスラム教との直接的関係性が深く、信憑性が高いのではという考えです。',
+        'より多くの説を知りたい方は、下記ページを見てみるのも面白いかもしれません。',
+        'Islamic flags：https://www.crwflags.com/fotw/flags/rel-is.html#cre',
+        '※FOTWは旗章学の世界において、権威性が高く情報の質が高いウェブサイト。ただし英語のため注意。',
       ],
     },
-    */
     {
       name: 'ユニオン・ジャック',
       title: 'ユニオンジャックに関係する国旗一覧と解説 ｜ SOF',
@@ -6191,7 +6200,7 @@ const App = () => {
 
         <Switch>
           <Route exact path='/' render={ () => <Main mainImage = {intialState.imageList}/>} />
-          <div className = 'flag-bg'>
+          <div className = 'flag-bg' location="none" computedmatch="none">
           <Route path='/iceland' render={ () => <IcelandPage mainImage = {intialState.imageList}/>} />
           <Route path='/ireland' render={ () => <IrelandPage mainImage = {intialState.imageList}/>} />
           <Route path='/azerbaijan' render={ () => <AzerbaijanPage mainImage = {intialState.imageList}/>} />
@@ -6413,13 +6422,13 @@ const App = () => {
           <Route path='/square' render={ () => <SquarePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/unionjack' render={ () => <UnionjackPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/double-headed-eagle' render={ () => <DoubleEaglePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
+          <Route path='/crescent-moon-and-stars' render={ () => <StarMoonPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
 
           <Route path='/tips' render={ () => <Tips knowledge = {knowledge} />}/>
           </div>
         </Switch>
 
       </Router>
-
 
 
       <Footer />

@@ -3,9 +3,9 @@ import TopicDate from './topicComp/TopicDate';
 import Share from '../Share';
 import ScrollTop from '../ScrollToTopOnMount';
 
-const Unionjack = (props) => {
+const StarMoon = (props) => {
 
-	const targetKnowledge = props.knowledge.find((v) => String(v.name) === 'ユニオン・ジャック');
+	const targetKnowledge = props.knowledge.find((v) => String(v.name) === '三日月と星');
 
     return (
       <div className='flag-page'>
@@ -17,4 +17,4 @@ const Unionjack = (props) => {
     );
   }
 
-export default Unionjack;
+export default StarMoon;

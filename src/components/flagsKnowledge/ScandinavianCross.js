@@ -12,7 +12,7 @@ const ScandinavianCross = (props) => {
           
 				<ScrollTop />
 				<TopicDate mainImage = {props.mainImage} name = {targetKnowledge.name} knowledge = {props.knowledge}/>
-				<Share url = {'https://sof.flaghistory.jp/' + targetKnowledge.url} title = {targetKnowledge.name + 'の国旗一覧と解説 | SOF'} />
+				<Share url = {'https://sof.flaghistory.jp/' + targetKnowledge.url} title = {targetKnowledge.title} />
       </div>
     );
   }
