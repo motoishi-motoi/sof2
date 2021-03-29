@@ -4,6 +4,7 @@ import Share from '../../Share';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Page from '../../Page';
+import CustomLinkify from '../../CustomLinkify';
 
 const TopicDate = (props) => {
 
@@ -40,11 +41,12 @@ const TopicDate = (props) => {
 			}
 			<div className = 'flag-date-info'>
 				<div className = 'flag-date-intro'>
-					{targetKnowledge.desc.map((desc) => {
+					<CustomLinkify content = {targetKnowledge.desc.map((desc) => {
 						return (
 							<p className='flag-date-desc' key = {desc}>{desc}</p>
 						);
-					})}
+					})} />
+
 				</div>
 			</div>
 			<div style={{marginTop:'14px' , marginBottom:'42px'}}>
