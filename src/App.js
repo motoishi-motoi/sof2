@@ -675,6 +675,7 @@ import UnionjackPage　from './components/flagsKnowledge/Unionjack';
 import DoubleEaglePage　from './components/flagsKnowledge/DoubleEagle';
 import StarMoonPage from './components/flagsKnowledge/StarMoon';
 import HorTriPage from './components/flagsKnowledge/HorTri';
+import VerTriPage from './components/flagsKnowledge/VerTri';
 
 // tipsページ
 import Tips　from './components/Tips';
@@ -725,6 +726,7 @@ const App = () => {
     doubleEagle: '双頭の鷲',
     starMoon: '三日月と星',
     horTri: '横三色旗',
+    verTri: '縦三色旗',
   };
 
   const topicsUrl = {
@@ -734,6 +736,7 @@ const App = () => {
     doubleEagle: 'double-headed-eagle',
     starMoon: 'crescent-moon-and-stars',
     horTri: 'horizontal-tricolor-flag',
+    verTri: 'vertical-tricolor-flag',
   }
 
   //-----------------------------------------------------------
@@ -776,8 +779,8 @@ const App = () => {
           fullColor: [green, white, orange],
           tag: [],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'ireland',
@@ -1202,8 +1205,8 @@ const App = () => {
           fullColor: [red, green, white],
           tag: [],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'italy',
@@ -2129,8 +2132,8 @@ const App = () => {
           fullColor: [red, green, yellow],
           tag: [],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'guinea',
@@ -2479,8 +2482,8 @@ const App = () => {
           fullColor: [green, orange, white],
           tag: [],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'cotod',
@@ -3580,8 +3583,8 @@ const App = () => {
           fullColor: [red, blue, yellow],
           tag: [],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'chad',
@@ -3980,8 +3983,8 @@ const App = () => {
           fullColor: [green, white],
           tag: [],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'nigeria',
@@ -4755,8 +4758,8 @@ const App = () => {
           fullColor: [red, blue, white],
           tag: [],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'france',
@@ -5280,8 +5283,8 @@ const App = () => {
           fullColor: [red, green, yellow],
           tag: [],
           area: worldArea.africa,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'mali',
@@ -5930,8 +5933,8 @@ const App = () => {
           fullColor: [red, blue, yellow],
           tag: [],
           area: worldArea.eu,
-          topics: [],
-          topicsUrl: [],
+          topics: [topics.verTri],
+          topicsUrl: [topicsUrl.verTri],
           kokuren: '国連加盟国',
           groupingCSS: 'kokuren',
           id: 'romania',
@@ -6154,22 +6157,19 @@ const App = () => {
       ],
     },
     {
-      name: '横三色旗',
-      title: '横三色旗の一覧と、世界初の三色旗を解説 ｜ SOF',
-      metaDesc: '横三色旗を一覧で掲載しています。また世界で初めて使われたとされる三色旗についても解説していきます。',
-      englishName: 'horizontal tricolor flag',
-      ogp: 'ogpFlagImages/Netherlands.png',
-      image: Netherlands,
-      url: 'horizontal-tricolor-flag',
+      name: '縦三色旗',
+      title: '縦三色旗の一覧と解説 ｜ SOF',
+      metaDesc: '縦三色旗を一覧で掲載しています。また知っていると少し国旗が面白くなることを解説しました。',
+      englishName: 'vertical tricolor flag',
+      ogp: 'ogpFlagImages/france.png',
+      image: france,
+      url: 'vertical-tricolor-flag',
       desc: [
-        '横三色旗とは、横方向に三分割され、かつ3つの色が使われている国旗のことです。',
-        'そのため三分割されていても3色使われていないものは、厳密には横三分割旗と呼ぶのですが、利便性の関係で三分割旗もこのページで扱います。',
-        '縦・横含む三色旗において、最初に登場したのは1581年に制定されたオランダ国旗だと言われており、当時このデザインは画期的なものでした',
-        'それまでの国旗の多くは紋章を描いているものが多く、市民が使ってはいけないものでした。（そもそも複製することも複雑さゆえ難しい）',
-        'しかし三色旗であれば市民も使うことが可能になるため、三色旗は国民国家の象徴とも語られています。',
-        'なお、横三色旗で最も古いものはオランダ国旗ですが、横三分割旗であればオーストリア国旗が最も古いです。',
-        '書籍によって年代は前後しますが、12世紀には登場していたと考えられています。',
-        'また、補足として、三色旗全般が世界各地で使われ始めたきっかけとなったのは、1794年に登場したフランス国旗です。（現在のフランス国旗のデザインと同じ）',
+        '縦三色旗とは、縦方向に三分割され、かつ3つの色が使われている国旗のことです。',
+        'そのため三分割されていても3色使われていないものは、厳密には縦三分割旗と呼ぶのですが、利便性の関係で三分割旗もこのページで扱います。',
+        '縦・横含む三色旗において、最初に登場したのは1581年に制定されたオランダ国旗だと言われています。',
+        'その後、縦三色旗が増えるきっかけとなったのが1794年のフランス国旗です。',
+        '当時のフランス国旗は現在フランスで使われている国旗と同じデザインで、この国旗に影響を受けた国が増えた結果、世界で縦三色旗が増えました。',
       ],
     },
     {
@@ -6208,6 +6208,25 @@ const App = () => {
         'なおユニオンジャックがカントン（左上、旗竿側上部）に描かれているものは、過去イギリス植民地であった影響、もしくはイギリス連邦に所属している名残から来ています。',
         'そのため国旗にイギリス国旗が含まれているものは、歴史的にイギリスと関係のある場所と考えて良いです。',
         'ちなみにカントンにイギリス国旗を描くもののうち、青ベースのものをブルーエンサイン。赤ベースのものをレッドエンサインと呼んだりします。',
+      ],
+    },
+    {
+      name: '横三色旗',
+      title: '横三色旗の一覧と、世界初の三色旗を解説 ｜ SOF',
+      metaDesc: '横三色旗を一覧で掲載しています。また世界で初めて使われたとされる三色旗についても解説していきます。',
+      englishName: 'horizontal tricolor flag',
+      ogp: 'ogpFlagImages/Netherlands.png',
+      image: Netherlands,
+      url: 'horizontal-tricolor-flag',
+      desc: [
+        '横三色旗とは、横方向に三分割され、かつ3つの色が使われている国旗のことです。',
+        'そのため三分割されていても3色使われていないものは、厳密には横三分割旗と呼ぶのですが、利便性の関係で三分割旗もこのページで扱います。',
+        '縦・横含む三色旗において、最初に登場したのは1581年に制定されたオランダ国旗だと言われており、当時このデザインは画期的なものでした',
+        'それまでの国旗の多くは紋章を描いているものが多く、市民が使ってはいけないものでした。（そもそも複製することも複雑さゆえ難しい）',
+        'しかし三色旗であれば市民も使うことが可能になるため、三色旗は国民国家の象徴とも語られています。',
+        'なお、横三色旗で最も古いものはオランダ国旗ですが、横三分割旗であればオーストリア国旗が最も古いです。',
+        '書籍によって年代は前後しますが、12世紀には登場していたと考えられています。',
+        'また、補足として、三色旗全般が世界各地で使われ始めたきっかけとなったのは、1794年に登場したフランス国旗です。（現在のフランス国旗のデザインと同じ）',
       ],
     },
   ]
@@ -6446,6 +6465,7 @@ const App = () => {
           <Route path='/double-headed-eagle' render={ () => <DoubleEaglePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/crescent-moon-and-stars' render={ () => <StarMoonPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/horizontal-tricolor-flag' render={ () => <HorTriPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
+          <Route path='/vertical-tricolor-flag' render={ () => <VerTriPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
 
 
           <Route path='/tips' render={ () => <Tips knowledge = {knowledge} />}/>
