@@ -223,6 +223,17 @@ import mann from './assets/flagImages/mann.svg';
 import wales from './assets/flagImages/wales.svg';
 import scotland from './assets/flagImages/scotland.svg';
 import england from './assets/flagImages/england.svg';
+// 03/30追加分
+import alabama from './assets/flagImages/alabama.svg';
+import alaska from './assets/flagImages/alaska.svg';
+import arizona from './assets/flagImages/arizona.svg';
+import arkansas from './assets/flagImages/arkansas.svg';
+import california from './assets/flagImages/california.svg';
+import colorado from './assets/flagImages/colorado.svg';
+import connecticut from './assets/flagImages/connecticut.svg';
+import delaware from './assets/flagImages/delaware.svg';
+import florida from './assets/flagImages/florida.svg';
+import georgiaUS from './assets/flagImages/georgiaUS.svg';
 
 // マップ画像のimport
 import afghanistanMap from './assets/mapImages/afghanistanMap.svg';
@@ -442,7 +453,17 @@ import mannMap from './assets/mapImages/mannMap.svg';
 import walesMap from './assets/mapImages/walesMap.svg';
 import scotlandMap from './assets/mapImages/scotlandMap.svg';
 import englandMap from './assets/mapImages/englandMap.svg';
-
+// 03/30追加分
+import alabamaMap from './assets/mapImages/alabamaMap.svg';
+import alaskaMap from './assets/mapImages/alaskaMap.svg';
+import arizonaMap from './assets/mapImages/arizonaMap.svg';
+import arkansasMap from './assets/mapImages/arkansasMap.svg';
+import californiaMap from './assets/mapImages/californiaMap.svg';
+import coloradoMap from './assets/mapImages/coloradoMap.svg';
+import connecticutMap from './assets/mapImages/connecticutMap.svg';
+import delawareMap from './assets/mapImages/delawareMap.svg';
+import floridaMap from './assets/mapImages/floridaMap.svg';
+import georgiaUSMap from './assets/mapImages/georgiaUSMap.svg';
 
 
 //個別ページのimport
@@ -662,7 +683,17 @@ import MannPage from './components/countryFlags/Mann';
 import WalesPage from './components/countryFlags/Wales';
 import ScotlandPage from './components/countryFlags/Scotland';
 import EnglandPage from './components/countryFlags/England';
-
+// 03/30追加分
+import AlabamaPage from './components/countryFlags/Alabama';
+import AlaskaPage from './components/countryFlags/Alaska';
+import ArizonaPage from './components/countryFlags/Arizona';
+import ArkansasPage from './components/countryFlags/Arkansas';
+import CaliforniaPage from './components/countryFlags/California';
+import ColoradoPage from './components/countryFlags/Colorado';
+import ConnecticutPage from './components/countryFlags/Connecticut';
+import DelawarePage from './components/countryFlags/Delaware';
+import FloridaPage from './components/countryFlags/Florida';
+import GeorgiaUSPage from './components/countryFlags/GeorgiaUS';
 
 
 
@@ -743,12 +774,53 @@ const App = () => {
   //関連変数
 
   const kanren = {
-    UK : 'イギリスの過去国旗',
-    UKLocal : 'イギリスの地方旗',
+    UK: 'イギリス',
+    UKOld: 'イギリスの過去国旗',
+    UKLocal: 'イギリスの地方旗',
+    US: 'アメリカ',
+    USOld: 'アメリカの過去国旗',
+    USLocal: 'アメリカの地方旗',
   };
 
   const intialState ={
     imageList : [
+        {
+          mainColor: [red, blue, white],
+          fullColor: [red, blue, white],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'arkansas',
+          url: 'arkansas',
+          name: 'アーカンソー',
+          fullName: 'アーカンソー州',
+          firstLetter: 'あ',
+          officialName: 'State of Arkansas',
+          image: arkansas,
+          location: arkansasMap,
+          link: '',
+          ogp: 'ogpFlagImages/arkansas.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '青い帯に描かれた25個の星は、アーカンソー州がアメリカ合衆国に加わった25州目だったことを示します。',
+            '白い部分に描かれている4つの星は詳しく話すと少し長くなります。',
+            'まず、白枠内に描かれた星は昔は3つで、',
+            '---',
+            '1.アーカンソーは州として加わるまで、3カ国（フランス、スペイン、アメリカ）に属していたこと。',
+            '2.1803年にアーカンソー州である土地がアメリカに買収されたこと（ルイジアナ買収）。',
+            '3.アーカンソーがアメリカによる購入によって出来た3番目の州であること。',
+            '4.『ARKANSAS』という文字の下に2つの星が描かれており、これによってアーカンソーとミシガンが双子の州であることを示す。',
+            '---',
+            'と、4つの意味がありました。',
+            'しかし、1861年から1865年にかけて存在した、アメリカ連合国（CSA）としてアーカンソーが含まれていたことを示せていないことが問題視され、4つめの星が追加されました。',
+            'つまり、現在の4つの星の意味は『フランス・スペイン・アメリカ合衆国・アメリカ連合国』を示す、と考えるのがシンプルでわかりやすいかと思います。',
+            '※アメリカ連合国（CSA）は、北米に存在した未承認共和国。南北戦争においてアメリカ合衆国と争い、1865年に降伏して消滅した。',
+          ],
+        },
         {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
@@ -878,6 +950,7 @@ const App = () => {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [star],
+          kanrenTag: [kanren.US, kanren.USOld, kanren.USLocal],
           area: worldArea.ncAmerica,
           topics: [],
           topicsUrl: [],
@@ -897,6 +970,59 @@ const App = () => {
             '縦横比率は【10:19】',
             '青は正義と忍耐、赤は勇気と耐久力、白は純粋さと純血を表します。50個の星はアメリカを構成する50の州を、13の赤白の縞は独立宣言した独立当初の13州を示したものです。',
             '新たに州が加わるたびに星の数を増やしてきたため、世界で最も国旗の変更回数が多い国となりました。',
+          ],
+        },
+        {
+          mainColor: [blue, yellow],
+          fullColor: [blue, yellow],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'alaska',
+          url: 'alaska',
+          name: 'アラスカ',
+          fullName: 'アラスカ州',
+          firstLetter: 'あ',
+          officialName: 'State of Alaska',
+          image: alaska,
+          location: alaskaMap,
+          link: '',
+          ogp: 'ogpFlagImages/alaska.png',
+          desc: [
+            '縦横比率は【125:177】',
+            '7つの小さな星は北斗七星、一つの大きな星は北極星を表しています。',
+            '旗のデザインは1927年のコンテストで決まりました。採用されたのは13歳の孤児であったベニーベンソンのもので、功績をたたえ1,000ドル相当の教育を受けられたそうです。',
+          ],
+        },
+        {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [cross],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'alabama',
+          url: 'alabama',
+          name: 'アラバマ',
+          fullName: 'アラバマ州',
+          firstLetter: 'あ',
+          officialName: 'State of Alabama',
+          image: alabama,
+          location: alabamaMap,
+          link: '',
+          ogp: 'ogpFlagImages/alabama.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '旗章学において聖アンデレ十字（セント・アンドリュー・クロス）と呼ばれるデザインをしています。',
+            'イギリス構成国の一つ、スコットランドの旗と似ています。',
+            '※スコットランド：https://sof.flaghistory.jp/scotland',
           ],
         },
         {
@@ -922,6 +1048,32 @@ const App = () => {
             '縦横比率は【1:2】',
             '赤は犠牲者の血、緑は肥沃な黒土、白は平和と純粋さ、黒は国に近代化をもたらす石油を表します。これら4色の組み合わせは汎アラブ色と呼ばれるものです。',
             '設計したのは『Abdullah Mohammed Al Maainah』氏で、当時19歳でした。',
+          ],
+        },
+        {
+          mainColor: [red, blue, yellow, orange],
+          fullColor: [red, blue, yellow, orange],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'arizona',
+          url: 'arizona',
+          name: 'アリゾナ',
+          fullName: 'アリゾナ州',
+          firstLetter: 'あ',
+          officialName: 'State of Arizona',
+          image: arizona,
+          location: arizonaMap,
+          link: '',
+          ogp: 'ogpFlagImages/arizona.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '赤と青はアメリカ合衆国から採られた色で、青と黄色はアリゾナの色、赤と黄色は1540年に最初にアリゾナに来たコロナド（スペインの探検家）が率いるスペインの征服者の色です。',
+            '星から太陽光線が伸びるデザインは、「天文学的にありそうもない」と感じる人が多くいたため、多くの議論の末に採用されました。',
           ],
         },
         {
@@ -1153,7 +1305,7 @@ const App = () => {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [cross],
-          kanrenTag: [kanren.UK, kanren.UKLocal],
+          kanrenTag: [kanren.UK, kanren.UKOld, kanren.UKLocal],
           area: worldArea.eu,
           topics: [topics.uj],
           topicsUrl: [topicsUrl.uj],
@@ -1978,6 +2130,33 @@ const App = () => {
           ],
         },
         {
+          mainColor: [red, green, white],
+          fullColor: [red, green, white],
+          tag: [star, creature],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'california',
+          url: 'california',
+          name: 'カリフォルニア',
+          fullName: 'カリフォルニア州',
+          firstLetter: 'か',
+          officialName: 'State of California',
+          image: california,
+          location: californiaMap,
+          link: '',
+          ogp: 'ogpFlagImages/california.png',
+          desc: [
+            '縦横比率は【2:3】',
+            'ベアフラッグという別名のある旗です。',
+            '1911年に制定されたものですが、その由来はカリフォルニア共和国（1846年にごく僅かな期間存在した国。米墨戦争、アメリカ・メキシコ戦争において、メキシコ合衆国領アルタ・カリフォルニアから分離独立した国）で使われた、クマと星の描かれた旗にまで遡ります。',
+            'このクマは元々、強さと揺るぎない抵抗の象徴として描かれました。（抵抗とは、メキシコからの独立を宣言したアルタ・カリフォルニアに掛かっている言葉）',
+          ],
+        },
+        {
           mainColor: [red, blue, white, black],
           fullColor: [red, blue, white, black],
           tag: [],
@@ -2553,6 +2732,34 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, white],
+          fullColor: [green, blue, yellow, white],
+          tag: [plant],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'connecticut',
+          url: 'connecticut',
+          name: 'コネチカット',
+          fullName: 'コネチカット州',
+          firstLetter: 'こ',
+          officialName: 'State of Connecticut',
+          image: connecticut,
+          location: connecticutMap,
+          link: '',
+          ogp: 'ogpFlagImages/connecticut.png',
+          desc: [
+            '縦横比率は【3:4】',
+            'リボンの文字は、コネチカット州のモットーである「移植した人は維持する」と、ラテン語（Qui transtulit sustinet）で書かれています。',
+            '訳は直訳なため、厳密な言葉のニュアンスは不明です。またモットーの起源も不明となっています。',
+            '推測するのであれば、州の医療プログラムの名前として再利用されたことから、医療にまつわる意味を持つのかもしれません。',
+            '3つのブドウの木は3つの最も古い集落である『ウィンザー、ウェザーズフィールド、ハートフォード』を示しています。（この3つは現在のコネチカット州の町の名前）',
+          ],
+        },
+        {
           mainColor: [red, green, blue, yellow, white],
           fullColor: [red, green, blue, yellow, white],
           tag: [moon, star],
@@ -2575,6 +2782,33 @@ const App = () => {
             '縦横比率は【3:5】',
             '緑と三日月はイスラム教を示し、4つの星と黄白赤青の4色はコモロを構成する4島を表しています。',
             'なお4色はそれぞれ黄色がモヘリ島、白がマヨット島、赤がアンジュアン島、青がグランコモル島を表しており、この4島が使っている旗にはそれぞれの色が含まれています。',
+          ],
+        },
+        {
+          mainColor: [red, blue, yellow, white],
+          fullColor: [red, blue, yellow, white],
+          tag: [sun],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'colorado',
+          url: 'colorado',
+          name: 'コロラド',
+          fullName: 'コロラド州',
+          firstLetter: 'こ',
+          officialName: 'State of Colorado',
+          image: colorado,
+          location: coloradoMap,
+          link: '',
+          ogp: 'ogpFlagImages/colorado.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '青は空、黄色は太陽、白は雪をかぶった山々、赤は血色の良い地球を表しています。',
+            '赤色で『C』の形をかたどっており、これによってコロラド（colorado）のCを表現しました。',
+            'また、赤と青色はアメリカ合衆国の国旗と同じ色になるように決められています。',
           ],
         },
         {
@@ -2900,6 +3134,35 @@ const App = () => {
             '縦横比率は【2:3】',
             '国旗に描かれているのはエルサレム十字と呼ばれるもので、これは十字軍に由来するシンボルです。',
             '12世紀から14世紀にかけて存在したグルジア王国で使われていた国旗がもととなっています。',
+          ],
+        },
+        {
+          mainColor: [red, blue, yellow, white],
+          fullColor: [red, blue, yellow, white],
+          tag: [star, creature],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'georgiaUS',
+          url: 'georgiaUS',
+          name: 'ジョージア',
+          fullName: 'ジョージア州',
+          firstLetter: 'し',
+          officialName: 'State of Georgia',
+          image: georgiaUS,
+          location: georgiaUSMap,
+          link: '',
+          ogp: 'ogpFlagImages/georgiaUS.png',
+          desc: [
+            '縦横比率は【2:3】',
+            'カントン（左上、旗竿側上部）に黄色で描かれているのはジョージア州の紋章で、柱は政府の3つの支部を、また州のモットーである「知恵、正義、節度」の言葉が書かれています。',
+            'また紋章を囲んでいる13の星は、ジョージア州が13植民地の一つということを表しています。（13植民地とはアメリカ合衆国として独立を果たす前の、イギリスの植民地だった頃のこと）',
+            'なお、旗全体のデザインはアメリカ連合国（CSA）国旗に基づいています。（CSAについてはアーカンソー州のページで触れています）',
+            'アーカンソー州：https://sof.flaghistory.jp/arkansas',
+
           ],
         },
         {
@@ -3726,6 +3989,32 @@ const App = () => {
             '縦横比率は【1:2】',
             '9個の星は無人島を含めたこの国の島の数を表しています。またカントン（左上）に描かれているのはイギリスの国旗です。イギリスとの歴史的関係性を示します。',
             '一時は有人島の数に合わせて星の数が8個に変更されていましたが、1997年に星の数が9つに戻りました。',
+          ],
+        },
+        {
+          mainColor: [blue, yellow],
+          fullColor: [red, green, blue, yellow, white, black],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'delaware',
+          url: 'delaware',
+          name: 'デラウェア',
+          fullName: 'デラウェア州',
+          firstLetter: 'て',
+          officialName: 'State of Delaware',
+          image: delaware,
+          location: delawareMap,
+          link: '',
+          ogp: 'ogpFlagImages/delaware.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '旗に採用されている色はジョージ・ワシントン将軍の制服の色が反映されたものです。',
+            'リボンの文字はデラウェア州のモットーである自由と独立が書かれています。',
           ],
         },
         {
@@ -4876,6 +5165,32 @@ const App = () => {
             '縦横比率は【3:5】',
             '赤は独立闘争、緑は希望、白は平和を表します。',
             '3つの星は主要民族であるフツ族・ツチ族・トゥワ族と国の標語である統一・労働・進歩を示しています。',
+          ],
+        },
+        {
+          mainColor: [red, white],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [plant],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'florida',
+          url: 'florida',
+          name: 'フロリダ',
+          fullName: 'フロリダ州',
+          firstLetter: 'ふ',
+          officialName: 'State of Florida',
+          image: florida,
+          location: floridaMap,
+          link: '',
+          ogp: 'ogpFlagImages/florida.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '旗には「In God We Trust」と書かれています。',
+            'これはアメリカの国家のモットーであり、フロリダ州以外にはジョージア州とミシシッピ州の旗にも同じ言葉が書かれています。',
           ],
         },
         {
@@ -6456,6 +6771,16 @@ const App = () => {
           <Route path='/wales' render={ () => <WalesPage mainImage = {intialState.imageList}/>} />
           <Route path='/england' render={ () => <EnglandPage mainImage = {intialState.imageList}/>} />
           <Route path='/scotland' render={ () => <ScotlandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/alabama' render={ () => <AlabamaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/alaska' render={ () => <AlaskaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/arizona' render={ () => <ArizonaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/arkansas' render={ () => <ArkansasPage mainImage = {intialState.imageList}/>} />
+          <Route path='/california' render={ () => <CaliforniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/colorado' render={ () => <ColoradoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/connecticut' render={ () => <ConnecticutPage mainImage = {intialState.imageList}/>} />
+          <Route path='/delaware' render={ () => <DelawarePage mainImage = {intialState.imageList}/>} />
+          <Route path='/florida' render={ () => <FloridaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/georgiaUS' render={ () => <GeorgiaUSPage mainImage = {intialState.imageList}/>} />
 
 
 

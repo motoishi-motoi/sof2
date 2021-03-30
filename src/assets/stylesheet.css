@@ -826,11 +826,21 @@ footer h4{
 
 
 
-.relation h3 {
+.relation h2 {
+  font-size: 1.2em;
   color: #4b4b4b;
   border-bottom: 1px solid #a5d6a7;
   padding-bottom: 8px;
   padding-left: 12px;
+}
+.relation h3 {
+  display: inline-block;
+  border-bottom: 1px solid #a5d6a7;
+  font-size: 1.06em;
+  color: #4b4b4b;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .relation-flag{
@@ -876,7 +886,16 @@ footer h4{
   grid-gap: 1.4rem;
   margin-bottom: 3em;
 }
+.grid-relation-margin{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1.4rem;
+  margin-bottom: 1em;
+}
 .grid-relation a{
+  text-decoration: none;
+}
+.grid-relation-margin a{
   text-decoration: none;
 }
 
@@ -1180,6 +1199,11 @@ footer h4{
     grid-template-columns: repeat(3,1fr);
     grid-gap: 1.4rem;
   }
+  .grid-relation-margin{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.4rem;
+  }
 
   .flag-date-button{
     display: block;
@@ -1283,6 +1307,11 @@ footer h4{
     cursor: pointer;
   }
   .grid-relation{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.4rem;
+  }
+  .grid-relation-margin{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 1.4rem;
