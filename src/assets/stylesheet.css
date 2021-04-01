@@ -249,6 +249,17 @@ header nav a{
   color:#fff;
 }
 
+/*地方旗*/
+.old{
+  display: inline-block;
+  background: #7b7b7b;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  color:#fff;
+}
+
 /*
 タグを囲んでるやつ
 .tagbox{
@@ -307,6 +318,7 @@ header nav a{
   cursor: pointer;
   box-shadow: 0 0 7px #ccc;
   background: #fff;
+  overflow: hidden;
 }
 .flagBox:hover{
   box-shadow: 0 0 6px #9b9b9b;
@@ -338,6 +350,9 @@ header nav a{
 .countryName{
   text-align: center;
   color: #4b4b4b;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
 }
 
 

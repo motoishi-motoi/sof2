@@ -74,6 +74,7 @@ const Main = (props) =>{
   const[notKokurencount, setNotKokurencount] = useState('OFF');
   const[othercount, setOthercount] = useState('OFF');
   const[localcount, setLocalcount] = useState('OFF');
+  const[oldcount, setOldcount] = useState('OFF');
 
   // useState()を使う場合は、必ずconst[x1, x2]のようにやらないといけないらしい。
   // １つ目が初期値になって、２つ目が例えば"setCount(count + 1)"みたいに
@@ -200,6 +201,9 @@ const Main = (props) =>{
     }
     if(sessionStorage.localcount){
       setLocalcount(sessionStorage.getItem('localcount'));
+    }
+    if(sessionStorage.oldcount){
+      setOldcount(sessionStorage.getItem('oldcount'));
     }
 
     //一文字目検索の値を取得
@@ -438,6 +442,8 @@ const Main = (props) =>{
         return false;
       }else if(String(row.kokuren).indexOf('地方旗') === -1 && localcount === String('ON')){
         return false;
+      }else if(String(row.kokuren).indexOf('過去の旗') === -1 && oldcount === String('ON')){
+        return false;
       }
 
       // ひらがな検索
@@ -470,7 +476,7 @@ const Main = (props) =>{
     //.mapはこういう書き方した関数を呼び出してもいけるみたい。
     //useMemoはなんか高速化するらしい。
 
-  }, [localcount, othercount, filterHiragana, unspeArea, filterQuery.title, notKokurencount, plantcount, exclusionColor, fColorSwitch, mColorSwitch, partialColor, perfectColor, africacount, asiacount, blackcount, bluecount, creaturecount, crosscount, eucount, goldcount, greencount, kokurencount, mooncount, ncAmericacount, oceaniacount, orangecount, purplecount, redcount, sAmericacount, starcount, suncount, whitecount, yellowcount, images]);
+  }, [oldcount, localcount, othercount, filterHiragana, unspeArea, filterQuery.title, notKokurencount, plantcount, exclusionColor, fColorSwitch, mColorSwitch, partialColor, perfectColor, africacount, asiacount, blackcount, bluecount, creaturecount, crosscount, eucount, goldcount, greencount, kokurencount, mooncount, ncAmericacount, oceaniacount, orangecount, purplecount, redcount, sAmericacount, starcount, suncount, whitecount, yellowcount, images]);
 
 
   //onClickで呼び出す関数たち。
@@ -785,11 +791,13 @@ const Main = (props) =>{
     setNotKokurencount(String('OFF'));
     setOthercount(String('OFF'));
     setLocalcount(String('OFF'));
+    setOldcount(String('OFF'));
     sessionStorage.setItem('unspeKokuren', 'OFF');
     sessionStorage.setItem('kokurencount', 'OFF');
     sessionStorage.setItem('notKokurencount', 'OFF');
     sessionStorage.setItem('othercount', 'OFF');
     sessionStorage.setItem('localcount', 'OFF');
+    sessionStorage.setItem('oldcount', 'OFF');
   };
 
   const handleFilterKokuren = e => {
@@ -841,6 +849,18 @@ const Main = (props) =>{
       kokurenReset();
       setLocalcount(String('ON'));
       sessionStorage.setItem('localcount', 'ON');
+    }else{
+      kokurenReset();
+      setUnspeKokuren(String('ON'));
+      sessionStorage.setItem('unspeKokuren', 'ON');
+    }
+  };
+
+  const handleFilterOld = e => {
+    if(oldcount === String('OFF')){
+      kokurenReset();
+      setOldcount(String('ON'));
+      sessionStorage.setItem('oldcount', 'ON');
     }else{
       kokurenReset();
       setUnspeKokuren(String('ON'));
@@ -1061,6 +1081,9 @@ const Main = (props) =>{
                 </div>
                 <div className = {'button button' + localcount} onClick={() => {handleFilterLocal()}}>
                   <span className ='searchButton'>地方旗</span>
+                </div>
+                <div className = {'button button' + oldcount} onClick={() => {handleFilterOld()}}>
+                  <span className ='searchButton'>過去の旗</span>
                 </div>
               </div>
             </div>            

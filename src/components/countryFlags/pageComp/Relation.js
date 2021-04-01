@@ -94,7 +94,7 @@ const Relation = (props) => {
     
       }, [targetCountry.fullName, blackSwitch, blueSwitch, goldSwitch, greenSwitch, orangeSwitch, purpleSwitch, redSwitch, whiteSwitch, yellowSwitch, images]);
 
-      const filteredImageKanren = useMemo(() => {
+      const filteredImageLocal = useMemo(() => {
         let tmpImages = images;
 
 
@@ -106,6 +106,9 @@ const Relation = (props) => {
                 return false;
             }
             if(targetCountry.kanrenTag === undefined){
+              return false;
+            }
+            if(row.kokuren === '過去の旗'){
               return false;
             }
             if(row.kanrenTag !== undefined){
@@ -138,6 +141,68 @@ const Relation = (props) => {
         //useMemoはなんか高速化するらしい。
     
       }, [targetCountry.kanrenTag, targetCountry.fullName, images]);
+
+      const filteredImageOld = useMemo(() => {
+        let tmpImages = images;
+
+
+        tmpImages = tmpImages.filter(row =>{
+    
+            // 関連する旗の検索
+
+            if(String(row.fullName) === targetCountry.fullName){
+                return false;
+            }
+            if(targetCountry.kanrenTag === undefined){
+              return false;
+            }
+            if(row.kokuren === '地方旗'){
+              return false;
+            }
+            if(row.kanrenTag !== undefined){
+              if(String(row.kanrenTag).indexOf('国家タグ') !== -1){
+                return false;
+              }
+            }
+            if(String(row.kanrenTag).indexOf(targetCountry.kanrenTag[0]) !== -1 && targetCountry.kanrenTag[0] !== undefined){
+              return row;
+            }else if(String(row.kanrenTag).indexOf(targetCountry.kanrenTag[1]) !== -1 && targetCountry.kanrenTag[1] !== undefined){
+              return row;
+            }else if(String(row.kanrenTag).indexOf(targetCountry.kanrenTag[2]) !== -1 && targetCountry.kanrenTag[2] !== undefined){
+              return row;
+            }
+
+            return false;
+
+        
+        
+        });
+    
+        //indexOf()は引数と該当するものが配列内にあった場合、配列の位置に応じて数字を返す
+        //当てはまらなかった場合-1を返す。
+        //String型を対象としたものにしか出来ないので、String()を使うのが得策
+        
+
+        return tmpImages;
+    
+        //.mapはこういう書き方した関数を呼び出してもいけるみたい。
+        //useMemoはなんか高速化するらしい。
+    
+      }, [targetCountry.kanrenTag, targetCountry.fullName, images]);
+
+        //降順にソートする
+        filteredImageOld.sort(function (a, b){
+          if(a.age !== undefined && b.age !== undefined){
+            if(a.age < b.age){
+              return -1;
+            }
+            if(a.age > b.age){
+              return 1
+            }
+          }
+          return 0;
+        });
+
 
       const filteredImageCountry = useMemo(() => {
         let tmpImages = images;
@@ -180,6 +245,7 @@ const Relation = (props) => {
         //当てはまらなかった場合-1を返す。
         //String型を対象としたものにしか出来ないので、String()を使うのが得策
     
+
         return tmpImages;
     
         //.mapはこういう書き方した関数を呼び出してもいけるみたい。
@@ -241,9 +307,14 @@ const Relation = (props) => {
         }
       }
 
+      const checkRelation = () =>{
+        let value = filteredImageOld.length + filteredImageLocal.length;
+        return value;
+      }
+
     return (
         <div className='relation'>
-            {filteredImageKanren.length !== 0 &&
+            {checkRelation() !== 0 &&
             <div>
               <h2>{targetCountry.name + flagSwitch(targetCountry)}と関連する旗一覧</h2>
                 {filteredImageCountry.length !== 0 && filteredImageCountry !== undefined &&
@@ -264,16 +335,17 @@ const Relation = (props) => {
                     );
                   })}
                   </div>}
-                  {filteredImageCountry.length > 0 ?
+                  {filteredImageCountry.length > 0 && filteredImageLocal.length !== 0 ?
                   filteredImageCountry.map((flagImage) => {
                     return(
                       <h3 key = {flagImage.name}>{flagImage.name + 'の地方旗'}</h3>
                     );
                   })
-                  :<h3>{targetCountry.name + 'の地方旗'}</h3>
+                  :filteredImageLocal.length !== 0 && <h3>{targetCountry.name + 'の地方旗'}</h3>
                   }
+                  {filteredImageLocal.length !== 0 &&
                   <div className = 'grid-relation'>
-                  {filteredImageKanren.map((flagImage) => {
+                  {filteredImageLocal.map((flagImage) => {
                     return(
                       <Link to = {'/' + flagImage.url} key = {flagImage.id}>
                           <section className = 'relation-flag' key={flagImage.url}>
@@ -285,7 +357,30 @@ const Relation = (props) => {
                       </Link>
                     );
                   })}
-              </div>
+                  </div>}
+                  {filteredImageCountry.length > 0 && filteredImageOld.length > 0 ?
+                  filteredImageCountry.map((flagImage) => {
+                    return(
+                      <h3 key = {flagImage.name}>{flagImage.name + 'の過去の旗'}</h3>
+                    );
+                  })
+                  :filteredImageOld.length !== 0 &&<h3>{targetCountry.name + 'の過去の旗'}</h3>
+                  }
+                  {filteredImageOld.length !== 0 &&
+                  <div className = 'grid-relation'>
+                  {filteredImageOld.map((flagImage) => {
+                    return(
+                      <Link to = {'/' + flagImage.url} key = {flagImage.id}>
+                          <section className = 'relation-flag' key={flagImage.url}>
+                              <div className = 'relation-flag-box'>
+                                  <img className = {flagImage.id + 'reFlag relation-flag-img'} src={flagImage.image} alt = {flagImage.fullName + 'の国旗'} />
+                              </div>
+                              <h4>{flagImage.name}</h4>
+                          </section>
+                      </Link>
+                    );
+                  })}
+                  </div>}
             </div>}
             <h2>{targetCountry.name + flagSwitch(targetCountry)}と同じ色だけを使っている旗一覧</h2>
             <div className = 'grid-relation'>

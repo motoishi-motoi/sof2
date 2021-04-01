@@ -276,6 +276,25 @@ import washington from './assets/flagImages/washington.svg';
 import westVirginia from './assets/flagImages/westVirginia.svg';
 import wisconsin from './assets/flagImages/wisconsin.svg';
 import wyoming from './assets/flagImages/wyoming.svg';
+import azerbaijanSoviet1952_1991 from './assets/flagImages/azerbaijanSoviet1952-1991.svg';
+import azerbaijanSoviet1940_1952 from './assets/flagImages/azerbaijanSoviet1940-1952.svg';
+import azerbaijanSoviet1936_1940 from './assets/flagImages/azerbaijanSoviet1936-1940.svg';
+import SFSR1922_1936 from './assets/flagImages/SFSR1922-1936.svg';
+import azerbaijan1918_1920 from './assets/flagImages/azerbaijan1918-1920.svg';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // マップ画像のimport
@@ -786,7 +805,11 @@ import WashingtonPage from './components/countryFlags/Washington';
 import WestVirginiaPage from './components/countryFlags/WestVirginia';
 import WisconsinPage from './components/countryFlags/Wisconsin';
 import WyomingPage from './components/countryFlags/Wyoming';
-
+import AzSoviet1952Page from './components/countryFlags/AzSoviet1952';
+import AzSoviet1940Page from './components/countryFlags/AzSoviet1940';
+import AzSoviet1936Page from './components/countryFlags/AzSoviet1936';
+import Azerbaijan1918Page from './components/countryFlags/Azerbaijan1918';
+import SFSR1922Page from './components/countryFlags/SFSR1922';
 
 
 // カテゴリ・タグページ
@@ -870,6 +893,8 @@ const App = () => {
     UKLocal: 'イギリスの地方旗',
     USOld: 'アメリカの過去国旗',
     USLocal: 'アメリカの地方旗',
+    azOld: 'アゼルバイジャンの過去国旗',
+    azLocal: 'アゼルバイジャンの地方旗',
   };
 
   const intialState ={
@@ -1019,6 +1044,7 @@ const App = () => {
           mainColor: [red, green, blue, white],
           fullColor: [red, green, blue, white],
           tag: [moon, star],
+          kanrenTag: [kanren.main, kanren.azOld, kanren.azLocal],
           area: worldArea.asia,
           topics: [topics.starMoon],
           topicsUrl: [topicsUrl.starMoon],
@@ -1038,6 +1064,106 @@ const App = () => {
             '縦横比率は【1:2】',
             '青色はトルコ系民族、赤色は近代化への決意、緑はイスラム、八角星は8つのトルコ系民族を表します。また三日月と星の組み合わせはイスラム教の象徴です。',
             '現国旗を作ったのは『Ali Bey Hussein Zade』という哲学者（1864 - 1940）。ナショナリストのリーダーでもありました。',
+          ],
+        },
+        {
+          mainColor: [red, green, blue, white],
+          fullColor: [red, green, blue, white],
+          tag: [moon, star],
+          kanrenTag: [kanren.azOld],
+          age: 1918,
+          area: worldArea.asia,
+          topics: [topics.starMoon],
+          topicsUrl: [topicsUrl.starMoon],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'azerbaijan_1918-1920',
+          url: 'azerbaijan_1918-1920',
+          name: 'アゼルバイジャン 1918-1920 ',
+          fullName: 'アゼルバイジャン民主共和国 1918-1920 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: azerbaijan1918_1920,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/azerbaijan1918-1920.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, yellow],
+          fullColor: [red, yellow],
+          tag: [],
+          kanrenTag: [kanren.azOld],
+          age: 1936,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'azerbaijanSoviet1936-1940',
+          url: 'azerbaijanSoviet1936-1940',
+          name: 'アゼルバイジャン・ソビエト 1936-1940 ',
+          fullName: 'アゼルバイジャン・ソビエト社会主義共和国 1936-1940 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: azerbaijanSoviet1936_1940,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/azerbaijanSoviet1936-1940.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, yellow],
+          fullColor: [red, yellow],
+          tag: [],
+          kanrenTag: [kanren.azOld],
+          age: 1940,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'azerbaijanSoviet1940-1952',
+          url: 'azerbaijanSoviet1940-1952',
+          name: 'アゼルバイジャン・ソビエト 1940-1952 ',
+          fullName: 'アゼルバイジャン・ソビエト社会主義共和国 1940-1952 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: azerbaijanSoviet1940_1952,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/azerbaijanSoviet1940-1952.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, blue, yellow],
+          fullColor: [red, blue, yellow],
+          tag: [],
+          kanrenTag: [kanren.azOld],
+          age: 1952,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'azerbaijanSoviet1952-1991',
+          url: 'azerbaijanSoviet1952-1991',
+          name: 'アゼルバイジャン・ソビエト 1952-1991 ',
+          fullName: 'アゼルバイジャン・ソビエト社会主義共和国 1952-1991 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: azerbaijanSoviet1952_1991,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/azerbaijanSoviet1952-1991.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -3326,6 +3452,31 @@ const App = () => {
           ogp: 'ogpFlagImages/southDakota.png',
           desc: [
             '準備中…',
+          ],
+        },
+        {
+          mainColor: [red, yellow],
+          fullColor: [red, yellow],
+          tag: [star],
+          kanrenTag: [kanren.azOld],
+          age: 1922,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'SFSR1922-1936',
+          url: 'SFSR1922-1936',
+          name: 'ザカフカース 1922-1936 ',
+          fullName: 'ザカフカース社会主義連邦ソビエト共和国 1922-1936 ',
+          firstLetter: 'さ',
+          officialName: '',
+          image: SFSR1922_1936,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/SFSR1922-1936.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -7931,6 +8082,12 @@ const App = () => {
           <Route path='/west-virginia' render={ () => <WestVirginiaPage mainImage = {intialState.imageList}/>} />
           <Route path='/wisconsin' render={ () => <WisconsinPage mainImage = {intialState.imageList}/>} />
           <Route path='/wyoming' render={ () => <WyomingPage mainImage = {intialState.imageList}/>} />
+          <Route path='/azerbaijan_1918-1920' render={ () => <Azerbaijan1918Page mainImage = {intialState.imageList}/>} />
+          <Route path='/azerbaijanSoviet1936-1940' render={ () => <AzSoviet1936Page mainImage = {intialState.imageList}/>} />
+          <Route path='/azerbaijanSoviet1940-1952' render={ () => <AzSoviet1940Page mainImage = {intialState.imageList}/>} />
+          <Route path='/azerbaijanSoviet1952-1991' render={ () => <AzSoviet1952Page mainImage = {intialState.imageList}/>} />
+          <Route path='/SFSR1922-1936' render={ () => <SFSR1922Page mainImage = {intialState.imageList}/>} />
+
 
 
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
