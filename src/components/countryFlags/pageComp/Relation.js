@@ -109,7 +109,7 @@ const Relation = (props) => {
               return false;
             }
             if(row.kanrenTag !== undefined){
-              if(row.kanrenTag.length >= 3){
+              if(String(row.kanrenTag).indexOf('国家タグ') !== -1){
                 return false;
               }
             }
@@ -153,12 +153,17 @@ const Relation = (props) => {
             if(targetCountry.kanrenTag === undefined){
               return false;
             }
+
+            //国家の場合は表示したくない
+            if(String(targetCountry.kanrenTag).indexOf('国家タグ') !== -1 && targetCountry.kanrenTag !== undefined){
+              return false;
+            }
             //地方旗は一つしか持たないはずなので、0のみ。
             if(String(row.kanrenTag).indexOf(targetCountry.kanrenTag[0]) !== -1 && targetCountry.kanrenTag[0] !== undefined){
              
-              //要素数が3以上のものはメインの国旗しか無い
+              //要素に国家タグが含まれるものはメインの国旗しか無い
               if(row.kanrenTag !== undefined){
-              if(row.kanrenTag.length >= 3){
+              if(String(row.kanrenTag).indexOf('国家タグ') !== -1){
                 return row;
               }
               }
@@ -229,8 +234,10 @@ const Relation = (props) => {
       const flagSwitch = (flag) => {
         if(flag.kokuren !== '地方旗' || flag.kanrenTag[0] === 'イギリスの地方旗'){
           return '国旗';
-        }else{
+        }else if(flag.fullName !== 'ワシントンD.C.'){
           return '州旗';
+        }else{
+          return '旗';
         }
       }
 

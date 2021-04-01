@@ -63,9 +63,11 @@ const FlagDate = (props) => {
 						<img className = {targetCountry.id + 'Date flag-date-image-svg'} src ={targetCountry.image} alt = {targetCountry.name + 'の国旗'} />
 					</a>
 				</div>
+				{targetCountry.location !== '' &&
 				<div className = 'flag-date-location'>
 					<img className = {targetCountry.id + 'Map flag-date-map-image'} src ={targetCountry.location} alt = {targetCountry.name + 'の場所'} />
 				</div>
+				}
 			</div>
 			<div className = 'flag-date-info'>
 				<div className = 'flag-date-intro'>

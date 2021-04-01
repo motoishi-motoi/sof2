@@ -366,6 +366,17 @@ header nav a{
   left:5px;
 }
 
+.rhode-island{
+  left:11px;
+}
+
+.ohio{
+  border: none;
+}
+.ohioDate{
+  border: none;
+}
+
 
 /*なぜか下記２つだけborderとの間に隙間ができるので、max-heightを100pxにしておく*/
 .norway, .denmark{
@@ -946,6 +957,7 @@ footer h4{
 /*国旗表示エリア*/
 .flag-date-image{
   width: 50%;
+  margin:0 auto;
 }
 
 /*国旗画像自体*/

@@ -234,6 +234,49 @@ import connecticut from './assets/flagImages/connecticut.svg';
 import delaware from './assets/flagImages/delaware.svg';
 import florida from './assets/flagImages/florida.svg';
 import georgiaUS from './assets/flagImages/georgiaUS.svg';
+// 03/31追加分
+import hawaii from './assets/flagImages/hawaii.svg';
+import idaho from './assets/flagImages/idaho.svg';
+import illinois from './assets/flagImages/illinois.svg';
+import indiana from './assets/flagImages/indiana.svg';
+import iowa from './assets/flagImages/iowa.svg';
+import washingtonDC from './assets/flagImages/washingtonDC.svg';
+import kansas from './assets/flagImages/kansas.svg';
+import kentucky from './assets/flagImages/kentucky.svg';
+import louisiana from './assets/flagImages/louisiana.svg';
+import maine from './assets/flagImages/maine.svg';
+import maryland from './assets/flagImages/maryland.svg';
+import massachusetts from './assets/flagImages/massachusetts.svg';
+import michigan from './assets/flagImages/michigan.svg';
+import minnesota from './assets/flagImages/minnesota.svg';
+import mississippi from './assets/flagImages/mississippi.svg';
+import missouri from './assets/flagImages/missouri.svg';
+import montana from './assets/flagImages/montana.svg';
+import nebraska from './assets/flagImages/nebraska.svg';
+import nevada from './assets/flagImages/nevada.svg';
+import newHampshire from './assets/flagImages/newHampshire.svg';
+import newJersey from './assets/flagImages/newJersey.svg';
+import newMexico from './assets/flagImages/newMexico.svg';
+import newYork from './assets/flagImages/newYork.svg';
+import northCarolina from './assets/flagImages/northCarolina.svg';
+import northDakota from './assets/flagImages/northDakota.svg';
+import ohio from './assets/flagImages/ohio.svg';
+import oklahoma from './assets/flagImages/oklahoma.svg';
+import oregon from './assets/flagImages/oregon.svg';
+import pennsylvania from './assets/flagImages/pennsylvania.svg';
+import rhodeisland from './assets/flagImages/rhodeIsland.svg';
+import southCarolina from './assets/flagImages/southCarolina.svg';
+import southDakota from './assets/flagImages/southDakota.svg';
+import tennessee from './assets/flagImages/tennessee.svg';
+import texas from './assets/flagImages/texas.svg';
+import utah from './assets/flagImages/utah.svg';
+import vermont from './assets/flagImages/vermont.svg';
+import virginia from './assets/flagImages/virginia.svg';
+import washington from './assets/flagImages/washington.svg';
+import westVirginia from './assets/flagImages/westVirginia.svg';
+import wisconsin from './assets/flagImages/wisconsin.svg';
+import wyoming from './assets/flagImages/wyoming.svg';
+
 
 // マップ画像のimport
 import afghanistanMap from './assets/mapImages/afghanistanMap.svg';
@@ -464,6 +507,13 @@ import connecticutMap from './assets/mapImages/connecticutMap.svg';
 import delawareMap from './assets/mapImages/delawareMap.svg';
 import floridaMap from './assets/mapImages/floridaMap.svg';
 import georgiaUSMap from './assets/mapImages/georgiaUSMap.svg';
+// 03/31追加分
+import hawaiiMap from './assets/mapImages/hawaiiMap.svg';
+import idahoMap from './assets/mapImages/idahoMap.svg';
+import illinoisMap from './assets/mapImages/illinoisMap.svg';
+import indianaMap from './assets/mapImages/indianaMap.svg';
+import iowaMap from './assets/mapImages/iowaMap.svg';
+//Mapの追加は負担が大きいので一旦停止する
 
 
 //個別ページのimport
@@ -694,7 +744,48 @@ import ConnecticutPage from './components/countryFlags/Connecticut';
 import DelawarePage from './components/countryFlags/Delaware';
 import FloridaPage from './components/countryFlags/Florida';
 import GeorgiaUSPage from './components/countryFlags/GeorgiaUS';
-
+// 03/31追加分
+import HawaiiPage from './components/countryFlags/Hawaii';
+import IdahoPage from './components/countryFlags/Idaho';
+import IllinoisPage from './components/countryFlags/Illinois';
+import IndianaPage from './components/countryFlags/Indiana';
+import IowaPage from './components/countryFlags/Iowa';
+import WashingtonDCPage from './components/countryFlags/WashingtonDC';
+import KansasPage from './components/countryFlags/Kansas';
+import KentuckyPage from './components/countryFlags/Kentucky';
+import LouisianaPage from './components/countryFlags/Louisiana';
+import MainePage from './components/countryFlags/Maine';
+import MarylandPage from './components/countryFlags/Maryland';
+import MassachusettsPage from './components/countryFlags/Massachusetts';
+import MichiganPage from './components/countryFlags/Michigan';
+import MinnesotaPage from './components/countryFlags/Minnesota';
+import MississippiPage from './components/countryFlags/Mississippi';
+import MissouriPage from './components/countryFlags/Missouri';
+import MontanaPage from './components/countryFlags/Montana';
+import NebraskaPage from './components/countryFlags/Nebraska';
+import NevadaPage from './components/countryFlags/Nevada';
+import NewHampshirePage from './components/countryFlags/NewHampshire';
+import NewJerseyPage from './components/countryFlags/NewJersey';
+import NewMexicoPage from './components/countryFlags/NewMexico';
+import NewYorkPage from './components/countryFlags/NewYork';
+import NorthCarolinaPage from './components/countryFlags/NorthCarolina';
+import NorthDakotaPage from './components/countryFlags/NorthDakota';
+import OhioPage from './components/countryFlags/Ohio';
+import OklahomaPage from './components/countryFlags/Oklahoma';
+import OregonPage from './components/countryFlags/Oregon';
+import PennsylvaniaPage from './components/countryFlags/Pennsylvania';
+import RhodeislandPage from './components/countryFlags/Rhodeisland';
+import SouthCarolinaPage from './components/countryFlags/SouthCarolina';
+import SouthDakotaPage from './components/countryFlags/SouthDakota';
+import TennesseePage from './components/countryFlags/Tennessee';
+import TexasPage from './components/countryFlags/Texas';
+import UtahPage from './components/countryFlags/Utah';
+import VermontPage from './components/countryFlags/Vermont';
+import VirginiaPage from './components/countryFlags/Virginia';
+import WashingtonPage from './components/countryFlags/Washington';
+import WestVirginiaPage from './components/countryFlags/WestVirginia';
+import WisconsinPage from './components/countryFlags/Wisconsin';
+import WyomingPage from './components/countryFlags/Wyoming';
 
 
 
@@ -774,10 +865,9 @@ const App = () => {
   //関連変数
 
   const kanren = {
-    UK: 'イギリス',
+    main: '国家タグ',
     UKOld: 'イギリスの過去国旗',
     UKLocal: 'イギリスの地方旗',
-    US: 'アメリカ',
     USOld: 'アメリカの過去国旗',
     USLocal: 'アメリカの地方旗',
   };
@@ -823,6 +913,34 @@ const App = () => {
         },
         {
           mainColor: [red, blue, white],
+          fullColor: [red, blue, yellow, white],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'iowa',
+          url: 'iowa',
+          name: 'アイオワ',
+          fullName: 'アイオワ州',
+          firstLetter: 'あ',
+          officialName: 'State of Iowa',
+          image: iowa,
+          location: iowaMap,
+          link: '',
+          ogp: 'ogpFlagImages/iowa.png',
+          desc: [
+            '縦横比率は【2:3】',
+            'リボンには「Our liberties we prize and our rights we will maintain」と書かれています。（私達が大切にする、自由とそれを維持する権利）',
+            'フランス国旗の配色と似ていますが、これはアイオワが州になる前、2度フランスの支配下にあったことが影響しています。',
+            '色には意味が込められており、白は最初のアメリカ人であるインディアンがアイオワの大草原に住んでいた頃を、青は忠誠を、赤は勇気を表しています。',
+            'フランス国旗：https://sof.flaghistory.jp/france',  
+          ],
+        },
+        {
+          mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [cross, scCross],
           topics: [topics.scCross],
@@ -844,6 +962,32 @@ const App = () => {
             '縦横比率は【18:25】',
             '青色は古くからアイスランドで親しまれてきた国民的な色。赤は国内に多く存在する火山、白は氷河と雪原を表します。旗竿側に交点が少し寄っている十字はスカンジナビア十字と呼ばれるものです。',
             '過去使われていた国旗の中には、重要な輸出品であった干しタラの描かれたものがありました。',
+          ],
+        },
+        {
+          mainColor: [red, blue, yellow],
+          fullColor: [red, blue, green, yellow, white, black, purple],
+          tag: [creature, plant],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'idaho',
+          url: 'idaho',
+          name: 'アイダホ',
+          fullName: 'アイダホ州',
+          firstLetter: 'あ',
+          officialName: 'State of Idaho',
+          image: idaho,
+          location: idahoMap,
+          link: '',
+          ogp: 'ogpFlagImages/idaho.png',
+          desc: [
+            '縦横比率は【26:33】',
+            '中央に描かれているのは州の印章で、この印章をデザインしたのはエマエドワーズグリーン氏です。',
+            '印章には平等、自由、正義を表す鉱山労働者と女性が、またアイダホの天然資源である鉱山、森林、農地、野生生物が描かれています。',
           ],
         },
         {
@@ -950,7 +1094,7 @@ const App = () => {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [star],
-          kanrenTag: [kanren.US, kanren.USOld, kanren.USLocal],
+          kanrenTag: [kanren.main, kanren.USOld, kanren.USLocal],
           area: worldArea.ncAmerica,
           topics: [],
           topicsUrl: [],
@@ -1305,7 +1449,7 @@ const App = () => {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [cross],
-          kanrenTag: [kanren.UK, kanren.UKOld, kanren.UKLocal],
+          kanrenTag: [kanren.main, kanren.UKOld, kanren.UKLocal],
           area: worldArea.eu,
           topics: [topics.uj],
           topicsUrl: [topicsUrl.uj],
@@ -1428,6 +1572,32 @@ const App = () => {
           ],
         },
         {
+          mainColor: [red, blue, green, white],
+          fullColor: [red, blue, green, yellow, white, black],
+          tag: [creature, sun],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'illinois',
+          url: 'illinois',
+          name: 'イリノイ',
+          fullName: 'イリノイ州',
+          firstLetter: 'い',
+          officialName: 'State of Illinois',
+          image: illinois,
+          location: illinoisMap,
+          link: '',
+          ogp: 'ogpFlagImages/illinois.png',
+          desc: [
+            '準備中…',
+            '中央の印章には1818年と1868年の2つの日付が書いてありますが、これは1818年がイリノイがアメリカに加わった年を、1868年がこの印章が導入された年を表しています。',
+            'なお印章が導入されたのは1868年ですが、旗のデザインが決まったのは1915年のことです。',
+          ],
+        },
+        {
           mainColor: [red, white],
           fullColor: [red, white],
           tag: [cross],
@@ -1451,6 +1621,33 @@ const App = () => {
             '縦横比率は【3:5】',
             'イギリスを構成する4つの地域の一つである、イングランドで使われている域旗です。イギリスの前身であるイングランド王国で国旗として使われていたものと同一のデザインで、聖ゲオルギオス十字と呼ばれます。',
             '聖ゲオルギオスとはキリスト教の聖人の一人で、ドラゴン退治の伝説で有名な人物です。なお聖ゲオルギオス十字はセント・ジョージズ・クロスとも呼ばれます。またカトリックと由来のあるシンボルです。',
+          ],
+        },
+        {
+          mainColor: [blue, yellow],
+          fullColor: [blue, yellow],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'indiana',
+          url: 'indiana',
+          name: 'インディアナ',
+          fullName: 'インディアナ州',
+          firstLetter: 'い',
+          officialName: 'State of Indiana',
+          image: indiana,
+          location: indianaMap,
+          link: '',
+          ogp: 'ogpFlagImages/indiana.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '星の配置はよく見ると二重の円構造になっていて、外側が13個、内側が5個、そしてトーチの上に一つあります。',
+            '外側の13個はアメリカ独立当時の13州を表しており、5つの星はインディアナの前に連合に入った5つの州を、そしてINDIANAと書かれている星はインディアナ自体を表しています。',
+            'なお、トーチは自由と啓発の象徴です。',
           ],
         },
         {
@@ -1504,6 +1701,30 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, white],
+          fullColor: [red, green, blue, yellow, white, black],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'wisconsin',
+          url: 'wisconsin',
+          name: 'ウィスコンシン',
+          fullName: 'ウィスコンシン州',
+          firstLetter: 'う',
+          officialName: 'State of Wisconsin',
+          image: wisconsin,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/wisconsin.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
           mainColor: [red, green, white],
           fullColor: [red, green, white, black],
           tag: [creature],
@@ -1527,6 +1748,30 @@ const App = () => {
             '縦横比率は【3:5】',
             'ウェールズはイギリスを構成する4つの地域の一つです。イギリス国旗はほか3地域を象徴するシンボルがデザインに含まれているのですが、ウェールズのみ入っていません。悲しいですね。',
             'ウェールズの旗に描かれている赤いドラゴンはア・ズライグ・ゴッホと呼びます。背景に使われている白と緑はウェールズを発祥とするテューダー家で使われた薔薇の紋章から来ていると考えられています。',
+          ],
+        },
+        {
+          mainColor: [blue, white, green, red],
+          fullColor: [blue, white, green, red, yellow],
+          tag: [creature, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'west-virginia',
+          url: 'west-virginia',
+          name: 'ウェストバージニア',
+          fullName: 'ウェストバージニア州',
+          firstLetter: 'う',
+          officialName: 'State of West Virginia',
+          image: westVirginia,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/westVirginia.png',
+          desc: [
+            '準備中…',
           ],
         },
         {
@@ -1880,6 +2125,54 @@ const App = () => {
           ],
         },
         {
+          mainColor: [green, blue, white],
+          fullColor: [red, green, blue, white],
+          tag: [plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'oklahoma',
+          url: 'oklahoma',
+          name: 'オクラホマ',
+          fullName: 'オクラホマ州',
+          firstLetter: 'お',
+          officialName: 'State of Oklahoma',
+          image: oklahoma,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/oklahoma.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [red, blue, white],
+          fullColor: [red, blue, white],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'ohio',
+          url: 'ohio',
+          name: 'オハイオ',
+          fullName: 'オハイオ州',
+          firstLetter: 'お',
+          officialName: 'State of Ohio',
+          image: ohio,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/ohio.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
           mainColor: [red, green, white],
           fullColor: [red, green, white],
           tag: [],
@@ -1927,6 +2220,30 @@ const App = () => {
             '縦横比率は【2:3】',
             '赤は国民が持つ勇気、白は信仰心、青は忠誠心を表しています。',
             '世界で最初に三色旗を使った国がオランダと言われており、1581年当時のものは赤がオレンジ色でした。赤に変更されたのは海上での識別がオレンジだと難しかったためと言われています。',
+          ],
+        },
+        {
+          mainColor: [blue, yellow],
+          fullColor: [blue, yellow],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'oregon',
+          url: 'oregon',
+          name: 'オレゴン',
+          fullName: 'オレゴン州',
+          firstLetter: 'お',
+          officialName: 'State of Oregon',
+          image: oregon,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/oregon.png',
+          desc: [
+            '準備中…',
           ],
         },
         {
@@ -2179,6 +2496,32 @@ const App = () => {
             '縦横比率は【2:3】',
             '中央の赤青の太極は陰陽・善悪と言った万物が相反するものからなるという中国古来の思想に由来するものです。四隅の卦と呼ばれるものは四季や方角、天地火水など。白地で国土や平和、太極で国民、4つの卦で政府を表してもいます。',
             '※韓国人は白衣民族と呼ばれるほど白い服を好んでおり、そのため白は韓国にとって関連性の深い色。また青と赤も同じく伝統的な色。',
+          ],
+        },
+        {
+          mainColor: [blue, yellow],
+          fullColor: [green, blue, yellow, white, black, purple, orange],
+          tag: [sun, creature, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'kansas',
+          url: 'kansas',
+          name: 'カンサス',
+          fullName: 'カンサス州',
+          firstLetter: 'か',
+          officialName: 'State of Kansas',
+          image: kansas,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/kansas.png',
+          desc: [
+            '縦横比率は【3:5】',
+            'カンサス旗の中央にあるのは周の印章で、カンサスの歴史と開拓者の生活を描いています。',
+            '印章の中にある星は34個あり、これによってアメリカに受け入れられた34番目の州であることを表しています。',
           ],
         },
         {
@@ -2657,6 +3000,32 @@ const App = () => {
           ],
         },
         {
+          mainColor: [green, blue, yellow, white],
+          fullColor: [green, blue, yellow, white],
+          tag: [creature, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'kentucky',
+          url: 'kentucky',
+          name: 'ケンタッキー',
+          fullName: 'ケンタッキー州',
+          firstLetter: 'け',
+          officialName: 'State of Kentucky',
+          image: kentucky,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/kentucky.png',
+          desc: [
+            '縦横比率は【10:19】',
+            '中央に描かれているのは州の印章で、開拓者と政治家が法要している様子が描かれています。',
+            'ちなみに縦横比率【10:19】という数字は、アメリカの国旗と同じものです。',
+          ],
+        },
+        {
           mainColor: [green, orange, white],
           fullColor: [green, orange, white],
           tag: [],
@@ -2909,6 +3278,54 @@ const App = () => {
             '縦横比率は【2:3】',
             '中央には「アッラーの他に神はなく、ムハンマドはアッラーの使徒なり」という信仰告白（シャハーダ）が書かれており、その下の件はイスラムの力と聖地メッカの守護を表します。緑はムハンマドの娘ファティマに由来する色、もしくはムハンマドのターバンの色であり、イスラムを象徴する色です。',
             '一般的な国旗は旗竿が左側に来るように掲揚しますが、サウジアラビアの国旗は文字が読めるよう右側に竿を置きます。また国内で不幸があった場合、竿の中間に掲揚しますが（半旗）、イスラム教の信仰の証を下げることは冒涜的とされるためサウジアラビア国旗は半旗を行いません。',
+          ],
+        },
+        {
+          mainColor: [blue, white],
+          fullColor: [blue, white],
+          tag: [moon, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'south-carolina',
+          url: 'south-carolina',
+          name: 'サウスカロライナ',
+          fullName: 'サウスカロライナ州',
+          firstLetter: 'さ',
+          officialName: 'State of South Carolina',
+          image: southCarolina,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/southCarolina.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [blue, yellow, white],
+          fullColor: [blue, yellow, white],
+          tag: [sun],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'south-dakota',
+          url: 'south-dakota',
+          name: 'サウスダコタ',
+          fullName: 'サウスダコタ州',
+          firstLetter: 'さ',
+          officialName: 'State of South Dakota',
+          image: southDakota,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/southDakota.png',
+          desc: [
+            '準備中…',
           ],
         },
         {
@@ -3992,6 +4409,54 @@ const App = () => {
           ],
         },
         {
+          mainColor: [red, blue, white],
+          fullColor: [red, blue, white],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'texas',
+          url: 'texas',
+          name: 'テキサス',
+          fullName: 'テキサス州',
+          firstLetter: 'て',
+          officialName: 'State of Texas',
+          image: texas,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/texas.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [red, blue, white],
+          fullColor: [red, blue, white],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'tennessee',
+          url: 'tennessee',
+          name: 'テネシー',
+          fullName: 'テネシー州',
+          firstLetter: 'て',
+          officialName: 'State of Tennessee',
+          image: tennessee,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/tennessee.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
           mainColor: [blue, yellow],
           fullColor: [red, green, blue, yellow, white, black],
           tag: [creature],
@@ -4493,6 +4958,102 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, orange],
+          fullColor: [red, blue, yellow, orange],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'new-jersey',
+          url: 'new-jersey',
+          name: 'ニュージャージー',
+          fullName: 'ニュージャージー州',
+          firstLetter: 'に',
+          officialName: 'State of New Jersey',
+          image: newJersey,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/newJersey.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [blue, yellow],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'new-hampshire',
+          url: 'new-hampshire',
+          name: 'ニューハンプシャー',
+          fullName: 'ニューハンプシャー州',
+          firstLetter: 'に',
+          officialName: 'State of New Hampshire',
+          image: newHampshire,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/newHampshire.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [red, yellow],
+          fullColor: [red, yellow],
+          tag: [sun],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'new-mexico',
+          url: 'new-mexico',
+          name: 'ニューメキシコ',
+          fullName: 'ニューメキシコ州',
+          firstLetter: 'に',
+          officialName: 'State of New Mexico',
+          image: newMexico,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/newMexico.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [blue, yellow, white],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [sun, creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'newyork',
+          url: 'newyork',
+          name: 'ニューヨーク',
+          fullName: 'ニューヨーク州',
+          firstLetter: 'に',
+          officialName: 'State of New York',
+          image: newYork,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/newYork.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [sun, moon],
@@ -4518,6 +5079,102 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, yellow, white, green],
+          fullColor: [blue, yellow, white, green],
+          tag: [star, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'nevada',
+          url: 'nevada',
+          name: 'ネバダ',
+          fullName: 'ネバダ州',
+          firstLetter: 'ね',
+          officialName: 'State of Nevada',
+          image: nevada,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/nevada.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [blue, yellow],
+          fullColor: [blue, yellow],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'nevbaska',
+          url: 'nebraska',
+          name: 'ネブラスカ',
+          fullName: 'ネブラスカ州',
+          firstLetter: 'ね',
+          officialName: 'State of Nebraska',
+          image: nebraska,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/nebraska.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [red, blue, yellow, white],
+          fullColor: [red, blue, yellow, white],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'north-carolina',
+          url: 'north-carolina',
+          name: 'ノースカロライナ',
+          fullName: 'ノースカロライナ州',
+          firstLetter: 'の',
+          officialName: 'State of North Carolina',
+          image: northCarolina,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/northCarolina.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [red, blue, yellow],
+          fullColor: [red, blue, yellow, green],
+          tag: [star, creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'north-dakota',
+          url: 'north-dakota',
+          name: 'ノースダコタ',
+          fullName: 'ノースダコタ州',
+          firstLetter: 'の',
+          officialName: 'State of North Dakota',
+          image: northDakota,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/northDakota.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [cross, scCross],
@@ -4540,6 +5197,54 @@ const App = () => {
             '縦横比率は【8:11】',
             '赤は国民の情熱、青は海と国土、白は雪を表します。',
             '交点が左によっている十字はスカンジナビア十字と呼ばれます。',
+          ],
+        },
+        {
+          mainColor: [blue, white],
+          fullColor: [red, blue, white],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'virginia',
+          url: 'virginia',
+          name: 'バージニア',
+          fullName: 'バージニア州',
+          firstLetter: 'は',
+          officialName: 'State of Virginia',
+          image: virginia,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/virginia.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [blue, yellow],
+          fullColor: [red, blue, green, yellow],
+          tag: [creature, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'vermont',
+          url: 'vermont',
+          name: 'バーモント',
+          fullName: 'バーモント州',
+          firstLetter: 'は',
+          officialName: 'State of Vermont',
+          image: vermont,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/vermont.png',
+          desc: [
+            '準備中…',
           ],
         },
         {
@@ -4840,6 +5545,33 @@ const App = () => {
             '縦横比率は【1:2】',
             '赤は勇気、黒は暗い過去、白は純潔、緑はイスラム教を表しています。',
             'ヨルダン国旗と非常によく似ています。また赤緑白黒の組み合わせは汎アラブ色と呼ばれるものです。',
+          ],
+        },
+        {
+          mainColor: [red, blue, white],
+          fullColor: [red, blue, white],
+          tag: [cross],
+          kanrenTag: [kanren.USLocal],
+          topics: [topics.uj],
+          topicsUrl: [topicsUrl.uj],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'hawaii',
+          url: 'hawaii',
+          name: 'ハワイ',
+          fullName: 'ハワイ州',
+          firstLetter: 'は',
+          officialName: 'State of Hawaii',
+          image: hawaii,
+          location: hawaiiMap,
+          link: '',
+          ogp: 'ogpFlagImages/hawaii.png',
+          desc: [
+            '縦横比率は【1:2】',
+            'カントン（左上）にユニオンジャックが描かれている旗は、過去イギリス保護領であった場合がほとんどなのですが、ハワイはそのような過去のない例外です。',
+            'なぜユニオンジャックを含んだ旗が揚げられるようになったかといえば、1778年にハワイを発見したイギリスのジェームズ・クックがカメハメハ大王にイギリス国旗を謹呈し、当時旗布がなかったハワイは貴重なものとして受け入れました。',
+            'その後、1816年にハワイの旗のデザインを米海軍のジョージ・ベックリーに依頼したところ、現在の旗のようにカントンにユニオンジャックの入ったものが出来上がったと言われています。',
           ],
         },
         {
@@ -5369,6 +6101,30 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, yellow],
+          fullColor: [red, green, blue, yellow, white, black],
+          tag: [creature, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'pennsylvania',
+          url: 'pennsylvania',
+          name: 'ペンシルバニア',
+          fullName: 'ペンシルバニア州',
+          firstLetter: 'へ',
+          officialName: 'State of Pennsylvania',
+          image: pennsylvania,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/pennsylvania.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
           mainColor: [red, white],
           fullColor: [red, white],
           tag: [],
@@ -5541,6 +6297,32 @@ const App = () => {
             '縦横比率は【10:19】',
             '青は太平洋、白は平和、オレンジ色は勇気を表しています。これら星や2本の帯にも細かく意味が込められています。',
             '国旗は当時の大統領の妻であるEmlain Kabuaによってデザインされたものです。',
+          ],
+        },
+        {
+          mainColor: [blue, yellow, white],
+          fullColor: [blue, yellow, white],
+          tag: [star, creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'massachusetts',
+          url: 'massachusetts',
+          name: 'マサチューセッツ',
+          fullName: 'マサチューセッツ州',
+          firstLetter: 'ま',
+          officialName: 'State of Massachusetts',
+          image: massachusetts,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/massachusetts.png',
+          desc: [
+            '縦横比率は【3:5】',
+            '中央に描かれているのはアルゴンキン先住民（ネイティブアメリカン）です。',
+            'リボンには州のモットーである「「剣によって平和を求めるが、平和は自由の下でのみ得られる。」と書かれています。',
           ],
         },
         {
@@ -5719,6 +6501,109 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue],
+          fullColor: [red, green, blue, yellow, white, black],
+          tag: [sun, creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'michigan',
+          url: 'michigan',
+          name: 'ミシガン',
+          fullName: 'ミシガン州',
+          firstLetter: 'み',
+          officialName: 'State of Michigan',
+          image: michigan,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/michigan.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '中央に描かれているのは州の紋章で、下部のリボンには「快適な半島を求めているならば、ここを見に来てください」と書かれています。',
+          ],
+        },
+        {
+          mainColor: [red, blue, yellow, white],
+          fullColor: [red, blue, yellow, white],
+          tag: [star, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'mississippi',
+          url: 'mississippi',
+          name: 'ミシシッピ',
+          fullName: 'ミシシッピ州',
+          firstLetter: 'み',
+          officialName: 'State of Mississippi',
+          image: mississippi,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/mississippi.png',
+          desc: [
+            '縦横比率は【5:8】',
+            '2021年1月11日にこの州旗に変更されました。',
+            '「In God We Trust」（我々は神を信じる）とはアメリカ合衆国のおける公式な国家の標語です。',
+          ],
+        },
+        {
+          mainColor: [red, blue, white],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [star, moon, creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'missouri',
+          url: 'missouri',
+          name: 'ミズーリ',
+          fullName: 'ミズーリ州',
+          firstLetter: 'み',
+          officialName: 'State of Missouri',
+          image: missouri,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/missouri.png',
+          desc: [
+            '縦横比率は【7:12】',
+            '中央に描かれている24個の星は、ミズーリ州が24番目に加入した州であることを表しています。',
+            'また赤は勇気、白は純粋さ、青は警戒と正義を意味します。',
+          ],
+        },
+        {
+          mainColor: [red, blue, white],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'minnesota',
+          url: 'minnesota',
+          name: 'ミネソタ',
+          fullName: 'ミネソタ州',
+          firstLetter: 'み',
+          officialName: 'State of Minnesota',
+          image: minnesota,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/minnesota.png',
+          desc: [
+            '縦横比率は【250:159】',
+            '中央に描かれているのは州の印章です。',
+            '2017年にデザインが酷いということからミネソタ州の旗を変更する請願が、Change.orgというクラウドファンディングサイトで開始したことがあります。',
+          ],
+        },
+        {
           mainColor: [red, green, blue, yellow, white, black],
           fullColor: [red, green, blue, yellow, white, black],
           tag: [],
@@ -5819,6 +6704,31 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue],
+          fullColor: [red, blue, yellow, white],
+          tag: [star, creature, plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'maine',
+          url: 'maine',
+          name: 'メイン',
+          fullName: 'メイン州',
+          firstLetter: 'め',
+          officialName: 'State of Maine',
+          image: maine,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/maine.png',
+          desc: [
+            '縦横比率は【26:33】',
+            '中央に描かれているのはメイン州で使われている紋章です。',
+          ],
+        },
+        {
           mainColor: [red, green, white],
           fullColor: [red, green, blue, white],
           tag: [creature, plant],
@@ -5841,6 +6751,32 @@ const App = () => {
             '縦横比率は【4:7】',
             '緑は国民の希望、白は統一と純粋さ、赤は愛国者の血を表します。中央に描かれているのは国章です。',
             'イタリア国旗と配色が同じですが、縦横比率が異なります。',
+          ],
+        },
+        {
+          mainColor: [red, yellow, white, black],
+          fullColor: [red, yellow, white, black],
+          tag: [cross],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'maryland',
+          url: 'maryland',
+          name: 'メリーランド',
+          fullName: 'メリーランド州',
+          firstLetter: 'め',
+          officialName: 'State of Maryland',
+          image: maryland,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/maryland.png',
+          desc: [
+            '縦横比率は【2:3】',
+            '白と赤で描かれた十字はクロスランドバナーと呼ばれるものです。',
+            '黒と黄色で描かれているのは南北戦争中に使用された、ボルチモア卿の旗です。',
           ],
         },
         {
@@ -6044,6 +6980,30 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, yellow],
+          fullColor: [green, blue, yellow, white],
+          tag: [plant],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'montana',
+          url: 'montana',
+          name: 'モンタナ',
+          fullName: 'モンタナ州',
+          firstLetter: 'も',
+          officialName: 'State of Montana',
+          image: montana,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/montana.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
           mainColor: [red, gold],
           fullColor: [red, green, blue, gold],
           tag: [cross, creature],
@@ -6066,6 +7026,30 @@ const App = () => {
             '縦横比率は【1:2】',
             '19世紀にオスマン帝国との戦いで用いられた赤い旗が基となっている国旗で、それに金色の縁取りがなされています。',
             '中央に描かれているのは国章です。',
+          ],
+        },
+        {
+          mainColor: [red, blue, white],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [star, creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'utah',
+          url: 'utah',
+          name: 'ユタ',
+          fullName: 'ユタ州',
+          firstLetter: 'ゆ',
+          officialName: 'State of Utah',
+          image: utah,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/utah.png',
+          desc: [
+            '準備中…',
           ],
         },
         {
@@ -6244,6 +7228,32 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, yellow, white],
+          fullColor: [blue, yellow, white],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'louisiana',
+          url: 'louisiana',
+          name: 'ルイジアナ',
+          fullName: 'ルイジアナ州',
+          firstLetter: 'る',
+          officialName: 'State of Louisiana',
+          image: louisiana,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/louisiana.png',
+          desc: [
+            '縦横比率は【7:11】',
+            'ペリカンのシンボルはくちばしで自身の胸を引き裂き、その血で子どもたちを潤わせています。',
+            'これによって自己犠牲を象徴しているようです。',
+          ],
+        },
+        {
           mainColor: [red, blue, yellow],
           fullColor: [red, blue, yellow],
           tag: [],
@@ -6394,6 +7404,30 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, yellow, white],
+          fullColor: [blue, yellow, white],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'rhodeisland',
+          url: 'rhodeisland',
+          name: 'ロードアイランド',
+          fullName: 'ロードアイランド州',
+          firstLetter: 'ろ',
+          officialName: 'State of Rhode Island',
+          image: rhodeisland,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/rhodeisland.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [],
@@ -6416,6 +7450,81 @@ const App = () => {
             '縦横比率は【2:3】',
             '白は高潔と素直さ、青は名誉と純粋さ、赤は勇気と寛大さを表しています。',
             'ピョートル大帝が近代国家の模範としたオランダの国旗を元にデザインされたと言われています。',
+          ],
+        },
+        {
+          mainColor: [red, blue, white],
+          fullColor: [red, blue, white],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'wyoming',
+          url: 'wyoming',
+          name: 'ワイオミング',
+          fullName: 'ワイオミング州',
+          firstLetter: 'わ',
+          officialName: 'State of ワイオミング',
+          image: wyoming,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/wyoming.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [blue, green, yellow, white],
+          fullColor: [blue, green, yellow, white, black],
+          tag: [creature],
+          kanrenTag: [kanren.USLocal],
+          area: worldArea.ncAmerica,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'washington',
+          url: 'washington',
+          name: 'ワシントン',
+          fullName: 'ワシントン州',
+          firstLetter: 'わ',
+          officialName: 'State of Washington',
+          image: washington,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/washington.png',
+          desc: [
+            '準備中…',
+          ],
+        },
+        {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [star],
+          kanrenTag: [kanren.USLocal],
+          topics: [],
+          topicsUrl: [],
+          area: worldArea.ncAmerica,
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'washingtonDC',
+          url: 'washingtonDC',
+          name: 'ワシントンD.C.',
+          fullName: 'ワシントンD.C.',
+          firstLetter: 'わ',
+          officialName: 'Washington, D.C.',
+          image: washingtonDC,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/washingtonDC.png',
+          desc: [
+            '縦横比率は【1:2】',
+            'ワシントン家が使用したとされる紋章が元となっています。',
+            '紋章：https://en.wikipedia.org/wiki/Flag_of_Washington,_D.C.#/media/File:COA_George_Washington.svg',
+            'チャールズ・ダンによって設計され、1938年に採用されました。',
           ],
         },
     ],
@@ -6781,7 +7890,47 @@ const App = () => {
           <Route path='/delaware' render={ () => <DelawarePage mainImage = {intialState.imageList}/>} />
           <Route path='/florida' render={ () => <FloridaPage mainImage = {intialState.imageList}/>} />
           <Route path='/georgiaUS' render={ () => <GeorgiaUSPage mainImage = {intialState.imageList}/>} />
-
+          <Route path='/hawaii' render={ () => <HawaiiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/idaho' render={ () => <IdahoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/illinois' render={ () => <IllinoisPage mainImage = {intialState.imageList}/>} />
+          <Route path='/indiana' render={ () => <IndianaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/iowa' render={ () => <IowaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/washingtonDC' render={ () => <WashingtonDCPage mainImage = {intialState.imageList}/>} />
+          <Route path='/kansas' render={ () => <KansasPage mainImage = {intialState.imageList}/>} />
+          <Route path='/kentucky' render={ () => <KentuckyPage mainImage = {intialState.imageList}/>} />
+          <Route path='/louisiana' render={ () => <LouisianaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/maine' render={ () => <MainePage mainImage = {intialState.imageList}/>} />
+          <Route path='/maryland' render={ () => <MarylandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/massachusetts' render={ () => <MassachusettsPage mainImage = {intialState.imageList}/>} />
+          <Route path='/michigan' render={ () => <MichiganPage mainImage = {intialState.imageList}/>} />
+          <Route path='/minnesota' render={ () => <MinnesotaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/mississippi' render={ () => <MississippiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/missouri' render={ () => <MissouriPage mainImage = {intialState.imageList}/>} />
+          <Route path='/montana' render={ () => <MontanaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/nebraska' render={ () => <NebraskaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/nevada' render={ () => <NevadaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/new-hampshire' render={ () => <NewHampshirePage mainImage = {intialState.imageList}/>} />
+          <Route path='/new-jersey' render={ () => <NewJerseyPage mainImage = {intialState.imageList}/>} />
+          <Route path='/new-mexico' render={ () => <NewMexicoPage mainImage = {intialState.imageList}/>} />
+          <Route path='/newyork' render={ () => <NewYorkPage mainImage = {intialState.imageList}/>} />
+          <Route path='/north-carolina' render={ () => <NorthCarolinaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/north-dakota' render={ () => <NorthDakotaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/ohio' render={ () => <OhioPage mainImage = {intialState.imageList}/>} />
+          <Route path='/oklahoma' render={ () => <OklahomaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/oregon' render={ () => <OregonPage mainImage = {intialState.imageList}/>} />
+          <Route path='/pennsylvania' render={ () => <PennsylvaniaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/rhodeisland' render={ () => <RhodeislandPage mainImage = {intialState.imageList}/>} />
+          <Route path='/south-carolina' render={ () => <SouthCarolinaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/south-dakota' render={ () => <SouthDakotaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/tennessee' render={ () => <TennesseePage mainImage = {intialState.imageList}/>} />
+          <Route path='/texas' render={ () => <TexasPage mainImage = {intialState.imageList}/>} />
+          <Route path='/utah' render={ () => <UtahPage mainImage = {intialState.imageList}/>} />
+          <Route path='/vermont' render={ () => <VermontPage mainImage = {intialState.imageList}/>} />
+          <Route path='/virginia' render={ () => <VirginiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/washington' render={ () => <WashingtonPage mainImage = {intialState.imageList}/>} />
+          <Route path='/west-virginia' render={ () => <WestVirginiaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/wisconsin' render={ () => <WisconsinPage mainImage = {intialState.imageList}/>} />
+          <Route path='/wyoming' render={ () => <WyomingPage mainImage = {intialState.imageList}/>} />
 
 
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
