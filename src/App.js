@@ -282,7 +282,21 @@ import azerbaijanSoviet1936_1940 from './assets/flagImages/azerbaijanSoviet1936-
 import SFSR1922_1936 from './assets/flagImages/SFSR1922-1936.svg';
 import azerbaijan1918_1920 from './assets/flagImages/azerbaijan1918-1920.svg';
 
-
+import afghanistan1880_1901 from './assets/flagImages/afghanistan1880-1901.svg';
+import afghanistan1919_1928 from './assets/flagImages/afghanistan1919-1928.svg';
+import afghanistan1928_1929 from './assets/flagImages/afghanistan1928-1929.svg';
+import afghanistan1929_1930 from './assets/flagImages/afghanistan1929-1930.svg';
+import afghanistan1930_1973 from './assets/flagImages/afghanistan1930-1973.svg';
+import afghanistan1973_1974 from './assets/flagImages/afghanistan1973-1974.svg';
+import afghanistan1974_1978 from './assets/flagImages/afghanistan1974-1978.svg';
+import afghanistan1978_1980 from './assets/flagImages/afghanistan1978-1980.svg';
+import afghanistan1980_1987 from './assets/flagImages/afghanistan1980-1987.svg';
+import afghanistan1987_1992 from './assets/flagImages/afghanistan1987-1992.svg';
+import afghanistan1992 from './assets/flagImages/afghanistan1992.svg';
+import afghanistan1992_1996 from './assets/flagImages/afghanistan1992-1996.svg';
+import afghanistan1996_1997 from './assets/flagImages/afghanistan1996-1997.svg';
+import afghanistan1997_2002 from './assets/flagImages/afghanistan1997-2002.svg';
+import afghanistan2002_2004 from './assets/flagImages/afghanistan2002-2004.svg';
 
 
 
@@ -812,6 +826,29 @@ import Azerbaijan1918Page from './components/countryFlags/Azerbaijan1918';
 import SFSR1922Page from './components/countryFlags/SFSR1922';
 
 
+import Afghanistan1880Page from './components/countryFlags/Afghanistan1880';
+import Afghanistan1919Page from './components/countryFlags/Afghanistan1919';
+import Afghanistan1928Page from './components/countryFlags/Afghanistan1928';
+import Afghanistan1929Page from './components/countryFlags/Afghanistan1929';
+import Afghanistan1930Page from './components/countryFlags/Afghanistan1930';
+import Afghanistan1973Page from './components/countryFlags/Afghanistan1973';
+import Afghanistan1974Page from './components/countryFlags/Afghanistan1974';
+import Afghanistan1978Page from './components/countryFlags/Afghanistan1978';
+import Afghanistan1980Page from './components/countryFlags/Afghanistan1980';
+import Afghanistan1987Page from './components/countryFlags/Afghanistan1987';
+import Afghanistan1992Page from './components/countryFlags/Afghanistan1992';
+import Afghanistan19921Page from './components/countryFlags/Afghanistan1992_1';
+import Afghanistan1996Page from './components/countryFlags/Afghanistan1996';
+import Afghanistan1997Page from './components/countryFlags/Afghanistan1997';
+import Afghanistan2002Page from './components/countryFlags/Afghanistan2002';
+
+
+
+
+
+
+
+
 // カテゴリ・タグページ
 import ScandinavianCrossPage　from './components/flagsKnowledge/ScandinavianCross';
 import ScandinavianCross from './assets/flagImages/scCross.svg';
@@ -895,6 +932,8 @@ const App = () => {
     USLocal: 'アメリカの地方旗',
     azOld: 'アゼルバイジャンの過去国旗',
     azLocal: 'アゼルバイジャンの地方旗',
+    afOld: 'アフガニスタンの過去国旗',
+    afLocal: 'アフガニスタンの地方旗',
   };
 
   const intialState ={
@@ -1170,6 +1209,7 @@ const App = () => {
           mainColor: [red, green, white, black],
           fullColor: [red, green, white, black],
           tag: [],
+          kanrenTag: [kanren.main, kanren.afOld, kanren.afLocal],
           area: worldArea.asia,
           topics: [],
           topicsUrl: [],
@@ -1189,6 +1229,356 @@ const App = () => {
             '縦横比率は【2:3】',
             '黒は外国に支配されていた暗い過去、赤はイギリスからの独立を目指した戦いで流された血、緑は達成した独立と平和・イスラムを表します。中央に描かれているのはモスク（イスラム教の礼拝堂）やシャハーダ（信仰告白）が描かれた国章です。',
             '19世紀のイギリス保護国時代に黒一色の旗を、1996年のアフガニスタン・イスラム首長国時代には白一色の旗を使っていたことがありました。',
+          ],
+        },
+        {
+          mainColor: [white, black],
+          fullColor: [white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1919,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1919-1928',
+          url: 'afghanistan1919-1928',
+          name: 'アフガニスタン 1919-1928 ',
+          fullName: 'アフガニスタン首長国 1919-1928 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1919_1928,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1919-1928.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, green, black],
+          fullColor: [red, green, yellow, white, black],
+          tag: [star, sun],
+          kanrenTag: [kanren.afOld],
+          age: 1928,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1928-1929',
+          url: 'afghanistan1928-1929',
+          name: 'アフガニスタン 1928-1929 ',
+          fullName: 'アフガニスタン王国 1928-1929 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1928_1929,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1928-1929.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, green, white, black],
+          fullColor: [red, green, white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1929,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1929-1930',
+          url: 'afghanistan1929-1930',
+          name: 'アフガニスタン 1929-1930 ',
+          fullName: 'アフガニスタン王国 1929-1930 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1929_1930,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1929-1930.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, green, white, black],
+          fullColor: [red, green, white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1930,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1930-1973',
+          url: 'afghanistan1930-1973',
+          name: 'アフガニスタン 1930-1973 ',
+          fullName: 'アフガニスタン王国 1930-1973 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1930_1973,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1930-1973.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, green, white, black],
+          fullColor: [red, green, white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1973,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1973-1974',
+          url: 'afghanistan1973-1974',
+          name: 'アフガニスタン 1973-1974 ',
+          fullName: 'アフガニスタン共和国 1973-1974 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1973_1974,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1973-1974.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, green, yellow, black],
+          fullColor: [red, green, yellow, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1974,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1974-1978',
+          url: 'afghanistan1974-1978',
+          name: 'アフガニスタン 1974-1978 ',
+          fullName: 'アフガニスタン共和国 1974-1978 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1974_1978,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1974-1978.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, yellow],
+          fullColor: [red, yellow],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1978,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1978-1980',
+          url: 'afghanistan1978-1980',
+          name: 'アフガニスタン 1978-1980 ',
+          fullName: 'アフガニスタン民主共和国 1978-1980 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1978_1980,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1978-1980.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, green, black],
+          fullColor: [red, green, yellow, white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1980,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1980-1987',
+          url: 'afghanistan1980-1987',
+          name: 'アフガニスタン 1980-1987 ',
+          fullName: 'アフガニスタン民主共和国 1980-1987 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1980_1987,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1980-1987.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, green, black],
+          fullColor: [red, green, blue, yellow, white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1987,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1987-1992',
+          url: 'afghanistan1987-1992',
+          name: 'アフガニスタン 1987-1992 ',
+          fullName: 'アフガニスタン共和国 1987-1992 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1987_1992,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1987-1992.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [green, white, black],
+          fullColor: [green, white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1992,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1992',
+          url: 'afghanistan1992',
+          name: 'アフガニスタン 1992 ',
+          fullName: 'アフガニスタン・イスラム国 1992 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1992,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1992.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [green, yellow, white, black],
+          fullColor: [green, yellow, white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1992.1,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1992-1996',
+          url: 'afghanistan1992-1996',
+          name: 'アフガニスタン 1992-1996 ',
+          fullName: 'アフガニスタン・イスラム国 1992-1996 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1992_1996,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1992-1996.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [white],
+          fullColor: [white],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1996,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1996-1997',
+          url: 'afghanistan1996-1997',
+          name: 'アフガニスタン 1996-1997 ',
+          fullName: 'アフガニスタン・イスラム首長国 1996-1997 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1996_1997,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1996-1997.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [white, black],
+          fullColor: [white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1997,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1997-2002',
+          url: 'afghanistan1997-2002',
+          name: 'アフガニスタン 1997-2002 ',
+          fullName: 'アフガニスタン・イスラム首長国 1997-2002 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan1997_2002,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1997-2002.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, green, white, black],
+          fullColor: [red, green, white, black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 2002,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan2002-2004',
+          url: 'afghanistan2002-2004',
+          name: 'アフガニスタン 2002-2004 ',
+          fullName: 'アフガニスタン・イスラム移行国 2002-2004 ',
+          firstLetter: 'あ',
+          officialName: '',
+          image: afghanistan2002_2004,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan2002-2004.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -1595,6 +1985,31 @@ const App = () => {
             '縦横比率は【1:2】',
             '構成地域であるイングランドの聖ジョージ旗、スコットランドの聖アンドリュース旗、アイルランドの聖パトリック旗を組み合わせた旗。通称『ユニオン・ジャック』、『ユニオン・フラッグ』。',
             '構成地域には他にウェールズが存在しますが、その地域を示す旗のみ現在の国旗に含まれていません。',
+          ],
+        },
+        {
+          mainColor: [black],
+          fullColor: [black],
+          tag: [],
+          kanrenTag: [kanren.afOld],
+          age: 1880,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'afghanistan1880-1901',
+          url: 'afghanistan1880-1901',
+          name: 'イギリス保護国アフガニスタン 1880-1901 ',
+          fullName: 'イギリス保護国アフガニスタン 1880-1901 ',
+          firstLetter: 'い',
+          officialName: '',
+          image: afghanistan1880_1901,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/afghanistan1880-1901.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -8088,6 +8503,21 @@ const App = () => {
           <Route path='/azerbaijanSoviet1952-1991' render={ () => <AzSoviet1952Page mainImage = {intialState.imageList}/>} />
           <Route path='/SFSR1922-1936' render={ () => <SFSR1922Page mainImage = {intialState.imageList}/>} />
 
+          <Route path='/afghanistan1880-1901' render={ () => <Afghanistan1880Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1919-1928' render={ () => <Afghanistan1919Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1928-1929' render={ () => <Afghanistan1928Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1929-1930' render={ () => <Afghanistan1929Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1930-1973' render={ () => <Afghanistan1930Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1973-1974' render={ () => <Afghanistan1973Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1974-1978' render={ () => <Afghanistan1974Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1978-1980' render={ () => <Afghanistan1978Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1980-1987' render={ () => <Afghanistan1980Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1987-1992' render={ () => <Afghanistan1987Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1992' render={ () => <Afghanistan1992Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1992-1996' render={ () => <Afghanistan19921Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1996-1997' render={ () => <Afghanistan1996Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan1997-2002' render={ () => <Afghanistan1997Page mainImage = {intialState.imageList}/>} />
+          <Route path='/afghanistan2002-2004' render={ () => <Afghanistan2002Page mainImage = {intialState.imageList}/>} />
 
 
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
