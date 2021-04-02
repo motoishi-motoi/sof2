@@ -298,7 +298,7 @@ import afghanistan1996_1997 from './assets/flagImages/afghanistan1996-1997.svg';
 import afghanistan1997_2002 from './assets/flagImages/afghanistan1997-2002.svg';
 import afghanistan2002_2004 from './assets/flagImages/afghanistan2002-2004.svg';
 
-
+import trucialOman1968 from './assets/flagImages/trucialOman.svg'
 
 
 
@@ -842,7 +842,7 @@ import Afghanistan1996Page from './components/countryFlags/Afghanistan1996';
 import Afghanistan1997Page from './components/countryFlags/Afghanistan1997';
 import Afghanistan2002Page from './components/countryFlags/Afghanistan2002';
 
-
+import TrucialOman1968Page from './components/countryFlags/TrucialOman1968';
 
 
 
@@ -934,6 +934,8 @@ const App = () => {
     azLocal: 'アゼルバイジャンの地方旗',
     afOld: 'アフガニスタンの過去国旗',
     afLocal: 'アフガニスタンの地方旗',
+    uaeOld: 'アラブ首長国連邦の過去国旗',
+    uaeLocal: 'アラブ首長国連邦の地方旗',
   };
 
   const intialState ={
@@ -1689,6 +1691,7 @@ const App = () => {
           mainColor: [red, green, white, black],
           fullColor: [red, green, white, black],
           tag: [],
+          kanrenTag: [kanren.main, kanren.uaeOld, kanren.uaeLocal],
           area: worldArea.asia,
           topics: [],
           topicsUrl: [],
@@ -5274,6 +5277,34 @@ const App = () => {
           ],
         },
         {
+          mainColor: [red, green, white],
+          fullColor: [red, green, white],
+          tag: [star],
+          kanrenTag: [kanren.uaeOld],
+          age: 1968,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '過去の旗',
+          groupingCSS: 'old',
+          id: 'trucialOman1968-1971',
+          url: 'trucialoman1968-1971',
+          name: 'トルシャル・オマーン 1968-1971 ',
+          fullName: 'トルシャル・オマーン 1968-1971 ',
+          firstLetter: 'と',
+          officialName: '',
+          image: trucialOman1968,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/trucialOman.png',
+          desc: [
+            'トルシャルオマーンは休戦オマーンとも呼ばれた国で、1820年から1971年にかけて存在しました。',
+            'この国旗は1968年から1971年にかけて使われていたものです。',
+            '1971年になるとアラブ首長国連邦が成立し、トルシャルオマーンは消滅します。',
+            '※トルシャルオマーンはイギリス保護下にあったが、イギリスが撤退したことにより独立しての存続が困難な国が現れ、その結果連邦国家結成への機運が高まりアラブ首長国連邦となった。'
+          ],
+        },
+        {
           mainColor: [red, white],
           fullColor: [red, white],
           tag: [cross],
@@ -8519,6 +8550,7 @@ const App = () => {
           <Route path='/afghanistan1997-2002' render={ () => <Afghanistan1997Page mainImage = {intialState.imageList}/>} />
           <Route path='/afghanistan2002-2004' render={ () => <Afghanistan2002Page mainImage = {intialState.imageList}/>} />
 
+          <Route path='/trucialoman1968-1971' render={ () => <TrucialOman1968Page mainImage = {intialState.imageList}/>} />
 
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/square' render={ () => <SquarePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>

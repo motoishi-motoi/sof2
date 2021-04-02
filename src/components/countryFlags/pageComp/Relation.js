@@ -255,7 +255,7 @@ const Relation = (props) => {
       }
 
       const checkRelation = () =>{
-        let value = filteredImageOld.length + filteredImageLocal.length;
+        let value = filteredImageOld.length + filteredImageLocal.length + filteredImageCountry.length;
         return value;
       }
 
