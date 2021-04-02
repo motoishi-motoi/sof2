@@ -245,7 +245,9 @@ const Relation = (props) => {
       }, [targetCountry.kanrenTag, targetCountry.fullName, images]);
 
       const flagSwitch = (flag) => {
-        if(flag.kokuren !== '地方旗' || flag.kanrenTag[0] === 'イギリスの地方旗'){
+        if(flag.flagtype !== undefined){
+          return flag.flagtype;
+        }else if(flag.kokuren !== '地方旗' || flag.kanrenTag[0] === 'イギリスの地方旗'){
           return '国旗';
         }else if(flag.fullName !== 'ワシントンD.C.'){
           return '州旗';

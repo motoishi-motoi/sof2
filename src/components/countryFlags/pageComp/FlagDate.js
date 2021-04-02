@@ -16,12 +16,24 @@ const FlagDate = (props) => {
 		window.history.back(-1);
 	}
 
+	const flagSwitch = (flag) => {
+		if(flag.flagtype !== undefined){
+			return flag.flagtype;
+		}else if(flag.kokuren !== '地方旗' || flag.kanrenTag[0] === 'イギリスの地方旗'){
+			return '国旗';
+		}else if(flag.fullName !== 'ワシントンD.C.'){
+			return '州旗';
+		}else{
+			return '旗';
+		}
+	}
+
 	return(
 		<article className = 'flag-date'>
 			<Page />
 			{targetCountry.kokuren !== '地方旗' || targetCountry.kanrenTag[0] === 'イギリスの地方旗' ?
 			<Helmet 
-				title={targetCountry.fullName + 'の国旗 | SOF'}
+				title={targetCountry.fullName + 'の' + flagSwitch(targetCountry) + ' | SOF'}
 				link={[{ rel: "canonical", href: 'https://sof.flaghistory.jp/' + targetCountry.url}]}
 				meta={[
 					{ name: 'description', content: targetCountry.fullName + '国旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。' },
@@ -38,19 +50,19 @@ const FlagDate = (props) => {
 			/>
 			:
 			<Helmet 
-			title={targetCountry.fullName + 'の州旗 | SOF'}
+			title={targetCountry.fullName + 'の' + flagSwitch(targetCountry) + ' | SOF'}
 			link={[{ rel: "canonical", href: 'https://sof.flaghistory.jp/' + targetCountry.url}]}
 			meta={[
-				{ name: 'description', content: targetCountry.fullName + '州旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。' },
-				{property: 'twitter:description', content: targetCountry.fullName + '州旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。'},
-				{property: 'twitter:title', content: targetCountry.fullName + 'の州旗 | SOF'},
+				{ name: 'description', content: targetCountry.fullName + flagSwitch(targetCountry) + 'の解説や、合わせて見ると面白い旗を一覧で掲載しました。' },
+				{property: 'twitter:description', content: targetCountry.fullName + flagSwitch(targetCountry) + 'の解説や、合わせて見ると面白い旗を一覧で掲載しました。'},
+				{property: 'twitter:title', content: targetCountry.fullName + 'の' + flagSwitch(targetCountry) + ' | SOF'},
 				{property: 'twitter:url', content: 'https://sof.flaghistory.jp/' + targetCountry.url},
 				{name: 'twitter:image', content: 'https://sof.flaghistory.jp/' + targetCountry.ogp},
 				{property: 'og:type', content: 'article'},
-				{property: 'og:title', content: targetCountry.fullName + 'の州旗 | SOF'},
+				{property: 'og:title', content: targetCountry.fullName + 'の' + flagSwitch(targetCountry) + ' | SOF'},
 				{property: 'og:url', content: 'https://sof.flaghistory.jp/' + targetCountry.url},
 				{property: 'og:image', content: 'https://sof.flaghistory.jp/' + targetCountry.ogp},
-				{property: 'og:description', content: targetCountry.fullName + '州旗の解説や、合わせて見ると面白い旗を一覧で掲載しました。'},
+				{property: 'og:description', content: targetCountry.fullName + flagSwitch(targetCountry) + 'の解説や、合わせて見ると面白い旗を一覧で掲載しました。'},
 			]}
 		/>}
 			<div className = {targetCountry.id + "-flag-date flag-date-name"}>
@@ -101,9 +113,9 @@ const FlagDate = (props) => {
 			{targetCountry.link !== '' ?
 			<div className = 'flag-date-button'>
 				{targetCountry.kokuren !== '地方旗' || targetCountry.kanrenTag[0] === 'イギリスの地方旗' ?
-				<button className = 'detail'><a href = {targetCountry.link} target = '_blank' rel = 'noreferrer noopener'>{targetCountry.name + '国旗の詳細'}<FontAwesomeIcon icon={faExternalLinkAlt} /></a></button>
+				<button className = 'detail'><a href = {targetCountry.link} target = '_blank' rel = 'noreferrer noopener'>{targetCountry.name + flagSwitch(targetCountry) + 'の詳細'}<FontAwesomeIcon icon={faExternalLinkAlt} /></a></button>
 				:
-				<button className = 'detail'><a href = {targetCountry.link} target = '_blank' rel = 'noreferrer noopener'>{targetCountry.name + '州旗の詳細'}<FontAwesomeIcon icon={faExternalLinkAlt} /></a></button>}
+				<button className = 'detail'><a href = {targetCountry.link} target = '_blank' rel = 'noreferrer noopener'>{targetCountry.name + flagSwitch(targetCountry) + 'の詳細'}<FontAwesomeIcon icon={faExternalLinkAlt} /></a></button>}
 				<span className='close-link' onClick={() => {browserBack()}}><button className = 'close'>前のページに戻る</button></span>
 			</div>
 			:<div className = 'flag-date-button'>
@@ -111,8 +123,8 @@ const FlagDate = (props) => {
 			</div>}
 			<div style={{marginTop:'14px' , marginBottom:'42px'}}>
 				{targetCountry.kokuren !== '地方旗' || targetCountry.kanrenTag[0] === 'イギリスの地方旗' ?
-				<Share url = {'https://sof.flaghistory.jp/' + targetCountry.url} title = {targetCountry.fullName + 'の国旗 | SOF'} />
-				:<Share url = {'https://sof.flaghistory.jp/' + targetCountry.url} title = {targetCountry.fullName + 'の州旗 | SOF'} />}
+				<Share url = {'https://sof.flaghistory.jp/' + targetCountry.url} title = {targetCountry.fullName + 'の' + flagSwitch(targetCountry) + ' | SOF'} />
+				:<Share url = {'https://sof.flaghistory.jp/' + targetCountry.url} title = {targetCountry.fullName + 'の' + flagSwitch(targetCountry) + ' | SOF'} />}
 				</div>
 			<Relation mainImage = {props.mainImage} name = {props.name}/>
 			<p>⇒ <Link to = '/'>旗・国旗一覧に戻る</Link></p>
