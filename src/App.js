@@ -300,6 +300,15 @@ import afghanistan2002_2004 from './assets/flagImages/afghanistan2002-2004.svg';
 
 import trucialOman1968 from './assets/flagImages/trucialOman.svg'
 
+import abudhabi from './assets/flagImages/abudhabi.svg'
+import ajman from './assets/flagImages/ajman.svg'
+import dubai from './assets/flagImages/dubai.svg'
+import fujairah from './assets/flagImages/fujairah.svg'
+import rasalkhaimah from './assets/flagImages/rasalkhaimah.svg'
+import sharjah from './assets/flagImages/sharjah.svg'
+import ummalQaiwain from './assets/flagImages/ummalQaiwain.svg'
+
+
 
 
 
@@ -844,7 +853,13 @@ import Afghanistan2002Page from './components/countryFlags/Afghanistan2002';
 
 import TrucialOman1968Page from './components/countryFlags/TrucialOman1968';
 
-
+import AbudhabiPage from './components/countryFlags/Abudhabi';
+import AjmanPage from './components/countryFlags/Ajman';
+import DubaiPage from './components/countryFlags/Dubai';
+import FujairahPage from './components/countryFlags/Fujairah';
+import RasalkhaimahPage from './components/countryFlags/Rasalkhaimah';
+import SharjahPage from './components/countryFlags/Sharjah';
+import UmmalQaiwainPage from './components/countryFlags/UmmalQaiwain';
 
 
 
@@ -921,6 +936,10 @@ const App = () => {
     verTri: 'vertical-tricolor-flag',
   }
 
+  const flagtype = {
+    c : '国旗',
+  }
+
   //-----------------------------------------------------------
   //関連変数
 
@@ -937,6 +956,37 @@ const App = () => {
     uaeOld: 'アラブ首長国連邦の過去国旗',
     uaeLocal: 'アラブ首長国連邦の地方旗',
   };
+
+
+/*  {
+  例：
+    mainColor: [red, green, blue, white],
+    fullColor: [red, green, blue, white],
+    tag: [moon, star],
+    kanrenTag: [kanren.azOld],
+    age: 1918,
+    flagtype: '国旗',
+    area: worldArea.asia,
+    topics: [topics.starMoon],
+    topicsUrl: [topicsUrl.starMoon],
+    kokuren: '過去の旗',
+    groupingCSS: 'old',
+    id: 'azerbaijan_1918-1920',
+    url: 'azerbaijan_1918-1920',
+    name: 'アゼルバイジャン 1918-1920 ',
+    fullName: 'アゼルバイジャン民主共和国 1918-1920 ',
+    firstLetter: 'あ',
+    officialName: '',
+    image: azerbaijan1918_1920,
+    location: '',
+    link: '',
+    ogp: 'ogpFlagImages/azerbaijan1918-1920.png',
+    desc: [
+      '',
+    ],
+  },
+*/
+
 
   const intialState ={
     imageList : [
@@ -1079,6 +1129,32 @@ const App = () => {
             '縦横比率は【1:2】',
             '緑色はケルトの伝統とカトリック、オレンジ色はウィリアム3世の支持者とプロテスタント、白色はその両者の平和を表します。',
             'こうした色の意味はあくまで通説であり、国の憲法として公式に定められたものではありません。',
+          ],
+        },
+        {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [],
+          kanrenTag: [kanren.uaeLocal],
+          age: '',
+          flagtype: flagtype.c,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'ajman',
+          url: 'ajman',
+          name: 'アジュマーン',
+          fullName: 'アジュマーン首長国',
+          firstLetter: 'あ',
+          officialName: '',
+          image: ajman,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/ajman.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -1579,6 +1655,32 @@ const App = () => {
           location: '',
           link: '',
           ogp: 'ogpFlagImages/afghanistan2002-2004.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [],
+          kanrenTag: [kanren.uaeLocal],
+          age: '',
+          flagtype: flagtype.c,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'abudhabi',
+          url: 'abudhabi',
+          name: 'アブダビ',
+          fullName: 'アブダビ首長国',
+          firstLetter: 'あ',
+          officialName: '',
+          image: abudhabi,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/abudhabi.png',
           desc: [
             '',
           ],
@@ -2416,6 +2518,32 @@ const App = () => {
             '縦横比率は【2:3】',
             '青白9つの縞は独立宣言当時の9州を表します。',
             '左上（カントン部分）に描かれているのは5月の太陽と呼ばれるもので、アルゼンチン国旗の太陽と同一のものです。独立を支援してくれたアルゼンチンに敬意を表するためにデザインに取り入れられました。',
+          ],
+        },
+        {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [],
+          kanrenTag: [kanren.uaeLocal],
+          age: '',
+          flagtype: flagtype.c,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'ummalqaiwain',
+          url: 'ummalqaiwain',
+          name: 'ウンム・アル＝カイワイン',
+          fullName: 'ウンム・アル＝カイワイン首長国',
+          firstLetter: 'う',
+          officialName: '',
+          image: ummalQaiwain,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/ummalQaiwain.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -4100,6 +4228,32 @@ const App = () => {
         {
           mainColor: [red, white],
           fullColor: [red, white],
+          tag: [],
+          kanrenTag: [kanren.uaeLocal],
+          age: '',
+          flagtype: flagtype.c,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'sharjah',
+          url: 'sharjah',
+          name: 'シャールジャ',
+          fullName: 'シャールジャ首長国',
+          firstLetter: 'し',
+          officialName: '',
+          image: sharjah,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/sharjah.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [red, white],
+          fullColor: [red, white],
           tag: [cross],
           area: worldArea.asia,
           topics: [],
@@ -5149,6 +5303,32 @@ const App = () => {
             '縦横比率は【2:3】',
             '黒は黒海や石炭産業、青は水、赤は自由を表します。',
             'ドネツクは2014年にウクライナから独立宣言をした国で、また人民共和国が資本主義からの解放として赤を用いることから、赤は自由を表すと考えられていますが、意味として断言できるかと言われると情報が不足しています。',
+          ],
+        },
+        {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [],
+          kanrenTag: [kanren.uaeLocal],
+          age: '',
+          flagtype: flagtype.c,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'dubai',
+          url: 'dubai',
+          name: 'ドバイ',
+          fullName: 'ドバイ首長国',
+          firstLetter: 'と',
+          officialName: '',
+          image: dubai,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/dubai.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -6344,6 +6524,32 @@ const App = () => {
             '縦横比率は【2:3】',
             '黄色は国王の指導力、オレンジは仏教、白は純粋さと忠誠心を表します。',
             'ブータンという国名は『雷龍の国』を意味しており、そのため龍が描かれています。龍が掴んでいる玉は国の富と成熟を示します。',
+          ],
+        },
+        {
+          mainColor: [red, green, black, white],
+          fullColor: [red, green, black, white],
+          tag: [],
+          kanrenTag: [kanren.uaeLocal],
+          age: '',
+          flagtype: flagtype.c,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'fujairah',
+          url: 'fujairah',
+          name: 'フジャイラ',
+          fullName: 'フジャイラ首長国',
+          firstLetter: 'ふ',
+          officialName: '',
+          image: fujairah,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/fujairah.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -7675,6 +7881,32 @@ const App = () => {
           ],
         },
         {
+          mainColor: [red, white],
+          fullColor: [red, white],
+          tag: [],
+          kanrenTag: [kanren.uaeLocal],
+          age: '',
+          flagtype: flagtype.c,
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          kokuren: '地方旗',
+          groupingCSS: 'local',
+          id: 'rasalkhaimah',
+          url: 'rasalkhaimah',
+          name: 'ラアス・アル＝ハイマ',
+          fullName: 'ラアス・アル＝ハイマ首長国',
+          firstLetter: 'ら',
+          officialName: '',
+          image: rasalkhaimah,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/rasalkhaimah.png',
+          desc: [
+            '',
+          ],
+        },
+        {
           mainColor: [red, blue, white],
           fullColor: [red, blue, white],
           tag: [moon],
@@ -8551,6 +8783,15 @@ const App = () => {
           <Route path='/afghanistan2002-2004' render={ () => <Afghanistan2002Page mainImage = {intialState.imageList}/>} />
 
           <Route path='/trucialoman1968-1971' render={ () => <TrucialOman1968Page mainImage = {intialState.imageList}/>} />
+
+          <Route path='/abudhabi' render={ () => <AbudhabiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/ajman' render={ () => <AjmanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/dubai' render={ () => <DubaiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/fujairah' render={ () => <FujairahPage mainImage = {intialState.imageList}/>} />
+          <Route path='/rasalkhaimah' render={ () => <RasalkhaimahPage mainImage = {intialState.imageList}/>} />
+          <Route path='/sharjah' render={ () => <SharjahPage mainImage = {intialState.imageList}/>} />
+          <Route path='/ummalqaiwain' render={ () => <UmmalQaiwainPage mainImage = {intialState.imageList}/>} />
+
 
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
           <Route path='/square' render={ () => <SquarePage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
