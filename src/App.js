@@ -308,10 +308,17 @@ import rasalkhaimah from './assets/flagImages/rasalkhaimah.svg'
 import sharjah from './assets/flagImages/sharjah.svg'
 import ummalQaiwain from './assets/flagImages/ummalQaiwain.svg'
 
-
-
-
-
+//0405
+import bali from './assets/flagImages/bali.svg'
+import bangkaBelitung from './assets/flagImages/bangkaBelitung.svg'
+import banten from './assets/flagImages/banten.svg'
+import bengkulu from './assets/flagImages/bengkulu.svg'
+import centralJava from './assets/flagImages/centralJava.svg'
+import centralKalimantan from './assets/flagImages/centralKalimantan.svg'
+import eastJava from './assets/flagImages/eastJava.svg'
+import eastKalimantan from './assets/flagImages/eastKalimantan.svg'
+import eastNusa from './assets/flagImages/eastNusa.svg'
+import centralSulawesi from './assets/flagImages/centralSulawesi.svg'
 
 
 
@@ -861,6 +868,17 @@ import RasalkhaimahPage from './components/countryFlags/Rasalkhaimah';
 import SharjahPage from './components/countryFlags/Sharjah';
 import UmmalQaiwainPage from './components/countryFlags/UmmalQaiwain';
 
+//0405
+import BaliPage from './components/countryFlags/Bali'
+import BangkaBelitungPage from './components/countryFlags/BangkaBelitung'
+import BantenPage from './components/countryFlags/Banten'
+import BengkuluPage from './components/countryFlags/Bengkulu'
+import CentralJavaPage from './components/countryFlags/CentralJava'
+import CentralKalimantanPage from './components/countryFlags/CentralKalimantan'
+import EastJavaPage from './components/countryFlags/EastJava'
+import EastKalimantanPage from './components/countryFlags/EastKalimantan'
+import EastNusaPage from './components/countryFlags/EastNusa'
+import CentralSulawesiPage from './components/countryFlags/CentralSulawesi'
 
 
 
@@ -955,6 +973,8 @@ const App = () => {
     afLocal: 'アフガニスタンの地方旗',
     uaeOld: 'アラブ首長国連邦の過去国旗',
     uaeLocal: 'アラブ首長国連邦の地方旗',
+    indonesiaOld: 'インドネシアの過去国旗',
+    indonesiaLocal: 'インドネシアの地方旗',
   };
 
 
@@ -2325,6 +2345,7 @@ const App = () => {
           mainColor: [red, white],
           fullColor: [red, white],
           tag: [],
+          kanrenTag: [kanren.main, kanren.indonesiaLocal, kanren.indonesiaOld],
           area: worldArea.asia,
           topics: [],
           topicsUrl: [],
@@ -5057,6 +5078,78 @@ const App = () => {
           ],
         },
         {
+          mainColor: [red, yellow],
+          fullColor: [red, green, yellow, white, black],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'central-kalimantan',
+          url: 'central-kalimantan',
+          name: '中部カリマンタン',
+          fullName: '中部カリマンタン州',
+          firstLetter: 'ち',
+          officialName: '',
+          image: centralKalimantan,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/centralKalimantan.png',
+          desc: [
+            'CC：https://ja.wikipedia.org/wiki/ファイル:Flag_of_Central_Kalimantan.png',
+          ],
+        },
+        {
+          mainColor: [red, yellow],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'central-java',
+          url: 'central-java',
+          name: '中部ジャワ',
+          fullName: '中部ジャワ州',
+          firstLetter: 'ち',
+          officialName: '',
+          image: centralJava,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/centralJava.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [blue, yellow, white],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'central-sulawesi',
+          url: 'central-sulawesi',
+          name: '中部スラウェシ',
+          fullName: '中部スラウェシ州',
+          firstLetter: 'ち',
+          officialName: '',
+          image: centralSulawesi,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/centralSulawesi.png',
+          desc: [
+            'CC：https://ja.wikipedia.org/wiki/ファイル:Flag_of_Central_Sulawesi.png',
+          ],
+        },
+        {
           mainColor: [red, white],
           fullColor: [red, white],
           tag: [sun, moon, star],
@@ -6275,6 +6368,30 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, yellow],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'bali',
+          url: 'bali',
+          name: 'バリ',
+          fullName: 'バリ州',
+          firstLetter: 'は',
+          officialName: '',
+          image: bali,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/bali.png',
+          desc: [
+            '',
+          ],
+        },
+        {
           mainColor: [blue, yellow, black],
           fullColor: [blue, yellow, black],
           tag: [],
@@ -6352,6 +6469,30 @@ const App = () => {
           ],
         },
         {
+          mainColor: [blue, white],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'bangka',
+          url: 'bangka',
+          name: 'バンガ・ブリトン',
+          fullName: 'バンガ・ブリトン州',
+          firstLetter: 'は',
+          officialName: '',
+          image: bangkaBelitung,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/bangkaBelitung.png',
+          desc: [
+            '',
+          ],
+        },
+        {
           mainColor: [red, green, white],
           fullColor: [red, green, white],
           tag: [],
@@ -6402,6 +6543,78 @@ const App = () => {
           ],
         },
         {
+          mainColor: [green, yellow],
+          fullColor: [red, green, blue, yellow, white, black],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'banten',
+          url: 'banten',
+          name: 'バンテン',
+          fullName: 'バンテン州',
+          firstLetter: 'は',
+          officialName: '',
+          image: banten,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/banten.png',
+          desc: [
+            'CC：https://commons.wikimedia.org/wiki/File:Flag_of_Banten.png',
+          ],
+        },
+        {
+          mainColor: [green, yellow],
+          fullColor: [red, green, yellow, white],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'east-kalimantan',
+          url: 'east-kalimantan',
+          name: '東カリマンタン',
+          fullName: '東カリマンタン州',
+          firstLetter: 'ひ',
+          officialName: '',
+          image: eastKalimantan,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/eastKalimantan.png',
+          desc: [
+            '',
+          ],
+        },
+        {
+          mainColor: [green, blue],
+          fullColor: [red, green, blue, yellow, white],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'east-java',
+          url: 'east-java',
+          name: '東ジャワ',
+          fullName: '東ジャワ州',
+          firstLetter: 'ひ',
+          officialName: '',
+          image: eastJava,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/eastJava.png',
+          desc: [
+            '',
+          ],
+        },
+        {
           mainColor: [red, yellow, white, black],
           fullColor: [red, yellow, white, black],
           tag: [star],
@@ -6424,6 +6637,30 @@ const App = () => {
             '縦横比率は【1:2】',
             '黒い三角形は克服すべき困難、黄色は植民地時代の痕跡、赤は独立戦争、星は平和を表します。',
             '現地の言葉のテトゥン語だと、この国はティモールロロサエ（昇る太陽のティモール）と呼ばれます。',
+          ],
+        },
+        {
+          mainColor: [red, green, yellow],
+          fullColor: [red, green, yellow, white],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'east-nusa',
+          url: 'east-nusa',
+          name: '東ヌサ・トンガラ',
+          fullName: '東ヌサ・トンガラ州',
+          firstLetter: 'ひ',
+          officialName: '',
+          image: eastNusa,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/eastNusa.png',
+          desc: [
+            '',
           ],
         },
         {
@@ -6726,6 +6963,30 @@ const App = () => {
             '縦横比率は【2:3】',
             '旗には「In God We Trust」と書かれています。',
             'これはアメリカの国家のモットーであり、フロリダ州以外にはジョージア州とミシシッピ州の旗にも同じ言葉が書かれています。',
+          ],
+        },
+        {
+          mainColor: [green, blue],
+          fullColor: [green, blue, yellow, white, red],
+          tag: [],
+          kanrenTag: [kanren.indonesiaLocal],
+          area: worldArea.asia,
+          topics: [],
+          topicsUrl: [],
+          groupingCSS: 'local',
+          kokuren: '地方旗',
+          id: 'bengkulu',
+          url: 'bengkulu',
+          name: 'ブンクル',
+          fullName: 'ブンクル州',
+          firstLetter: 'ふ',
+          officialName: '',
+          image: bengkulu,
+          location: '',
+          link: '',
+          ogp: 'ogpFlagImages/bengkulu.png',
+          desc: [
+            'CC：https://ja.wikipedia.org/wiki/ファイル:Flag_of_Bengkulu.png',
           ],
         },
         {
@@ -8791,6 +9052,18 @@ const App = () => {
           <Route path='/rasalkhaimah' render={ () => <RasalkhaimahPage mainImage = {intialState.imageList}/>} />
           <Route path='/sharjah' render={ () => <SharjahPage mainImage = {intialState.imageList}/>} />
           <Route path='/ummalqaiwain' render={ () => <UmmalQaiwainPage mainImage = {intialState.imageList}/>} />
+
+          <Route path='/bali' render={ () => <BaliPage mainImage = {intialState.imageList}/>} />
+          <Route path='/bangka' render={ () => <BangkaBelitungPage mainImage = {intialState.imageList}/>} />
+          <Route path='/banten' render={ () => <BantenPage mainImage = {intialState.imageList}/>} />
+          <Route path='/bengkulu' render={ () => <BengkuluPage mainImage = {intialState.imageList}/>} />
+          <Route path='/central-java' render={ () => <CentralJavaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/central-kalimantan' render={ () => <CentralKalimantanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/central-sulawesi' render={ () => <CentralSulawesiPage mainImage = {intialState.imageList}/>} />
+          <Route path='/east-java' render={ () => <EastJavaPage mainImage = {intialState.imageList}/>} />
+          <Route path='/east-kalimantan' render={ () => <EastKalimantanPage mainImage = {intialState.imageList}/>} />
+          <Route path='/east-nusa' render={ () => <EastNusaPage mainImage = {intialState.imageList}/>} />
+
 
 
           <Route path='/scandinavian-cross' render={ () => <ScandinavianCrossPage knowledge = {knowledge} mainImage = {intialState.imageList}/>}/>
